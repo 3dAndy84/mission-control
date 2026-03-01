@@ -3,9 +3,22 @@
     {
       "id": "sxm-cams-cloudflare",
       "title": "SXM Cams — Add Cloudflare Tunnel Route",
-      "description": "Dashboard built and running on port 8081. Need to expose via Cloudflare Tunnel as cams.n8n-andy.xyz. Waiting on Andy to add route in CF dashboard.",
+      "description": "Dashboard built and running on port 8081. Need to expose via Cloudflare Tunnel as cams.n8n-andy.xyz.",
       "status": "in-progress",
       "priority": "medium",
+      "agent": "max",
+      "project": "sxm-cams",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "sxm-cams-build",
+      "title": "SXM Cams — Build Dashboard & Proxy",
+      "description": "Built webcam dashboard with 11 SXM cameras. HLS proxy for PTZtv streams, YouTube embeds, grid/single view.",
+      "status": "done",
+      "priority": "high",
+      "agent": "max",
+      "project": "sxm-cams",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     },
@@ -15,6 +28,8 @@
       "description": "Secrets spread across ~/.openclaw/.env, credentials/, n8n-stack/.env. Plan: use pass (GPG-encrypted) as single source of truth.",
       "status": "backlog",
       "priority": "medium",
+      "agent": "max",
+      "project": "infrastructure",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     },
@@ -24,24 +39,30 @@
       "description": "Claude Code CLI installed. Config patch ready. Andy deciding on VPS vs desktop session continuity.",
       "status": "backlog",
       "priority": "low",
+      "agent": "max",
+      "project": "infrastructure",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     },
     {
       "id": "gdrive-upload-fix",
       "title": "Fix Google Drive Upload (Service Account Quota)",
-      "description": "Google removed storage quota for service accounts. Read access works. Need Shared Drive or OAuth delegation to upload.",
+      "description": "Google removed storage quota for service accounts. Read access works. Need Shared Drive or OAuth delegation.",
       "status": "backlog",
       "priority": "low",
+      "agent": "max",
+      "project": "infrastructure",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     },
     {
       "id": "dominica-proposal",
       "title": "Dominica Duty-Free Field Study",
-      "description": "Business proposal for Douglas-Charles Airport duty-free retail. Written, humanized, emailed to ernielsambre1@gmail.com, posted to Dominica topic.",
+      "description": "Business proposal for Douglas-Charles Airport duty-free retail. Written, humanized, emailed, posted to Dominica topic.",
       "status": "done",
       "priority": "high",
+      "agent": "max",
+      "project": "dominica",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     },
@@ -51,6 +72,8 @@
       "description": "Removed himalaya binary, config, and gmail credentials. Email is now exclusively via agentmail API.",
       "status": "done",
       "priority": "medium",
+      "agent": "max",
+      "project": "infrastructure",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     },
@@ -60,6 +83,8 @@
       "description": "Updated 07:00 AST cron job to always report heartbeat status, even when all clear.",
       "status": "done",
       "priority": "medium",
+      "agent": "max",
+      "project": "operations",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     },
@@ -69,6 +94,8 @@
       "description": "Created DAILY_LOG.md. Protocol: write immediately after every significant action, not at session end.",
       "status": "done",
       "priority": "medium",
+      "agent": "max",
+      "project": "operations",
       "created": "2026-03-01",
       "updated": "2026-03-01"
     }
