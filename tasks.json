@@ -1,3 +1,76 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "id": "sxm-cams-cloudflare",
+      "title": "SXM Cams — Add Cloudflare Tunnel Route",
+      "description": "Dashboard built and running on port 8081. Need to expose via Cloudflare Tunnel as cams.n8n-andy.xyz. Waiting on Andy to add route in CF dashboard.",
+      "status": "in-progress",
+      "priority": "medium",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "secrets-centralize",
+      "title": "Centralize External Secrets Management",
+      "description": "Secrets spread across ~/.openclaw/.env, credentials/, n8n-stack/.env. Plan: use pass (GPG-encrypted) as single source of truth.",
+      "status": "backlog",
+      "priority": "medium",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "acp-activation",
+      "title": "Activate ACP (Agent Communication Protocol)",
+      "description": "Claude Code CLI installed. Config patch ready. Andy deciding on VPS vs desktop session continuity.",
+      "status": "backlog",
+      "priority": "low",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "gdrive-upload-fix",
+      "title": "Fix Google Drive Upload (Service Account Quota)",
+      "description": "Google removed storage quota for service accounts. Read access works. Need Shared Drive or OAuth delegation to upload.",
+      "status": "backlog",
+      "priority": "low",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "dominica-proposal",
+      "title": "Dominica Duty-Free Field Study",
+      "description": "Business proposal for Douglas-Charles Airport duty-free retail. Written, humanized, emailed to ernielsambre1@gmail.com, posted to Dominica topic.",
+      "status": "done",
+      "priority": "high",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "himalaya-removal",
+      "title": "Remove Himalaya CLI — Agentmail Only",
+      "description": "Removed himalaya binary, config, and gmail credentials. Email is now exclusively via agentmail API.",
+      "status": "done",
+      "priority": "medium",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "briefing-heartbeat-update",
+      "title": "Morning Briefing Always Includes Heartbeat",
+      "description": "Updated 07:00 AST cron job to always report heartbeat status, even when all clear.",
+      "status": "done",
+      "priority": "medium",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "daily-log-protocol",
+      "title": "Daily Log — Write Immediately After Actions",
+      "description": "Created DAILY_LOG.md. Protocol: write immediately after every significant action, not at session end.",
+      "status": "done",
+      "priority": "medium",
+      "created": "2026-03-01",
+      "updated": "2026-03-01"
+    }
+  ]
 }
