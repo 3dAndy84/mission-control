@@ -147,12 +147,12 @@
       "id": "fix-acp-sessions-spawn-dispatch",
       "title": "Fix ACP sessions_spawn dispatch",
       "description": "sessions_spawn(runtime=acp) returns 'not configured' despite acpx plugin being loaded and working via CLI. Debug gateway dispatch.",
-      "status": "backlog",
+      "status": "in-progress",
       "priority": "high",
       "agent": "max",
       "project": "infrastructure",
       "created": "2026-03-02T19:47:13Z",
-      "updated": "2026-03-02T19:47:13Z"
+      "updated": "2026-03-02T19:48:22Z"
     },
     {
       "id": "n8n-google-drive-calendar-workflow",
