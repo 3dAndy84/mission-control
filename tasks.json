@@ -37,12 +37,12 @@
       "id": "acp-activation",
       "title": "Activate ACP (Agent Communication Protocol)",
       "description": "Claude Code CLI installed. Config patch ready. Andy deciding on VPS vs desktop session continuity.",
-      "status": "in-progress",
+      "status": "done",
       "priority": "low",
       "agent": "max",
       "project": "infrastructure",
       "created": "2026-03-01",
-      "updated": "2026-03-02T18:50:52Z"
+      "updated": "2026-03-02T19:57:09Z"
     },
     {
       "id": "gdrive-upload-fix",
