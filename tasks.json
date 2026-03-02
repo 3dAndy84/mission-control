@@ -125,12 +125,12 @@
       "id": "config-cleanup-session",
       "title": "Config Cleanup Session",
       "description": "Fixed idle timeout 480->120min, committed 11 orphaned memory deletions, committed bin/ and documents/",
-      "status": "backlog",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "operations",
       "created": "2026-03-02T18:50:50Z",
-      "updated": "2026-03-02T18:50:50Z"
+      "updated": "2026-03-02T18:50:51Z"
     }
   ]
 }
