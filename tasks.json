@@ -180,12 +180,12 @@
       "id": "n8n-google-calendar-workflow",
       "title": "n8n Google Calendar workflow",
       "description": "Build, test, deploy n8n webhook workflow for Calendar events. Email to Andy. Pending: Andy imports + connects OAuth + sets GCAL_API_TOKEN. Update morning briefing cron with real token.",
-      "status": "backlog",
+      "status": "blocked",
       "priority": "high",
       "agent": "max",
       "project": "n8n",
       "created": "2026-03-02T21:24:52Z",
-      "updated": "2026-03-02T21:24:52Z"
+      "updated": "2026-03-02T21:24:55Z"
     },
     {
       "id": "connect-calendar-to-morning-briefing",
