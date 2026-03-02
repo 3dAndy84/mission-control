@@ -103,12 +103,12 @@
       "id": "test-task-dashboard-cli",
       "title": "Test Task Dashboard CLI",
       "description": "Verify CLI works correctly",
-      "status": "backlog",
-      "priority": "low",
+      "status": "in-progress",
+      "priority": "high",
       "agent": "max",
       "project": "infrastructure",
       "created": "2026-03-02T16:34:15Z",
-      "updated": "2026-03-02T16:34:15Z"
+      "updated": "2026-03-02T16:34:23Z"
     }
   ]
 }
