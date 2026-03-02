@@ -164,6 +164,17 @@
       "project": "n8n",
       "created": "2026-03-02T19:47:13Z",
       "updated": "2026-03-02T20:08:53Z"
+    },
+    {
+      "id": "n8n-google-drive-workflow",
+      "title": "n8n Google Drive workflow",
+      "description": "Build, test, deploy n8n webhook workflow for Drive CRUD. Email to Andy. Pending: Andy imports + connects OAuth + sets GDRIVE_API_TOKEN",
+      "status": "backlog",
+      "priority": "high",
+      "agent": "max",
+      "project": "n8n",
+      "created": "2026-03-02T21:24:51Z",
+      "updated": "2026-03-02T21:24:51Z"
     }
   ]
 }
