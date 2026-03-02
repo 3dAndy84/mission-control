@@ -109,6 +109,17 @@
       "project": "operations",
       "created": "2026-03-02T18:50:47Z",
       "updated": "2026-03-02T18:50:48Z"
+    },
+    {
+      "id": "acp-claude-code-setup",
+      "title": "ACP Claude Code Setup",
+      "description": "Enabled acpx plugin, configured ACP with Claude Code backend. Gateway dispatch still broken, CLI works.",
+      "status": "backlog",
+      "priority": "medium",
+      "agent": "max",
+      "project": "infrastructure",
+      "created": "2026-03-02T18:50:49Z",
+      "updated": "2026-03-02T18:50:49Z"
     }
   ]
 }
