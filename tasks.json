@@ -197,6 +197,17 @@
       "project": "operations",
       "created": "2026-03-02T21:24:53Z",
       "updated": "2026-03-02T21:24:53Z"
+    },
+    {
+      "id": "2-layer-heartbeat-system",
+      "title": "2-Layer Heartbeat System",
+      "description": "Implement Elvis pattern: bash pre-check before LLM heartbeat. Eliminates ~20 wasted LLM calls/day. Files: heartbeat-precheck.sh, heartbeat-gate.sh. Commit: e77b0e3",
+      "status": "backlog",
+      "priority": "high",
+      "agent": "max",
+      "project": "operations",
+      "created": "2026-03-03T13:13:01Z",
+      "updated": "2026-03-03T13:13:01Z"
     }
   ]
 }
