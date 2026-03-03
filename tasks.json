@@ -213,12 +213,12 @@
       "id": "finch-memory-automation-option-a",
       "title": "Finch Memory Automation (Option A)",
       "description": "AUTONOMY.md trust ladder, nightly extraction cron (2-layer), memory decay automation (30d→archive, 90d→delete). Commit: 064f108",
-      "status": "backlog",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "operations",
       "created": "2026-03-03T13:13:02Z",
-      "updated": "2026-03-03T13:13:02Z"
+      "updated": "2026-03-03T13:13:07Z"
     }
   ]
 }
