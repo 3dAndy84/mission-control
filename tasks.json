@@ -67,17 +67,6 @@
       "updated": "2026-03-02T21:24:53Z"
     },
     {
-      "id": "2-layer-heartbeat-system",
-      "title": "2-Layer Heartbeat System",
-      "description": "Implement Elvis pattern: bash pre-check before LLM heartbeat. Eliminates ~20 wasted LLM calls/day. Files: heartbeat-precheck.sh, heartbeat-gate.sh. Commit: e77b0e3",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "operations",
-      "created": "2026-03-03T13:13:01Z",
-      "updated": "2026-03-03T13:13:06Z"
-    },
-    {
       "id": "finch-memory-automation-option-a",
       "title": "Finch Memory Automation (Option A)",
       "description": "AUTONOMY.md trust ladder, nightly extraction cron (2-layer), memory decay automation (30d→archive, 90d→delete). Commit: 064f108",
