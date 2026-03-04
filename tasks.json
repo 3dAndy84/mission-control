@@ -34,17 +34,6 @@
       "updated": "2026-03-01"
     },
     {
-      "id": "task-dashboard-auto-update-skill",
-      "title": "Task Dashboard Auto-Update Skill",
-      "description": "Built task-dashboard CLI + OpenClaw skill for auto-updating kanban",
-      "status": "done",
-      "priority": "medium",
-      "agent": "max",
-      "project": "operations",
-      "created": "2026-03-02T18:50:47Z",
-      "updated": "2026-03-02T18:50:48Z"
-    },
-    {
       "id": "acp-claude-code-setup",
       "title": "ACP Claude Code Setup",
       "description": "Enabled acpx plugin, configured ACP with Claude Code backend. Gateway dispatch still broken, CLI works.",
