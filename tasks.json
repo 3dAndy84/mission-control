@@ -34,17 +34,6 @@
       "updated": "2026-03-01"
     },
     {
-      "id": "acp-claude-code-setup",
-      "title": "ACP Claude Code Setup",
-      "description": "Enabled acpx plugin, configured ACP with Claude Code backend. Gateway dispatch still broken, CLI works.",
-      "status": "done",
-      "priority": "medium",
-      "agent": "max",
-      "project": "infrastructure",
-      "created": "2026-03-02T18:50:49Z",
-      "updated": "2026-03-02T19:57:08Z"
-    },
-    {
       "id": "config-cleanup-session",
       "title": "Config Cleanup Session",
       "description": "Fixed idle timeout 480->120min, committed 11 orphaned memory deletions, committed bin/ and documents/",
