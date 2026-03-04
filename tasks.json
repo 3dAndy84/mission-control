@@ -67,17 +67,6 @@
       "updated": "2026-03-02T21:24:53Z"
     },
     {
-      "id": "finch-memory-automation-option-a",
-      "title": "Finch Memory Automation (Option A)",
-      "description": "AUTONOMY.md trust ladder, nightly extraction cron (2-layer), memory decay automation (30d→archive, 90d→delete). Commit: 064f108",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "operations",
-      "created": "2026-03-03T13:13:02Z",
-      "updated": "2026-03-03T13:13:07Z"
-    },
-    {
       "id": "task-lifecycle-tracking-system",
       "title": "Task Lifecycle Tracking System",
       "description": "CLI + skill for verified task execution with proof artifacts and notifications",
