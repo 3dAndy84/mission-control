@@ -34,17 +34,6 @@
       "updated": "2026-03-01"
     },
     {
-      "id": "fix-acp-sessions-spawn-dispatch",
-      "title": "Fix ACP sessions_spawn dispatch",
-      "description": "sessions_spawn(runtime=acp) returns 'not configured' despite acpx plugin being loaded and working via CLI. Debug gateway dispatch.",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "infrastructure",
-      "created": "2026-03-02T19:47:13Z",
-      "updated": "2026-03-02T19:57:07Z"
-    },
-    {
       "id": "n8n-google-drive-calendar-workflow",
       "title": "n8n Google Drive + Calendar workflow",
       "description": "Finish n8n webhook workflow for Google Drive and Calendar integration. Email to jsambre@gmail.com with JSON + setup instructions.",
