@@ -34,17 +34,6 @@
       "updated": "2026-03-01"
     },
     {
-      "id": "briefing-heartbeat-update",
-      "title": "Morning Briefing Always Includes Heartbeat",
-      "description": "Updated 07:00 AST cron job to always report heartbeat status, even when all clear.",
-      "status": "done",
-      "priority": "medium",
-      "agent": "worker",
-      "project": "operations",
-      "created": "2026-03-01",
-      "updated": "2026-03-01"
-    },
-    {
       "id": "daily-log-protocol",
       "title": "Daily Log — Write Immediately After Actions",
       "description": "Created DAILY_LOG.md. Protocol: write immediately after every significant action, not at session end.",
