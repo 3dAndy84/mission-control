@@ -12,18 +12,6 @@
       "updated": "2026-03-01"
     },
     {
-      "id": "gdrive-upload-fix",
-      "title": "Fix Google Drive Upload (Service Account Quota)",
-      "description": "Research and implement fix: Shared Drive, OAuth delegation, or alternative upload method.",
-      "status": "done",
-      "priority": "low",
-      "agent": "researcher",
-      "project": "infrastructure",
-      "created": "2026-03-01",
-      "updated": "2026-03-04T23:04:51Z",
-      "completed_at": "2026-03-04T23:04:51Z"
-    },
-    {
       "id": "connect-calendar-to-morning-briefing",
       "title": "Connect calendar to morning briefing",
       "description": "Once Andy sets GCAL_API_TOKEN, update morning briefing cron (dafc366d) to replace PENDING_TOKEN with real token",
