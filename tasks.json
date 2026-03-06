@@ -93,12 +93,13 @@
       "id": "mission-control-dashboard",
       "title": "Mission Control Dashboard",
       "description": "Single-page dashboard: agent activity, system health, calendar, tasks",
-      "status": "backlog",
+      "status": "in-progress",
       "priority": "high",
       "agent": "max",
       "project": "mission-control",
       "created": "2026-03-05T16:14:16Z",
-      "updated": "2026-03-05T16:14:16Z"
+      "updated": "2026-03-06T20:42:08Z",
+      "started_at": "2026-03-06T20:42:08Z"
     },
     {
       "id": "watchdog-auto-repair-mission-control-tab",
