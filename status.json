@@ -1,11 +1,11 @@
 {
-  "generated": 1772757934395,
+  "generated": 1772760182550,
   "gateway": {
     "version": "2026.2.23",
+    "app_latest": "2026.3.2",
     "status": "online",
     "uptime_since": "2026-02-24 09:27:26",
-    "app_latest": "2026.3.2",
-    "sessions": 34,
+    "sessions": 33,
     "memory_files": 169,
     "heartbeat": "30m"
   },
@@ -13,9 +13,21 @@
     "disk_used": "60G",
     "disk_total": "193G",
     "disk_pct": "31%",
-    "mem_used": "2.8Gi",
+    "mem_used": "2.9Gi",
     "mem_total": "15Gi",
-    "load": "0.23 0.09 0.06",
+    "load": "0.35 0.13 0.04",
     "node_version": "v22.22.0"
+  },
+  "health": {
+    "vector_db": 607,
+    "last_checkpoint_ms": 1772697640000,
+    "session_size": "20M",
+    "cron_jobs_active": 8
+  },
+  "cost": {
+    "today_estimate": 4.31,
+    "tokens_in": 492,
+    "tokens_out": 15779,
+    "tokens_cache": 832670
   }
 }
