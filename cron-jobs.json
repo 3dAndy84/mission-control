@@ -1,0 +1,100 @@
+{
+  "jobs": [
+    {
+      "id": "morning-briefing",
+      "name": "Morning Briefing",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1741334400000,
+        "lastRunAtMs": 1741248000015,
+        "lastRunStatus": "ok",
+        "lastDurationMs": 45123,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "evening-recap",
+      "name": "Evening Recap",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "model": "sonnet"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1741377600000,
+        "lastRunAtMs": 1741291200023,
+        "lastRunStatus": "ok",
+        "lastDurationMs": 123456,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "weekly-review",
+      "name": "Weekly Review",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * 0",
+        "tz": "America/Lower_Princes"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "model": "opus"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1741582800000,
+        "lastRunAtMs": 1740978000012,
+        "lastRunStatus": "ok",
+        "lastDurationMs": 395172,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "backup-check",
+      "name": "Backup Health Check",
+      "enabled": false,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 43200000,
+        "anchorMs": 1741248000000
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1741291200000,
+        "lastRunAtMs": null,
+        "lastRunStatus": null,
+        "lastDurationMs": null,
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}
