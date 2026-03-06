@@ -119,15 +119,44 @@
             color: #f59e0b;
         }
 
-        .health-info {
-            font-size: 13px;
-            color: #b0b0b0;
-            margin-top: 8px;
-            line-height: 1.5;
+        .health-rows {
+            display: flex;
+            flex-direction: column;
         }
 
-        .health-info div {
-            margin-bottom: 4px;
+        .health-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .health-row:last-child {
+            border-bottom: none;
+        }
+
+        .health-row-label {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .health-row-value {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .health-row-value.green {
+            color: #10b981;
+        }
+
+        .health-row-value.amber {
+            color: #f59e0b;
+        }
+
+        .health-row-value.red {
+            color: #dc2626;
         }
 
         .update-badge {
@@ -621,74 +650,6 @@
             margin-bottom: 20px;
         }
 
-        /* Health Tab */
-        .health-section {
-            background: #252525;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .health-section h2 {
-            font-size: 18px;
-            color: #ffffff;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #3a3a3a;
-        }
-
-        .health-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
-        .health-item {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .health-label {
-            font-size: 12px;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .health-value {
-            font-size: 16px;
-            color: #e0e0e0;
-            font-weight: 600;
-        }
-
-        .usage-bar {
-            width: 100%;
-            height: 6px;
-            background: #3a3a3a;
-            border-radius: 3px;
-            overflow: hidden;
-            margin-top: 5px;
-        }
-
-        .usage-bar-fill {
-            height: 100%;
-            border-radius: 3px;
-            transition: width 0.3s;
-        }
-
-        .usage-bar-fill.green {
-            background: #10b981;
-        }
-
-        .usage-bar-fill.amber {
-            background: #f59e0b;
-        }
-
-        .usage-bar-fill.red {
-            background: #dc2626;
-        }
-
         /* Memory Tab */
         .memory-controls {
             display: flex;
@@ -814,9 +775,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .health-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -838,9 +796,14 @@
         <div class="overview">
             <div class="overview-grid">
                 <div class="overview-card">
-                    <div class="overview-card-title">System Status</div>
-                    <div id="system-status-content">
-                        <span class="status-badge status-online">● Online</span>
+                    <div class="overview-card-title">System Health</div>
+                    <div class="health-rows" id="health-rows">
+                        <div class="health-row"><span class="health-row-label">Gateway</span><span class="health-row-value green" id="hr-gateway">● Online</span></div>
+                        <div class="health-row"><span class="health-row-label">Uptime</span><span class="health-row-value" id="hr-uptime">—</span></div>
+                        <div class="health-row"><span class="health-row-label">Vector DB</span><span class="health-row-value" id="hr-vectordb">—</span></div>
+                        <div class="health-row"><span class="health-row-label">Last Checkpoint</span><span class="health-row-value" id="hr-checkpoint">—</span></div>
+                        <div class="health-row"><span class="health-row-label">Session Size</span><span class="health-row-value" id="hr-sessionsize">—</span></div>
+                        <div class="health-row"><span class="health-row-label">Cron Jobs</span><span class="health-row-value" id="hr-cronjobs">—</span></div>
                     </div>
                 </div>
 
@@ -862,16 +825,12 @@
                 </div>
 
                 <div class="overview-card">
-                    <div class="overview-card-title">Quick Stats</div>
-                    <div style="display: flex; gap: 20px;">
-                        <div>
-                            <div class="quick-stat" id="stat-active-crons">0</div>
-                            <div class="quick-stat-label">Active Jobs</div>
-                        </div>
-                        <div>
-                            <div class="quick-stat" id="stat-tasks-progress">0</div>
-                            <div class="quick-stat-label">In Progress</div>
-                        </div>
+                    <div class="overview-card-title">Estimated Cost</div>
+                    <div class="health-rows" id="cost-rows">
+                        <div class="health-row"><span class="health-row-label">Today</span><span class="health-row-value green" id="cr-today">—</span></div>
+                        <div class="health-row"><span class="health-row-label">Tokens In</span><span class="health-row-value" id="cr-in">—</span></div>
+                        <div class="health-row"><span class="health-row-label">Tokens Out</span><span class="health-row-value" id="cr-out">—</span></div>
+                        <div class="health-row"><span class="health-row-label">Cache Read</span><span class="health-row-value" id="cr-cache">—</span></div>
                     </div>
                 </div>
             </div>
@@ -881,7 +840,6 @@
         <div class="tabs">
             <button class="tab active" onclick="switchTab('tasks')">Tasks</button>
             <button class="tab" onclick="switchTab('cron-jobs')">Cron Jobs</button>
-            <button class="tab" onclick="switchTab('health')">Health</button>
             <button class="tab" onclick="switchTab('memory')">Memory</button>
         </div>
 
@@ -957,77 +915,6 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-        <!-- Health Tab -->
-        <div id="health-tab" class="tab-content">
-            <div class="health-section">
-                <h2>Gateway Information</h2>
-                <div class="health-grid" id="gateway-info">
-                    <div class="health-item">
-                        <div class="health-label">Version</div>
-                        <div class="health-value" id="gateway-version">Loading...</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Status</div>
-                        <div class="health-value" id="gateway-status">Loading...</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Uptime</div>
-                        <div class="health-value" id="gateway-uptime">Loading...</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Sessions</div>
-                        <div class="health-value" id="gateway-sessions">0</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Memory Files</div>
-                        <div class="health-value" id="gateway-memory-files">0</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Heartbeat</div>
-                        <div class="health-value" id="gateway-heartbeat">—</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="health-section">
-                <h2>System Resources</h2>
-                <div class="health-grid">
-                    <div class="health-item">
-                        <div class="health-label">Disk Usage</div>
-                        <div class="health-value" id="disk-usage">Loading...</div>
-                        <div class="usage-bar">
-                            <div class="usage-bar-fill green" id="disk-bar" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Memory Usage</div>
-                        <div class="health-value" id="mem-usage">Loading...</div>
-                        <div class="usage-bar">
-                            <div class="usage-bar-fill green" id="mem-bar" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Load Average</div>
-                        <div class="health-value" id="load-avg">Loading...</div>
-                    </div>
-                    <div class="health-item">
-                        <div class="health-label">Node Version</div>
-                        <div class="health-value" id="node-version">Loading...</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="health-section">
-                <h2>Data Freshness</h2>
-                <div class="health-grid">
-                    <div class="health-item">
-                        <div class="health-label">Last Updated</div>
-                        <div class="health-value" id="status-freshness">Loading...</div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Memory Tab -->
@@ -1121,7 +1008,6 @@
                 populateFilters();
                 renderTasks();
                 renderCronJobs();
-                renderHealth();
                 renderMemory();
                 updateOverview();
                 updateLastRefreshTime();
@@ -1156,11 +1042,6 @@
                 <span class="task-pill task-pill-done">Done: ${doneCount}</span>
             `;
 
-            // Quick stats
-            const activeCrons = allCronJobs.filter(j => j.enabled).length;
-            document.getElementById('stat-active-crons').textContent = activeCrons;
-            document.getElementById('stat-tasks-progress').textContent = progressCount;
-
             // Next scheduled jobs
             const nextJobsContainer = document.getElementById('next-jobs');
             const upcomingJobs = allCronJobs
@@ -1182,44 +1063,56 @@
                 }).join('');
             }
 
-            // Enhanced system status
+            // System Health card
             if (systemStatus) {
                 const now = Date.now();
                 const twoHoursMs = 2 * 60 * 60 * 1000;
                 const isStale = (now - systemStatus.generated) > twoHoursMs;
                 const isOffline = !systemStatus.gateway || systemStatus.gateway.status !== 'online';
-                
-                let statusBadge, statusClass;
+
+                const gwEl = document.getElementById('hr-gateway');
                 if (isOffline) {
-                    statusBadge = '● Offline';
-                    statusClass = 'status-offline';
+                    gwEl.textContent = '● Offline';
+                    gwEl.className = 'health-row-value red';
                 } else if (isStale) {
-                    statusBadge = '● Stale';
-                    statusClass = 'status-stale';
+                    gwEl.textContent = '● Stale';
+                    gwEl.className = 'health-row-value amber';
                 } else {
-                    statusBadge = '● Online';
-                    statusClass = 'status-online';
+                    gwEl.textContent = '● Online';
+                    gwEl.className = 'health-row-value green';
                 }
 
-                let healthInfo = '';
-                if (systemStatus.gateway) {
-                    const hasUpdate = systemStatus.gateway.version !== systemStatus.gateway.app_latest;
-                    const versionText = systemStatus.gateway.version + (hasUpdate ? '<span class="update-badge">Update Available</span>' : '');
-                    const uptime = systemStatus.gateway.uptime_since ? formatRelativeTime(new Date(systemStatus.gateway.uptime_since).getTime()) : '—';
-                    
-                    healthInfo = `
-                        <div class="health-info">
-                            <div>Version: ${versionText}</div>
-                            <div>Uptime: ${uptime}</div>
-                        </div>
-                    `;
+                if (systemStatus.gateway && systemStatus.gateway.uptime_since) {
+                    const uptimeMs = now - new Date(systemStatus.gateway.uptime_since).getTime();
+                    const days = Math.floor(uptimeMs / 86400000);
+                    const hours = Math.floor((uptimeMs % 86400000) / 3600000);
+                    const mins = Math.floor((uptimeMs % 3600000) / 60000);
+                    document.getElementById('hr-uptime').textContent = `${days}d ${hours}h ${mins}m`;
                 }
 
-                document.getElementById('system-status-content').innerHTML = `
-                    <span class="status-badge ${statusClass}">${statusBadge}</span>
-                    ${healthInfo}
-                `;
+                if (systemStatus.health) {
+                    const h = systemStatus.health;
+                    document.getElementById('hr-vectordb').textContent = h.vector_db ? h.vector_db.toLocaleString() + ' items' : '—';
+                    document.getElementById('hr-checkpoint').textContent = h.last_checkpoint_ms ? formatRelativeTime(h.last_checkpoint_ms) : '—';
+                    document.getElementById('hr-sessionsize').textContent = h.session_size || '—';
+                    document.getElementById('hr-cronjobs').textContent = h.cron_jobs_active || '—';
+                }
+
+                // Cost card
+                if (systemStatus.cost) {
+                    const c = systemStatus.cost;
+                    document.getElementById('cr-today').textContent = '$' + (c.today_estimate || 0).toFixed(2);
+                    document.getElementById('cr-in').textContent = formatTokenCount(c.tokens_in || 0);
+                    document.getElementById('cr-out').textContent = formatTokenCount(c.tokens_out || 0);
+                    document.getElementById('cr-cache').textContent = formatTokenCount(c.tokens_cache || 0);
+                }
             }
+        }
+
+        function formatTokenCount(n) {
+            if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+            if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+            return n.toString();
         }
 
         function switchTab(tabName) {
@@ -1531,72 +1424,6 @@
                     </tr>
                 `;
             }).join('');
-        }
-
-        function renderHealth() {
-            if (!systemStatus) {
-                document.getElementById('gateway-version').textContent = 'No data';
-                document.getElementById('gateway-status').textContent = 'No data';
-                document.getElementById('gateway-uptime').textContent = 'No data';
-                document.getElementById('disk-usage').textContent = 'No data';
-                document.getElementById('mem-usage').textContent = 'No data';
-                document.getElementById('load-avg').textContent = 'No data';
-                document.getElementById('node-version').textContent = 'No data';
-                document.getElementById('status-freshness').textContent = 'No data';
-                return;
-            }
-
-            // Gateway info
-            if (systemStatus.gateway) {
-                const gw = systemStatus.gateway;
-                const hasUpdate = gw.version !== gw.app_latest;
-                document.getElementById('gateway-version').innerHTML = 
-                    gw.version + (hasUpdate ? ` <span class="update-badge">${gw.app_latest}</span>` : '');
-                document.getElementById('gateway-status').textContent = gw.status || 'unknown';
-                document.getElementById('gateway-uptime').textContent = 
-                    gw.uptime_since ? formatRelativeTime(new Date(gw.uptime_since).getTime()) : '—';
-                document.getElementById('gateway-sessions').textContent = gw.sessions || 0;
-                document.getElementById('gateway-memory-files').textContent = gw.memory_files || 0;
-                document.getElementById('gateway-heartbeat').textContent = gw.heartbeat || '—';
-            }
-
-            // System resources
-            if (systemStatus.system) {
-                const sys = systemStatus.system;
-                
-                // Disk usage
-                const diskPct = parseInt(sys.disk_pct);
-                document.getElementById('disk-usage').textContent = 
-                    `${sys.disk_used} / ${sys.disk_total} (${sys.disk_pct})`;
-                const diskBar = document.getElementById('disk-bar');
-                diskBar.style.width = sys.disk_pct;
-                diskBar.className = 'usage-bar-fill ' + getUsageColor(diskPct);
-
-                // Memory usage
-                const memPct = (parseFloat(sys.mem_used) / parseFloat(sys.mem_total)) * 100;
-                document.getElementById('mem-usage').textContent = 
-                    `${sys.mem_used} / ${sys.mem_total} (${memPct.toFixed(0)}%)`;
-                const memBar = document.getElementById('mem-bar');
-                memBar.style.width = `${memPct}%`;
-                memBar.className = 'usage-bar-fill ' + getUsageColor(memPct);
-
-                // Load average
-                document.getElementById('load-avg').textContent = sys.load || '—';
-
-                // Node version
-                document.getElementById('node-version').textContent = sys.node_version || '—';
-            }
-
-            // Data freshness
-            const freshness = new Date(systemStatus.generated);
-            document.getElementById('status-freshness').textContent = 
-                formatRelativeTime(systemStatus.generated);
-        }
-
-        function getUsageColor(percentage) {
-            if (percentage >= 80) return 'red';
-            if (percentage >= 60) return 'amber';
-            return 'green';
         }
 
         function renderMemory() {
