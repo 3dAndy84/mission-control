@@ -1169,7 +1169,8 @@
                 nextJobsContainer.innerHTML = '<div class="empty-state" style="padding: 10px;">No scheduled jobs</div>';
             } else {
                 nextJobsContainer.innerHTML = upcomingJobs.map(job => {
-                    const timeUntil = formatRelativeTime(job.state.nextRunAtMs);
+                    const nextMs = job.state.nextRunAtMs;
+                    const timeUntil = nextMs < Date.now() ? estimateNextRun(job) : formatRelativeTime(nextMs);
                     return `
                         <div class="next-job-item">
                             <span class="next-job-name">${job.name}</span>
@@ -1339,6 +1340,72 @@
                 if (minutes > 0) return `in ${minutes}m`;
                 return `in ${seconds}s`;
             }
+        }
+
+        function estimateNextRun(job) {
+            // When the snapshot's nextRunAtMs is stale (in the past),
+            // estimate the real next run from the schedule
+            const schedule = job.schedule;
+            const now = Date.now();
+            
+            if (schedule.kind === 'every') {
+                // For interval-based jobs, step forward from anchor
+                const interval = schedule.everyMs;
+                const anchor = schedule.anchorMs || (job.state && job.state.lastRunAtMs) || now;
+                let next = anchor;
+                while (next <= now) {
+                    next += interval;
+                }
+                return formatRelativeTime(next);
+            }
+            
+            if (schedule.kind === 'cron') {
+                // For cron jobs, do a rough estimate based on known patterns
+                const expr = schedule.expr;
+                const parts = expr.split(' ');
+                const [min, hour, dayMonth, month, dayWeek] = parts;
+                
+                // Daily jobs (e.g. "0 7 * * *")
+                if (dayMonth === '*' && month === '*' && dayWeek === '*' && !hour.includes('/') && !hour.includes(',')) {
+                    const targetHour = parseInt(hour);
+                    const targetMin = parseInt(min);
+                    // Create next occurrence in the job's timezone
+                    const nowDate = new Date();
+                    const todayTarget = new Date(nowDate);
+                    // Approximate: use UTC offset for AST (-4h)
+                    const tzOffset = schedule.tz === 'America/Lower_Princes' ? -4 : 0;
+                    todayTarget.setUTCHours(targetHour - tzOffset, targetMin, 0, 0);
+                    if (todayTarget.getTime() <= now) {
+                        todayTarget.setUTCDate(todayTarget.getUTCDate() + 1);
+                    }
+                    return formatRelativeTime(todayTarget.getTime());
+                }
+                
+                // Weekly jobs (e.g. "0 1 * * 0" = Sundays)
+                if (dayMonth === '*' && month === '*' && dayWeek !== '*') {
+                    const targetDay = parseInt(dayWeek); // 0=Sun
+                    const targetHour = parseInt(hour);
+                    const targetMin = parseInt(min);
+                    const tzOffset = schedule.tz === 'America/Lower_Princes' ? -4 : 0;
+                    const nowDate = new Date();
+                    const currentDay = nowDate.getUTCDay();
+                    let daysUntil = targetDay - currentDay;
+                    if (daysUntil < 0) daysUntil += 7;
+                    if (daysUntil === 0) {
+                        // Check if today's time already passed
+                        const todayTarget = new Date(nowDate);
+                        todayTarget.setUTCHours(targetHour - tzOffset, targetMin, 0, 0);
+                        if (todayTarget.getTime() <= now) daysUntil = 7;
+                    }
+                    const next = new Date(nowDate);
+                    next.setUTCDate(next.getUTCDate() + daysUntil);
+                    next.setUTCHours(targetHour - tzOffset, targetMin, 0, 0);
+                    return formatRelativeTime(next.getTime());
+                }
+            }
+            
+            // Fallback: can't estimate, show that data is stale
+            return 'awaiting refresh';
         }
 
         function formatCronSchedule(schedule) {
@@ -1515,9 +1582,16 @@
                     ? `${formatRelativeTime(job.state.lastRunAtMs)}${job.state.lastDurationMs ? ` (${formatDurationMs(job.state.lastDurationMs)})` : ''}`
                     : 'Never';
 
-                const nextRun = job.state && job.state.nextRunAtMs 
-                    ? formatRelativeTime(job.state.nextRunAtMs)
-                    : 'Not scheduled';
+                let nextRun = 'Not scheduled';
+                if (job.state && job.state.nextRunAtMs) {
+                    const nextMs = job.state.nextRunAtMs;
+                    if (nextMs < Date.now()) {
+                        // Stale snapshot — estimate next run from schedule
+                        nextRun = estimateNextRun(job);
+                    } else {
+                        nextRun = formatRelativeTime(nextMs);
+                    }
+                }
 
                 const enabledIndicator = job.enabled 
                     ? '<span class="enabled-indicator"></span>'

@@ -1,110 +1,6 @@
 {
   "jobs": [
     {
-      "id": "d1d24b00-26f4-4ada-a0b8-084da9a61eef",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:1",
-      "name": "Self-Eval Review",
-      "enabled": true,
-      "createdAtMs": 1772478614503,
-      "updatedAtMs": 1772716319272,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 43200000,
-        "anchorMs": 1772605365403
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run a self-evaluation review. Steps:\n\n1. Read ~/workspace/memory/mistakes.md and ~/workspace/memory/current-weaknesses.md\n2. Check the last 3 session transcripts for patterns: Did I update the task dashboard? Did I read docs before config changes? Did I follow through on commitments? Did I test before declaring done?\n3. If I find new mistakes, append them to mistakes.md with the standard format (date | category | what happened | root cause | fix)\n4. Update current-weaknesses.md: remove resolved items, add new ones, keep max 5 items\n5. If any entry in mistakes.md is older than 30 days and resolved, move it to mistakes-archive.md\n6. Commit changes to git\n7. Report: list what was found and what changed. If nothing needs attention, say so briefly.",
-        "model": "sonnet"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1772759414580,
-        "lastRunAtMs": 1772716214580,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 104692,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "workspace-backup",
-      "enabled": true,
-      "createdAtMs": 1772283080996,
-      "updatedAtMs": 1772750472912,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 0 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Export cron jobs: openclaw cron list --json > backups/cron-jobs.json 2>/dev/null || true\n3. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n4. git add -A && git diff --cached --stat\n5. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && git push\n6. If no changes, stay silent.\nOnly report if the push failed.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:102"
-      },
-      "state": {
-        "nextRunAtMs": 1772769600000,
-        "lastRunAtMs": 1772683200008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 11973,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "a9b19543-1b47-4466-8cb9-b738f3f03631",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
-      "name": "clawvault-observe",
-      "enabled": true,
-      "createdAtMs": 1772659182696,
-      "updatedAtMs": 1772697644358,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 4 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run ClawVault observation on all active sessions. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault observe --active --cron`\n2. If observations were written, run `cd ~/workspace && git add -A && git commit -m \"clawvault: nightly observations $(date +%Y-%m-%d)\" && git push`\n3. Report number of sessions observed and observations written. If nothing new, stay silent.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1772784000000,
-        "lastRunAtMs": 1772697600013,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 44345,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
       "id": "dafc366d-e8b0-4867-8657-5ee5e14b632d",
       "agentId": "main",
       "sessionKey": "agent:main:main",
@@ -137,6 +33,110 @@
         "lastDurationMs": 395172,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "d1d24b00-26f4-4ada-a0b8-084da9a61eef",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:1",
+      "name": "Self-Eval Review",
+      "enabled": true,
+      "createdAtMs": 1772478614503,
+      "updatedAtMs": 1772759475027,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 43200000,
+        "anchorMs": 1772605365403
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run a self-evaluation review. Steps:\n\n1. Read ~/workspace/memory/mistakes.md and ~/workspace/memory/current-weaknesses.md\n2. Check the last 3 session transcripts for patterns: Did I update the task dashboard? Did I read docs before config changes? Did I follow through on commitments? Did I test before declaring done?\n3. If I find new mistakes, append them to mistakes.md with the standard format (date | category | what happened | root cause | fix)\n4. Update current-weaknesses.md: remove resolved items, add new ones, keep max 5 items\n5. If any entry in mistakes.md is older than 30 days and resolved, move it to mistakes-archive.md\n6. Commit changes to git\n7. Report: list what was found and what changed. If nothing needs attention, say so briefly.",
+        "model": "sonnet"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1772802614586,
+        "lastRunAtMs": 1772759414586,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 60441,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "workspace-backup",
+      "enabled": true,
+      "createdAtMs": 1772283080996,
+      "updatedAtMs": 1772769615594,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Export cron jobs: openclaw cron list --json > backups/cron-jobs.json 2>/dev/null || true\n3. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n4. git add -A && git diff --cached --stat\n5. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && git push\n6. If no changes, stay silent.\nOnly report if the push failed.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:102"
+      },
+      "state": {
+        "nextRunAtMs": 1772856000000,
+        "lastRunAtMs": 1772769600007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 15587,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "a9b19543-1b47-4466-8cb9-b738f3f03631",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
+      "name": "clawvault-observe",
+      "enabled": true,
+      "createdAtMs": 1772659182696,
+      "updatedAtMs": 1772784104502,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run ClawVault observation on all active sessions. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault observe --active --cron`\n2. If observations were written, run `cd ~/workspace && git add -A && git commit -m \"clawvault: nightly observations $(date +%Y-%m-%d)\" && git push`\n3. Report number of sessions observed and observations written. If nothing new, stay silent.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1772870400000,
+        "lastRunAtMs": 1772784000020,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 104482,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     },
