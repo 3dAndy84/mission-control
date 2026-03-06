@@ -119,44 +119,15 @@
             color: #f59e0b;
         }
 
-        .health-rows {
-            display: flex;
-            flex-direction: column;
+        .health-info {
+            font-size: 13px;
+            color: #b0b0b0;
+            margin-top: 8px;
+            line-height: 1.5;
         }
 
-        .health-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #333;
-        }
-
-        .health-row:last-child {
-            border-bottom: none;
-        }
-
-        .health-row-label {
-            font-size: 14px;
-            color: #999;
-        }
-
-        .health-row-value {
-            font-size: 14px;
-            font-weight: 700;
-            color: #ffffff;
-        }
-
-        .health-row-value.green {
-            color: #10b981;
-        }
-
-        .health-row-value.amber {
-            color: #f59e0b;
-        }
-
-        .health-row-value.red {
-            color: #dc2626;
+        .health-info div {
+            margin-bottom: 4px;
         }
 
         .update-badge {
@@ -168,6 +139,78 @@
             font-size: 11px;
             font-weight: 600;
             margin-left: 5px;
+        }
+
+        .health-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .health-row:last-child {
+            border-bottom: none;
+        }
+
+        .health-row-label {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .health-row-value {
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .cost-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .cost-row:last-child {
+            border-bottom: none;
+        }
+
+        .cost-row-label {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .model-cost-pill {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .model-cost-pill.opus {
+            background: rgba(168, 85, 247, 0.2);
+            color: #a855f7;
+        }
+
+        .model-cost-pill.sonnet {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .model-cost-pill.haiku {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .cost-row-value {
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .cost-value-green {
+            color: #10b981;
         }
 
         .task-summary {
@@ -774,7 +817,6 @@
             .memory-grid {
                 grid-template-columns: 1fr;
             }
-
         }
     </style>
 </head>
@@ -797,13 +839,31 @@
             <div class="overview-grid">
                 <div class="overview-card">
                     <div class="overview-card-title">System Health</div>
-                    <div class="health-rows" id="health-rows">
-                        <div class="health-row"><span class="health-row-label">Gateway</span><span class="health-row-value green" id="hr-gateway">● Online</span></div>
-                        <div class="health-row"><span class="health-row-label">Uptime</span><span class="health-row-value" id="hr-uptime">—</span></div>
-                        <div class="health-row"><span class="health-row-label">Vector DB</span><span class="health-row-value" id="hr-vectordb">—</span></div>
-                        <div class="health-row"><span class="health-row-label">Last Checkpoint</span><span class="health-row-value" id="hr-checkpoint">—</span></div>
-                        <div class="health-row"><span class="health-row-label">Session Size</span><span class="health-row-value" id="hr-sessionsize">—</span></div>
-                        <div class="health-row"><span class="health-row-label">Cron Jobs</span><span class="health-row-value" id="hr-cronjobs">—</span></div>
+                    <div id="system-health-content">
+                        <div class="health-row">
+                            <span class="health-row-label">Gateway</span>
+                            <span class="health-row-value" id="health-gateway">🟢 Online</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Uptime</span>
+                            <span class="health-row-value" id="health-uptime">—</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Vector DB</span>
+                            <span class="health-row-value" id="health-vectordb">0 items</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Last Checkpoint</span>
+                            <span class="health-row-value" id="health-checkpoint">—</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Session Size</span>
+                            <span class="health-row-value" id="health-session-size">—</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Cron Jobs</span>
+                            <span class="health-row-value" id="health-cron-jobs">0</span>
+                        </div>
                     </div>
                 </div>
 
@@ -825,12 +885,42 @@
                 </div>
 
                 <div class="overview-card">
+                    <div class="overview-card-title">Quick Stats</div>
+                    <div style="display: flex; gap: 20px;">
+                        <div>
+                            <div class="quick-stat" id="stat-active-crons">0</div>
+                            <div class="quick-stat-label">Active Jobs</div>
+                        </div>
+                        <div>
+                            <div class="quick-stat" id="stat-tasks-progress">0</div>
+                            <div class="quick-stat-label">In Progress</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-card">
                     <div class="overview-card-title">Estimated Cost</div>
-                    <div class="health-rows" id="cost-rows">
-                        <div class="health-row"><span class="health-row-label">Today</span><span class="health-row-value green" id="cr-today">—</span></div>
-                        <div class="health-row"><span class="health-row-label">Tokens In</span><span class="health-row-value" id="cr-in">—</span></div>
-                        <div class="health-row"><span class="health-row-label">Tokens Out</span><span class="health-row-value" id="cr-out">—</span></div>
-                        <div class="health-row"><span class="health-row-label">Cache Read</span><span class="health-row-value" id="cr-cache">—</span></div>
+                    <div id="cost-content">
+                        <div class="cost-row">
+                            <span class="cost-row-label">Session Total</span>
+                            <span class="cost-row-value cost-value-green" id="cost-today">$0.00</span>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-row-label">Monthly Budget</span>
+                            <span class="cost-row-value" id="cost-budget">$60</span>
+                        </div>
+                        <div class="cost-row" style="flex-direction:column;gap:8px;align-items:stretch;">
+                            <span class="cost-row-label">By Model</span>
+                            <div id="cost-models" style="display:flex;gap:8px;flex-wrap:wrap;"></div>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-row-label">Tokens In / Out</span>
+                            <span class="cost-row-value" id="cost-tokens-io">0 / 0</span>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-row-label">Cache R / W</span>
+                            <span class="cost-row-value" id="cost-cache">0 / 0</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1028,6 +1118,27 @@
             document.getElementById('last-refresh').textContent = `Last refresh: ${timeStr}`;
         }
 
+        function formatTokens(tokens) {
+            if (tokens >= 1000000) {
+                return (tokens / 1000000).toFixed(1) + 'M';
+            } else if (tokens >= 1000) {
+                return (tokens / 1000).toFixed(1) + 'K';
+            }
+            return tokens.toString();
+        }
+
+        function calculateUptime(uptimeSince) {
+            const now = Date.now();
+            const uptimeDate = new Date(uptimeSince).getTime();
+            const diffMs = now - uptimeDate;
+            
+            const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+            
+            return `${days}d ${hours}h ${minutes}m`;
+        }
+
         function updateOverview() {
             // Task summary
             const backlogCount = allTasks.filter(t => t.status === 'backlog' || t.status === 'todo').length;
@@ -1041,6 +1152,11 @@
                 <span class="task-pill task-pill-blocked">Blocked: ${blockedCount}</span>
                 <span class="task-pill task-pill-done">Done: ${doneCount}</span>
             `;
+
+            // Quick stats
+            const activeCrons = allCronJobs.filter(j => j.enabled).length;
+            document.getElementById('stat-active-crons').textContent = activeCrons;
+            document.getElementById('stat-tasks-progress').textContent = progressCount;
 
             // Next scheduled jobs
             const nextJobsContainer = document.getElementById('next-jobs');
@@ -1063,56 +1179,54 @@
                 }).join('');
             }
 
-            // System Health card
+            // System Health
             if (systemStatus) {
-                const now = Date.now();
-                const twoHoursMs = 2 * 60 * 60 * 1000;
-                const isStale = (now - systemStatus.generated) > twoHoursMs;
-                const isOffline = !systemStatus.gateway || systemStatus.gateway.status !== 'online';
-
-                const gwEl = document.getElementById('hr-gateway');
-                if (isOffline) {
-                    gwEl.textContent = '● Offline';
-                    gwEl.className = 'health-row-value red';
-                } else if (isStale) {
-                    gwEl.textContent = '● Stale';
-                    gwEl.className = 'health-row-value amber';
-                } else {
-                    gwEl.textContent = '● Online';
-                    gwEl.className = 'health-row-value green';
+                const gateway = systemStatus.gateway;
+                const health = systemStatus.health;
+                
+                // Gateway status
+                if (gateway) {
+                    const isOnline = gateway.status === 'online';
+                    document.getElementById('health-gateway').textContent = isOnline ? '🟢 Online' : '🔴 Offline';
+                    
+                    // Uptime
+                    if (gateway.uptime_since) {
+                        const uptime = calculateUptime(gateway.uptime_since);
+                        document.getElementById('health-uptime').textContent = uptime;
+                    }
                 }
-
-                if (systemStatus.gateway && systemStatus.gateway.uptime_since) {
-                    const uptimeMs = now - new Date(systemStatus.gateway.uptime_since).getTime();
-                    const days = Math.floor(uptimeMs / 86400000);
-                    const hours = Math.floor((uptimeMs % 86400000) / 3600000);
-                    const mins = Math.floor((uptimeMs % 3600000) / 60000);
-                    document.getElementById('hr-uptime').textContent = `${days}d ${hours}h ${mins}m`;
-                }
-
-                if (systemStatus.health) {
-                    const h = systemStatus.health;
-                    document.getElementById('hr-vectordb').textContent = h.vector_db ? h.vector_db.toLocaleString() + ' items' : '—';
-                    document.getElementById('hr-checkpoint').textContent = h.last_checkpoint_ms ? formatRelativeTime(h.last_checkpoint_ms) : '—';
-                    document.getElementById('hr-sessionsize').textContent = h.session_size || '—';
-                    document.getElementById('hr-cronjobs').textContent = h.cron_jobs_active || '—';
-                }
-
-                // Cost card
-                if (systemStatus.cost) {
-                    const c = systemStatus.cost;
-                    document.getElementById('cr-today').textContent = '$' + (c.today_estimate || 0).toFixed(2);
-                    document.getElementById('cr-in').textContent = formatTokenCount(c.tokens_in || 0);
-                    document.getElementById('cr-out').textContent = formatTokenCount(c.tokens_out || 0);
-                    document.getElementById('cr-cache').textContent = formatTokenCount(c.tokens_cache || 0);
+                
+                // Health metrics
+                if (health) {
+                    document.getElementById('health-vectordb').textContent = `${health.vector_db || 0} items`;
+                    
+                    if (health.last_checkpoint_ms) {
+                        const checkpointTime = formatRelativeTime(health.last_checkpoint_ms);
+                        document.getElementById('health-checkpoint').textContent = checkpointTime;
+                    }
+                    
+                    document.getElementById('health-session-size').textContent = health.session_size || '—';
+                    document.getElementById('health-cron-jobs').textContent = health.cron_jobs_active || 0;
                 }
             }
-        }
 
-        function formatTokenCount(n) {
-            if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
-            if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
-            return n.toString();
+            // Cost metrics
+            if (systemStatus && systemStatus.cost) {
+                const cost = systemStatus.cost;
+                document.getElementById('cost-today').textContent = `$${cost.today_estimate.toFixed(2)}`;
+                document.getElementById('cost-tokens-io').textContent = `${formatTokens(cost.tokens_in)} / ${formatTokens(cost.tokens_out)}`;
+                document.getElementById('cost-cache').textContent = `${formatTokens(cost.tokens_cache_read || cost.tokens_cache || 0)} / ${formatTokens(cost.tokens_cache_write || 0)}`;
+                if (cost.monthly_budget) {
+                    document.getElementById('cost-budget').textContent = `$${cost.today_estimate.toFixed(2)} / $${cost.monthly_budget}`;
+                }
+                if (cost.by_model) {
+                    const modelsEl = document.getElementById('cost-models');
+                    modelsEl.innerHTML = Object.entries(cost.by_model)
+                        .filter(([_, v]) => v > 0)
+                        .map(([model, val]) => `<span class="model-cost-pill ${model}">${model}: $${val.toFixed(2)}</span>`)
+                        .join('');
+                }
+            }
         }
 
         function switchTab(tabName) {
