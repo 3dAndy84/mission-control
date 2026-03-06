@@ -26,23 +26,56 @@
 
         header {
             margin-bottom: 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 15px;
+            text-align: center;
+            position: relative;
         }
 
         .header-title {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 5px;
+        }
+
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .header-status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #3b82f6;
+            box-shadow: 0 0 12px #3b82f6, 0 0 4px #3b82f6;
+            animation: header-pulse 2s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+
+        .header-status-dot.online {
+            background: #10b981;
+            box-shadow: 0 0 12px #10b981, 0 0 4px #10b981;
+        }
+
+        .header-status-dot.error {
+            background: #ef4444;
+            box-shadow: 0 0 12px #ef4444, 0 0 4px #ef4444;
+        }
+
+        @keyframes header-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
 
         h1 {
             font-size: 32px;
-            color: #ffffff;
             font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .subtitle {
@@ -62,6 +95,9 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            position: absolute;
+            right: 0;
+            top: 0;
         }
         .refresh-btn:hover { background: #333; border-color: #4a4a4a; }
         .refresh-btn:active { transform: scale(0.95); }
@@ -824,7 +860,10 @@
     <div class="container">
         <header>
             <div class="header-title">
-                <h1>🎛 Mission Control</h1>
+                <div class="header-row">
+                    <span class="header-status-dot" id="header-dot"></span>
+                    <h1>Mission Control</h1>
+                </div>
                 <div class="subtitle" id="last-refresh">Last refresh: loading...</div>
             </div>
             <button class="refresh-btn" onclick="refreshDashboard()" id="refresh-btn">
@@ -1178,6 +1217,14 @@
                         </div>
                     `;
                 }).join('');
+            }
+
+            // Header dot — reflects overall system health
+            const headerDot = document.getElementById('header-dot');
+            if (systemStatus && systemStatus.gateway && systemStatus.gateway.status === 'online') {
+                headerDot.className = 'header-status-dot online';
+            } else if (systemStatus) {
+                headerDot.className = 'header-status-dot error';
             }
 
             // System Health
