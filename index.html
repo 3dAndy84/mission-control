@@ -1285,10 +1285,18 @@
             const enabledCronCount = allCronJobs.filter(j => j.enabled).length;
             document.getElementById('overview-cron-count').textContent = `${enabledCronCount}/${allCronJobs.length}`;
 
-            // Next scheduled jobs — show schedule description (static file may have stale nextRunAtMs)
+            // Next scheduled jobs — sorted by next run (soonest first), stale ones at the end
             const upcomingJobs = allCronJobs
                 .filter(j => j.enabled)
-                .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
+                .sort((a, b) => {
+                    const aNext = (a.state && a.state.nextRunAtMs) || Infinity;
+                    const bNext = (b.state && b.state.nextRunAtMs) || Infinity;
+                    const now = Date.now();
+                    const aFuture = aNext > now ? 0 : 1;
+                    const bFuture = bNext > now ? 0 : 1;
+                    if (aFuture !== bFuture) return aFuture - bFuture;
+                    return aNext - bNext;
+                })
                 .slice(0, 5);
 
             if (upcomingJobs.length > 0) {
@@ -1479,12 +1487,27 @@
         function formatCronSchedule(schedule) {
             if (schedule.kind === 'cron') {
                 const parts = schedule.expr.split(' ');
+                // Daily schedules
                 if (schedule.expr === '0 7 * * *') return 'Daily at 7:00 AM AST';
                 if (schedule.expr === '0 19 * * *') return 'Daily at 7:00 PM AST';
+                if (schedule.expr === '0 0 * * *') return 'Daily at midnight AST';
+                if (schedule.expr === '0 4 * * *') return 'Daily at 4:00 AM AST';
                 if (schedule.expr === '0 */12 * * *') return 'Every 12 hours';
+                // Weekly schedules (Sunday)
                 if (schedule.expr === '0 0 * * 0') return 'Sundays at midnight AST';
                 if (schedule.expr === '0 1 * * 0') return 'Sundays at 1:00 AM AST';
-                return `Cron: ${schedule.expr} (${schedule.tz.split('/').pop()})`;
+                if (schedule.expr === '0 2 * * 0') return 'Sundays at 2:00 AM AST';
+                if (schedule.expr === '0 3 * * 0') return 'Sundays at 3:00 AM AST';
+                if (schedule.expr === '0 5 * * 0') return 'Sundays at 5:00 AM AST';
+                // Generic parser for other hourly cron patterns
+                if (parts.length === 5 && parts[0] === '0' && parts[2] === '*' && parts[3] === '*' && parts[4] === '*') {
+                    const hour = parseInt(parts[1]);
+                    const ampm = hour >= 12 ? 'PM' : 'AM';
+                    const h12 = hour === 0 ? 12 : hour > 12 ? hour - 12 : hour;
+                    return `Daily at ${h12}:00 ${ampm} AST`;
+                }
+                const tz = schedule.tz ? schedule.tz.split('/').pop() : 'UTC';
+                return `Cron: ${schedule.expr} (${tz})`;
             } else if (schedule.kind === 'every') {
                 const hours = schedule.everyMs / (1000 * 60 * 60);
                 if (hours >= 24) {
