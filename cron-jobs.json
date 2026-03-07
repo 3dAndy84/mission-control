@@ -7,7 +7,7 @@
       "name": "morning-briefing",
       "enabled": true,
       "createdAtMs": 1772283294696,
-      "updatedAtMs": 1772708795187,
+      "updatedAtMs": 1772794922657,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -26,11 +26,11 @@
         "to": "-1003709913328:98"
       },
       "state": {
-        "nextRunAtMs": 1772794800000,
-        "lastRunAtMs": 1772708400015,
+        "nextRunAtMs": 1772881200000,
+        "lastRunAtMs": 1772794800005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 395172,
+        "lastDurationMs": 122652,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "Self-Eval Review",
       "enabled": true,
       "createdAtMs": 1772478614503,
-      "updatedAtMs": 1772759475027,
+      "updatedAtMs": 1772845949030,
       "schedule": {
         "kind": "every",
         "everyMs": 43200000,
@@ -60,11 +60,11 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772802614586,
-        "lastRunAtMs": 1772759414586,
+        "nextRunAtMs": 1772889014607,
+        "lastRunAtMs": 1772845814607,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 60441,
+        "lastDurationMs": 134423,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -77,7 +77,7 @@
       "name": "workspace-backup",
       "enabled": true,
       "createdAtMs": 1772283080996,
-      "updatedAtMs": 1772769615594,
+      "updatedAtMs": 1772856014193,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -87,7 +87,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Export cron jobs: openclaw cron list --json > backups/cron-jobs.json 2>/dev/null || true\n3. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n4. git add -A && git diff --cached --stat\n5. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && git push\n6. If no changes, stay silent.\nOnly report if the push failed.",
+        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n3. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n4. git add -A && git diff --cached --stat\n5. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && git push\n6. If no changes, stay silent.\nOnly report if the push failed.",
         "model": "haiku"
       },
       "delivery": {
@@ -96,45 +96,11 @@
         "to": "-1003709913328:102"
       },
       "state": {
-        "nextRunAtMs": 1772856000000,
-        "lastRunAtMs": 1772769600007,
+        "nextRunAtMs": 1772942400000,
+        "lastRunAtMs": 1772856000011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15587,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "a9b19543-1b47-4466-8cb9-b738f3f03631",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
-      "name": "clawvault-observe",
-      "enabled": true,
-      "createdAtMs": 1772659182696,
-      "updatedAtMs": 1772784104502,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 4 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run ClawVault observation on all active sessions. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault observe --active --cron`\n2. If observations were written, run `cd ~/workspace && git add -A && git commit -m \"clawvault: nightly observations $(date +%Y-%m-%d)\" && git push`\n3. Report number of sessions observed and observations written. If nothing new, stay silent.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1772870400000,
-        "lastRunAtMs": 1772784000020,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 104482,
+        "lastDurationMs": 14182,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -238,6 +204,40 @@
         "mode": "announce",
         "channel": "telegram",
         "to": "-1003709913328:102"
+      }
+    },
+    {
+      "id": "a9b19543-1b47-4466-8cb9-b738f3f03631",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
+      "name": "clawvault-observe",
+      "enabled": true,
+      "createdAtMs": 1772659182696,
+      "updatedAtMs": 1772870464619,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run ClawVault observation on all active sessions. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault observe --active --cron`\n2. If observations were written, run `cd ~/workspace && git add -A && git commit -m \"clawvault: nightly observations $(date +%Y-%m-%d)\" && git push`\n3. Report number of sessions observed and observations written. If nothing new, stay silent.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1772956800000,
+        "lastRunAtMs": 1772870400008,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 64611,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
       }
     },
     {
