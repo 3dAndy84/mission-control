@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Control</title>
+    <title>🎛 Mission Control</title>
     <style>
         * {
             margin: 0;
@@ -77,10 +77,229 @@
             }
         }
 
+        .subtitle {
+            font-size: 13px;
+            color: #888;
+            position: relative;
+            z-index: 2;
+            margin-top: 0.5rem;
+        }
+
+        .refresh-btn {
+            background: #252525;
+            border: 1px solid #3a3a3a;
+            color: #ccc;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            position: absolute;
+            right: 2rem;
+            top: 1.5rem;
+            z-index: 2;
+        }
+
+        .refresh-btn:hover {
+            background: #333;
+            border-color: #4a4a4a;
+        }
+
+        .refresh-btn:active {
+            transform: scale(0.95);
+        }
+
+        .refresh-btn.spinning .refresh-icon {
+            animation: spin 0.6s linear;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
         .container {
             max-width: 1600px;
             margin: 0 auto;
             padding: 2rem;
+        }
+
+        /* Overview Section */
+        .overview {
+            background: #252525;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .overview-card {
+            background: #2a2a2a;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .overview-card-title {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .health-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .health-row:last-child {
+            border-bottom: none;
+        }
+
+        .health-row-label {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .health-row-value {
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .task-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .task-pill {
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .task-pill-backlog {
+            background: rgba(107, 114, 128, 0.2);
+            color: #9ca3af;
+        }
+
+        .task-pill-progress {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .task-pill-blocked {
+            background: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+
+        .task-pill-done {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .next-jobs {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .next-job-item {
+            font-size: 13px;
+            color: #b0b0b0;
+            padding: 8px;
+            background: #333;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .next-job-name {
+            font-weight: 500;
+            color: #e0e0e0;
+        }
+
+        .next-job-time {
+            color: #888;
+            font-size: 12px;
+        }
+
+        .quick-stat {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .quick-stat-label {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .cost-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .cost-row:last-child {
+            border-bottom: none;
+        }
+
+        .cost-row-label {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .cost-row-value {
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .cost-value-green {
+            color: #10b981;
+        }
+
+        .model-cost-pill {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .model-cost-pill.opus {
+            background: rgba(168, 85, 247, 0.2);
+            color: #a855f7;
+        }
+
+        .model-cost-pill.sonnet {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .model-cost-pill.haiku {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
         }
 
         .grid {
@@ -325,7 +544,7 @@
             letter-spacing: 0.5px;
         }
 
-        .filter-group select {
+        .filter-group select, .filter-group input[type="text"] {
             background: #1a1a1a;
             color: #e0e0e0;
             border: 1px solid #3a3a3a;
@@ -337,13 +556,17 @@
             min-height: 44px;
         }
 
-        .filter-group select:hover {
+        .filter-group select:hover, .filter-group input[type="text"]:hover {
             border-color: #4a4a4a;
         }
 
-        .filter-group select:focus {
+        .filter-group select:focus, .filter-group input[type="text"]:focus {
             outline: none;
             border-color: #3b82f6;
+        }
+
+        .filter-group input[type="text"] {
+            cursor: text;
         }
 
         /* Kanban Board */
@@ -432,15 +655,15 @@
             transform: translateX(4px);
         }
 
-        .kanban-card.agent-opus {
+        .kanban-card.agent-opus, .kanban-card.agent-max {
             border-left-color: #a855f7;
         }
 
-        .kanban-card.agent-sonnet {
+        .kanban-card.agent-sonnet, .kanban-card.agent-worker {
             border-left-color: #3b82f6;
         }
 
-        .kanban-card.agent-haiku {
+        .kanban-card.agent-haiku, .kanban-card.agent-researcher {
             border-left-color: #10b981;
         }
 
@@ -518,17 +741,17 @@
             text-transform: uppercase;
         }
 
-        .agent-opus .tag-agent {
+        .agent-opus .tag-agent, .agent-max .tag-agent {
             background: rgba(168, 85, 247, 0.2);
             color: #a855f7;
         }
 
-        .agent-sonnet .tag-agent {
+        .agent-sonnet .tag-agent, .agent-worker .tag-agent {
             background: rgba(59, 130, 246, 0.2);
             color: #3b82f6;
         }
 
-        .agent-haiku .tag-agent {
+        .agent-haiku .tag-agent, .agent-researcher .tag-agent {
             background: rgba(16, 185, 129, 0.2);
             color: #10b981;
         }
@@ -666,129 +889,6 @@
             margin: 1rem 0;
         }
 
-        @media (max-width: 1200px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-
-            .kanban {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            .header {
-                padding: 1rem;
-            }
-
-            .header h1 {
-                font-size: 1.5rem;
-            }
-
-            .agent-panel {
-                grid-template-columns: 1fr;
-            }
-
-            .card {
-                padding: 1.25rem;
-            }
-
-            /* Activity feed with scroll on mobile */
-            .activity-feed {
-                max-height: 400px;
-            }
-
-            .activity-item {
-                padding: 0.875rem;
-            }
-
-            .activity-desc {
-                font-size: 0.8125rem;
-            }
-
-            /* Filters stack vertically and full-width */
-            .task-filters {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .filter-group {
-                width: 100%;
-            }
-
-            .filter-group select {
-                width: 100%;
-                min-width: unset;
-                padding: 0.75rem 1rem;
-                font-size: 1rem;
-            }
-
-            /* Kanban vertical stack on mobile */
-            .kanban {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .kanban-cards {
-                max-height: 300px;
-            }
-
-            /* Calendar and health panels stacking */
-            .calendar-events {
-                grid-template-columns: 1fr;
-            }
-
-            .health-metrics {
-                gap: 1rem;
-            }
-
-            .metric {
-                padding: 0.625rem 0;
-            }
-
-            /* Stats bar 2 columns */
-            .stats-bar {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-                padding: 1.25rem 1rem;
-            }
-
-            .stat-value {
-                font-size: 2rem;
-            }
-
-            .stat-label {
-                font-size: 0.8125rem;
-            }
-
-            /* Agent panel with horizontal scroll fallback */
-            .agent-panel {
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            /* Touch-friendly interactive elements */
-            .kanban-card {
-                padding: 1rem;
-                min-height: 44px;
-            }
-
-            .status-badge {
-                padding: 0.5rem 0.875rem;
-                font-size: 0.6875rem;
-                min-height: 32px;
-            }
-
-            .priority-badge {
-                padding: 0.375rem 0.625rem;
-                font-size: 0.6875rem;
-            }
-        }
-
         /* Tab Navigation */
         .tabs {
             display: flex;
@@ -836,6 +936,215 @@
 
         .tab-content.active {
             display: block;
+        }
+
+        /* Cron Jobs Table */
+        .cron-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #252525;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .cron-table thead {
+            background: #2a2a2a;
+        }
+
+        .cron-table th {
+            padding: 12px;
+            text-align: left;
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .cron-table td {
+            padding: 15px 12px;
+            border-top: 1px solid #3a3a3a;
+            font-size: 14px;
+        }
+
+        .cron-table tr.disabled {
+            opacity: 0.5;
+        }
+
+        .cron-name {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .cron-schedule {
+            color: #b0b0b0;
+        }
+
+        .cron-model {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .model-opus {
+            background: rgba(168, 85, 247, 0.2);
+            color: #a855f7;
+        }
+
+        .model-sonnet {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .model-haiku {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .cron-status-badge {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-ok {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .status-error {
+            background: rgba(220, 38, 38, 0.2);
+            color: #dc2626;
+        }
+
+        .status-never {
+            background: rgba(107, 114, 128, 0.2);
+            color: #9ca3af;
+        }
+
+        .enabled-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10b981;
+        }
+
+        .enabled-indicator.disabled {
+            background: #6b7280;
+        }
+
+        .relative-time {
+            color: #888;
+            font-size: 13px;
+        }
+
+        /* Memory Tab */
+        .memory-controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .memory-card {
+            background: #2a2a2a;
+            border-radius: 6px;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .memory-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .memory-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .memory-card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            flex: 1;
+        }
+
+        .category-badge {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .category-decisions {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .category-lessons {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .category-commitments {
+            background: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+
+        .category-projects {
+            background: rgba(168, 85, 247, 0.2);
+            color: #a855f7;
+        }
+
+        .category-people {
+            background: rgba(6, 182, 212, 0.2);
+            color: #06b6d4;
+        }
+
+        .category-patterns {
+            background: rgba(236, 72, 153, 0.2);
+            color: #ec4899;
+        }
+
+        .category-preferences {
+            background: rgba(107, 114, 128, 0.2);
+            color: #9ca3af;
+        }
+
+        .memory-card-date {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .memory-card-preview {
+            font-size: 13px;
+            color: #b0b0b0;
+            line-height: 1.4;
+        }
+
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .memory-count {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 15px;
         }
 
         /* Watchdog Styles */
@@ -1065,11 +1374,6 @@
             }
         }
 
-        .event-time {
-            font-size: 0.75rem;
-            color: #666;
-        }
-
         .event-message {
             color: #aaa;
             margin-bottom: 0.5rem;
@@ -1141,7 +1445,121 @@
             text-align: center;
         }
 
+        @media (max-width: 1200px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .kanban {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .refresh-btn {
+                right: 1rem;
+                top: 1rem;
+            }
+
+            .agent-panel {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 1.25rem;
+            }
+
+            .activity-feed {
+                max-height: 400px;
+            }
+
+            .activity-item {
+                padding: 0.875rem;
+            }
+
+            .activity-desc {
+                font-size: 0.8125rem;
+            }
+
+            .task-filters, .memory-controls {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .filter-group {
+                width: 100%;
+            }
+
+            .filter-group select, .filter-group input[type="text"] {
+                width: 100%;
+                min-width: unset;
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+            }
+
+            .kanban {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .kanban-cards {
+                max-height: 300px;
+            }
+
+            .calendar-events {
+                grid-template-columns: 1fr;
+            }
+
+            .health-metrics {
+                gap: 1rem;
+            }
+
+            .metric {
+                padding: 0.625rem 0;
+            }
+
+            .stats-bar {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                padding: 1.25rem 1rem;
+            }
+
+            .stat-value {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 0.8125rem;
+            }
+
+            .kanban-card {
+                padding: 1rem;
+                min-height: 44px;
+            }
+
+            .status-badge {
+                padding: 0.5rem 0.875rem;
+                font-size: 0.6875rem;
+                min-height: 32px;
+            }
+
+            .priority-badge {
+                padding: 0.375rem 0.625rem;
+                font-size: 0.6875rem;
+            }
+
             .tabs {
                 overflow-x: auto;
             }
@@ -1167,223 +1585,22 @@
                 padding: 1.5rem 0.5rem;
                 gap: 0.5rem;
             }
-        }
 
-        @media (max-width: 480px) {
-            /* Very small phones: even more compact */
-            .header {
-                padding: 0.75rem;
-            }
-
-            .header h1 {
-                font-size: 1.25rem;
-                gap: 0.5rem;
-            }
-
-            .pulse {
-                width: 10px;
-                height: 10px;
-            }
-
-            .container {
-                padding: 0.75rem;
-            }
-
-            .card {
-                padding: 1rem;
-                border-radius: 6px;
-            }
-
-            .card-title {
-                font-size: 0.8125rem;
-                margin-bottom: 0.875rem;
-            }
-
-            /* Stats bar single column */
-            .stats-bar {
+            .overview-grid {
                 grid-template-columns: 1fr;
-                gap: 0.875rem;
-                padding: 1rem 0.75rem;
             }
 
-            .stat {
-                padding: 0.75rem;
-                background: #1a1a1a;
-                border-radius: 6px;
-            }
-
-            .stat-value {
-                font-size: 1.75rem;
-            }
-
-            .stat-label {
-                font-size: 0.75rem;
-            }
-
-            /* Full-width everything */
-            .agent-panel {
+            .memory-grid {
                 grid-template-columns: 1fr;
-                gap: 0.875rem;
             }
 
-            .agent-card {
-                padding: 1rem;
+            .cron-table {
+                font-size: 12px;
             }
 
-            .agent-name {
-                font-size: 1.125rem;
-            }
-
-            .agent-task {
-                font-size: 0.8125rem;
-            }
-
-            .agent-meta {
-                gap: 0.75rem;
-                font-size: 0.6875rem;
-            }
-
-            /* Activity feed more compact */
-            .activity-feed {
-                max-height: 350px;
-            }
-
-            .activity-item {
-                padding: 0.75rem;
-            }
-
-            .activity-agent {
-                font-size: 0.875rem;
-            }
-
-            .activity-desc {
-                font-size: 0.75rem;
-            }
-
-            .activity-time {
-                font-size: 0.6875rem;
-            }
-
-            /* Filters full-width with larger touch targets */
-            .task-filters {
-                padding: 1rem;
-                gap: 0.875rem;
-            }
-
-            .filter-group label {
-                font-size: 0.6875rem;
-            }
-
-            .filter-group select {
-                padding: 0.875rem 1rem;
-                font-size: 1rem;
-                min-height: 48px;
-            }
-
-            /* Kanban columns */
-            .kanban {
-                gap: 0.875rem;
-            }
-
-            .kanban-column {
-                padding: 0.875rem;
-            }
-
-            .kanban-header {
-                font-size: 0.8125rem;
-                margin-bottom: 0.875rem;
-                padding-bottom: 0.625rem;
-            }
-
-            .kanban-count {
-                padding: 0.25rem 0.5rem;
-                font-size: 0.6875rem;
-            }
-
-            .kanban-cards {
-                gap: 0.625rem;
-                max-height: 250px;
-            }
-
-            .kanban-card {
-                padding: 0.875rem;
-            }
-
-            .kanban-card-title {
-                font-size: 0.8125rem;
-            }
-
-            .kanban-card-description {
-                font-size: 0.75rem;
-            }
-
-            .kanban-card-meta {
-                gap: 0.375rem;
-            }
-
-            .tag {
-                padding: 0.25rem 0.5rem;
-                font-size: 0.625rem;
-            }
-
-            .date-info {
-                font-size: 0.625rem;
-            }
-
-            .card-lifecycle {
-                margin-top: 0.625rem;
-                padding-top: 0.625rem;
-                font-size: 0.6875rem;
-            }
-
-            /* Health metrics */
-            .metric {
-                padding: 0.5rem 0;
-            }
-
-            .metric-label {
-                font-size: 0.8125rem;
-            }
-
-            .metric-value {
-                font-size: 1rem;
-            }
-
-            /* Calendar events */
-            .calendar-event {
-                padding: 0.875rem;
-            }
-
-            .event-time {
-                font-size: 0.6875rem;
-            }
-
-            .event-title {
-                font-size: 0.875rem;
-            }
-
-            .event-desc {
-                font-size: 0.8125rem;
-            }
-
-            /* Typography prevents overflow */
-            .agent-task,
-            .activity-desc,
-            .kanban-card-description,
-            .event-desc {
-                overflow-wrap: break-word;
-                word-wrap: break-word;
-                hyphens: auto;
-            }
-
-            /* Ensure no horizontal scroll */
-            body,
-            .container,
-            .grid,
-            .kanban,
-            .stats-bar {
-                overflow-x: hidden;
-                max-width: 100vw;
+            .cron-table th,
+            .cron-table td {
+                padding: 8px;
             }
         }
     </style>
@@ -1395,12 +1612,113 @@
             <div class="pulse"></div>
             Mission Control
         </h1>
+        <div class="subtitle" id="last-refresh">Last refresh: loading...</div>
+        <button class="refresh-btn" onclick="refreshDashboard()" id="refresh-btn">
+            <span class="refresh-icon">🔄</span> Refresh
+        </button>
     </div>
 
     <div class="container">
+        <div id="error-container"></div>
+
+        <!-- Overview Section -->
+        <div class="overview">
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-card-title">System Health</div>
+                    <div id="system-health-content">
+                        <div class="health-row">
+                            <span class="health-row-label">Gateway</span>
+                            <span class="health-row-value" id="health-gateway">🟢 Online</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Uptime</span>
+                            <span class="health-row-value" id="health-uptime">—</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Vector DB</span>
+                            <span class="health-row-value" id="health-vectordb">0 items</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Last Checkpoint</span>
+                            <span class="health-row-value" id="health-checkpoint">—</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Session Size</span>
+                            <span class="health-row-value" id="health-session-size">—</span>
+                        </div>
+                        <div class="health-row">
+                            <span class="health-row-label">Cron Jobs</span>
+                            <span class="health-row-value" id="health-cron-jobs">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-card-title">Task Summary</div>
+                    <div class="task-summary" id="task-summary">
+                        <span class="task-pill task-pill-backlog">Backlog: 0</span>
+                        <span class="task-pill task-pill-progress">In Progress: 0</span>
+                        <span class="task-pill task-pill-blocked">Blocked: 0</span>
+                        <span class="task-pill task-pill-done">Done: 0</span>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-card-title">Next Scheduled Jobs</div>
+                    <div class="next-jobs" id="next-jobs">
+                        <div class="empty-state" style="padding: 10px;">No scheduled jobs</div>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-card-title">Quick Stats</div>
+                    <div style="display: flex; gap: 20px;">
+                        <div>
+                            <div class="quick-stat" id="stat-active-crons">0</div>
+                            <div class="quick-stat-label">Active Jobs</div>
+                        </div>
+                        <div>
+                            <div class="quick-stat" id="stat-tasks-progress">0</div>
+                            <div class="quick-stat-label">In Progress</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-card-title">Estimated Cost</div>
+                    <div id="cost-content">
+                        <div class="cost-row">
+                            <span class="cost-row-label">Session Total</span>
+                            <span class="cost-row-value cost-value-green" id="cost-today">$0.00</span>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-row-label">Monthly Budget</span>
+                            <span class="cost-row-value" id="cost-budget">$60</span>
+                        </div>
+                        <div class="cost-row" style="flex-direction:column;gap:8px;align-items:stretch;">
+                            <span class="cost-row-label">By Model</span>
+                            <div id="cost-models" style="display:flex;gap:8px;flex-wrap:wrap;"></div>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-row-label">Tokens In / Out</span>
+                            <span class="cost-row-value" id="cost-tokens-io">0 / 0</span>
+                        </div>
+                        <div class="cost-row">
+                            <span class="cost-row-label">Cache R / W</span>
+                            <span class="cost-row-value" id="cost-cache">0 / 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Tab Navigation -->
         <div class="tabs">
             <button class="tab active" data-tab="dashboard">Dashboard</button>
+            <button class="tab" data-tab="tasks">Tasks</button>
+            <button class="tab" data-tab="cron-jobs">Cron Jobs</button>
+            <button class="tab" data-tab="memory">Memory</button>
             <button class="tab" data-tab="watchdog">Watchdog</button>
         </div>
 
@@ -1411,16 +1729,53 @@
                 <div class="loading">Loading agents...</div>
             </div>
 
-        <div class="grid">
-            <!-- Activity Feed -->
-            <div class="card">
-                <div class="card-title">Activity Feed</div>
-                <div class="activity-feed" id="activityFeed">
-                    <div class="loading">Loading activity...</div>
+            <div class="grid">
+                <!-- Activity Feed -->
+                <div class="card">
+                    <div class="card-title">Activity Feed</div>
+                    <div class="activity-feed" id="activityFeed">
+                        <div class="loading">Loading activity...</div>
+                    </div>
+                </div>
+
+                <!-- Task Filters (Dashboard view) -->
+                <div class="task-filters">
+                    <div class="filter-group">
+                        <label for="filter-agent-dash">Filter by Agent</label>
+                        <select id="filter-agent-dash">
+                            <option value="all">All Agents</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-project-dash">Filter by Project</label>
+                        <select id="filter-project-dash">
+                            <option value="all">All Projects</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- System Health -->
+                <div class="card">
+                    <div class="card-title">System Health</div>
+                    <div class="health-metrics" id="healthMetrics">
+                        <div class="loading">Loading health data...</div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Task Filters -->
+            <!-- Task Board (Dashboard view) -->
+            <div class="kanban" id="taskBoardDash">
+                <div class="loading">Loading tasks...</div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar" id="statsBar">
+                <div class="loading">Loading stats...</div>
+            </div>
+        </div>
+
+        <!-- Tasks Tab -->
+        <div id="tab-tasks" class="tab-content">
             <div class="task-filters">
                 <div class="filter-group">
                     <label for="filter-agent">Filter by Agent</label>
@@ -1436,32 +1791,56 @@
                 </div>
             </div>
 
-            <!-- System Health -->
-            <div class="card">
-                <div class="card-title">System Health</div>
-                <div class="health-metrics" id="healthMetrics">
-                    <div class="loading">Loading health data...</div>
+            <div class="kanban" id="taskBoard">
+                <div class="loading">Loading tasks...</div>
+            </div>
+        </div>
+
+        <!-- Cron Jobs Tab -->
+        <div id="tab-cron-jobs" class="tab-content">
+            <table class="cron-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Schedule</th>
+                        <th>Model</th>
+                        <th>Last Run</th>
+                        <th>Status</th>
+                        <th>Next Run</th>
+                        <th>Enabled</th>
+                    </tr>
+                </thead>
+                <tbody id="cron-table-body">
+                    <tr>
+                        <td colspan="7" class="empty-state">No cron jobs configured</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Memory Tab -->
+        <div id="tab-memory" class="tab-content">
+            <div class="memory-controls">
+                <div class="filter-group">
+                    <label for="memory-search">Search</label>
+                    <input type="text" id="memory-search" placeholder="Search title or preview...">
+                </div>
+                <div class="filter-group">
+                    <label for="memory-category">Category</label>
+                    <select id="memory-category">
+                        <option value="all">All Categories</option>
+                        <option value="decisions">Decisions</option>
+                        <option value="lessons">Lessons</option>
+                        <option value="commitments">Commitments</option>
+                        <option value="projects">Projects</option>
+                        <option value="people">People</option>
+                        <option value="patterns">Patterns</option>
+                        <option value="preferences">Preferences</option>
+                    </select>
                 </div>
             </div>
-        </div>
-
-        <!-- Task Board -->
-        <div class="kanban" id="taskBoard">
-            <div class="loading">Loading tasks...</div>
-        </div>
-
-        <!-- Calendar -->
-        <div class="card calendar">
-            <div class="card-title">Upcoming Events</div>
-            <div class="calendar-events" id="calendarEvents">
-                <div class="loading">Loading events...</div>
-            </div>
-        </div>
-
-        <!-- Stats Bar -->
-        <div class="stats-bar" id="statsBar">
-            <div class="loading">Loading stats...</div>
-        </div>
+            <div class="memory-count" id="memory-count">0 entries</div>
+            <div class="memory-grid" id="memory-grid"></div>
         </div>
 
         <!-- Watchdog Tab -->
@@ -1499,21 +1878,30 @@
 
     <script>
         // Configuration
-        const TASK_API_URL = 'https://task-dashboard-eosin.vercel.app/tasks.json';
         const STATUS_API_URL = 'https://n8n-andy.xyz/webhook/mission-control/status';
         const WATCHDOG_API_URL = 'https://n8n-andy.xyz/webhook/mission-control/watchdog';
         const REFRESH_INTERVAL = 30000; // 30 seconds
 
         // State
-        let tasks = [];
+        let allTasks = [];
+        let allCronJobs = [];
         let agents = [];
         let activity = [];
         let health = {};
         let stats = {};
         let watchdog = {};
+        let memoryData = null;
         let currentFilters = {
             agent: 'all',
             project: 'all'
+        };
+        let currentFiltersDash = {
+            agent: 'all',
+            project: 'all'
+        };
+        let memoryFilters = {
+            search: '',
+            category: 'all'
         };
         let currentTab = 'dashboard';
 
@@ -1522,17 +1910,39 @@
             loadAllData();
             setInterval(loadAllData, REFRESH_INTERVAL);
             
-            // Setup filter listeners
+            // Setup filter listeners (Tasks tab)
             document.getElementById('filter-agent').addEventListener('change', (e) => {
                 currentFilters.agent = e.target.value;
                 renderTaskBoard();
-                updateStats();
             });
 
             document.getElementById('filter-project').addEventListener('change', (e) => {
                 currentFilters.project = e.target.value;
                 renderTaskBoard();
+            });
+
+            // Setup filter listeners (Dashboard tab)
+            document.getElementById('filter-agent-dash').addEventListener('change', (e) => {
+                currentFiltersDash.agent = e.target.value;
+                renderDashboardTaskBoard();
                 updateStats();
+            });
+
+            document.getElementById('filter-project-dash').addEventListener('change', (e) => {
+                currentFiltersDash.project = e.target.value;
+                renderDashboardTaskBoard();
+                updateStats();
+            });
+
+            // Setup memory filters
+            document.getElementById('memory-search').addEventListener('input', (e) => {
+                memoryFilters.search = e.target.value;
+                renderMemory();
+            });
+
+            document.getElementById('memory-category').addEventListener('change', (e) => {
+                memoryFilters.category = e.target.value;
+                renderMemory();
             });
 
             // Setup tab switching
@@ -1570,35 +1980,59 @@
             try {
                 await Promise.all([
                     loadTasks(),
+                    loadCronJobs(),
                     loadStatus(),
-                    loadWatchdog()
+                    loadWatchdog(),
+                    loadMemory()
                 ]);
+                updateLastRefreshTime();
             } catch (error) {
                 console.error('Failed to load data:', error);
             }
         }
 
-        // Fetch real tasks from task dashboard
+        function updateLastRefreshTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            document.getElementById('last-refresh').textContent = `Last refresh: ${timeStr}`;
+        }
+
         async function loadTasks() {
             try {
-                const response = await fetch(TASK_API_URL);
+                const response = await fetch('./tasks.json');
                 if (!response.ok) throw new Error('Failed to fetch tasks');
                 
                 const data = await response.json();
-                tasks = Array.isArray(data) ? data : (data.tasks || []);
+                allTasks = Array.isArray(data) ? data : (data.tasks || []);
                 
                 populateFilters();
                 renderTaskBoard();
+                renderDashboardTaskBoard();
                 updateStats();
+                updateOverview();
             } catch (error) {
                 console.error('Error loading tasks:', error);
-                document.getElementById('taskBoard').innerHTML = `
-                    <div class="error">Failed to load tasks: ${error.message}</div>
-                `;
+                allTasks = [];
             }
         }
 
-        // Fetch mock status data (agents, activity, health)
+        async function loadCronJobs() {
+            try {
+                const response = await fetch('./cron-jobs.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    allCronJobs = data.jobs || [];
+                } else {
+                    allCronJobs = [];
+                }
+                renderCronJobs();
+                updateOverview();
+            } catch (error) {
+                console.error('Error loading cron jobs:', error);
+                allCronJobs = [];
+            }
+        }
+
         async function loadStatus() {
             try {
                 const response = await fetch(STATUS_API_URL);
@@ -1614,10 +2048,41 @@
                 renderActivity();
                 renderHealth();
                 updateStats();
+                updateOverview();
             } catch (error) {
                 console.error('Error loading status:', error);
-                // Use fallback mock data
+                // Use fallback
                 useMockData();
+            }
+        }
+
+        async function loadWatchdog() {
+            try {
+                const response = await fetch(WATCHDOG_API_URL);
+                if (!response.ok) throw new Error('Failed to fetch watchdog data');
+                
+                watchdog = await response.json();
+                renderWatchdog();
+            } catch (error) {
+                console.error('Error loading watchdog:', error);
+                document.getElementById('watchdogStatus').innerHTML = `
+                    <div class="error">Failed to load watchdog data: ${error.message}</div>
+                `;
+            }
+        }
+
+        async function loadMemory() {
+            try {
+                const response = await fetch('./memory.json');
+                if (response.ok) {
+                    memoryData = await response.json();
+                } else {
+                    memoryData = null;
+                }
+                renderMemory();
+            } catch (error) {
+                console.error('Error loading memory:', error);
+                memoryData = null;
             }
         }
 
@@ -1655,24 +2120,6 @@
                     status: 'active',
                     duration: null,
                     cost: null
-                },
-                {
-                    timestamp: new Date(Date.now() - 15 * 60000).toISOString(),
-                    agent: 'researcher',
-                    event: 'completed',
-                    description: 'Comparative analysis of task management systems',
-                    status: 'completed',
-                    duration: '8m 23s',
-                    cost: '$0.14'
-                },
-                {
-                    timestamp: new Date(Date.now() - 45 * 60000).toISOString(),
-                    agent: 'worker-03',
-                    event: 'completed',
-                    description: 'File batch processing for project exports',
-                    status: 'completed',
-                    duration: '3m 12s',
-                    cost: '$0.08'
                 }
             ];
 
@@ -1686,8 +2133,6 @@
             };
 
             stats = {
-                tasksCompletedToday: 0,
-                tasksCompletedWeek: 0,
                 costToday: '$2.34',
                 activeAgents: 2
             };
@@ -1784,13 +2229,73 @@
             `;
         }
 
+        function updateOverview() {
+            // Task summary
+            const backlogCount = allTasks.filter(t => t.status === 'backlog' || t.status === 'todo').length;
+            const progressCount = allTasks.filter(t => t.status === 'in-progress' || t.status === 'in_progress').length;
+            const blockedCount = allTasks.filter(t => t.status === 'blocked').length;
+            const doneCount = allTasks.filter(t => t.status === 'done').length;
+
+            document.getElementById('task-summary').innerHTML = `
+                <span class="task-pill task-pill-backlog">Backlog: ${backlogCount}</span>
+                <span class="task-pill task-pill-progress">In Progress: ${progressCount}</span>
+                <span class="task-pill task-pill-blocked">Blocked: ${blockedCount}</span>
+                <span class="task-pill task-pill-done">Done: ${doneCount}</span>
+            `;
+
+            // Quick stats
+            const activeCrons = allCronJobs.filter(j => j.enabled).length;
+            document.getElementById('stat-active-crons').textContent = activeCrons;
+            document.getElementById('stat-tasks-progress').textContent = progressCount;
+
+            // Next scheduled jobs
+            const nextJobsContainer = document.getElementById('next-jobs');
+            const upcomingJobs = allCronJobs
+                .filter(j => j.enabled && j.state && j.state.nextRunAtMs)
+                .sort((a, b) => a.state.nextRunAtMs - b.state.nextRunAtMs)
+                .slice(0, 3);
+
+            if (upcomingJobs.length === 0) {
+                nextJobsContainer.innerHTML = '<div class="empty-state" style="padding: 10px;">No scheduled jobs</div>';
+            } else {
+                nextJobsContainer.innerHTML = upcomingJobs.map(job => {
+                    const nextMs = job.state.nextRunAtMs;
+                    const timeUntil = nextMs < Date.now() ? estimateNextRun(job) : formatRelativeTime(nextMs);
+                    return `
+                        <div class="next-job-item">
+                            <span class="next-job-name">${job.name}</span>
+                            <span class="next-job-time">${timeUntil}</span>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // System Health in overview
+            if (health) {
+                document.getElementById('health-gateway').textContent = health.gateway === 'up' ? '🟢 Online' : '🔴 Offline';
+                document.getElementById('health-uptime').textContent = health.uptime || '—';
+                document.getElementById('health-vectordb').textContent = `${health.vectorCount || 0} items`;
+                document.getElementById('health-checkpoint').textContent = health.lastCheckpoint || '—';
+                document.getElementById('health-session-size').textContent = health.sessionSize || '—';
+                document.getElementById('health-cron-jobs').textContent = health.cronJobs || 0;
+            }
+
+            // Cost metrics (placeholder - will be populated from status endpoint if available)
+            if (stats && stats.costToday) {
+                document.getElementById('cost-today').textContent = stats.costToday;
+            }
+        }
+
         function populateFilters() {
             const agentSelect = document.getElementById('filter-agent');
             const projectSelect = document.getElementById('filter-project');
+            const agentSelectDash = document.getElementById('filter-agent-dash');
+            const projectSelectDash = document.getElementById('filter-project-dash');
 
-            const agents = [...new Set(tasks.map(task => task.agent))].filter(Boolean).sort();
-            const projects = [...new Set(tasks.map(task => task.project))].filter(Boolean).sort();
+            const agents = [...new Set(allTasks.map(task => task.agent))].filter(Boolean).sort();
+            const projects = [...new Set(allTasks.map(task => task.project))].filter(Boolean).sort();
 
+            // Tasks tab filters
             agentSelect.innerHTML = '<option value="all">All Agents</option>';
             agents.forEach(agent => {
                 const option = document.createElement('option');
@@ -1806,12 +2311,37 @@
                 option.textContent = project.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
                 projectSelect.appendChild(option);
             });
+
+            // Dashboard tab filters
+            agentSelectDash.innerHTML = '<option value="all">All Agents</option>';
+            agents.forEach(agent => {
+                const option = document.createElement('option');
+                option.value = agent;
+                option.textContent = agent.charAt(0).toUpperCase() + agent.slice(1);
+                agentSelectDash.appendChild(option);
+            });
+
+            projectSelectDash.innerHTML = '<option value="all">All Projects</option>';
+            projects.forEach(project => {
+                const option = document.createElement('option');
+                option.value = project;
+                option.textContent = project.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+                projectSelectDash.appendChild(option);
+            });
         }
 
         function filterTasks() {
-            return tasks.filter(task => {
+            return allTasks.filter(task => {
                 const agentMatch = currentFilters.agent === 'all' || task.agent === currentFilters.agent;
                 const projectMatch = currentFilters.project === 'all' || task.project === currentFilters.project;
+                return agentMatch && projectMatch;
+            });
+        }
+
+        function filterTasksDash() {
+            return allTasks.filter(task => {
+                const agentMatch = currentFiltersDash.agent === 'all' || task.agent === currentFiltersDash.agent;
+                const projectMatch = currentFiltersDash.project === 'all' || task.project === currentFiltersDash.project;
                 return agentMatch && projectMatch;
             });
         }
@@ -1843,6 +2373,84 @@
             }
         }
 
+        function formatDurationMs(durationMs) {
+            const seconds = Math.floor(durationMs / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const hours = Math.floor(minutes / 60);
+            
+            if (hours > 0) {
+                return `${hours}h ${minutes % 60}m`;
+            } else if (minutes > 0) {
+                return `${minutes}m ${seconds % 60}s`;
+            } else {
+                return `${seconds}s`;
+            }
+        }
+
+        function formatRelativeTime(timestampMs) {
+            const now = Date.now();
+            const diff = timestampMs - now;
+            const absDiff = Math.abs(diff);
+            
+            const seconds = Math.floor(absDiff / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const hours = Math.floor(minutes / 60);
+            const days = Math.floor(hours / 24);
+            
+            if (diff < 0) {
+                // Past
+                if (days > 0) return `${days}d ago`;
+                if (hours > 0) return `${hours}h ago`;
+                if (minutes > 0) return `${minutes}m ago`;
+                return `${seconds}s ago`;
+            } else {
+                // Future
+                if (days > 0) return `in ${days}d`;
+                if (hours > 0) return `in ${hours}h`;
+                if (minutes > 0) return `in ${minutes}m`;
+                return `in ${seconds}s`;
+            }
+        }
+
+        function estimateNextRun(job) {
+            const schedule = job.schedule;
+            const now = Date.now();
+            
+            if (schedule.kind === 'every') {
+                const interval = schedule.everyMs;
+                const anchor = schedule.anchorMs || (job.state && job.state.lastRunAtMs) || now;
+                let next = anchor;
+                while (next <= now) {
+                    next += interval;
+                }
+                return formatRelativeTime(next);
+            }
+            
+            return 'awaiting refresh';
+        }
+
+        function formatCronSchedule(schedule) {
+            if (schedule.kind === 'cron') {
+                if (schedule.expr === '0 7 * * *') return 'Daily at 7:00 AM AST';
+                if (schedule.expr === '0 19 * * *') return 'Daily at 7:00 PM AST';
+                if (schedule.expr === '0 */12 * * *') return 'Every 12 hours';
+                if (schedule.expr === '0 0 * * 0') return 'Sundays at midnight AST';
+                if (schedule.expr === '0 1 * * 0') return 'Sundays at 1:00 AM AST';
+                
+                return `Cron: ${schedule.expr} (${schedule.tz.split('/').pop()})`;
+            } else if (schedule.kind === 'every') {
+                const hours = schedule.everyMs / (1000 * 60 * 60);
+                if (hours >= 24) {
+                    const days = hours / 24;
+                    return `Every ${days} day${days > 1 ? 's' : ''}`;
+                }
+                return `Every ${hours} hour${hours > 1 ? 's' : ''}`;
+            } else if (schedule.kind === 'at') {
+                return `At ${new Date(schedule.at).toLocaleString()}`;
+            }
+            return 'Unknown schedule';
+        }
+
         function truncateProof(proof, maxLength = 120) {
             if (proof.length <= maxLength) return proof;
             return proof.substring(0, maxLength) + '...';
@@ -1852,12 +2460,65 @@
             const board = document.getElementById('taskBoard');
             const filteredTasks = filterTasks();
             
-            if (!tasks.length) {
+            if (!allTasks.length) {
                 board.innerHTML = '<div class="loading">No tasks found</div>';
                 return;
             }
 
-            // Status mapping: backlog/todo → To Do, in-progress/in_progress → In Progress
+            const todoTasks = filteredTasks.filter(t => t.status === 'backlog' || t.status === 'todo');
+            const progressTasks = filteredTasks.filter(t => t.status === 'in-progress' || t.status === 'in_progress');
+            const blockedTasks = filteredTasks.filter(t => t.status === 'blocked');
+            const doneTasks = filteredTasks.filter(t => t.status === 'done');
+
+            board.innerHTML = `
+                <div class="kanban-column">
+                    <div class="kanban-header">
+                        To Do
+                        <span class="kanban-count">${todoTasks.length}</span>
+                    </div>
+                    <div class="kanban-cards">
+                        ${todoTasks.length > 0 ? todoTasks.map(renderTaskCard).join('') : '<div class="empty-state"><div class="empty-state-icon">✨</div><div>No tasks</div></div>'}
+                    </div>
+                </div>
+                <div class="kanban-column">
+                    <div class="kanban-header">
+                        In Progress
+                        <span class="kanban-count">${progressTasks.length}</span>
+                    </div>
+                    <div class="kanban-cards">
+                        ${progressTasks.length > 0 ? progressTasks.map(renderTaskCard).join('') : '<div class="empty-state"><div class="empty-state-icon">✨</div><div>No tasks</div></div>'}
+                    </div>
+                </div>
+                <div class="kanban-column blocked-column">
+                    <div class="kanban-header">
+                        Blocked
+                        <span class="kanban-count">${blockedTasks.length}</span>
+                    </div>
+                    <div class="kanban-cards">
+                        ${blockedTasks.length > 0 ? blockedTasks.map(renderTaskCard).join('') : '<div class="empty-state"><div class="empty-state-icon">✨</div><div>No tasks</div></div>'}
+                    </div>
+                </div>
+                <div class="kanban-column">
+                    <div class="kanban-header">
+                        Done
+                        <span class="kanban-count">${doneTasks.length}</span>
+                    </div>
+                    <div class="kanban-cards">
+                        ${doneTasks.length > 0 ? doneTasks.map(renderTaskCard).join('') : '<div class="empty-state"><div class="empty-state-icon">✨</div><div>No tasks</div></div>'}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderDashboardTaskBoard() {
+            const board = document.getElementById('taskBoardDash');
+            const filteredTasks = filterTasksDash();
+            
+            if (!allTasks.length) {
+                board.innerHTML = '<div class="loading">No tasks found</div>';
+                return;
+            }
+
             const todoTasks = filteredTasks.filter(t => t.status === 'backlog' || t.status === 'todo');
             const progressTasks = filteredTasks.filter(t => t.status === 'in-progress' || t.status === 'in_progress');
             const blockedTasks = filteredTasks.filter(t => t.status === 'blocked');
@@ -1953,11 +2614,120 @@
             `;
         }
 
+        function renderCronJobs() {
+            const tbody = document.getElementById('cron-table-body');
+            
+            if (allCronJobs.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="empty-state">No cron jobs configured</td></tr>';
+                return;
+            }
+
+            const sortedJobs = [...allCronJobs].sort((a, b) => {
+                const aNext = (a.state && a.state.nextRunAtMs) || Infinity;
+                const bNext = (b.state && b.state.nextRunAtMs) || Infinity;
+                return aNext - bNext;
+            });
+
+            tbody.innerHTML = sortedJobs.map(job => {
+                const model = job.payload?.model || 'unknown';
+                const modelClass = `model-${model}`;
+                
+                let statusBadge = '<span class="cron-status-badge status-never">Never Run</span>';
+                if (job.state && job.state.lastRunAtMs) {
+                    if (job.state.lastRunStatus === 'ok') {
+                        statusBadge = '<span class="cron-status-badge status-ok">OK</span>';
+                    } else if (job.state.lastRunStatus === 'error') {
+                        statusBadge = '<span class="cron-status-badge status-error">Error</span>';
+                    }
+                }
+
+                const lastRun = job.state && job.state.lastRunAtMs 
+                    ? `${formatRelativeTime(job.state.lastRunAtMs)}${job.state.lastDurationMs ? ` (${formatDurationMs(job.state.lastDurationMs)})` : ''}`
+                    : 'Never';
+
+                let nextRun = 'Not scheduled';
+                if (job.state && job.state.nextRunAtMs) {
+                    const nextMs = job.state.nextRunAtMs;
+                    if (nextMs < Date.now()) {
+                        nextRun = estimateNextRun(job);
+                    } else {
+                        nextRun = formatRelativeTime(nextMs);
+                    }
+                }
+
+                const enabledIndicator = job.enabled 
+                    ? '<span class="enabled-indicator"></span>'
+                    : '<span class="enabled-indicator disabled"></span>';
+
+                const rowClass = job.enabled ? '' : 'disabled';
+                const schedule = formatCronSchedule(job.schedule);
+
+                return `
+                    <tr class="${rowClass}">
+                        <td><span class="cron-name">${job.name}</span></td>
+                        <td><span class="cron-schedule">${schedule}</span></td>
+                        <td><span class="cron-model ${modelClass}">${model}</span></td>
+                        <td><span class="relative-time">${lastRun}</span></td>
+                        <td>${statusBadge}</td>
+                        <td><span class="relative-time">${nextRun}</span></td>
+                        <td>${enabledIndicator}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function renderMemory() {
+            const grid = document.getElementById('memory-grid');
+            const countEl = document.getElementById('memory-count');
+
+            if (!memoryData || !memoryData.entries) {
+                grid.innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div>No memory data</div></div>';
+                countEl.textContent = '0 entries';
+                return;
+            }
+
+            const filtered = memoryData.entries.filter(entry => {
+                const searchMatch = memoryFilters.search === '' || 
+                    entry.title.toLowerCase().includes(memoryFilters.search.toLowerCase()) ||
+                    (entry.preview && entry.preview.toLowerCase().includes(memoryFilters.search.toLowerCase()));
+                
+                const categoryMatch = memoryFilters.category === 'all' || 
+                    entry.category === memoryFilters.category;
+                
+                return searchMatch && categoryMatch;
+            });
+
+            filtered.sort((a, b) => b.modified - a.modified);
+
+            countEl.textContent = `${filtered.length} ${filtered.length === 1 ? 'entry' : 'entries'}`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🔍</div><div>No entries match your filters</div></div>';
+                return;
+            }
+
+            grid.innerHTML = filtered.map(entry => {
+                const truncatedPreview = entry.preview && entry.preview.length > 150 
+                    ? entry.preview.substring(0, 150) + '...' 
+                    : entry.preview;
+                
+                return `
+                    <div class="memory-card">
+                        <div class="memory-card-header">
+                            <div class="memory-card-title">${entry.title}</div>
+                            <span class="category-badge category-${entry.category}">${entry.category}</span>
+                        </div>
+                        <div class="memory-card-date">${entry.date}</div>
+                        <div class="memory-card-preview">${truncatedPreview || 'No preview available'}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
         function updateStats() {
             const statsBar = document.getElementById('statsBar');
-            const filteredTasks = filterTasks();
+            const filteredTasks = filterTasksDash();
             
-            // Calculate real stats from tasks
             const today = new Date().toDateString();
             const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
             
@@ -2033,32 +2803,6 @@
             if (hours > 0) return `${hours}h ago`;
             if (minutes > 0) return `${minutes}m ago`;
             return 'just now';
-        }
-
-        // Calendar placeholder
-        const calendarEvents = document.getElementById('calendarEvents');
-        calendarEvents.innerHTML = `
-            <div class="calendar-event">
-                <div class="event-time">Coming Soon</div>
-                <div class="event-title">Calendar Integration</div>
-                <div class="event-desc">Connect to n8n webhook for scheduled events</div>
-            </div>
-        `;
-
-        // Watchdog functions
-        async function loadWatchdog() {
-            try {
-                const response = await fetch(WATCHDOG_API_URL);
-                if (!response.ok) throw new Error('Failed to fetch watchdog data');
-                
-                watchdog = await response.json();
-                renderWatchdog();
-            } catch (error) {
-                console.error('Error loading watchdog:', error);
-                document.getElementById('watchdogStatus').innerHTML = `
-                    <div class="error">Failed to load watchdog data: ${error.message}</div>
-                `;
-            }
         }
 
         function renderWatchdog() {
@@ -2196,7 +2940,6 @@
             const container = document.getElementById('crashHistory');
             const events = watchdog.recentEvents || [];
             
-            // Calculate crashes per day for last 7 days
             const now = new Date();
             const crashesByDay = {};
             
@@ -2249,6 +2992,14 @@
             if (hours > 0) return `${hours}h ago`;
             if (minutes > 0) return `${minutes}m ago`;
             return 'just now';
+        }
+
+        function refreshDashboard() {
+            const btn = document.getElementById('refresh-btn');
+            btn.classList.add('spinning');
+            loadAllData().then(() => {
+                setTimeout(() => btn.classList.remove('spinning'), 600);
+            });
         }
     </script>
 </body>
