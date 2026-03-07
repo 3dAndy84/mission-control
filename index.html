@@ -887,36 +887,80 @@
 
         <div id="error-container"></div>
 
+        <!-- Overview Section (Always Visible) -->
+        <div class="overview-grid" style="margin-bottom: 25px;">
+            <div class="overview-card">
+                <div class="overview-card-title">SYSTEM HEALTH</div>
+                <div class="health-info">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                        <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;" id="overview-status-dot"></span>
+                        <span id="overview-gateway-status">Online</span>
+                    </div>
+                    <div>Uptime: <span id="overview-uptime">—</span></div>
+                    <div>Vector DB: <span id="overview-vector-items">—</span> items</div>
+                    <div>Last Checkpoint: <span id="overview-checkpoint">—</span></div>
+                    <div>Session Size: <span id="overview-session-size">—</span></div>
+                    <div>Cron Jobs: <span id="overview-cron-count">—</span></div>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-card-title">TASK SUMMARY</div>
+                <div class="task-summary" id="overview-task-summary">
+                    <span class="task-pill task-pill-backlog">Backlog: 0</span>
+                    <span class="task-pill task-pill-progress">In Progress: 0</span>
+                    <span class="task-pill task-pill-blocked">Blocked: 0</span>
+                    <span class="task-pill task-pill-done">Done: 0</span>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-card-title">NEXT SCHEDULED JOBS</div>
+                <div id="overview-next-jobs" style="font-size: 13px; color: #b0b0b0;">
+                    —
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-card-title">QUICK STATS</div>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div>
+                        <div style="font-size: 12px; color: #888; margin-bottom: 4px;">Active Jobs</div>
+                        <div style="font-size: 32px; font-weight: 700; color: #ffffff;" id="overview-active-jobs">0</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 12px; color: #888; margin-bottom: 4px;">In Progress</div>
+                        <div style="font-size: 32px; font-weight: 700; color: #3b82f6;" id="overview-in-progress">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <div class="overview-card-title">ESTIMATED COST</div>
+                <div style="font-size: 13px; color: #b0b0b0; line-height: 1.6;">
+                    <div style="margin-bottom: 8px;">
+                        <div>Session Total: <span style="float: right; color: #ffffff; font-weight: 600;" id="overview-cost-session">$0.00</span></div>
+                        <div>Monthly Budget: <span style="float: right; color: #888;" id="overview-cost-budget">$0 / $60</span></div>
+                    </div>
+                    <div style="margin-bottom: 8px; display: flex; flex-wrap: wrap; gap: 6px;" id="overview-cost-by-model">
+                        <!-- Model badges will be inserted here -->
+                    </div>
+                    <div>
+                        <div>Tokens In: <span style="float: right;" id="overview-tokens-in">0</span></div>
+                        <div>Tokens Out: <span style="float: right;" id="overview-tokens-out">0</span></div>
+                        <div>Cache R: <span style="float: right;" id="overview-cache-read">0</span></div>
+                        <div>Cache W: <span style="float: right;" id="overview-cache-write">0</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Tabs -->
         <div class="tabs">
-            <button class="tab" onclick="switchTab('overview')">Overview</button>
             <button class="tab active" onclick="switchTab('tasks')">Tasks</button>
             <button class="tab" onclick="switchTab('cron-jobs')">Cron Jobs</button>
             <button class="tab" onclick="switchTab('memory')">Memory</button>
             <button class="tab" onclick="switchTab('watchdog')">Watchdog</button>
-        </div>
-
-        <!-- Overview Tab -->
-        <div id="overview-tab" class="tab-content">
-            <div class="overview-grid">
-                <div class="overview-card">
-                    <div class="overview-card-title">System Health</div>
-                    <div class="health-info">
-                        <div>Gateway: <span class="status-badge status-online" id="overview-gateway-status">Online</span></div>
-                        <div>Uptime: <span id="overview-uptime">—</span></div>
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <div class="overview-card-title">Task Summary</div>
-                    <div class="task-summary" id="overview-task-summary">
-                        <span class="task-pill task-pill-backlog">Backlog: 0</span>
-                        <span class="task-pill task-pill-progress">In Progress: 0</span>
-                        <span class="task-pill task-pill-blocked">Blocked: 0</span>
-                        <span class="task-pill task-pill-done">Done: 0</span>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Tasks Tab -->
@@ -1211,13 +1255,89 @@
             // System Health
             if (systemStatus && systemStatus.gateway) {
                 const isOnline = systemStatus.gateway.status === 'online';
+                const statusDot = document.getElementById('overview-status-dot');
                 const statusEl = document.getElementById('overview-gateway-status');
+                
                 statusEl.textContent = isOnline ? 'Online' : 'Offline';
-                statusEl.className = isOnline ? 'status-badge status-online' : 'status-badge status-offline';
+                statusDot.style.background = isOnline ? '#10b981' : '#dc2626';
                 
                 if (systemStatus.gateway.uptime_since) {
                     const uptime = calculateUptime(systemStatus.gateway.uptime_since);
                     document.getElementById('overview-uptime').textContent = uptime;
+                }
+
+                // Vector DB items
+                if (systemStatus.vector_db && systemStatus.vector_db.total_items !== undefined) {
+                    document.getElementById('overview-vector-items').textContent = systemStatus.vector_db.total_items;
+                }
+
+                // Last checkpoint
+                if (systemStatus.last_checkpoint) {
+                    document.getElementById('overview-checkpoint').textContent = formatRelativeTime(new Date(systemStatus.last_checkpoint).getTime());
+                }
+
+                // Session size
+                if (systemStatus.session && systemStatus.session.size) {
+                    document.getElementById('overview-session-size').textContent = systemStatus.session.size;
+                }
+            }
+
+            // Cron jobs count
+            const enabledCronCount = allCronJobs.filter(j => j.enabled).length;
+            document.getElementById('overview-cron-count').textContent = `${enabledCronCount}/${allCronJobs.length}`;
+
+            // Next scheduled jobs
+            const upcomingJobs = allCronJobs
+                .filter(j => j.enabled && j.state && j.state.nextRunAtMs)
+                .sort((a, b) => a.state.nextRunAtMs - b.state.nextRunAtMs)
+                .slice(0, 3);
+
+            if (upcomingJobs.length > 0) {
+                document.getElementById('overview-next-jobs').innerHTML = upcomingJobs.map(job => 
+                    `<div style="margin-bottom: 4px;">${job.name}: <span style="color: #888;">${formatRelativeTime(job.state.nextRunAtMs)}</span></div>`
+                ).join('');
+            } else {
+                document.getElementById('overview-next-jobs').textContent = 'No upcoming jobs';
+            }
+
+            // Quick stats
+            const enabledCrons = allCronJobs.filter(j => j.enabled).length;
+            document.getElementById('overview-active-jobs').textContent = enabledCrons;
+            document.getElementById('overview-in-progress').textContent = progressCount;
+
+            // Estimated cost
+            if (systemStatus && systemStatus.costs) {
+                const sessionTotal = systemStatus.costs.session_total || 0;
+                const monthlySpent = systemStatus.costs.monthly_spent || 0;
+                const monthlyBudget = systemStatus.costs.monthly_budget || 60;
+
+                document.getElementById('overview-cost-session').textContent = `$${sessionTotal.toFixed(2)}`;
+                document.getElementById('overview-cost-budget').textContent = `$${monthlySpent.toFixed(0)} / $${monthlyBudget}`;
+
+                // By model
+                if (systemStatus.costs.by_model) {
+                    const modelBadges = Object.entries(systemStatus.costs.by_model)
+                        .map(([model, cost]) => {
+                            const modelName = model.split('/').pop().split('-')[0]; // Extract short name
+                            const colorMap = {
+                                'opus': '#a855f7',
+                                'sonnet': '#3b82f6',
+                                'haiku': '#10b981',
+                                'gpt': '#10b981'
+                            };
+                            const color = colorMap[modelName] || '#888';
+                            return `<span style="padding: 3px 8px; border-radius: 4px; background: ${color}33; color: ${color}; font-size: 11px; font-weight: 600;">${modelName}: $${cost.toFixed(2)}</span>`;
+                        })
+                        .join('');
+                    document.getElementById('overview-cost-by-model').innerHTML = modelBadges;
+                }
+
+                // Tokens
+                if (systemStatus.costs.tokens) {
+                    document.getElementById('overview-tokens-in').textContent = (systemStatus.costs.tokens.input || 0).toLocaleString();
+                    document.getElementById('overview-tokens-out').textContent = (systemStatus.costs.tokens.output || 0).toLocaleString();
+                    document.getElementById('overview-cache-read').textContent = (systemStatus.costs.tokens.cache_read || 0).toLocaleString();
+                    document.getElementById('overview-cache-write').textContent = (systemStatus.costs.tokens.cache_write || 0).toLocaleString();
                 }
             }
         }
