@@ -7,7 +7,7 @@
       "name": "Refresh Mission Control memory.json",
       "enabled": true,
       "createdAtMs": 1772894129624,
-      "updatedAtMs": 1772966056769,
+      "updatedAtMs": 1772971497615,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -26,15 +26,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772971487432,
-        "lastRunAtMs": 1772949887440,
+        "nextRunAtMs": 1772993087432,
+        "lastRunAtMs": 1772971487448,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 9237,
+        "lastDurationMs": 10167,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772971487448
+        "runningAtMs": 1772993087465
       }
     },
     {
@@ -44,7 +44,7 @@
       "name": "Self-Eval Review",
       "enabled": true,
       "createdAtMs": 1772478614503,
-      "updatedAtMs": 1772932296892,
+      "updatedAtMs": 1772975487166,
       "schedule": {
         "kind": "every",
         "everyMs": 43200000,
@@ -61,11 +61,11 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772975414626,
-        "lastRunAtMs": 1772932214626,
+        "nextRunAtMs": 1773018614653,
+        "lastRunAtMs": 1772975414653,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 82266,
+        "lastDurationMs": 72513,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0

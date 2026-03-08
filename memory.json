@@ -1,4 +1,4 @@
-{"generated":1772971492159,"total":86,"entries":[
+{"generated":1772993091501,"total":88,"entries":[
   {"title":"2 layer cron pattern","category":"decisions","file":"2-layer-cron-pattern.md","date":"2026-03-03","modified":1772534558000,"preview":"All recurring crons should use a 2-layer approach: Layer 1 is a cheap bash pre-check that determines if there's actual work to do. Layer 2 is the LLM call, only triggered when the pre-check finds some "}
 ,
   {"title":"2026 03 02","category":"decisions","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# decisions — [[projects/2026-03-02]] "}
@@ -43,6 +43,8 @@
 ,
   {"title":"sxm cams dashboard","category":"decisions","file":"sxm-cams-dashboard.md","date":"2026-03-01","modified":1772408280000,"preview":"SXM Webcam Dashboard deployed at https://cams.n8n-andy.xyz "}
 ,
+  {"title":"telegram forum topic map","category":"decisions","file":"telegram-forum-topic-map.md","date":"2026-03-08","modified":1772983123000,"preview":"Telegram forum topics for Max Workspace group (-1003709913328): General=1, Briefings & Heartbeats=98, Coast Guard=99, Valley Estate=100, Infrastructure=102, Dominica=197, Personal=1143 "}
+,
   {"title":"todoist single capture point","category":"decisions","file":"todoist-single-capture-point.md","date":"2026-02-28","modified":1772290420000,"preview":"Todoist is the single task capture point. Projects: Inbox, Valley Estate, Coast Guard, Dominica. Any task/reminder/todo goes straight to Todoist in the right project. API key in .env, script at ~/.age "}
 ,
   {"title":"voice alice","category":"decisions","file":"voice-alice.md","date":"2026-03-01","modified":1772406384000,"preview":"Max's TTS voice is Alice (ElevenLabs ID: Xb7hH8MSUJpSbSDYk0k2). British, clear, engaging. Note: OpenClaw's built-in TTS tool ignores the config voiceId — use direct ElevenLabs API calls for correct  "}
@@ -62,6 +64,8 @@
   {"title":"2026 03 07","category":"lessons","file":"2026-03-07.md","date":"2026-03-07","modified":1772956830000,"preview":"# lessons — 2026-03-07 "}
 ,
   {"title":"2026 03 08","category":"lessons","file":"2026-03-08.md","date":"2026-03-08","modified":1772956817000,"preview":"# lessons — 2026-03-08 "}
+,
+  {"title":"ack reaction removal bug telegram forums","category":"lessons","file":"ack-reaction-removal-bug-telegram-forums.md","date":"2026-03-08","modified":1772974710000,"preview":"ackReaction (👀) appears on messages but removeAckAfterReply doesn't work in Telegram forum topics. The reaction sticks after reply. Manual API calls to setMessageReaction work fine (tested 2026-03- "}
 ,
   {"title":"always read openclaw docs before config","category":"lessons","file":"always-read-openclaw-docs-before-config.md","date":"2026-03-02","modified":1772472587000,"preview":"Before making ANY OpenClaw config changes: read the docs at https://docs.openclaw.ai first. Use 'openclaw config set <path> <value>' for changes (validates + creates backup). Do NOT edit openclaw.json "}
 ,
