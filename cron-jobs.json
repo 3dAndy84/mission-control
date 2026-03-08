@@ -1,49 +1,13 @@
 {
   "jobs": [
     {
-      "id": "dafc366d-e8b0-4867-8657-5ee5e14b632d",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "morning-briefing",
-      "enabled": true,
-      "createdAtMs": 1772283294696,
-      "updatedAtMs": 1772881282173,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 7 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Morning briefing for Andy. Three parts:\n\n**PART 1: HEARTBEAT (always include, even if everything is fine)**\n1. Check gateway: openclaw status\n2. Check for errors in logs (last 1h)\n3. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault checkpoint\n4. Check ~/workspace/memory/commitments/ for pending items\n5. Note any stale tasks or blockers\n6. ALWAYS report heartbeat status. If all clear, say so. Never skip this section.\n\n**PART 2: CALENDAR**\nFetch today's events:\nsource ~/.openclaw/.env && curl -s -X POST -H 'Content-Type: application/json' -H \"X-Api-Token: $N8N_WEBHOOK_TOKEN\" -d '{\"service\":\"calendar\",\"action\":\"today\"}' https://n8n-andy.xyz/webhook/openclaw-google\nIf it returns events, list them with times in AST (GMT-4). If it fails or returns empty, say 'Calendar: no events today' or 'Calendar: not configured yet'. Do NOT skip this section.\n\n**PART 3: BRIEFING**\n1. Run: ~/.agents/skills/todoist/scripts/todoist.sh list-tasks --filter 'today | overdue' — list tasks due today and overdue\n2. Check weather for Sint Maarten: curl -s 'wttr.in/Sint+Maarten?format=3'\n3. Any pending ClawVault commitments: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search 'commitments'\n\nFormat as a single concise morning update. Start with system health (one line if all good), then calendar events with times, then weather, then tasks/overdue, then commitments. Keep it punchy — no fluff.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:98"
-      },
-      "state": {
-        "nextRunAtMs": 1772967600000,
-        "lastRunAtMs": 1772881200016,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 82157,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
       "id": "c371d06f-6bc3-460a-8b67-e2d246ea67bb",
       "agentId": "main",
       "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
       "name": "Refresh Mission Control memory.json",
       "enabled": true,
       "createdAtMs": 1772894129624,
-      "updatedAtMs": 1772949896677,
+      "updatedAtMs": 1772966056769,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -55,7 +19,8 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Run ~/workspace/bin/refresh-memory-json.sh to regenerate the Mission Control memory.json and push to GitHub. Just run it and report the result briefly.",
-        "timeoutSeconds": 120
+        "timeoutSeconds": 120,
+        "model": "haiku"
       },
       "delivery": {
         "mode": "none"
@@ -68,7 +33,8 @@
         "lastDurationMs": 9237,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1772971487448
       }
     },
     {
@@ -172,6 +138,42 @@
         "lastDurationMs": 56408,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "dafc366d-e8b0-4867-8657-5ee5e14b632d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "morning-briefing",
+      "enabled": true,
+      "createdAtMs": 1772283294696,
+      "updatedAtMs": 1772967701604,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Morning briefing for Andy. Three parts:\n\n**PART 1: HEARTBEAT (always include, even if everything is fine)**\n1. Check gateway: openclaw status\n2. Check for errors in logs (last 1h)\n3. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault checkpoint\n4. Check ~/workspace/memory/commitments/ for pending items\n5. Note any stale tasks or blockers\n6. ALWAYS report heartbeat status. If all clear, say so. Never skip this section.\n\n**PART 2: CALENDAR**\nFetch today's events:\nsource ~/.openclaw/.env && curl -s -X POST -H 'Content-Type: application/json' -H \"X-Api-Token: $N8N_WEBHOOK_TOKEN\" -d '{\"service\":\"calendar\",\"action\":\"today\"}' https://n8n-andy.xyz/webhook/openclaw-google\nIf it returns events, list them with times in AST (GMT-4). If it fails or returns empty, say 'Calendar: no events today' or 'Calendar: not configured yet'. Do NOT skip this section.\n\n**PART 3: BRIEFING**\n1. Run: ~/.agents/skills/todoist/scripts/todoist.sh list-tasks --filter 'today | overdue' — list tasks due today and overdue\n2. Check weather for Sint Maarten: curl -s 'wttr.in/Sint+Maarten?format=3'\n3. Any pending ClawVault commitments: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search 'commitments'\n\nFormat as a single concise morning update. Start with system health (one line if all good), then calendar events with times, then weather, then tasks/overdue, then commitments. Keep it punchy — no fluff.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:98"
+      },
+      "state": {
+        "nextRunAtMs": 1773054000000,
+        "lastRunAtMs": 1772967600026,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 101578,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },

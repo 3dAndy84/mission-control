@@ -1,4 +1,4 @@
-{"generated":1772949893439,"total":82,"entries":[
+{"generated":1772971492159,"total":86,"entries":[
   {"title":"2 layer cron pattern","category":"decisions","file":"2-layer-cron-pattern.md","date":"2026-03-03","modified":1772534558000,"preview":"All recurring crons should use a 2-layer approach: Layer 1 is a cheap bash pre-check that determines if there's actual work to do. Layer 2 is the LLM call, only triggered when the pre-check finds some "}
 ,
   {"title":"2026 03 02","category":"decisions","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# decisions — [[projects/2026-03-02]] "}
@@ -8,6 +8,8 @@
   {"title":"2026 03 04","category":"decisions","file":"2026-03-04.md","date":"2026-03-04","modified":1772697619000,"preview":"# decisions — [[projects/2026-03-04]] "}
 ,
   {"title":"2026 03 05","category":"decisions","file":"2026-03-05.md","date":"2026-03-05","modified":1772784056000,"preview":"# decisions — 2026-03-05 "}
+,
+  {"title":"2026 03 07","category":"decisions","file":"2026-03-07.md","date":"2026-03-07","modified":1772956848000,"preview":"# decisions — 2026-03-07 "}
 ,
   {"title":"clawvault full activation","category":"decisions","file":"clawvault-full-activation.md","date":"2026-03-04","modified":1772660280000,"preview":"Activated ClawVault to full potential. Phase 1 (done): observe pipeline (nightly 04:00 AST), reflect pipeline (Sunday 05:00 AST), entity linking (126 nodes/169 edges), ClawVault OpenClaw plugin (auto- "}
 ,
@@ -57,7 +59,9 @@
 ,
   {"title":"2026 03 05","category":"lessons","file":"2026-03-05.md","date":"2026-03-05","modified":1772784070000,"preview":"# lessons — 2026-03-05 "}
 ,
-  {"title":"2026 03 07","category":"lessons","file":"2026-03-07.md","date":"2026-03-07","modified":1772870425000,"preview":"# lessons — 2026-03-07 "}
+  {"title":"2026 03 07","category":"lessons","file":"2026-03-07.md","date":"2026-03-07","modified":1772956830000,"preview":"# lessons — 2026-03-07 "}
+,
+  {"title":"2026 03 08","category":"lessons","file":"2026-03-08.md","date":"2026-03-08","modified":1772956817000,"preview":"# lessons — 2026-03-08 "}
 ,
   {"title":"always read openclaw docs before config","category":"lessons","file":"always-read-openclaw-docs-before-config.md","date":"2026-03-02","modified":1772472587000,"preview":"Before making ANY OpenClaw config changes: read the docs at https://docs.openclaw.ai first. Use 'openclaw config set <path> <value>' for changes (validates + creates backup). Do NOT edit openclaw.json "}
 ,
@@ -91,7 +95,7 @@
 ,
   {"title":"2026 03 04","category":"commitments","file":"2026-03-04.md","date":"2026-03-04","modified":1772697619000,"preview":"# commitments — [[projects/2026-03-04]] "}
 ,
-  {"title":"2026 03 07","category":"commitments","file":"2026-03-07.md","date":"2026-03-07","modified":1772870425000,"preview":"# commitments — 2026-03-07 "}
+  {"title":"2026 03 07","category":"commitments","file":"2026-03-07.md","date":"2026-03-07","modified":1772956813000,"preview":"# commitments — 2026-03-07 "}
 ,
   {"title":"2026 03 01","category":"projects","file":"2026-03-01.md","date":"2026-03-01","modified":1772660188000,"preview":"# projects — [[projects/2026-03-01]] "}
 ,
@@ -105,7 +109,7 @@
 ,
   {"title":"2026 03 06","category":"projects","file":"2026-03-06.md","date":"2026-03-06","modified":1772870407000,"preview":"# projects — 2026-03-06 "}
 ,
-  {"title":"2026 03 07","category":"projects","file":"2026-03-07.md","date":"2026-03-07","modified":1772870425000,"preview":"# projects — 2026-03-07 "}
+  {"title":"2026 03 07","category":"projects","file":"2026-03-07.md","date":"2026-03-07","modified":1772956848000,"preview":"# projects — 2026-03-07 "}
 ,
   {"title":"dominica duty free","category":"projects","file":"dominica-duty-free.md","date":"2026-03-04","modified":1772665882000,"preview":"# Dominica Duty-Free Proposal "}
 ,
@@ -129,7 +133,7 @@
 ,
   {"title":"2026 03 06","category":"preferences","file":"2026-03-06.md","date":"2026-03-06","modified":1772870412000,"preview":"# preferences — 2026-03-06 "}
 ,
-  {"title":"2026 03 07","category":"preferences","file":"2026-03-07.md","date":"2026-03-07","modified":1772870425000,"preview":"# preferences — 2026-03-07 "}
+  {"title":"2026 03 07","category":"preferences","file":"2026-03-07.md","date":"2026-03-07","modified":1772956830000,"preview":"# preferences — 2026-03-07 "}
 ,
   {"title":"confirm before destructive actions","category":"preferences","file":"confirm-before-destructive-actions.md","date":"2026-03-05","modified":1772686732000,"preview":"Andy requires confirmation before any destructive actions (file deletions, rm -rf, system changes, credential modifications). Never auto-execute destructive commands. "}
 ,
@@ -155,9 +159,13 @@
 ,
   {"title":"2026 03 07","category":"facts","file":"2026-03-07.md","date":"2026-03-07","modified":1772870436000,"preview":"# facts — 2026-03-07 "}
 ,
+  {"title":"2026 03 08","category":"facts","file":"2026-03-08.md","date":"2026-03-08","modified":1772956833000,"preview":"# facts — 2026-03-08 "}
+,
   {"title":"agentmail access","category":"facts","file":"agentmail-access.md","date":"2026-02-28","modified":1772290430000,"preview":"AgentMail (maxine@agentmail.to) accessed via Node.js SDK. No IMAP — use AgentMailClient with API key. Threads list, get, getAttachment methods available. Himalaya config has stale Gmail creds, not a "}
 ,
   {"title":"clawvault task management","category":"facts","file":"clawvault-task-management.md","date":"2026-03-04","modified":1772665909000,"preview":"# ClawVault Task Management "}
+,
+  {"title":"n8n docker access","category":"facts","file":"n8n-docker-access.md","date":"2026-03-08","modified":1772966855000,"preview":"I have direct access to n8n via 'docker exec n8n' from the clawd user on the VPS. This gives full CLI control over n8n workflows (list, export, import, update, activate/deactivate). No n8n REST API ke "}
 ,
   {"title":"task dashboard cleared","category":"facts","file":"task-dashboard-cleared.md","date":"2026-02-28","modified":1772290428000,"preview":"Task dashboard (task-dashboard-eosin.vercel.app) cleared of all demo tasks on Feb 28 2026. tasks.json is empty. Todoist is now the primary task system. "}
 ,
