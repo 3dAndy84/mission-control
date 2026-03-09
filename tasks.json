@@ -192,13 +192,14 @@
       "id": "layer-2-frontier-scanner",
       "title": "Layer 2: Frontier Scanner",
       "description": "LLM-based risk classifier. Structured JSON scoring, review at 35, block at 70. Uses strongest model.",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "security-hardening",
       "created": "2026-03-09T16:17:15Z",
-      "updated": "2026-03-09T16:42:07Z",
-      "started_at": "2026-03-09T16:42:07Z"
+      "updated": "2026-03-09T17:45:55Z",
+      "started_at": "2026-03-09T16:42:07Z",
+      "completed_at": "2026-03-09T17:45:55Z"
     },
     {
       "id": "layer-6-access-control",
