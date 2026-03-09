@@ -140,13 +140,14 @@
       "id": "layer-1-input-sanitizer",
       "title": "Layer 1: Input Sanitizer",
       "description": "11-step deterministic text sanitizer for prompt injection defense. lib/sanitizer.js",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "security-hardening",
       "created": "2026-03-09T14:26:03Z",
-      "updated": "2026-03-09T14:26:10Z",
-      "started_at": "2026-03-09T14:26:10Z"
+      "updated": "2026-03-09T15:11:11Z",
+      "started_at": "2026-03-09T14:26:10Z",
+      "completed_at": "2026-03-09T15:11:11Z"
     }
   ]
 }
