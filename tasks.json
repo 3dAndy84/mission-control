@@ -203,12 +203,13 @@
       "id": "layer-6-access-control",
       "title": "Layer 6: Access Control",
       "description": "Path guards (deny sensitive files), URL safety (block private IPs, DNS rebinding).",
-      "status": "backlog",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "security-hardening",
       "created": "2026-03-09T16:17:16Z",
-      "updated": "2026-03-09T16:17:16Z"
+      "updated": "2026-03-09T16:40:30Z",
+      "completed_at": "2026-03-09T16:40:30Z"
     }
   ]
 }
