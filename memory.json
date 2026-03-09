@@ -1,4 +1,4 @@
-{"generated":1773057892358,"total":95,"entries":[
+{"generated":1773079492369,"total":100,"entries":[
   {"title":"2 layer cron pattern","category":"decisions","file":"2-layer-cron-pattern.md","date":"2026-03-03","modified":1772534558000,"preview":"All recurring crons should use a 2-layer approach: Layer 1 is a cheap bash pre-check that determines if there's actual work to do. Layer 2 is the LLM call, only triggered when the pre-check finds some "}
 ,
   {"title":"2026 03 02","category":"decisions","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# decisions — [[projects/2026-03-02]] "}
@@ -73,11 +73,15 @@
 ,
   {"title":"2026 03 08","category":"lessons","file":"2026-03-08.md","date":"2026-03-08","modified":1772956817000,"preview":"# lessons — 2026-03-08 "}
 ,
+  {"title":"2026 03 09 fxtwitter api","category":"lessons","file":"2026-03-09-fxtwitter-api.md","date":"2026-03-09","modified":1773062473000,"preview":"# Lesson: Use fxtwitter API for X/Twitter content "}
+,
   {"title":"ack reaction removal bug telegram forums","category":"lessons","file":"ack-reaction-removal-bug-telegram-forums.md","date":"2026-03-08","modified":1772974710000,"preview":"ackReaction (👀) appears on messages but removeAckAfterReply doesn't work in Telegram forum topics. The reaction sticks after reply. Manual API calls to setMessageReaction work fine (tested 2026-03- "}
 ,
   {"title":"always read openclaw docs before config","category":"lessons","file":"always-read-openclaw-docs-before-config.md","date":"2026-03-02","modified":1772472587000,"preview":"Before making ANY OpenClaw config changes: read the docs at https://docs.openclaw.ai first. Use 'openclaw config set <path> <value>' for changes (validates + creates backup). Do NOT edit openclaw.json "}
 ,
   {"title":"always update task dashboard","category":"lessons","file":"always-update-task-dashboard.md","date":"2026-03-04","modified":1772586480000,"preview":"FAILURE PATTERN: Repeatedly forgot to update task-dashboard when starting/completing work. FIX: Hard rule added to SOUL.md Task Protocol — every task start/complete/block MUST trigger a task-dashboa "}
+,
+  {"title":"andy timezone gmt minus 4","category":"lessons","file":"andy-timezone-gmt-minus-4.md","date":"2026-03-09","modified":1773072996000,"preview":"Andy's timezone is GMT-4 (AST / America/Lower_Princes / Sint Maarten). When reporting times, convert to his local time. 16:16 UTC = 12:16 AST. "}
 ,
   {"title":"commitment tracking protocol","category":"lessons","file":"commitment-tracking-protocol.md","date":"2026-03-05","modified":1772686707000,"preview":"# Commitment Tracking Protocol "}
 ,
@@ -89,9 +93,13 @@
 ,
   {"title":"finch option a implementation","category":"lessons","file":"finch-option-a-implementation.md","date":"2026-03-03","modified":1772543218000,"preview":"Implemented conservative memory automation (Option A): "}
 ,
+  {"title":"fxtwitter api for twitter content","category":"lessons","file":"fxtwitter-api-for-twitter-content.md","date":"2026-03-09","modified":1773062478000,"preview":"Use https://api.fxtwitter.com/{username}/status/{tweet_id} to fetch X/Twitter content. Direct x.com scraping fails. Returns full JSON with tweet text, articles, media, engagement stats. "}
+,
   {"title":"google drive write access","category":"lessons","file":"google-drive-write-access.md","date":"2026-02-28","modified":1772282211000,"preview":"Google Drive service account has WRITE access (confirmed Feb 27, 2026). Can upload files, not just read. "}
 ,
   {"title":"mark tasks done when solved","category":"lessons","file":"mark-tasks-done-when-solved.md","date":"2026-03-04","modified":1772587346000,"preview":"FAILURE: n8n Google Drive + Calendar workflows were built and working (webhook at n8n-andy.xyz/webhook/openclaw-google), but the corresponding dashboard tasks stayed 'blocked' for days. Root cause: so "}
+,
+  {"title":"proactive subagent updates","category":"lessons","file":"proactive-subagent-updates.md","date":"2026-03-09","modified":1773074519000,"preview":"CRITICAL: When a subagent completes, IMMEDIATELY report to Andy. Do not wait for him to ask. This has failed twice (Layer 5 and Layer 4/6). The completion event IS the trigger to message Andy. No dela "}
 ,
   {"title":"save before respond","category":"lessons","file":"save-before-respond.md","date":"2026-03-06","modified":1772833747000,"preview":"CRITICAL: When Andy tells me ANY factual information (names, IDs, preferences, structures, decisions, lists), I MUST save it to memory BEFORE responding. The order is: (1) save to file/ClawVault, (2)  "}
 ,
@@ -134,6 +142,8 @@
   {"title":"n8n workflows","category":"projects","file":"n8n-workflows.md","date":"2026-03-04","modified":1772665882000,"preview":"# n8n Workflows "}
 ,
   {"title":"openclaw setup","category":"projects","file":"openclaw-setup.md","date":"2026-03-04","modified":1772665882000,"preview":"# OpenClaw Setup "}
+,
+  {"title":"security hardening 6 layer","category":"projects","file":"security-hardening-6-layer.md","date":"2026-03-09","modified":1773065691000,"preview":"6-layer prompt injection defense system inspired by Matthew Berman's article. Phase 1: Input Sanitizer (Layer 1) - Node.js module ~/workspace/lib/sanitizer.js. Phase 2: Outbound Content Gate (Layer 3) "}
 ,
   {"title":"sxm cams","category":"projects","file":"sxm-cams.md","date":"2026-03-04","modified":1772665882000,"preview":"# SXM Cams "}
 ,
