@@ -7,7 +7,7 @@
       "name": "Refresh Mission Control memory.json",
       "enabled": true,
       "createdAtMs": 1772894129624,
-      "updatedAtMs": 1773057897929,
+      "updatedAtMs": 1773081916198,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run ~/workspace/bin/refresh-memory-json.sh to regenerate the Mission Control memory.json and push to GitHub. Just run it and report the result briefly.",
+        "message": "Run ~/workspace/bin/refresh-memory-json.sh to regenerate the Mission Control memory.json, cron-jobs.json, and push to GitHub. The script already handles cron export and git push. Just run it and report the result briefly.",
         "timeoutSeconds": 120,
         "model": "haiku"
       },
@@ -26,49 +26,14 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773079487432,
-        "lastRunAtMs": 1773057887449,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 10480,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1773079487454
-      }
-    },
-    {
-      "id": "d1d24b00-26f4-4ada-a0b8-084da9a61eef",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:1",
-      "name": "Self-Eval Review",
-      "enabled": true,
-      "createdAtMs": 1772478614503,
-      "updatedAtMs": 1773037484852,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 43200000,
-        "anchorMs": 1772605365403
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run a self-evaluation review. Steps:\n\n1. Read ~/workspace/memory/mistakes.md and ~/workspace/memory/current-weaknesses.md\n2. Check the last 3 session transcripts for patterns: Did I update the task dashboard? Did I read docs before config changes? Did I follow through on commitments? Did I test before declaring done?\n3. If I find new mistakes, append them to mistakes.md with the standard format (date | category | what happened | root cause | fix)\n4. Update current-weaknesses.md: remove resolved items, add new ones, keep max 5 items\n5. If any entry in mistakes.md is older than 30 days and resolved, move it to mistakes-archive.md\n6. Commit changes to git\n7. Report: list what was found and what changed. If nothing needs attention, say so briefly.",
-        "model": "sonnet"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1773080565415,
-        "lastRunAtMs": 1773037365415,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 119437,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1773101087432,
+        "lastRunAtMs": 1773081796169,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 120029,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "runningAtMs": 1773101087444
       }
     },
     {
@@ -105,6 +70,69 @@
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "d1d24b00-26f4-4ada-a0b8-084da9a61eef",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:1",
+      "name": "Self-Eval Review",
+      "enabled": true,
+      "createdAtMs": 1772478614503,
+      "updatedAtMs": 1773080688046,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 43200000,
+        "anchorMs": 1772605365403
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run a self-evaluation review. Steps:\n\n1. Read ~/workspace/memory/mistakes.md and ~/workspace/memory/current-weaknesses.md\n2. Check the last 3 session transcripts for patterns: Did I update the task dashboard? Did I read docs before config changes? Did I follow through on commitments? Did I test before declaring done?\n3. If I find new mistakes, append them to mistakes.md with the standard format (date | category | what happened | root cause | fix)\n4. Update current-weaknesses.md: remove resolved items, add new ones, keep max 5 items\n5. If any entry in mistakes.md is older than 30 days and resolved, move it to mistakes-archive.md\n6. Commit changes to git\n7. Report: list what was found and what changed. If nothing needs attention, say so briefly.",
+        "model": "sonnet"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1773123765430,
+        "lastRunAtMs": 1773080565430,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 122616,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "23dcaabe-013b-485b-9778-1bfe6b94abe0",
+      "agentId": "ops",
+      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
+      "name": "Nightly Security Review",
+      "enabled": true,
+      "createdAtMs": 1773083616568,
+      "updatedAtMs": 1773083616568,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run nightly security review. Check:\n1. Run ~/workspace/bin/security-scan --report for current security stats\n2. Run ~/workspace/bin/security-scan --test to verify all 371 tests pass\n3. Check ~/workspace/logs/security.log for any blocked events in last 24h\n4. Check file permissions on sensitive dirs (~/.openclaw/, ~/.claude/)\n5. Check if any secrets accidentally committed to git (git log --diff-filter=A -p -- '*.env' '*.key' '*.pem')\n6. Report findings to Andy on Telegram. Only alert if something needs attention.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:98"
+      },
+      "state": {
+        "nextRunAtMs": 1773129600000
       }
     },
     {
@@ -321,9 +349,9 @@
       }
     }
   ],
-  "total": 9,
+  "total": 10,
   "offset": 0,
-  "limit": 9,
+  "limit": 10,
   "hasMore": false,
   "nextOffset": null
 }
