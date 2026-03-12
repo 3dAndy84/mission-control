@@ -7,7 +7,7 @@
       "name": "Refresh Mission Control memory.json",
       "enabled": true,
       "createdAtMs": 1772894129624,
-      "updatedAtMs": 1773230701848,
+      "updatedAtMs": 1773252297778,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -26,49 +26,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773252287432,
-        "lastRunAtMs": 1773230687442,
+        "nextRunAtMs": 1773273887432,
+        "lastRunAtMs": 1773252287447,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 14406,
+        "lastDurationMs": 10331,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773252287447
-      }
-    },
-    {
-      "id": "d1d24b00-26f4-4ada-a0b8-084da9a61eef",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:1",
-      "name": "Self-Eval Review",
-      "enabled": true,
-      "createdAtMs": 1772478614503,
-      "updatedAtMs": 1773210380841,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 43200000,
-        "anchorMs": 1772605365403
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run a self-evaluation review. Steps:\n\n1. Read ~/workspace/memory/mistakes.md and ~/workspace/memory/current-weaknesses.md\n2. Check the last 3 session transcripts for patterns: Did I update the task dashboard? Did I read docs before config changes? Did I follow through on commitments? Did I test before declaring done?\n3. If I find new mistakes, append them to mistakes.md with the standard format (date | category | what happened | root cause | fix)\n4. Update current-weaknesses.md: remove resolved items, add new ones, keep max 5 items\n5. If any entry in mistakes.md is older than 30 days and resolved, move it to mistakes-archive.md\n6. Commit changes to git\n7. Report: list what was found and what changed. If nothing needs attention, say so briefly.",
-        "model": "sonnet"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1773253365470,
-        "lastRunAtMs": 1773210165470,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 215371,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "runningAtMs": 1773273887447
       }
     },
     {
@@ -104,6 +70,40 @@
         "lastDurationMs": 35585,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "d1d24b00-26f4-4ada-a0b8-084da9a61eef",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:1",
+      "name": "Self-Eval Review",
+      "enabled": true,
+      "createdAtMs": 1772478614503,
+      "updatedAtMs": 1773253485078,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 43200000,
+        "anchorMs": 1772605365403
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run a self-evaluation review. Steps:\n\n1. Read ~/workspace/memory/mistakes.md and ~/workspace/memory/current-weaknesses.md\n2. Check the last 3 session transcripts for patterns: Did I update the task dashboard? Did I read docs before config changes? Did I follow through on commitments? Did I test before declaring done?\n3. If I find new mistakes, append them to mistakes.md with the standard format (date | category | what happened | root cause | fix)\n4. Update current-weaknesses.md: remove resolved items, add new ones, keep max 5 items\n5. If any entry in mistakes.md is older than 30 days and resolved, move it to mistakes-archive.md\n6. Commit changes to git\n7. Report: list what was found and what changed. If nothing needs attention, say so briefly.",
+        "model": "sonnet"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1773296565481,
+        "lastRunAtMs": 1773253365481,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 119597,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     },
