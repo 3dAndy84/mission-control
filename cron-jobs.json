@@ -7,7 +7,7 @@
       "name": "Refresh Mission Control memory.json",
       "enabled": true,
       "createdAtMs": 1772894129624,
-      "updatedAtMs": 1773360298018,
+      "updatedAtMs": 1773381898004,
       "schedule": {
         "kind": "cron",
         "expr": "0 0,6,12,18 * * *",
@@ -26,15 +26,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773381887432,
-        "lastRunAtMs": 1773360287454,
+        "nextRunAtMs": 1773403487432,
+        "lastRunAtMs": 1773381887443,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10564,
+        "lastDurationMs": 10561,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773381887443
+        "runningAtMs": 1773403487445
       }
     },
     {
@@ -44,7 +44,7 @@
       "name": "Self-Eval Review",
       "enabled": true,
       "createdAtMs": 1772478614503,
-      "updatedAtMs": 1773339888859,
+      "updatedAtMs": 1773383212373,
       "schedule": {
         "kind": "every",
         "everyMs": 43200000,
@@ -61,121 +61,13 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773382965505,
-        "lastRunAtMs": 1773339765505,
+        "nextRunAtMs": 1773426165520,
+        "lastRunAtMs": 1773382965520,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 123354,
+        "lastDurationMs": 246853,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "23dcaabe-013b-485b-9778-1bfe6b94abe0",
-      "agentId": "ops",
-      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
-      "name": "Nightly Security Review",
-      "enabled": true,
-      "createdAtMs": 1773083616568,
-      "updatedAtMs": 1773313165472,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 4 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run nightly security review. Check:\n1. Run ~/workspace/bin/security-scan --report for current security stats\n2. Run ~/workspace/bin/security-scan --test to verify all 33 tests pass\n3. Check ~/workspace/logs/security.log for any blocked events in last 24h\n4. Check file permissions on sensitive dirs (~/.openclaw/, ~/.claude/)\n5. Check if any secrets accidentally committed to git (git log --diff-filter=A -p -- '*.env' '*.key' '*.pem')\n6. Summarize findings. If everything is clean, say so briefly. Only flag things that need attention.",
-        "timeoutSeconds": 120,
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:102"
-      },
-      "state": {
-        "nextRunAtMs": 1773388800000,
-        "lastRunAtMs": 1773302410858,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 43154,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "⚠️ ✉️ Message failed"
-      }
-    },
-    {
-      "id": "a9b19543-1b47-4466-8cb9-b738f3f03631",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
-      "name": "clawvault-observe",
-      "enabled": true,
-      "createdAtMs": 1772659182696,
-      "updatedAtMs": 1773302410858,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 4 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run ClawVault observation on all active sessions. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault observe --active --cron`\n2. If observations were written, run `cd ~/workspace && git add -A && git commit -m \"clawvault: nightly observations $(date +%Y-%m-%d)\" && git push`\n3. Report number of sessions observed and observations written. If nothing new, stay silent.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1773388800000,
-        "lastRunAtMs": 1773302400028,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 10830,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "dafc366d-e8b0-4867-8657-5ee5e14b632d",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "morning-briefing",
-      "enabled": true,
-      "createdAtMs": 1772283294696,
-      "updatedAtMs": 1773313239033,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 7 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Morning briefing for Andy. Three parts:\n\n**PART 1: HEARTBEAT (always include, even if everything is fine)**\n1. Check gateway: openclaw status\n2. Check for errors in logs (last 1h)\n3. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault checkpoint\n4. Check ~/workspace/memory/commitments/ for pending items\n5. Note any stale tasks or blockers\n6. ALWAYS report heartbeat status. If all clear, say so. Never skip this section.\n\n**PART 2: CALENDAR**\nFetch today's events:\nsource ~/.openclaw/.env && curl -s -X POST -H 'Content-Type: application/json' -H \"X-Api-Token: $N8N_WEBHOOK_TOKEN\" -d '{\"service\":\"calendar\",\"action\":\"today\"}' https://n8n-andy.xyz/webhook/openclaw-google\nIf it returns events, list them with times in AST (GMT-4). If it fails or returns empty, say 'Calendar: no events today' or 'Calendar: not configured yet'. Do NOT skip this section.\n\n**PART 3: BRIEFING**\n1. Run: ~/.agents/skills/todoist/scripts/todoist.sh list-tasks --filter 'today | overdue' — list tasks due today and overdue\n2. Check weather for Sint Maarten: curl -s 'wttr.in/Sint+Maarten?format=3'\n3. Any pending ClawVault commitments: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search 'commitments'\n\nFormat as a single concise morning update. Start with system health (one line if all good), then calendar events with times, then weather, then tasks/overdue, then commitments. Keep it punchy — no fluff.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:98"
-      },
-      "state": {
-        "nextRunAtMs": 1773399600000,
-        "lastRunAtMs": 1773313200026,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 39007,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
@@ -210,6 +102,113 @@
         "lastRunStatus": "ok",
         "lastStatus": "ok",
         "lastDurationMs": 21994,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "23dcaabe-013b-485b-9778-1bfe6b94abe0",
+      "agentId": "ops",
+      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
+      "name": "Nightly Security Review",
+      "enabled": true,
+      "createdAtMs": 1773083616568,
+      "updatedAtMs": 1773388818538,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run nightly security review. Check:\n1. Run ~/workspace/bin/security-scan --report for current security stats\n2. Run ~/workspace/bin/security-scan --test to verify all 33 tests pass\n3. Check ~/workspace/logs/security.log for any blocked events in last 24h\n4. Check file permissions on sensitive dirs (~/.openclaw/, ~/.claude/)\n5. Check if any secrets accidentally committed to git (git log --diff-filter=A -p -- '*.env' '*.key' '*.pem')\n6. Summarize findings. If everything is clean, say so briefly. Only flag things that need attention.",
+        "timeoutSeconds": 120,
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:102"
+      },
+      "state": {
+        "nextRunAtMs": 1773475200000,
+        "lastRunAtMs": 1773388807343,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 11195,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "a9b19543-1b47-4466-8cb9-b738f3f03631",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
+      "name": "clawvault-observe",
+      "enabled": true,
+      "createdAtMs": 1772659182696,
+      "updatedAtMs": 1773388807343,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run ClawVault observation on all active sessions. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault observe --active --cron`\n2. If observations were written, run `cd ~/workspace && git add -A && git commit -m \"clawvault: nightly observations $(date +%Y-%m-%d)\" && git push`\n3. Report number of sessions observed and observations written. If nothing new, stay silent.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1773475200000,
+        "lastRunAtMs": 1773388800014,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 7329,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "dafc366d-e8b0-4867-8657-5ee5e14b632d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "morning-briefing",
+      "enabled": true,
+      "createdAtMs": 1772283294696,
+      "updatedAtMs": 1773399636607,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Morning briefing for Andy. Three parts:\n\n**PART 1: HEARTBEAT (always include, even if everything is fine)**\n1. Check gateway: openclaw status\n2. Check for errors in logs (last 1h)\n3. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault checkpoint\n4. Check ~/workspace/memory/commitments/ for pending items\n5. Note any stale tasks or blockers\n6. ALWAYS report heartbeat status. If all clear, say so. Never skip this section.\n\n**PART 2: CALENDAR**\nFetch today's events:\nsource ~/.openclaw/.env && curl -s -X POST -H 'Content-Type: application/json' -H \"X-Api-Token: $N8N_WEBHOOK_TOKEN\" -d '{\"service\":\"calendar\",\"action\":\"today\"}' https://n8n-andy.xyz/webhook/openclaw-google\nIf it returns events, list them with times in AST (GMT-4). If it fails or returns empty, say 'Calendar: no events today' or 'Calendar: not configured yet'. Do NOT skip this section.\n\n**PART 3: BRIEFING**\n1. Run: ~/.agents/skills/todoist/scripts/todoist.sh list-tasks --filter 'today | overdue' — list tasks due today and overdue\n2. Check weather for Sint Maarten: curl -s 'wttr.in/Sint+Maarten?format=3'\n3. Any pending ClawVault commitments: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search 'commitments'\n\nFormat as a single concise morning update. Start with system health (one line if all good), then calendar events with times, then weather, then tasks/overdue, then commitments. Keep it punchy — no fluff.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:98"
+      },
+      "state": {
+        "nextRunAtMs": 1773486000000,
+        "lastRunAtMs": 1773399600021,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 36586,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
