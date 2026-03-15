@@ -1,4 +1,4 @@
-{"generated":1773533092629,"total":105,"entries":[
+{"generated":1773554691986,"total":96,"entries":[
   {"title":"2 layer cron pattern","category":"decisions","file":"2-layer-cron-pattern.md","date":"2026-03-03","modified":1772534558000,"preview":"All recurring crons should use a 2-layer approach: Layer 1 is a cheap bash pre-check that determines if there's actual work to do. Layer 2 is the LLM call, only triggered when the pre-check finds some "}
 ,
   {"title":"2026 03 02","category":"decisions","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# decisions — [[projects/2026-03-02]] "}
@@ -31,10 +31,6 @@
 ,
   {"title":"kanban delegation","category":"decisions","file":"kanban-delegation.md","date":"2026-03-01","modified":1772408283000,"preview":"Kanban board (task-dashboard-eosin.vercel.app) is Max's work tracker. Todoist is Andy's personal task list. Tasks must be assigned to proper agents: max (planning/strategy), worker (routine tasks), re "}
 ,
-  {"title":"keep openclaw gatewayservice alongside watchdog","category":"decisions","file":"keep-openclaw-gatewayservice-alongside-watchdog.md","date":"2026-03-04","modified":1772666670000,"preview":"Andy confirmed: openclaw-gateway.service should run alongside openclaw-watchdog.service. Do NOT remove or disable it, even if doctor suggests cleanup. Both services are intentional. "}
-,
-  {"title":"keep openclaw gatewayservice","category":"decisions","file":"keep-openclaw-gatewayservice.md","date":"2026-03-14","modified":1773516803000,"preview":"Andy explicitly said to NEVER delete ~/.config/systemd/user/openclaw-gateway.service. Even though openclaw doctor suggests removing it, we keep it. Do not offer to clean it up. "}
-,
   {"title":"max workspace telegram topics","category":"decisions","file":"max-workspace-telegram-topics.md","date":"2026-03-06","modified":1772811757000,"preview":"Forum topic IDs for Max Workspace group (-1003709913328): General = 1, Briefings & Heartbeats = 98, Coast Guard = 99, Valley Estate = 100, Infrastructure = 102, Dominica = 197, Personal = 1143 "}
 ,
   {"title":"memory architecture patterns finch guide","category":"decisions","file":"memory-architecture-patterns-finch-guide.md","date":"2026-03-03","modified":1772542211000,"preview":"Five core patterns from FinchInSlc memory guide: "}
@@ -47,11 +43,9 @@
 ,
   {"title":"n8n workflow protection rule","category":"decisions","file":"n8n-workflow-protection-rule.md","date":"2026-03-07","modified":1772909813000,"preview":"HARD RULE: Never edit working n8n workflows or delete workflows without explicit permission from Andy. This includes modifying nodes, changing parameters, deactivating, or removing workflows. Always a "}
 ,
-  {"title":"openclaw gateway and watchdog coexistence","category":"decisions","file":"openclaw-gateway-and-watchdog-coexistence.md","date":"2026-03-04","modified":1772665056000,"preview":"openclaw-gateway.service and the watchdog service must work alongside each other. They are complementary services, not replacements. Both need to be running. "}
+  {"title":"openclaw services coexistence","category":"decisions","file":"openclaw-services-coexistence.md","date":"2026-03-14","modified":1773550825000,"preview":"openclaw-gateway.service and openclaw-watchdog.service must run together. They are complementary, not replacements. Both are intentional and should never be removed or disabled, even if `openclaw doct "}
 ,
   {"title":"regular plugin and tool update checks","category":"decisions","file":"regular-plugin-and-tool-update-checks.md","date":"2026-03-14","modified":1773524277000,"preview":"Andy wants regular checks for updates on all plugins, tools, and dependencies Max uses. This includes: OpenClaw itself, installed plugins (lossless-claw, acpx, device-pair, etc.), npm packages, ClawVa "}
-,
-  {"title":"skip openclaw 2026312 anthropic_model_aliases tdz bug","category":"decisions","file":"skip-openclaw-2026312-anthropic_model_aliases-tdz-bug.md","date":"2026-03-13","modified":1773415817000,"preview":"2026.3.12 has a temporal dead zone bug in normalizeAnthropicModelId() that crashes on config load. GitHub issue #44977 confirms it. Staying on 2026.3.11 until a fix is released. Do not attempt the upd "}
 ,
   {"title":"sxm cams dashboard","category":"decisions","file":"sxm-cams-dashboard.md","date":"2026-03-01","modified":1772408280000,"preview":"SXM Webcam Dashboard deployed at https://cams.n8n-andy.xyz "}
 ,
@@ -119,10 +113,6 @@
 ,
   {"title":"task dashboard must reflect reality","category":"lessons","file":"task-dashboard-must-reflect-reality.md","date":"2026-03-05","modified":1772686347000,"preview":"The task dashboard is only useful if it's accurate. RULES: 1) Never leave tasks in-progress if work has stopped — move to done or back to backlog. 2) Update status immediately when work starts, fini "}
 ,
-  {"title":"2026 03 03","category":"commitments","file":"2026-03-03.md","date":"2026-03-03","modified":1772660188000,"preview":"# commitments — [[projects/2026-03-03]] "}
-,
-  {"title":"2026 03 04","category":"commitments","file":"2026-03-04.md","date":"2026-03-04","modified":1772697619000,"preview":"# commitments — [[projects/2026-03-04]] "}
-,
   {"title":"2026 03 07","category":"commitments","file":"2026-03-07.md","date":"2026-03-07","modified":1772956813000,"preview":"# commitments — 2026-03-07 "}
 ,
   {"title":"2026 03 08","category":"commitments","file":"2026-03-08.md","date":"2026-03-08","modified":1773043220000,"preview":"# commitments — 2026-03-08 "}
@@ -183,15 +173,7 @@
 ,
   {"title":"show costs for api heavy work","category":"preferences","file":"show-costs-for-api-heavy-work.md","date":"2026-03-05","modified":1772686734000,"preview":"When work involves significant API usage or costs, show estimated costs upfront. Andy wants visibility into resource usage. "}
 ,
-  {"title":"use cheapest model that works","category":"preferences","file":"use-cheapest-model-that-works.md","date":"2026-03-05","modified":1772686738000,"preview":"Default to the most cost-effective model that can handle the task. Only escalate to more expensive models (Opus, o1) when complexity demands it. "}
-,
-  {"title":"2026 03 02","category":"facts","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# facts — [[projects/2026-03-02]] "}
-,
-  {"title":"2026 03 03","category":"facts","file":"2026-03-03.md","date":"2026-03-03","modified":1772660188000,"preview":"# facts — [[projects/2026-03-03]] "}
-,
-  {"title":"2026 03 04","category":"facts","file":"2026-03-04.md","date":"2026-03-04","modified":1772697619000,"preview":"# facts — [[projects/2026-03-04]] "}
-,
-  {"title":"2026 03 05","category":"facts","file":"2026-03-05.md","date":"2026-03-05","modified":1772784084000,"preview":"# facts — 2026-03-05 "}
+  {"title":"use best model for job","category":"preferences","file":"use-best-model-for-job.md","date":"2026-03-14","modified":1773550848000,"preview":"Andy's priority: quality over cost. Use the best model for the job, not the cheapest. Escalate to Opus, o1, or other premium models when the task complexity or quality bar demands it. Show costs when  "}
 ,
   {"title":"2026 03 06","category":"facts","file":"2026-03-06.md","date":"2026-03-06","modified":1772870410000,"preview":"# facts — 2026-03-06 "}
 ,

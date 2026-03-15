@@ -2,143 +2,6 @@
 {
   "jobs": [
     {
-      "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "workspace-backup",
-      "enabled": true,
-      "createdAtMs": 1772283080996,
-      "updatedAtMs": 1773460828036,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 0 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/update-mission-control-status to refresh live stats\n3. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n4. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n5. git add -A && git diff --cached --stat\n6. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && git push\n7. cd ~/workspace/dashboard && git add -A && git diff --cached --stat\n8. If there are changes: git commit -m \"Data sync $(date +%Y-%m-%d)\" && git push\n9. If no changes in either, stay silent.\nOnly report if a push failed.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:102"
-      },
-      "state": {
-        "nextRunAtMs": 1773547200000,
-        "lastRunAtMs": 1773460800026,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 28010,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1773547200044
-      }
-    },
-    {
-      "id": "43c6e119-4cb9-4d7f-920c-e1e36f2531c4",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "memory-hygiene",
-      "enabled": true,
-      "createdAtMs": 1772283019225,
-      "updatedAtMs": 1772946086423,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 1 * * 0",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Memory hygiene review. Go through ClawVault entries:\n1. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search '*' to list all entries\n2. Review each category (decisions, lessons, commitments, facts, people, projects, patterns, preferences)\n3. Flag entries older than 30 days that are no longer relevant (outdated decisions, completed commitments, stale facts)\n4. Delete truly obsolete entries with clawvault forget\n5. Summarize what was cleaned up and what was kept\n6. Only report if something was actually cleaned or if there's something noteworthy. Otherwise stay silent.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:102"
-      },
-      "state": {
-        "nextRunAtMs": 1773550800000,
-        "lastRunAtMs": 1772946000010,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 86413,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "5a94fdd8-97a6-4227-b2c2-4e750a39d689",
-      "agentId": "ops",
-      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
-      "name": "Daily Self-Eval",
-      "enabled": true,
-      "createdAtMs": 1773518692229,
-      "updatedAtMs": 1773518692229,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 2 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "DAILY SELF-EVAL: Read memory/self-eval-framework.md and follow it completely. Use LCM tools to review today's conversations. Classify errors, extract principles, update current-weaknesses.md if needed, score the day, and write output to memory/self-evals/YYYY-MM-DD.md. Only notify Andy (via Telegram to -1003709913328 topic 98) if you found a significant new pattern or regression. Otherwise complete silently.",
-        "model": "anthropic/claude-sonnet-4-6",
-        "timeoutSeconds": 300
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1773554400000
-      }
-    },
-    {
-      "id": "7063ca5d-7581-4cff-8ec2-a66899b1b5e4",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
-      "name": "weekly-setup-review",
-      "enabled": true,
-      "createdAtMs": 1772605505065,
-      "updatedAtMs": 1772949634850,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 2 * * 0",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Weekly setup review. Check the full OpenClaw environment and report only issues or actionable items.\n\n1. **Gateway health:** Run `openclaw status` — check version, session count, errors\n2. **Cron jobs:** List all cron jobs. Flag any that are disabled, failing, or have stale configs\n3. **System resources:** Check disk (`df -h /`), memory (`free -h`), uptime\n4. **QMD status:** Run `qmd status` — flag pending embeddings if >100\n5. **Git status:** `cd ~/workspace && git status --short` — flag uncommitted changes\n6. **Memory hygiene:** Check ~/workspace/memory/commitments/ for stale items, review current-weaknesses.md is still relevant\n7. **OpenClaw updates:** Compare installed vs latest (`openclaw status` shows this)\n\nFormat as a concise report. If everything is clean, say so in one line. Only flag things that actually need Andy's attention. Deliver the report — don't stay silent even if all clear.",
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:102"
-      },
-      "state": {
-        "nextRunAtMs": 1773554400000,
-        "lastRunAtMs": 1772949600012,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 34838,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
       "id": "c371d06f-6bc3-460a-8b67-e2d246ea67bb",
       "agentId": "main",
       "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
@@ -171,7 +34,8 @@
         "lastDurationMs": 12518,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": false
+        "lastDelivered": false,
+        "runningAtMs": 1773554687443
       }
     },
     {
@@ -412,6 +276,149 @@
       },
       "state": {
         "nextRunAtMs": 1773597600000
+      }
+    },
+    {
+      "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "workspace-backup",
+      "enabled": true,
+      "createdAtMs": 1772283080996,
+      "updatedAtMs": 1773547223485,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/update-mission-control-status to refresh live stats\n3. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n4. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n5. git add -A && git diff --cached --stat\n6. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && git push\n7. cd ~/workspace/dashboard && git add -A && git diff --cached --stat\n8. If there are changes: git commit -m \"Data sync $(date +%Y-%m-%d)\" && git push\n9. If no changes in either, stay silent.\nOnly report if a push failed.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:102"
+      },
+      "state": {
+        "nextRunAtMs": 1773633600000,
+        "lastRunAtMs": 1773547200044,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23441,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "5a94fdd8-97a6-4227-b2c2-4e750a39d689",
+      "agentId": "ops",
+      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
+      "name": "Daily Self-Eval",
+      "enabled": true,
+      "createdAtMs": 1773518692229,
+      "updatedAtMs": 1773554664448,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "DAILY SELF-EVAL: Read memory/self-eval-framework.md and follow it completely. Use LCM tools to review today's conversations. Classify errors, extract principles, update current-weaknesses.md if needed, score the day, and write output to memory/self-evals/YYYY-MM-DD.md. Only notify Andy (via Telegram to -1003709913328 topic 98) if you found a significant new pattern or regression. Otherwise complete silently.",
+        "model": "anthropic/claude-sonnet-4-6",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1773640800000,
+        "lastRunAtMs": 1773554422971,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 241477,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "43c6e119-4cb9-4d7f-920c-e1e36f2531c4",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "memory-hygiene",
+      "enabled": true,
+      "createdAtMs": 1772283019225,
+      "updatedAtMs": 1773550865812,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * 0",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Memory hygiene review. Go through ClawVault entries:\n1. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search '*' to list all entries\n2. Review each category (decisions, lessons, commitments, facts, people, projects, patterns, preferences)\n3. Flag entries older than 30 days that are no longer relevant (outdated decisions, completed commitments, stale facts)\n4. Delete truly obsolete entries with clawvault forget\n5. Summarize what was cleaned up and what was kept\n6. Only report if something was actually cleaned or if there's something noteworthy. Otherwise stay silent.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:102"
+      },
+      "state": {
+        "nextRunAtMs": 1774155600000,
+        "lastRunAtMs": 1773550800029,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 65783,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "7063ca5d-7581-4cff-8ec2-a66899b1b5e4",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
+      "name": "weekly-setup-review",
+      "enabled": true,
+      "createdAtMs": 1772605505065,
+      "updatedAtMs": 1773554422971,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * 0",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Weekly setup review. Check the full OpenClaw environment and report only issues or actionable items.\n\n1. **Gateway health:** Run `openclaw status` — check version, session count, errors\n2. **Cron jobs:** List all cron jobs. Flag any that are disabled, failing, or have stale configs\n3. **System resources:** Check disk (`df -h /`), memory (`free -h`), uptime\n4. **QMD status:** Run `qmd status` — flag pending embeddings if >100\n5. **Git status:** `cd ~/workspace && git status --short` — flag uncommitted changes\n6. **Memory hygiene:** Check ~/workspace/memory/commitments/ for stale items, review current-weaknesses.md is still relevant\n7. **OpenClaw updates:** Compare installed vs latest (`openclaw status` shows this)\n\nFormat as a concise report. If everything is clean, say so in one line. Only flag things that actually need Andy's attention. Deliver the report — don't stay silent even if all clear.",
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:102"
+      },
+      "state": {
+        "nextRunAtMs": 1774159200000,
+        "lastRunAtMs": 1773554400040,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 22931,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ],
