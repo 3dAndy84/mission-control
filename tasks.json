@@ -6,7 +6,7 @@
       "description": "Install pass, generate GPG key, migrate all secrets from ~/.openclaw/.env, credentials/, n8n-stack/.env into encrypted store.",
       "status": "backlog",
       "priority": "medium",
-      "agent": "worker",
+      "agent": "patch",
       "project": "infrastructure",
       "created": "2026-03-01",
       "updated": "2026-03-01"
@@ -29,7 +29,7 @@
       "description": "Auto-repair engine with 5-level escalation, crash loop detection, JSON logging. New Watchdog tab in Mission Control dashboard.",
       "status": "in-progress",
       "priority": "high",
-      "agent": "worker",
+      "agent": "patch",
       "project": "mission-control",
       "created": "2026-03-06T20:42:07Z",
       "updated": "2026-03-06T20:42:12Z",
@@ -126,7 +126,7 @@
     {
       "id": "integration-ingestion-gate-full-pipeline",
       "title": "Integration: Ingestion Gate + Full Pipeline",
-      "description": "Single entry point chaining all 6 layers. sanitize\u2192scan\u2192gate\u2192redact\u2192govern\u2192access control.",
+      "description": "Single entry point chaining all 6 layers. sanitize→scan→gate→redact→govern→access control.",
       "status": "done",
       "priority": "high",
       "agent": "max",
