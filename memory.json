@@ -1,4 +1,4 @@
-{"generated":1773749093697,"total":97,"entries":[
+{"generated":1773770695997,"total":98,"entries":[
   {"title":"2 layer cron pattern","category":"decisions","file":"2-layer-cron-pattern.md","date":"2026-03-03","modified":1772534558000,"preview":"All recurring crons should use a 2-layer approach: Layer 1 is a cheap bash pre-check that determines if there's actual work to do. Layer 2 is the LLM call, only triggered when the pre-check finds some "}
 ,
   {"title":"2026 03 02","category":"decisions","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# decisions — [[projects/2026-03-02]] "}
@@ -98,6 +98,8 @@
   {"title":"google drive write access","category":"lessons","file":"google-drive-write-access.md","date":"2026-02-28","modified":1772282211000,"preview":"Google Drive service account has WRITE access (confirmed Feb 27, 2026). Can upload files, not just read. "}
 ,
   {"title":"mark tasks done when solved","category":"lessons","file":"mark-tasks-done-when-solved.md","date":"2026-03-04","modified":1772587346000,"preview":"FAILURE: n8n Google Drive + Calendar workflows were built and working (webhook at n8n-andy.xyz/webhook/openclaw-google), but the corresponding dashboard tasks stayed 'blocked' for days. Root cause: so "}
+,
+  {"title":"n8n doctor first","category":"lessons","file":"n8n-doctor-first.md","date":"2026-03-17","modified":1773760655000,"preview":"When diagnosing n8n errors, ALWAYS check n8n-doctor skill references/common-errors.md FIRST before source-diving. n8n v2 Code node does NOT support numberOfOutputs/multi-output returns — use IF/Swit "}
 ,
   {"title":"n8n workflow access via docker cli","category":"lessons","file":"n8n-workflow-access-via-docker-cli.md","date":"2026-03-11","modified":1773258318000,"preview":"CRITICAL: You do NOT need an n8n API key to manage workflows. Use the n8n CLI inside the Docker container: "}
 ,
