@@ -166,12 +166,13 @@
       "id": "skill-audit-refactor-progressive-disclosure",
       "title": "Skill audit & refactor (progressive disclosure)",
       "description": "Audited all custom skills, deleted plant-doctor, refactored obsidian-vault/google/humanizer to lean SKILL.md + references/",
-      "status": "backlog",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-03-18T10:40:38Z",
-      "updated": "2026-03-18T10:40:38Z"
+      "updated": "2026-03-18T10:40:42Z",
+      "completed_at": "2026-03-18T10:40:42Z"
     }
   ]
 }
