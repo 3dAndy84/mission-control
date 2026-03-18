@@ -47,19 +47,6 @@
       "updated": "2026-03-07"
     },
     {
-      "id": "integration-ingestion-gate-full-pipeline",
-      "title": "Integration: Ingestion Gate + Full Pipeline",
-      "description": "Single entry point chaining all 6 layers. sanitize→scan→gate→redact→govern→access control.",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "security-hardening",
-      "created": "2026-03-09T17:46:35Z",
-      "updated": "2026-03-09T18:07:09Z",
-      "started_at": "2026-03-09T17:46:36Z",
-      "completed_at": "2026-03-09T18:07:09Z"
-    },
-    {
       "id": "wire-security-gate-into-openclaw-pipeline",
       "title": "Wire security-gate into OpenClaw pipeline",
       "description": "Hook security-gate.js into actual message processing. Inbound scanning on all untrusted input, outbound redaction before Telegram.",
