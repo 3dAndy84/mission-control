@@ -47,19 +47,6 @@
       "updated": "2026-03-07"
     },
     {
-      "id": "wire-security-gate-into-openclaw-pipeline",
-      "title": "Wire security-gate into OpenClaw pipeline",
-      "description": "Hook security-gate.js into actual message processing. Inbound scanning on all untrusted input, outbound redaction before Telegram.",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "security-hardening",
-      "created": "2026-03-09T18:30:20Z",
-      "updated": "2026-03-09T18:48:36Z",
-      "started_at": "2026-03-09T18:30:21Z",
-      "completed_at": "2026-03-09T18:48:36Z"
-    },
-    {
       "id": "skill-audit-refactor-progressive-disclosure",
       "title": "Skill audit & refactor (progressive disclosure)",
       "description": "Audited all custom skills, deleted plant-doctor, refactored obsidian-vault/google/humanizer to lean SKILL.md + references/",
