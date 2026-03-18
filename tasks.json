@@ -86,12 +86,13 @@
       "id": "edit-iltt-sick-leave-bot-docs-remove-supervisor-notifications",
       "title": "Edit ILTT Sick Leave bot docs (remove supervisor notifications)",
       "description": "",
-      "status": "backlog",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "n8n",
       "created": "2026-03-18T10:44:15Z",
-      "updated": "2026-03-18T10:44:15Z"
+      "updated": "2026-03-18T10:44:22Z",
+      "completed_at": "2026-03-18T10:44:22Z"
     }
   ]
 }
