@@ -1,4 +1,4 @@
-{"generated":1773770695997,"total":98,"entries":[
+{"generated":1773792293236,"total":98,"entries":[
   {"title":"2 layer cron pattern","category":"decisions","file":"2-layer-cron-pattern.md","date":"2026-03-03","modified":1772534558000,"preview":"All recurring crons should use a 2-layer approach: Layer 1 is a cheap bash pre-check that determines if there's actual work to do. Layer 2 is the LLM call, only triggered when the pre-check finds some "}
 ,
   {"title":"2026 03 02","category":"decisions","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# decisions — [[projects/2026-03-02]] "}
@@ -25,7 +25,7 @@
 ,
   {"title":"gmail forwarding approved","category":"decisions","file":"gmail-forwarding-approved.md","date":"2026-02-28","modified":1772290426000,"preview":"Gmail forwarding from jsambre@gmail.com to maxine@agentmail.to confirmed and approved on Feb 28 2026. Andy still needs to enable it on Gmail side (Settings → Forwarding). "}
 ,
-  {"title":"himalaya removed agentmail only","category":"decisions","file":"himalaya-removed-agentmail-only.md","date":"2026-03-01","modified":1772393933000,"preview":"Removed himalaya CLI email client. All email is handled via agentmail API (maxine@agentmail.to). No IMAP/SMTP needed. Deleted: himalaya binary, config, gmail-oauth.json, google-oauth-client.json. andy "}
+  {"title":"himalaya removed agentmail only","category":"decisions","file":"himalaya-removed-agentmail-only.md","date":"2026-03-01","modified":1773774501000,"preview":"Removed himalaya CLI email client. All email is handled via agentmail API (maxine@agentmail.to). No IMAP/SMTP needed. Deleted: himalaya binary, config, gmail-oauth.json, google-oauth-client.json. jsam "}
 ,
   {"title":"humanizer skill v2","category":"decisions","file":"humanizer-skill-v2.md","date":"2026-03-09","modified":1773049337000,"preview":"Updated humanizer SKILL.md to v2 (2026-03-09). Expanded checklist with inline explanations, more detection pattern examples, better severity tier prose. 147 lines, ~10KB. Andy reviewed and approved. A "}
 ,
