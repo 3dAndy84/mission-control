@@ -93,6 +93,17 @@
       "created": "2026-03-18T10:44:15Z",
       "updated": "2026-03-18T10:44:22Z",
       "completed_at": "2026-03-18T10:44:22Z"
+    },
+    {
+      "id": "build-consolidated-task-cli-audit-cron",
+      "title": "Build consolidated task CLI + audit cron",
+      "description": "",
+      "status": "backlog",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-18T10:55:52Z",
+      "updated": "2026-03-18T10:55:52Z"
     }
   ]
 }
