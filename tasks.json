@@ -98,12 +98,14 @@
       "id": "build-consolidated-task-cli-audit-cron",
       "title": "Build consolidated task CLI + audit cron",
       "description": "",
-      "status": "backlog",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-03-18T10:55:52Z",
-      "updated": "2026-03-18T10:55:52Z"
+      "updated": "2026-03-18T10:59:20Z",
+      "completed_at": "2026-03-18T10:59:20Z",
+      "proof": "Commit 372b7a0: bin/task (unified CLI), scripts/task-audit.sh (cron every 10 min), updated SOUL.md + HEARTBEAT.md + both skill files. Old tools renamed to .old."
     }
   ]
 }
