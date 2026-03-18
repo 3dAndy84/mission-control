@@ -47,19 +47,6 @@
       "updated": "2026-03-07"
     },
     {
-      "id": "layer-5-runtime-governance",
-      "title": "Layer 5: Runtime Governance",
-      "description": "Call governor: spend limits, volume limits, lifetime counter, duplicate detection. Wraps all LLM calls.",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "security-hardening",
-      "created": "2026-03-09T15:51:43Z",
-      "updated": "2026-03-09T16:14:50Z",
-      "started_at": "2026-03-09T15:51:44Z",
-      "completed_at": "2026-03-09T16:14:50Z"
-    },
-    {
       "id": "layer-4-redaction-pipeline",
       "title": "Layer 4: Redaction Pipeline",
       "description": "PII, secrets, notification redaction. Chains into outbound pipeline.",
