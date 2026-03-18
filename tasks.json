@@ -68,6 +68,17 @@
       "project": "n8n",
       "created": "2026-03-18T10:44:13Z",
       "updated": "2026-03-18T10:44:13Z"
+    },
+    {
+      "id": "build-n8n-error-diagnosis-infrastructure",
+      "title": "Build n8n error diagnosis infrastructure",
+      "description": "",
+      "status": "backlog",
+      "priority": "high",
+      "agent": "max",
+      "project": "n8n",
+      "created": "2026-03-18T10:44:14Z",
+      "updated": "2026-03-18T10:44:14Z"
     }
   ]
 }
