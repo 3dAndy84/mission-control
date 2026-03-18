@@ -47,19 +47,6 @@
       "updated": "2026-03-07"
     },
     {
-      "id": "layer-3-outbound-content-gate",
-      "title": "Layer 3: Outbound Content Gate",
-      "description": "Scan outbound messages for leaked secrets, internal paths, injection artifacts, exfiltration URLs, financial data. Pure regex, no API calls.",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "security-hardening",
-      "created": "2026-03-09T15:20:51Z",
-      "updated": "2026-03-09T15:46:21Z",
-      "started_at": "2026-03-09T15:20:52Z",
-      "completed_at": "2026-03-09T15:46:21Z"
-    },
-    {
       "id": "layer-5-runtime-governance",
       "title": "Layer 5: Runtime Governance",
       "description": "Call governor: spend limits, volume limits, lifetime counter, duplicate detection. Wraps all LLM calls.",
