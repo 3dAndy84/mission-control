@@ -47,19 +47,6 @@
       "updated": "2026-03-07"
     },
     {
-      "id": "layer-4-redaction-pipeline",
-      "title": "Layer 4: Redaction Pipeline",
-      "description": "PII, secrets, notification redaction. Chains into outbound pipeline.",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "security-hardening",
-      "created": "2026-03-09T16:17:07Z",
-      "updated": "2026-03-09T16:40:29Z",
-      "started_at": "2026-03-09T16:17:08Z",
-      "completed_at": "2026-03-09T16:40:29Z"
-    },
-    {
       "id": "layer-2-frontier-scanner",
       "title": "Layer 2: Frontier Scanner",
       "description": "LLM-based risk classifier. Structured JSON scoring, review at 35, block at 70. Uses strongest model.",
