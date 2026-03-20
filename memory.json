@@ -1,4 +1,4 @@
-{"generated":1773943492951,"total":99,"entries":[
+{"generated":1773965093073,"total":101,"entries":[
   {"title":"2 layer cron pattern","category":"decisions","file":"2-layer-cron-pattern.md","date":"2026-03-03","modified":1772534558000,"preview":"All recurring crons should use a 2-layer approach: Layer 1 is a cheap bash pre-check that determines if there's actual work to do. Layer 2 is the LLM call, only triggered when the pre-check finds some "}
 ,
   {"title":"2026 03 02","category":"decisions","file":"2026-03-02.md","date":"2026-03-02","modified":1772660188000,"preview":"# decisions — [[projects/2026-03-02]] "}
@@ -12,6 +12,8 @@
   {"title":"2026 03 07","category":"decisions","file":"2026-03-07.md","date":"2026-03-07","modified":1772956848000,"preview":"# decisions — 2026-03-07 "}
 ,
   {"title":"2026 03 08","category":"decisions","file":"2026-03-08.md","date":"2026-03-08","modified":1773043237000,"preview":"# decisions — 2026-03-08 "}
+,
+  {"title":"autoresearch pattern","category":"decisions","file":"autoresearch-pattern.md","date":"2026-03-19","modified":1773955342000,"preview":"Karpathy's autoresearch pattern (github.com/karpathy/autoresearch): autonomous experimentation loop where an AI agent iterates on code/config, measures results against a metric, keeps improvements, di "}
 ,
   {"title":"clawvault full activation","category":"decisions","file":"clawvault-full-activation.md","date":"2026-03-04","modified":1772660280000,"preview":"Activated ClawVault to full potential. Phase 1 (done): observe pipeline (nightly 04:00 AST), reflect pipeline (Sunday 05:00 AST), entity linking (126 nodes/169 edges), ClawVault OpenClaw plugin (auto- "}
 ,
@@ -102,6 +104,8 @@
   {"title":"n8n doctor first","category":"lessons","file":"n8n-doctor-first.md","date":"2026-03-17","modified":1773760655000,"preview":"When diagnosing n8n errors, ALWAYS check n8n-doctor skill references/common-errors.md FIRST before source-diving. n8n v2 Code node does NOT support numberOfOutputs/multi-output returns — use IF/Swit "}
 ,
   {"title":"n8n workflow access via docker cli","category":"lessons","file":"n8n-workflow-access-via-docker-cli.md","date":"2026-03-11","modified":1773258318000,"preview":"CRITICAL: You do NOT need an n8n API key to manage workflows. Use the n8n CLI inside the Docker container: "}
+,
+  {"title":"proactive pattern matching","category":"lessons","file":"proactive-pattern-matching.md","date":"2026-03-19","modified":1773955410000,"preview":"When Andy starts a new project or build, actively check memory for saved patterns/tools/ideas that could apply. Specifically: autoresearch pattern (decisions/autoresearch-pattern) — recommend it whe "}
 ,
   {"title":"proactive subagent updates","category":"lessons","file":"proactive-subagent-updates.md","date":"2026-03-09","modified":1773074519000,"preview":"CRITICAL: When a subagent completes, IMMEDIATELY report to Andy. Do not wait for him to ask. This has failed twice (Layer 5 and Layer 4/6). The completion event IS the trigger to message Andy. No dela "}
 ,
