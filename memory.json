@@ -1,6 +1,6 @@
 {
-  "generated": 1774094711361,
-  "total": 102,
+  "generated": 1774116292048,
+  "total": 104,
   "entries": [
     [
       {
@@ -228,6 +228,14 @@
         "preview": "Telegram forum topic routing (2026-03-09). Group -1003709913328. Route proactive messages by content:"
       },
       {
+        "title": "telegram topic structure",
+        "category": "decisions",
+        "file": "telegram-topic-structure.md",
+        "date": "2026-03-21",
+        "modified": 1774104075000,
+        "preview": "Max Workspace (-1003709913328) Telegram Topic Map:"
+      },
+      {
         "title": "todoist single capture point",
         "category": "decisions",
         "file": "todoist-single-capture-point.md",
@@ -266,6 +274,14 @@
         "date": "2026-02-28",
         "modified": 1772290427000,
         "preview": "Telegram workspace group (-1003709913328) topics: General (default), 🔔 Briefings & Heartbeats (98), ⚓ Coast Guard (99), 🏪 Valley Estate (100), 🌴 Dominica (101), 🔧 Infrastructure (102). A"
+      },
+      {
+        "title": "10 second delegation rule",
+        "category": "lessons",
+        "file": "10-second-delegation-rule.md",
+        "date": "2026-03-21",
+        "modified": 1774101264000,
+        "preview": "MANDATORY: If any task execution takes more than 10 seconds, delegate to a sub-agent. I (Opus) am the planner only. I make the plan, define scope, set success criteria. Patch/Scout execute everything."
       },
       {
         "title": "2 layer cron implementation",
