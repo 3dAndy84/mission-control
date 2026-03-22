@@ -1,6 +1,6 @@
 {
-  "generated": 1774159509644,
-  "total": 104,
+  "generated": 1774181092342,
+  "total": 105,
   "entries": [
     [
       {
@@ -74,6 +74,14 @@
         "date": "2026-03-04",
         "modified": 1772660280000,
         "preview": "Activated ClawVault to full potential. Phase 1 (done): observe pipeline (nightly 04:00 AST), reflect pipeline (Sunday 05:00 AST), entity linking (126 nodes/169 edges), ClawVault OpenClaw plugin (auto-"
+      },
+      {
+        "title": "clawvault obsidian sync",
+        "category": "decisions",
+        "file": "clawvault-obsidian-sync.md",
+        "date": "2026-03-22",
+        "modified": 1774175663000,
+        "preview": "Set up one-way sync from ClawVault (~/workspace/memory/) to Obsidian vault (~/vaults/Max/). ClawVault remains the source of truth for agent memory. Obsidian mirror gives Andy visibility into decisions"
       },
       {
         "title": "clawvault path fix",
