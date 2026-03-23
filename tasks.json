@@ -75,12 +75,13 @@
       "id": "fix-booking-detail-page-range-booking",
       "title": "Fix booking detail page (Range Booking)",
       "description": "Fixed [Bookings] Format Response to handle single booking lookup - was returning list instead of single object",
-      "status": "backlog",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "shooting-range",
       "created": "2026-03-23T13:47:46Z",
-      "updated": "2026-03-23T13:47:46Z"
+      "updated": "2026-03-23T13:47:47Z",
+      "completed_at": "2026-03-23T13:47:47Z"
     }
   ]
 }
