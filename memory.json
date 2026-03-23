@@ -1,6 +1,6 @@
 {
-  "generated": 1774202693065,
-  "total": 105,
+  "generated": 1774224293736,
+  "total": 106,
   "entries": [
     [
       {
@@ -386,6 +386,14 @@
         "date": "2026-03-05",
         "modified": 1772686707000,
         "preview": "# Commitment Tracking Protocol"
+      },
+      {
+        "title": "context compaction protocol",
+        "category": "lessons",
+        "file": "context-compaction-protocol.md",
+        "date": "2026-03-22",
+        "modified": 1774209217000,
+        "preview": "# Lesson: Preventing Duplicate Work After Context Compaction"
       },
       {
         "title": "daily log protocol",
