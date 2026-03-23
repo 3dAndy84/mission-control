@@ -47,18 +47,6 @@
       "updated": "2026-03-07"
     },
     {
-      "id": "fix-iltt-sick-leave-workflow-env-vars-code-node",
-      "title": "Fix ILTT Sick Leave workflow (env vars + code node)",
-      "description": "",
-      "status": "done",
-      "priority": "high",
-      "agent": "max",
-      "project": "n8n",
-      "created": "2026-03-18T10:44:13Z",
-      "updated": "2026-03-18T10:44:21Z",
-      "completed_at": "2026-03-18T10:44:21Z"
-    },
-    {
       "id": "build-n8n-error-diagnosis-infrastructure",
       "title": "Build n8n error diagnosis infrastructure",
       "description": "",
