@@ -58,6 +58,17 @@
       "updated": "2026-03-23T13:47:43Z",
       "started_at": "2026-03-18T13:24:22Z",
       "completed_at": "2026-03-23T13:47:43Z"
+    },
+    {
+      "id": "resend-email-migration-range-booking",
+      "title": "Resend email migration (Range Booking)",
+      "description": "Migrated admin notification + password reset emails from AgentMail to Resend API",
+      "status": "backlog",
+      "priority": "high",
+      "agent": "max",
+      "project": "shooting-range",
+      "created": "2026-03-23T13:47:44Z",
+      "updated": "2026-03-23T13:47:44Z"
     }
   ]
 }
