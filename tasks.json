@@ -47,18 +47,6 @@
       "updated": "2026-03-07"
     },
     {
-      "id": "edit-iltt-sick-leave-bot-docs-remove-supervisor-notifications",
-      "title": "Edit ILTT Sick Leave bot docs (remove supervisor notifications)",
-      "description": "",
-      "status": "done",
-      "priority": "medium",
-      "agent": "max",
-      "project": "n8n",
-      "created": "2026-03-18T10:44:15Z",
-      "updated": "2026-03-18T10:44:22Z",
-      "completed_at": "2026-03-18T10:44:22Z"
-    },
-    {
       "id": "build-consolidated-task-cli-audit-cron",
       "title": "Build consolidated task CLI + audit cron",
       "description": "",
