@@ -82,6 +82,17 @@
       "created": "2026-03-23T13:47:46Z",
       "updated": "2026-03-23T13:47:47Z",
       "completed_at": "2026-03-23T13:47:47Z"
+    },
+    {
+      "id": "hr-cyclus-v3-delete-existing-doc-fix",
+      "title": "HR Cyclus v3 - Delete Existing Doc fix",
+      "description": "Fixed Supabase DELETE node missing WHERE clause, E2E test passed",
+      "status": "backlog",
+      "priority": "high",
+      "agent": "max",
+      "project": "n8n",
+      "created": "2026-03-23T13:47:48Z",
+      "updated": "2026-03-23T13:47:48Z"
     }
   ]
 }
