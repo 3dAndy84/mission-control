@@ -1,79 +1,5 @@
-[plugins] [lcm] Plugin loaded (enabled=true, db=/home/clawd/.openclaw/lcm.db, threshold=0.75)
 {
   "jobs": [
-    {
-      "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "workspace-backup",
-      "enabled": true,
-      "createdAtMs": 1772283080996,
-      "updatedAtMs": 1774183446439,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 0 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/update-mission-control-status to refresh live stats\n3. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n4. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n5. git add -A && git diff --cached --stat\n6. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n7. cd ~/workspace/dashboard && git add -A && git diff --cached --stat\n8. If there are changes: git commit -m \"Data sync $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n9. If no changes in either, stay silent.\nOnly report if a push failed.",
-        "model": "haiku",
-        "timeoutSeconds": 120
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:102"
-      },
-      "state": {
-        "nextRunAtMs": 1774238400000,
-        "lastRunAtMs": 1774152000026,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 44516,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1774238400034
-      }
-    },
-    {
-      "id": "5a94fdd8-97a6-4227-b2c2-4e750a39d689",
-      "agentId": "ops",
-      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
-      "name": "Daily Self-Eval",
-      "enabled": true,
-      "createdAtMs": 1773518692229,
-      "updatedAtMs": 1774159501641,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 2 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "DAILY SELF-EVAL: Read memory/self-eval-framework.md and follow it completely. Use LCM tools to review today's conversations. Classify errors, extract principles, update current-weaknesses.md if needed, score the day, and write output to memory/self-evals/YYYY-MM-DD.md. Only notify Andy (via Telegram to -1003709913328 topic 98) if you found a significant new pattern or regression. Otherwise complete silently.",
-        "model": "anthropic/claude-sonnet-4-6",
-        "timeoutSeconds": 300
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1774245600000,
-        "lastRunAtMs": 1774159230046,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 271595,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false
-      }
-    },
     {
       "id": "c371d06f-6bc3-460a-8b67-e2d246ea67bb",
       "agentId": "main",
@@ -107,7 +33,8 @@
         "lastDurationMs": 16737,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": false
+        "lastDelivered": false,
+        "runningAtMs": 1774245887450
       }
     },
     {
@@ -252,6 +179,78 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "workspace-backup",
+      "enabled": true,
+      "createdAtMs": 1772283080996,
+      "updatedAtMs": 1774238453881,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/update-mission-control-status to refresh live stats\n3. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n4. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n5. git add -A && git diff --cached --stat\n6. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n7. cd ~/workspace/dashboard && git add -A && git diff --cached --stat\n8. If there are changes: git commit -m \"Data sync $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n9. If no changes in either, stay silent.\nOnly report if a push failed.",
+        "model": "haiku",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:102"
+      },
+      "state": {
+        "nextRunAtMs": 1774324800000,
+        "lastRunAtMs": 1774238400034,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 53847,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "5a94fdd8-97a6-4227-b2c2-4e750a39d689",
+      "agentId": "ops",
+      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
+      "name": "Daily Self-Eval",
+      "enabled": true,
+      "createdAtMs": 1773518692229,
+      "updatedAtMs": 1774245817153,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * *",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "DAILY SELF-EVAL: Read memory/self-eval-framework.md and follow it completely. Use LCM tools to review today's conversations. Classify errors, extract principles, update current-weaknesses.md if needed, score the day, and write output to memory/self-evals/YYYY-MM-DD.md. Only notify Andy (via Telegram to -1003709913328 topic 98) if you found a significant new pattern or regression. Otherwise complete silently.",
+        "model": "anthropic/claude-sonnet-4-6",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1774332000000,
+        "lastRunAtMs": 1774245600052,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 217101,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
       }
     },
     {
