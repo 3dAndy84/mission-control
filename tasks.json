@@ -94,6 +94,17 @@
       "created": "2026-03-23T13:47:48Z",
       "updated": "2026-03-23T13:47:49Z",
       "completed_at": "2026-03-23T13:47:49Z"
+    },
+    {
+      "id": "admin-email-addresses-range-booking",
+      "title": "Admin email addresses (Range Booking)",
+      "description": "Updated Cathalina + Levenstone with policesxm.sx emails",
+      "status": "backlog",
+      "priority": "medium",
+      "agent": "max",
+      "project": "shooting-range",
+      "created": "2026-03-23T13:47:50Z",
+      "updated": "2026-03-23T13:47:50Z"
     }
   ]
 }
