@@ -14,13 +14,13 @@
     {
       "id": "mission-control-dashboard",
       "title": "Mission Control Dashboard",
-      "description": "Single-page dashboard: agent activity, system health, calendar, tasks",
-      "status": "in-progress",
+      "description": "Dashboard live but needs real-time data + alerting tabs",
+      "status": "backlog",
       "priority": "high",
       "agent": "max",
       "project": "mission-control",
       "created": "2026-03-05T16:14:16Z",
-      "updated": "2026-03-06T20:42:08Z",
+      "updated": "2026-03-23T13:47:41Z",
       "started_at": "2026-03-06T20:42:08Z"
     },
     {
