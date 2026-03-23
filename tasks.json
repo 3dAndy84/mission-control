@@ -111,13 +111,15 @@
       "id": "build-enforcement-systems-task-gate-delegation-che",
       "title": "Build enforcement systems: task gate, delegation check, sub-agent watcher, topic router",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "general",
       "created": "2026-03-23T14:01:48Z",
-      "updated": "2026-03-23T14:01:48Z",
-      "started_at": "2026-03-23T14:01:48Z"
+      "updated": "2026-03-23T14:10:05Z",
+      "started_at": "2026-03-23T14:01:48Z",
+      "completed_at": "2026-03-23T14:10:05Z",
+      "proof": "All 4 systems built, tested, committed (ba55a08). Gate blocks without task, topic router maps 12 topics, agent watcher escalates after 2min, scorecard tracks delegation rate."
     },
     {
       "id": "test-enforcement",
