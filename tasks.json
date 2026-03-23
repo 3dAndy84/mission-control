@@ -50,13 +50,14 @@
       "id": "build-shooting-range-reservation-system-postgres-n",
       "title": "Build shooting range reservation system (Postgres + n8n + Telegram bot)",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "shooting-range",
       "created": "2026-03-18T13:24:22Z",
-      "updated": "2026-03-18T13:24:22Z",
-      "started_at": "2026-03-18T13:24:22Z"
+      "updated": "2026-03-23T13:47:43Z",
+      "started_at": "2026-03-18T13:24:22Z",
+      "completed_at": "2026-03-23T13:47:43Z"
     }
   ]
 }
