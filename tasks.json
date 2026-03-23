@@ -26,13 +26,13 @@
     {
       "id": "watchdog-auto-repair-mission-control-tab",
       "title": "Watchdog auto-repair + Mission Control tab",
-      "description": "Auto-repair engine with 5-level escalation, crash loop detection, JSON logging. New Watchdog tab in Mission Control dashboard.",
-      "status": "in-progress",
+      "description": "Watchdog auto-repair logic + Mission Control integration",
+      "status": "backlog",
       "priority": "high",
       "agent": "patch",
       "project": "mission-control",
       "created": "2026-03-06T20:42:07Z",
-      "updated": "2026-03-06T20:42:12Z",
+      "updated": "2026-03-23T13:47:42Z",
       "started_at": "2026-03-06T20:42:12Z"
     },
     {
