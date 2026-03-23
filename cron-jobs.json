@@ -1,42 +1,6 @@
+[plugins] [lcm] Plugin loaded (enabled=true, db=/home/clawd/.openclaw/lcm.db, threshold=0.75)
 {
   "jobs": [
-    {
-      "id": "c371d06f-6bc3-460a-8b67-e2d246ea67bb",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
-      "name": "Refresh Mission Control memory.json",
-      "enabled": true,
-      "createdAtMs": 1772894129624,
-      "updatedAtMs": 1774202702838,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 0,6,12,18 * * *",
-        "tz": "UTC",
-        "staggerMs": 300000
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run ~/workspace/bin/refresh-memory-json.sh to regenerate the Mission Control memory.json, cron-jobs.json, and push to GitHub. The script already handles cron export and git push. Just run it and report the result briefly.",
-        "timeoutSeconds": 120,
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1774224287432,
-        "lastRunAtMs": 1774202687445,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 15393,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false,
-        "runningAtMs": 1774224287446
-      }
-    },
     {
       "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
       "agentId": "main",
@@ -71,7 +35,8 @@
         "lastDurationMs": 44516,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1774238400034
       }
     },
     {
@@ -104,6 +69,42 @@
         "lastRunStatus": "ok",
         "lastStatus": "ok",
         "lastDurationMs": 271595,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "c371d06f-6bc3-460a-8b67-e2d246ea67bb",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
+      "name": "Refresh Mission Control memory.json",
+      "enabled": true,
+      "createdAtMs": 1772894129624,
+      "updatedAtMs": 1774224304183,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0,6,12,18 * * *",
+        "tz": "UTC",
+        "staggerMs": 300000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run ~/workspace/bin/refresh-memory-json.sh to regenerate the Mission Control memory.json, cron-jobs.json, and push to GitHub. The script already handles cron export and git push. Just run it and report the result briefly.",
+        "timeoutSeconds": 120,
+        "model": "haiku"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1774245887432,
+        "lastRunAtMs": 1774224287446,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 16737,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
