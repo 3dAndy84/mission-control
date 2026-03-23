@@ -1,6 +1,6 @@
 {
-  "generated": 1774267493758,
-  "total": 104,
+  "generated": 1774289094072,
+  "total": 100,
   "entries": [
     [
       {
@@ -148,14 +148,6 @@
         "preview": "Kanban board (task-dashboard-eosin.vercel.app) is Max's work tracker. Todoist is Andy's personal task list. Tasks must be assigned to proper agents: max (planning/strategy), worker (routine tasks), re"
       },
       {
-        "title": "max workspace telegram topics",
-        "category": "decisions",
-        "file": "max-workspace-telegram-topics.md",
-        "date": "2026-03-06",
-        "modified": 1772811757000,
-        "preview": "Forum topic IDs for Max Workspace group (-1003709913328): General = 1, Briefings & Heartbeats = 98, Coast Guard = 99, Valley Estate = 100, Infrastructure = 102, Dominica = 197, Personal = 1143"
-      },
-      {
         "title": "memory architecture patterns finch guide",
         "category": "decisions",
         "file": "memory-architecture-patterns-finch-guide.md",
@@ -220,27 +212,11 @@
         "preview": "SXM Webcam Dashboard deployed at https://cams.n8n-andy.xyz"
       },
       {
-        "title": "telegram forum topic map",
-        "category": "decisions",
-        "file": "telegram-forum-topic-map.md",
-        "date": "2026-03-08",
-        "modified": 1772983123000,
-        "preview": "Telegram forum topics for Max Workspace group (-1003709913328): General=1, Briefings & Heartbeats=98, Coast Guard=99, Valley Estate=100, Infrastructure=102, Dominica=197, Personal=1143"
-      },
-      {
-        "title": "telegram topic routing",
-        "category": "decisions",
-        "file": "telegram-topic-routing.md",
-        "date": "2026-03-09",
-        "modified": 1773050438000,
-        "preview": "Telegram forum topic routing (2026-03-09). Group -1003709913328. Route proactive messages by content:"
-      },
-      {
         "title": "telegram topic structure",
         "category": "decisions",
         "file": "telegram-topic-structure.md",
-        "date": "2026-03-21",
-        "modified": 1774104075000,
+        "date": "2026-03-23",
+        "modified": 1774275914000,
         "preview": "Max Workspace (-1003709913328) Telegram Topic Map:"
       },
       {
@@ -274,14 +250,6 @@
         "date": "2026-02-28",
         "modified": 1772290423000,
         "preview": "Workspace backed up to private GitHub repo: github.com/3dAndy84/workspace. Daily backup cron at midnight AST exports cron jobs + openclaw config, commits and pushes. PAT embedded in remote URL. .gitig"
-      },
-      {
-        "title": "workspace group topics",
-        "category": "decisions",
-        "file": "workspace-group-topics.md",
-        "date": "2026-02-28",
-        "modified": 1772290427000,
-        "preview": "Telegram workspace group (-1003709913328) topics: General (default), 🔔 Briefings & Heartbeats (98), ⚓ Coast Guard (99), 🏪 Valley Estate (100), 🌴 Dominica (101), 🔧 Infrastructure (102). A"
       },
       {
         "title": "10 second delegation rule",

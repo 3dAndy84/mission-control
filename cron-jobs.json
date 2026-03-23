@@ -7,7 +7,7 @@
       "name": "Refresh Mission Control memory.json",
       "enabled": true,
       "createdAtMs": 1772894129624,
-      "updatedAtMs": 1774245899482,
+      "updatedAtMs": 1774267501202,
       "schedule": {
         "kind": "cron",
         "expr": "0 0,6,12,18 * * *",
@@ -26,15 +26,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774267487432,
-        "lastRunAtMs": 1774245887450,
+        "nextRunAtMs": 1774289087432,
+        "lastRunAtMs": 1774267487448,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12032,
+        "lastDurationMs": 13754,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1774267487448
+        "runningAtMs": 1774289087442
       }
     },
     {
@@ -79,7 +79,7 @@
       "name": "workspace-backup",
       "enabled": true,
       "createdAtMs": 1772283080996,
-      "updatedAtMs": 1774238453881,
+      "updatedAtMs": 1774275955126,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -89,7 +89,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/update-mission-control-status to refresh live stats\n3. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n4. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n5. git add -A && git diff --cached --stat\n6. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n7. cd ~/workspace/dashboard && git add -A && git diff --cached --stat\n8. If there are changes: git commit -m \"Data sync $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n9. If no changes in either, stay silent.\nOnly report if a push failed.",
+        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/topic-sync to regenerate topic markdown from JSON\n3. Run ~/workspace/bin/update-mission-control-status to refresh live stats\n4. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n5. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n6. git add -A && git diff --cached --stat\n7. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n8. cd ~/workspace/dashboard && git add -A && git diff --cached --stat\n9. If there are changes: git commit -m \"Data sync $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n10. If no changes in either, stay silent.\nOnly report if a push failed.",
         "model": "haiku",
         "timeoutSeconds": 120
       },
