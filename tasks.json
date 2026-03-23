@@ -123,13 +123,15 @@
       "id": "test-enforcement",
       "title": "test enforcement",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-03-23T14:08:47Z",
-      "updated": "2026-03-23T14:08:47Z",
-      "started_at": "2026-03-23T14:08:47Z"
+      "updated": "2026-03-23T14:08:48Z",
+      "started_at": "2026-03-23T14:08:47Z",
+      "completed_at": "2026-03-23T14:08:48Z",
+      "proof": "test proof"
     }
   ]
 }
