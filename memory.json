@@ -1,6 +1,6 @@
 {
-  "generated": 1774332311278,
-  "total": 101,
+  "generated": 1774353894952,
+  "total": 102,
   "entries": [
     [
       {
@@ -578,6 +578,14 @@
         "date": "2026-03-08",
         "modified": 1773043237000,
         "preview": "# projects — 2026-03-08"
+      },
+      {
+        "title": "ai consulting business",
+        "category": "projects",
+        "file": "ai-consulting-business.md",
+        "date": "2026-03-24",
+        "modified": 1774350620000,
+        "preview": "# AI Consultancy Startup — Master Plan"
       },
       {
         "title": "dominica duty free",
