@@ -134,6 +134,18 @@
       "started_at": "2026-03-23T14:08:47Z",
       "completed_at": "2026-03-23T14:08:48Z",
       "proof": "test proof"
+    },
+    {
+      "id": "simplify-pass-2-refactor-lib-monster-functions-san",
+      "title": "Simplify pass #2: refactor lib/ monster functions (sanitizer.js 199-line fn, access-control.js 3x 50+ line fns, frontier-scanner.js 2x 60+ line fns), clean duplicate code blocks in security-gate.js. Target: break into smaller functions, eliminate duplicates. 1,081 findings remaining.",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-28T13:15:08Z",
+      "updated": "2026-03-28T13:15:08Z",
+      "started_at": "2026-03-28T13:15:08Z"
     }
   ]
 }
