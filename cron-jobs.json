@@ -1,85 +1,13 @@
 {
   "jobs": [
     {
-      "id": "c371d06f-6bc3-460a-8b67-e2d246ea67bb",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
-      "name": "Refresh Mission Control memory.json",
-      "enabled": true,
-      "createdAtMs": 1772894129624,
-      "updatedAtMs": 1774440297500,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 0,6,12,18 * * *",
-        "tz": "UTC",
-        "staggerMs": 300000
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run ~/workspace/bin/refresh-memory-json.sh to regenerate the Mission Control memory.json, cron-jobs.json, and push to GitHub. The script already handles cron export and git push. Just run it and report the result briefly.",
-        "timeoutSeconds": 120,
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1774461887432,
-        "lastRunAtMs": 1774440287438,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 10062,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false,
-        "runningAtMs": 1774461887445
-      }
-    },
-    {
-      "id": "d1d24b00-26f4-4ada-a0b8-084da9a61eef",
-      "agentId": "main",
-      "sessionKey": "agent:main:telegram:group:-1003709913328:topic:1",
-      "name": "Self-Eval Review",
-      "enabled": true,
-      "createdAtMs": 1772478614503,
-      "updatedAtMs": 1774419932085,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 43200000,
-        "anchorMs": 1772605365403
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run a self-evaluation review. Steps:\n\n1. Read ~/workspace/memory/mistakes.md and ~/workspace/memory/current-weaknesses.md\n2. Check the last 3 session transcripts for patterns: Did I update the task dashboard? Did I read docs before config changes? Did I follow through on commitments? Did I test before declaring done?\n3. If I find new mistakes, append them to mistakes.md with the standard format (date | category | what happened | root cause | fix)\n4. Update current-weaknesses.md: remove resolved items, add new ones, keep max 5 items\n5. If any entry in mistakes.md is older than 30 days and resolved, move it to mistakes-archive.md\n6. Commit changes to git\n7. Report: list what was found and what changed. If nothing needs attention, say so briefly.",
-        "model": "sonnet",
-        "timeoutSeconds": 600
-      },
-      "delivery": {
-        "mode": "none"
-      },
-      "state": {
-        "nextRunAtMs": 1774462965791,
-        "lastRunAtMs": 1774419765791,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 166294,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
       "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "workspace-backup",
       "enabled": true,
       "createdAtMs": 1772283080996,
-      "updatedAtMs": 1774411247555,
+      "updatedAtMs": 1775016026563,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -89,7 +17,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/topic-sync to regenerate topic markdown from JSON\n3. Run ~/workspace/bin/update-mission-control-status to refresh live stats\n4. Export cron jobs to both locations: openclaw cron list --json | tee backups/cron-jobs.json > dashboard/cron-jobs.json 2>/dev/null || true\n5. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n6. git add -A && git diff --cached --stat\n7. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n8. cd ~/workspace/dashboard && git add -A && git diff --cached --stat\n9. If there are changes: git commit -m \"Data sync $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n10. If no changes in either, stay silent.\nOnly report if a push failed.",
+        "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/topic-sync to regenerate topic markdown from JSON\n3. Export cron jobs: openclaw cron list --json > backups/cron-jobs.json 2>/dev/null || true\n4. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n5. git add -A && git diff --cached --stat\n6. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n7. If no changes, stay silent.\nOnly report if a push failed.",
         "model": "haiku",
         "timeoutSeconds": 120
       },
@@ -99,11 +27,11 @@
         "to": "-1003709913328:102"
       },
       "state": {
-        "nextRunAtMs": 1774497600000,
-        "lastRunAtMs": 1774411200009,
+        "nextRunAtMs": 1775102400000,
+        "lastRunAtMs": 1775016000028,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 47546,
+        "lastDurationMs": 26535,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -116,7 +44,7 @@
       "name": "Daily Self-Eval",
       "enabled": true,
       "createdAtMs": 1773518692229,
-      "updatedAtMs": 1774418641917,
+      "updatedAtMs": 1775023254359,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *",
@@ -126,59 +54,22 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "DAILY SELF-EVAL: Read memory/self-eval-framework.md and follow it completely. Use LCM tools to review today's conversations. Classify errors, extract principles, update current-weaknesses.md if needed, score the day, and write output to memory/self-evals/YYYY-MM-DD.md. Only notify Andy (via Telegram to -1003709913328 topic 98) if you found a significant new pattern or regression. Otherwise complete silently.",
-        "model": "anthropic/claude-sonnet-4-6",
+        "message": "DAILY SELF-EVAL. Follow ~/workspace/memory/self-eval-framework.md.\n\n1. Read memory/mistakes.md and memory/current-weaknesses.md.\n2. Use LCM tools (lcm_grep, lcm_expand_query) to review today's conversations. Look for: Andy corrections, repeated mistakes, wrong info given, work done instead of delegating, broken commitments, slow learning.\n3. Also check git log --since=24h for commit patterns.\n4. If new mistakes found: append to memory/mistakes.md (date | #category | one-line, then 2-3 lines max).\n5. Review current-weaknesses.md \u2014 max 3 items, trigger\u2192response format. Prune items not improving in 7 days.\n6. Archive mistakes older than 30 days to mistakes-archive.md.\n7. Git commit if changed.\n8. Stay silent \u2014 weekly report handles Andy notification.",
+        "model": "haiku",
         "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774504800000,
-        "lastRunAtMs": 1774418400014,
+        "nextRunAtMs": 1775109600000,
+        "lastRunAtMs": 1775023200017,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 241903,
+        "lastDurationMs": 54342,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
-      }
-    },
-    {
-      "id": "23dcaabe-013b-485b-9778-1bfe6b94abe0",
-      "agentId": "ops",
-      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
-      "name": "Nightly Security Review",
-      "enabled": true,
-      "createdAtMs": 1773083616568,
-      "updatedAtMs": 1774425628115,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 4 * * *",
-        "tz": "America/Lower_Princes"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run nightly security review. Check:\n1. Run ~/workspace/bin/security-scan --report for current security stats\n2. Run ~/workspace/bin/security-scan --test to verify all 33 tests pass\n3. Check ~/workspace/logs/security.log for any blocked events in last 24h\n4. Check file permissions on sensitive dirs (~/.openclaw/, ~/.claude/)\n5. Check if any secrets accidentally committed to git (git log --diff-filter=A -p -- '*.env' '*.key' '*.pem')\n6. Summarize findings. If everything is clean, say so briefly. Only flag things that need attention.",
-        "timeoutSeconds": 120,
-        "model": "haiku"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "-1003709913328:102"
-      },
-      "state": {
-        "nextRunAtMs": 1774512000000,
-        "lastRunAtMs": 1774425610277,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 17838,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
       }
     },
     {
@@ -188,7 +79,7 @@
       "name": "clawvault-observe",
       "enabled": true,
       "createdAtMs": 1772659182696,
-      "updatedAtMs": 1774425610277,
+      "updatedAtMs": 1775030416946,
       "schedule": {
         "kind": "cron",
         "expr": "0 4 * * *",
@@ -206,11 +97,11 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774512000000,
-        "lastRunAtMs": 1774425600009,
+        "nextRunAtMs": 1775116800000,
+        "lastRunAtMs": 1775030400036,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10268,
+        "lastDurationMs": 16910,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -223,7 +114,7 @@
       "name": "morning-briefing",
       "enabled": true,
       "createdAtMs": 1772283294696,
-      "updatedAtMs": 1774436433544,
+      "updatedAtMs": 1775041230428,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -233,7 +124,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Morning briefing for Andy. Three parts:\n\n**PART 1: HEARTBEAT (always include, even if everything is fine)**\n1. Check gateway: openclaw status\n2. Check for errors in logs (last 1h)\n3. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault checkpoint\n4. Check ~/workspace/memory/commitments/ for pending items\n5. Note any stale tasks or blockers\n6. ALWAYS report heartbeat status. If all clear, say so. Never skip this section.\n\n**PART 2: CALENDAR**\nFetch today's events:\nsource ~/.openclaw/.env && curl -s -X POST -H 'Content-Type: application/json' -H \"X-Api-Token: $N8N_WEBHOOK_TOKEN\" -d '{\"service\":\"calendar\",\"action\":\"today\"}' https://n8n-andy.xyz/webhook/openclaw-google\nIf it returns events, list them with times in AST (GMT-4). If it fails or returns empty, say 'Calendar: no events today' or 'Calendar: not configured yet'. Do NOT skip this section.\n\n**PART 3: BRIEFING**\n1. Run: ~/.agents/skills/todoist/scripts/todoist.sh list-tasks --filter 'today | overdue' — list tasks due today and overdue\n2. Check weather for Sint Maarten: curl -s 'wttr.in/Sint+Maarten?format=3'\n3. Any pending ClawVault commitments: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search 'commitments'\n\nFormat as a single concise morning update. Start with system health (one line if all good), then calendar events with times, then weather, then tasks/overdue, then commitments. Keep it punchy — no fluff.",
+        "message": "Morning briefing for Andy. Four parts:\n\n**PART 1: HEARTBEAT (always include, even if everything is fine)**\n1. Check gateway: openclaw status\n2. Check for errors in logs (last 1h)\n3. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault checkpoint\n4. Check ~/workspace/memory/commitments/ for pending items\n5. Note any stale tasks or blockers\n6. ALWAYS report heartbeat status. If all clear, say so. Never skip this section.\n\n**PART 2: CALENDAR**\nFetch today's events:\nsource ~/.openclaw/.env && curl -s -X POST -H 'Content-Type: application/json' -H \"X-Api-Token: $N8N_WEBHOOK_TOKEN\" -d '{\"service\":\"calendar\",\"action\":\"today\"}' https://n8n-andy.xyz/webhook/openclaw-google\nIf it returns events, list them with times in AST (GMT-4). If it fails or returns empty, say 'Calendar: no events today' or 'Calendar: not configured yet'. Do NOT skip this section.\n\n**PART 3: TASKS (Obsidian TaskNotes)**\n1. Scan Obsidian TaskNotes for open/in-progress tasks:\n   grep -rl 'status: open\\|status: in-progress' /home/clawd/vaults/TaskNotes/Tasks/ 2>/dev/null | while read f; do echo \"--- $(basename \"$f\" .md) ---\"; head -20 \"$f\"; done\n   List task titles, priorities, and due dates. Highlight overdue items.\n2. If no tasks found, say 'No open tasks in Obsidian.'\n\n**PART 4: BRIEFING**\n1. Check weather for Sint Maarten: curl -s 'wttr.in/Sint+Maarten?format=3'\n2. Any pending ClawVault commitments: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search 'commitments'\n\nFormat as a single concise morning update. Start with system health (one line if all good), then calendar events with times, then tasks, then weather, then commitments. Keep it punchy \u2014 no fluff.",
         "model": "haiku",
         "timeoutSeconds": 90
       },
@@ -243,11 +134,11 @@
         "to": "-1003709913328:98"
       },
       "state": {
-        "nextRunAtMs": 1774522800000,
-        "lastRunAtMs": 1774436400021,
+        "nextRunAtMs": 1775127600000,
+        "lastRunAtMs": 1775041200036,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 33523,
+        "lastDurationMs": 30392,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -260,7 +151,7 @@
       "name": "memory-hygiene",
       "enabled": true,
       "createdAtMs": 1772283019225,
-      "updatedAtMs": 1774183446523,
+      "updatedAtMs": 1774760412569,
       "schedule": {
         "kind": "cron",
         "expr": "0 1 * * 0",
@@ -280,11 +171,11 @@
         "to": "-1003709913328:102"
       },
       "state": {
-        "nextRunAtMs": 1774760400000,
-        "lastRunAtMs": 1774155600016,
+        "nextRunAtMs": 1775365200000,
+        "lastRunAtMs": 1774760400017,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8886,
+        "lastDurationMs": 12552,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -297,7 +188,7 @@
       "name": "weekly-setup-review",
       "enabled": true,
       "createdAtMs": 1772605505065,
-      "updatedAtMs": 1774183446541,
+      "updatedAtMs": 1774764027614,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * 0",
@@ -307,7 +198,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Weekly setup review. Check the full OpenClaw environment and report only issues or actionable items.\n\n1. **Gateway health:** Run `openclaw status` — check version, session count, errors\n2. **Cron jobs:** List all cron jobs. Flag any that are disabled, failing, or have stale configs\n3. **System resources:** Check disk (`df -h /`), memory (`free -h`), uptime\n4. **QMD status:** Run `qmd status` — flag pending embeddings if >100\n5. **Git status:** `cd ~/workspace && git status --short` — flag uncommitted changes\n6. **Memory hygiene:** Check ~/workspace/memory/commitments/ for stale items, review current-weaknesses.md is still relevant\n7. **OpenClaw updates:** Compare installed vs latest (`openclaw status` shows this)\n\nFormat as a concise report. If everything is clean, say so in one line. Only flag things that actually need Andy's attention. Deliver the report — don't stay silent even if all clear.",
+        "message": "Weekly setup review. Check the full OpenClaw environment and report only issues or actionable items.\n\n1. **Gateway health:** Run `openclaw status` \u2014 check version, session count, errors\n2. **Cron jobs:** List all cron jobs. Flag any that are disabled, failing, or have stale configs\n3. **System resources:** Check disk (`df -h /`), memory (`free -h`), uptime\n4. **QMD status:** Run `qmd status` \u2014 flag pending embeddings if >100\n5. **Git status:** `cd ~/workspace && git status --short` \u2014 flag uncommitted changes\n6. **Memory hygiene:** Check ~/workspace/memory/commitments/ for stale items, review current-weaknesses.md is still relevant\n7. **OpenClaw updates:** Compare installed vs latest (`openclaw status` shows this)\n\nFormat as a concise report. If everything is clean, say so in one line. Only flag things that actually need Andy's attention. Deliver the report \u2014 don't stay silent even if all clear.",
         "model": "haiku",
         "timeoutSeconds": 120
       },
@@ -317,11 +208,11 @@
         "to": "-1003709913328:102"
       },
       "state": {
-        "nextRunAtMs": 1774764000000,
-        "lastRunAtMs": 1774159200019,
+        "nextRunAtMs": 1775368800000,
+        "lastRunAtMs": 1774764000033,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 30027,
+        "lastDurationMs": 27581,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -333,7 +224,7 @@
       "name": "clawvault-update-check",
       "enabled": true,
       "createdAtMs": 1771116405246,
-      "updatedAtMs": 1774183446562,
+      "updatedAtMs": 1774767610058,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * 0",
@@ -348,10 +239,10 @@
         "timeoutSeconds": 60
       },
       "state": {
-        "nextRunAtMs": 1774767600000,
-        "lastRunAtMs": 1774162800022,
+        "nextRunAtMs": 1775372400000,
+        "lastRunAtMs": 1774767600029,
         "lastStatus": "ok",
-        "lastDurationMs": 9176,
+        "lastDurationMs": 10029,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -370,7 +261,7 @@
       "name": "clawvault-reflect",
       "enabled": true,
       "createdAtMs": 1772659182723,
-      "updatedAtMs": 1774183446580,
+      "updatedAtMs": 1774774825047,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * 0",
@@ -390,11 +281,48 @@
         "to": "-1003709913328:102"
       },
       "state": {
-        "nextRunAtMs": 1774774800000,
-        "lastRunAtMs": 1774170000023,
+        "nextRunAtMs": 1775379600000,
+        "lastRunAtMs": 1774774800017,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 69365,
+        "lastDurationMs": 25030,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "c634ca2b-dead-4e2e-b8ab-dda5d6e3b189",
+      "agentId": "ops",
+      "sessionKey": "agent:ops:telegram:group:-1003709913328:topic:1",
+      "name": "weekly-self-eval-report",
+      "enabled": true,
+      "createdAtMs": 1774477958229,
+      "updatedAtMs": 1774792974327,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 0",
+        "tz": "America/Lower_Princes"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "WEEKLY SELF-EVAL REPORT. Follow ~/workspace/memory/self-eval-framework.md.\n\n1. Read memory/self-evals/ from this week and memory/mistakes.md.\n2. Write memory/self-evals/week-YYYY-WW.md with: what improved (evidence), what didn't, one concrete change for next week.\n3. Git commit.\n4. Send a concise summary to Andy via Telegram (-1003709913328 topic 98). Keep it under 10 lines. Be honest \u2014 no fluff.",
+        "model": "anthropic/claude-sonnet-4-6",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-1003709913328:98"
+      },
+      "state": {
+        "nextRunAtMs": 1775397600000,
+        "lastRunAtMs": 1774792800015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 174312,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -407,7 +335,7 @@
       "name": "Weekly Update Check",
       "enabled": true,
       "createdAtMs": 1773524320472,
-      "updatedAtMs": 1774202438249,
+      "updatedAtMs": 1774807256173,
       "schedule": {
         "kind": "cron",
         "expr": "0 14 * * 0",
@@ -425,22 +353,21 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774807200000,
-        "lastRunAtMs": 1774202400022,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 38227,
+        "nextRunAtMs": 1775412000000,
+        "lastRunAtMs": 1774807200021,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 56152,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 1,
-        "lastError": "⚠️ ✉️ Message: `1` failed",
-        "lastDeliveryError": "⚠️ ✉️ Message: `1` failed"
+        "consecutiveErrors": 0
       }
     }
   ],
-  "total": 12,
+  "total": 10,
   "offset": 0,
-  "limit": 12,
+  "limit": 10,
   "hasMore": false,
-  "nextOffset": null
+  "nextOffset": null,
+  "generated": 1775059546471
 }

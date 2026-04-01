@@ -1,122 +1,33 @@
 {
-  "generated": 1772762777979,
+  "generated": 1775059364471,
   "gateway": {
-    "version": "2026.2.23",
-    "app_latest": "2026.3.2",
+    "version": "2026.3.31",
     "status": "online",
-    "uptime_since": "2026-02-24 09:27:26",
-    "sessions": 33,
-    "memory_files": 169,
+    "uptime_since": "Wed 2026-04-01 02:03:47",
+    "sessions": 3,
+    "memory_files": 780,
     "heartbeat": "30m"
   },
   "system": {
-    "disk_used": "60G",
+    "disk_used": "70G",
     "disk_total": "193G",
-    "disk_pct": "31%",
-    "mem_used": "2.9Gi",
+    "disk_pct": "37%",
+    "mem_used": "2.6Gi",
     "mem_total": "15Gi",
-    "load": "0.35 0.13 0.04",
+    "load": "1.13 0.56 0.57",
     "node_version": "v22.22.0"
   },
   "health": {
-    "vector_db": 607,
-    "last_checkpoint_ms": 1772697640000,
-    "session_size": "20M",
-    "cron_jobs_active": 8
+    "vector_db": 363,
+    "vector_db_embedded": 1202,
+    "cron_jobs_active": 0,
+    "session_size": "unknown",
+    "last_checkpoint_ms": null
   },
-  "cost": {
-    "today_estimate": 1.36,
-    "tokens_in": 492,
-    "tokens_out": 16055,
-    "tokens_cache_read": 856932,
-    "tokens_cache_write": 149029,
-    "monthly_budget": 60,
-    "sessions": [
-      {
-        "key": "agent:main:telegram:group:-1003709913328:topic:1",
-        "model": "opus",
-        "tokens_in": 21,
-        "tokens_out": 4159,
-        "cache_read": 67786,
-        "cost": 0.5763
-      },
-      {
-        "key": "agent:main:telegram:group:-1003709913328:topic:102",
-        "model": "opus",
-        "tokens_in": 5,
-        "tokens_out": 516,
-        "cache_read": 99928,
-        "cost": 0.4299
-      },
-      {
-        "key": "agent:main:main",
-        "model": "opus",
-        "tokens_in": 4,
-        "tokens_out": 161,
-        "cache_read": 23018,
-        "cost": 0.1057
-      },
-      {
-        "key": "agent:main:cron:d1d24b00-26f4-4ada-a0b8-084da9a61eef:run:553",
-        "model": "haiku",
-        "tokens_in": 158,
-        "tokens_out": 3381,
-        "cache_read": 323470,
-        "cost": 0.0989
-      },
-      {
-        "key": "agent:main:cron:d1d24b00-26f4-4ada-a0b8-084da9a61eef",
-        "model": "haiku",
-        "tokens_in": 116,
-        "tokens_out": 2332,
-        "cache_read": 133598,
-        "cost": 0.0402
-      },
-      {
-        "key": "agent:main:cron:d1d24b00-26f4-4ada-a0b8-084da9a61eef:run:5ab",
-        "model": "haiku",
-        "tokens_in": 116,
-        "tokens_out": 2332,
-        "cache_read": 133598,
-        "cost": 0.0402
-      },
-      {
-        "key": "agent:main:cron:dafc366d-e8b0-4867-8657-5ee5e14b632d",
-        "model": "haiku",
-        "tokens_in": 36,
-        "tokens_out": 1587,
-        "cache_read": 37767,
-        "cost": 0.0332
-      },
-      {
-        "key": "agent:main:cron:dafc366d-e8b0-4867-8657-5ee5e14b632d:run:edb",
-        "model": "haiku",
-        "tokens_in": 36,
-        "tokens_out": 1587,
-        "cache_read": 37767,
-        "cost": 0.0332
-      },
-      {
-        "key": "agent:main:telegram:group:-1003709913328:topic:1169",
-        "model": "opus",
-        "tokens_in": 0,
-        "tokens_out": 0,
-        "cache_read": 0,
-        "cost": 0.0
-      },
-      {
-        "key": "telegram:slash:690429893",
-        "model": "opus",
-        "tokens_in": 0,
-        "tokens_out": 0,
-        "cache_read": 0,
-        "cost": 0.0
-      }
-    ],
-    "by_model": {
-      "opus": 1.11,
-      "sonnet": 0,
-      "haiku": 0.25
-    }
-  }
+  "uptime": "0d 13h 59m",
+  "vectorDb": {
+    "items": 363,
+    "embedded": 1202
+  },
+  "costs": {}
 }

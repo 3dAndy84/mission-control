@@ -1,0 +1,196 @@
+{
+  "generated": 1775059364471,
+  "status": "active",
+  "gateway": "up",
+  "last_check": "2026-04-01 02:02:16",
+  "failure_level": 0,
+  "crashes_24h": 33,
+  "repairs_24h": 1,
+  "crashCount24h": 33,
+  "repairAttempts24h": 1,
+  "autoRepair": true,
+  "notifications": true,
+  "uptime": "0d 13h 59m",
+  "recentEvents": [
+    {
+      "timestamp": 1775006429000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775006479000,
+      "message": "Repair failed (level 5, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775006779000,
+      "message": "Gateway check failed (attempt 27, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775006779000,
+      "message": "Attempting repair (attempt 25, level 5)",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775006779000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775006830000,
+      "message": "Repair failed (level 5, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775007130000,
+      "message": "Gateway check failed (attempt 28, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775007130000,
+      "message": "Attempting repair (attempt 26, level 5)",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775007130000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775007181000,
+      "message": "Repair failed (level 5, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775007481000,
+      "message": "Gateway check failed (attempt 29, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775007481000,
+      "message": "Attempting repair (attempt 27, level 5)",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775007482000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775007532000,
+      "message": "Repair failed (level 5, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775007832000,
+      "message": "Gateway check failed (attempt 30, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775007832000,
+      "message": "Attempting repair (attempt 28, level 5)",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775007833000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775007883000,
+      "message": "Repair failed (level 5, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775008183000,
+      "message": "Gateway check failed (attempt 31, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775008183000,
+      "message": "Attempting repair (attempt 29, level 5)",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775008184000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775008234000,
+      "message": "Repair failed (level 5, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775008534000,
+      "message": "Gateway check failed (attempt 32, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775008534000,
+      "message": "Attempting repair (attempt 30, level 5)",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775008535000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775008585000,
+      "message": "Repair failed (level 5, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775008885000,
+      "message": "Gateway check failed (attempt 33, status: 000)",
+      "type": "watchdog",
+      "level": "error"
+    },
+    {
+      "timestamp": 1775008885000,
+      "message": "Attempting repair (attempt 31, level 5)",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775008886000,
+      "message": "REPAIR LEVEL 5: Full reset",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775008936000,
+      "message": "Repair successful (level 5)",
+      "type": "watchdog",
+      "level": "success"
+    }
+  ]
+}
