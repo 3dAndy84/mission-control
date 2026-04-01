@@ -1,5 +1,5 @@
 {
-  "generated": 1775059364471,
+  "generated": 1775059723977,
   "gateway": {
     "version": "2026.3.31",
     "status": "online",
@@ -14,17 +14,17 @@
     "disk_pct": "37%",
     "mem_used": "2.6Gi",
     "mem_total": "15Gi",
-    "load": "1.13 0.56 0.57",
+    "load": "2.10 1.17 0.78",
     "node_version": "v22.22.0"
   },
   "health": {
     "vector_db": 363,
     "vector_db_embedded": 1202,
-    "cron_jobs_active": 0,
+    "cron_jobs_active": 10,
     "session_size": "unknown",
     "last_checkpoint_ms": null
   },
-  "uptime": "0d 13h 59m",
+  "uptime": "0d 14h 5m",
   "vectorDb": {
     "items": 363,
     "embedded": 1202
