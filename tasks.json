@@ -189,13 +189,15 @@
       "id": "feedz-website",
       "title": "Feedz website delivery",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "automatexm",
       "created": "2026-04-03T20:32:18Z",
-      "updated": "2026-04-03T20:32:18Z",
-      "started_at": "2026-04-03T20:32:18Z"
+      "updated": "2026-04-03T20:32:20Z",
+      "started_at": "2026-04-03T20:32:18Z",
+      "completed_at": "2026-04-03T20:32:20Z",
+      "proof": "Live at feedz-sxm.com, 17 pages EN/FR, Astro + Tailwind, Phase 6/7 (Harden)"
     }
   ]
 }
