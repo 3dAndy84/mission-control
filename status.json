@@ -1,5 +1,5 @@
 {
-  "generated": 1775242983387,
+  "generated": 1775243056825,
   "gateway": {
     "version": "2026.4.2",
     "status": "online",
@@ -14,7 +14,7 @@
     "disk_pct": "37%",
     "mem_used": "4.8Gi",
     "mem_total": "15Gi",
-    "load": "1.93 0.52 0.23",
+    "load": "2.70 0.93 0.39",
     "node_version": "v22.22.0"
   },
   "health": {
@@ -24,7 +24,7 @@
     "session_size": "unknown",
     "last_checkpoint_ms": null
   },
-  "uptime": "0d 21h 58m",
+  "uptime": "0d 21h 59m",
   "vectorDb": {
     "items": 366,
     "embedded": 1202
