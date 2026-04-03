@@ -161,13 +161,15 @@
       "id": "automatexm-cal",
       "title": "Set up Cal.com for AutomateXM",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "automatexm",
       "created": "2026-04-03T20:32:12Z",
-      "updated": "2026-04-03T20:32:12Z",
-      "started_at": "2026-04-03T20:32:12Z"
+      "updated": "2026-04-03T20:32:14Z",
+      "started_at": "2026-04-03T20:32:12Z",
+      "completed_at": "2026-04-03T20:32:14Z",
+      "proof": "cal.com/automatexm live with 4 event types (Discovery, Audit, Strategy, Kickoff)"
     }
   ]
 }
