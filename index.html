@@ -861,29 +861,188 @@
         }
 
         @media (max-width: 768px) {
-            .board {
-                grid-template-columns: 1fr;
+            body {
+                padding: 12px;
             }
 
+            h1 {
+                font-size: 22px;
+            }
+
+            .subtitle {
+                font-size: 11px;
+            }
+
+            header {
+                margin-bottom: 16px;
+            }
+
+            .refresh-btn {
+                position: static;
+                margin-top: 8px;
+                align-self: center;
+            }
+
+            .header-title {
+                align-items: center;
+            }
+
+            /* Tabs: horizontal scroll */
+            .tabs {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                flex-wrap: nowrap;
+                gap: 6px;
+                margin-bottom: 16px;
+                padding-bottom: 8px;
+                scrollbar-width: none;
+            }
+            .tabs::-webkit-scrollbar {
+                display: none;
+            }
+            .tab {
+                padding: 8px 14px;
+                font-size: 13px;
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+
+            /* Overview */
             .overview-grid {
                 grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            .overview-card {
+                padding: 14px;
+            }
+            .overview-card-title {
+                font-size: 11px;
+                margin-bottom: 8px;
             }
 
-            .cron-table {
+            /* Board */
+            .board {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+            .column {
+                padding: 14px;
+                min-height: auto;
+            }
+            .card {
+                padding: 12px;
+            }
+            .card-title {
+                font-size: 14px;
+            }
+            .card-description {
                 font-size: 12px;
             }
+            .card-meta {
+                gap: 6px;
+                font-size: 11px;
+            }
 
+            /* Filters */
+            .filters {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .filter-group {
+                width: 100%;
+            }
+            select, input[type="text"] {
+                width: 100%;
+                min-width: unset;
+            }
+
+            /* Cron table: scrollable + hide less important cols */
+            #cron-jobs-tab {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .cron-table {
+                font-size: 12px;
+                min-width: 500px;
+            }
             .cron-table th,
             .cron-table td {
-                padding: 8px;
+                padding: 8px 6px;
+            }
+            .cron-table th:nth-child(3),
+            .cron-table td:nth-child(3),
+            .cron-table th:nth-child(4),
+            .cron-table td:nth-child(4) {
+                display: none;
             }
 
+            /* Memory */
             .memory-grid {
                 grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .memory-controls {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .memory-card {
+                padding: 12px;
             }
 
+            /* Watchdog */
             .watchdog-status-cards {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .watchdog-card {
+                padding: 12px;
+            }
+            .watchdog-card-value {
+                font-size: 16px;
+            }
+            .event-timeline {
+                padding: 14px;
+            }
+            .timeline-event {
+                padding: 10px;
+            }
+            .event-message {
+                font-size: 13px;
+            }
+
+            /* Projects: card layout on mobile */
+            #projects-tab .card {
+                padding: 14px;
+            }
+            #projects-table thead {
+                display: none;
+            }
+            #projects-table,
+            #projects-table tbody,
+            #projects-table tr,
+            #projects-table td {
+                display: block;
+                width: 100%;
+            }
+            #projects-table tr {
+                background: #2a2a2a;
+                border-radius: 6px;
+                padding: 12px;
+                margin-bottom: 10px;
+                border-left: 3px solid #3b82f6;
+            }
+            #projects-table td {
+                padding: 3px 0;
+                text-align: left !important;
+            }
+            #projects-table td::before {
+                content: attr(data-label);
+                font-size: 10px;
+                color: #888;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                display: block;
+                margin-bottom: 2px;
             }
         }
     </style>
@@ -1518,11 +1677,11 @@
                     ${p.emoji || ''} ${p.status || 'PENDING'}</span>`;
 
                 return `<tr style="border-bottom:1px solid #2a2a2a;">
-                    <td style="padding:10px 12px; font-weight:500; color:#e0e0e0;">${p.project || '—'}</td>
-                    <td style="padding:10px 12px; color:#b0b0b0;">${p.client || '—'}</td>
-                    <td style="padding:10px 12px; min-width:160px;">${phaseBar}</td>
-                    <td style="padding:10px 12px;">${badge}</td>
-                    <td style="padding:10px 12px; color:#777; font-size:12px;">${p.since_human || '—'}</td>
+                    <td data-label="Project" style="padding:10px 12px; font-weight:500; color:#e0e0e0;">${p.project || '—'}</td>
+                    <td data-label="Client" style="padding:10px 12px; color:#b0b0b0;">${p.client || '—'}</td>
+                    <td data-label="Phase" style="padding:10px 12px; min-width:160px;">${phaseBar}</td>
+                    <td data-label="Status" style="padding:10px 12px;">${badge}</td>
+                    <td data-label="Since" style="padding:10px 12px; color:#777; font-size:12px;">${p.since_human || '—'}</td>
                 </tr>`;
             }).join('');
         }
