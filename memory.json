@@ -1,15 +1,63 @@
 {
-  "generated": 1775059723977,
-  "total": 275,
+  "generated": 1775242983387,
+  "total": 278,
   "vector_count": 1202,
   "entries": [
+    {
+      "title": "Mistakes",
+      "category": "general",
+      "file": "mistakes.md",
+      "date": "mistakes.m",
+      "modified": 1775196268717,
+      "preview": "# Mistakes Journal  Active failure patterns. Pruned monthly \u2014 resolved entries move to `mistakes-archive.md`.  ## Format <!-- date | category | what happened | root cause | fix -->  ## Active  ### 202"
+    },
+    {
+      "title": "Mistakes Archive",
+      "category": "general",
+      "file": "mistakes-archive.md",
+      "date": "mistakes-a",
+      "modified": 1775196245490,
+      "preview": "# Mistakes Archive  Resolved mistakes moved from mistakes.md after 30+ days or when demonstrably fixed.  ## Archived 2026-04-03 (30+ days old)  ### 2026-03-02 | #discipline | Didn't use task-dashboard"
+    },
     {
       "title": "Telegram Topic Structure",
       "category": "decisions",
       "file": "decisions/telegram-topic-structure.md",
       "date": "telegram-t",
-      "modified": 1775016016881,
-      "preview": "--- title: telegram-topic-structure date: '2026-04-01' memoryType: decision --- Max Workspace (-1003709913328) Telegram Topic Map: 1 \u2192 \ud83d\udcac General (default conversation, Andy's main channel) 3089 \u2192 n8n "
+      "modified": 1775188884429,
+      "preview": "--- title: telegram-topic-structure date: '2026-04-03' memoryType: decision --- Max Workspace (-1003709913328) Telegram Topic Map: 1 \u2192 \ud83d\udcac General (default conversation, Andy's main channel) 3089 \u2192 n8n "
+    },
+    {
+      "title": "Current Weaknesses",
+      "category": "general",
+      "file": "current-weaknesses.md",
+      "date": "current-we",
+      "modified": 1775178952752,
+      "preview": "# Current Weaknesses  Max 3 items. Each must be a trigger \u2192 response pair.  1. **When asked about a person \u2192** search ClawVault (`qmd query`) FIRST, not LCM. Never guess relationships, roles, or prono"
+    },
+    {
+      "title": "Automatexm Security Checklist",
+      "category": "general",
+      "file": "automatexm-security-checklist.md",
+      "date": "automatexm",
+      "modified": 1775175356280,
+      "preview": "# AutomateXM Security & Quality Checklist **Updated: 2026-04-03** **Rule: Run before every client launch. No exceptions.**  ## Pre-Launch Checklist (30 min)  ### 1. Row Level Security (Supabase) - [ ]"
+    },
+    {
+      "title": "Andy Ai Stack",
+      "category": "general",
+      "file": "andy-ai-stack.md",
+      "date": "andy-ai-st",
+      "modified": 1775174507949,
+      "preview": "# AutomateXM Tech Stack **Updated: 2026-04-02** **Purpose:** Client project planning \u2014 tools available for AutomateXM engagements  | Service | Category | |---------|----------| | Cloudinary | Media/CD"
+    },
+    {
+      "title": "2026 04 02",
+      "category": "self-evals",
+      "file": "self-evals/2026-04-02.md",
+      "date": "2026-04-02",
+      "modified": 1775109641240,
+      "preview": "# Daily Self-Eval \u2014 2026-04-02  **Time:** 06:00 UTC (2:00 AST) | **Day:** Wednesday  ## Sessions Reviewed - **04:00 UTC:** workspace-backup cron (routine) - **00:49 UTC:** GitHub token investigation +"
     },
     {
       "title": "Ernie Sambre",
@@ -18,14 +66,6 @@
       "date": "ernie-samb",
       "modified": 1774995033986,
       "preview": "# Ernie Sambre  Andy's wife. Together they are exploring business opportunities in Dominica (Commonwealth of Dominica). No business name yet \u2014 use \"Ernie Sambre\" as placeholder.  **Note:** This is sep"
-    },
-    {
-      "title": "Current Weaknesses",
-      "category": "general",
-      "file": "current-weaknesses.md",
-      "date": "current-we",
-      "modified": 1774965908981,
-      "preview": "# Current Weaknesses  Max 3 items. Each must be a trigger \u2192 response pair.  1. **When asked about a person \u2192** search ClawVault (`qmd query`) FIRST, not LCM. Never guess relationships, roles, or prono"
     },
     {
       "title": "Business Architecture",
@@ -98,14 +138,6 @@
       "date": "self-eval-",
       "modified": 1774477938977,
       "preview": "# Self-Eval Framework  Daily at 22:00 AST (02:00 UTC). One cron, one pass.  ## What to Review  Scan today's conversations via LCM. Look for: - Andy correcting me (\"no\", \"wrong\", \"I said\", \"don't\", \"st"
-    },
-    {
-      "title": "Mistakes",
-      "category": "general",
-      "file": "mistakes.md",
-      "date": "mistakes.m",
-      "modified": 1774463389061,
-      "preview": "# Mistakes Journal  Active failure patterns. Pruned monthly \u2014 resolved entries move to `mistakes-archive.md`.  ## Format <!-- date | category | what happened | root cause | fix -->  ## Active  ### 202"
     },
     {
       "title": "2026 03 25",
@@ -1962,14 +1994,6 @@
       "date": "2026-03-01",
       "modified": 1772660188820,
       "preview": "# preferences \u2014 [[projects/2026-03-01]]  - [preference|c=0.94|i=0.82] 16:01 [telegram-group|topic-197] [[Andy]] (with wife [[Ernie]]) pursuing business opportunities in [[Dominica]] under the name \"[["
-    },
-    {
-      "title": "Mistakes Archive",
-      "category": "general",
-      "file": "mistakes-archive.md",
-      "date": "mistakes-a",
-      "modified": 1772660188817,
-      "preview": "# Mistakes Archive  Resolved mistakes moved from mistakes.md after 30+ days or when demonstrably fixed.  ## Resolved  ### [[projects/2026-03-02]] | #follow-through | Self-review checklist exists but n"
     },
     {
       "title": "2026 03 03",

@@ -1,32 +1,32 @@
 {
-  "generated": 1775059723977,
+  "generated": 1775242983387,
   "gateway": {
-    "version": "2026.3.31",
+    "version": "2026.4.2",
     "status": "online",
-    "uptime_since": "Wed 2026-04-01 02:03:47",
+    "uptime_since": "Thu 2026-04-02 21:05:18",
     "sessions": 3,
-    "memory_files": 780,
+    "memory_files": 456,
     "heartbeat": "30m"
   },
   "system": {
-    "disk_used": "70G",
+    "disk_used": "71G",
     "disk_total": "193G",
     "disk_pct": "37%",
-    "mem_used": "2.6Gi",
+    "mem_used": "4.8Gi",
     "mem_total": "15Gi",
-    "load": "2.10 1.17 0.78",
+    "load": "1.93 0.52 0.23",
     "node_version": "v22.22.0"
   },
   "health": {
-    "vector_db": 363,
+    "vector_db": 366,
     "vector_db_embedded": 1202,
     "cron_jobs_active": 10,
     "session_size": "unknown",
     "last_checkpoint_ms": null
   },
-  "uptime": "0d 14h 5m",
+  "uptime": "0d 21h 58m",
   "vectorDb": {
-    "items": 363,
+    "items": 366,
     "embedded": 1202
   },
   "costs": {}

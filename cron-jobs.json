@@ -2,12 +2,12 @@
   "jobs": [
     {
       "id": "ce6da4ec-a6fb-4e29-86ec-43950146efab",
-      "agentId": "main",
+      "agentId": "ops",
       "sessionKey": "agent:main:main",
       "name": "workspace-backup",
       "enabled": true,
       "createdAtMs": 1772283080996,
-      "updatedAtMs": 1775016026563,
+      "updatedAtMs": 1775227246900,
       "schedule": {
         "kind": "cron",
         "expr": "0 0 * * *",
@@ -18,8 +18,8 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Backup workspace to GitHub. Run these commands:\n1. cd ~/workspace\n2. Run ~/workspace/bin/topic-sync to regenerate topic markdown from JSON\n3. Export cron jobs: openclaw cron list --json > backups/cron-jobs.json 2>/dev/null || true\n4. Copy config: cp ~/.openclaw/openclaw.json backups/openclaw.json\n5. git add -A && git diff --cached --stat\n6. If there are changes: git commit -m \"Daily backup $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes\n7. If no changes, stay silent.\nOnly report if a push failed.",
-        "model": "haiku",
-        "timeoutSeconds": 120
+        "model": "anthropic/claude-haiku-4-5",
+        "timeoutSeconds": 240
       },
       "delivery": {
         "mode": "announce",
@@ -27,14 +27,15 @@
         "to": "-1003709913328:102"
       },
       "state": {
-        "nextRunAtMs": 1775102400000,
-        "lastRunAtMs": 1775016000028,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 26535,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1775275200000,
+        "lastRunAtMs": 1775188800047,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 120018,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
@@ -44,7 +45,7 @@
       "name": "Daily Self-Eval",
       "enabled": true,
       "createdAtMs": 1773518692229,
-      "updatedAtMs": 1775023254359,
+      "updatedAtMs": 1775227246920,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *",
@@ -55,31 +56,32 @@
       "payload": {
         "kind": "agentTurn",
         "message": "DAILY SELF-EVAL. Follow ~/workspace/memory/self-eval-framework.md.\n\n1. Read memory/mistakes.md and memory/current-weaknesses.md.\n2. Use LCM tools (lcm_grep, lcm_expand_query) to review today's conversations. Look for: Andy corrections, repeated mistakes, wrong info given, work done instead of delegating, broken commitments, slow learning.\n3. Also check git log --since=24h for commit patterns.\n4. If new mistakes found: append to memory/mistakes.md (date | #category | one-line, then 2-3 lines max).\n5. Review current-weaknesses.md \u2014 max 3 items, trigger\u2192response format. Prune items not improving in 7 days.\n6. Archive mistakes older than 30 days to mistakes-archive.md.\n7. Git commit if changed.\n8. Stay silent \u2014 weekly report handles Andy notification.",
-        "model": "haiku",
-        "timeoutSeconds": 300
+        "model": "anthropic/claude-haiku-4-5",
+        "timeoutSeconds": 600
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775109600000,
-        "lastRunAtMs": 1775023200017,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 54342,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false
+        "nextRunAtMs": 1775282400000,
+        "lastRunAtMs": 1775196000017,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 300302,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
       "id": "a9b19543-1b47-4466-8cb9-b738f3f03631",
-      "agentId": "main",
+      "agentId": "ops",
       "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
       "name": "clawvault-observe",
       "enabled": true,
       "createdAtMs": 1772659182696,
-      "updatedAtMs": 1775030416946,
+      "updatedAtMs": 1775227246999,
       "schedule": {
         "kind": "cron",
         "expr": "0 4 * * *",
@@ -90,31 +92,32 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Run ClawVault observation on all active sessions. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault observe --active --cron`\n2. If observations were written, run `cd ~/workspace && git add -A && git commit -m \"clawvault: nightly observations $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes`\n3. Report number of sessions observed and observations written. If nothing new, stay silent.",
-        "model": "haiku",
-        "timeoutSeconds": 60
+        "model": "anthropic/claude-haiku-4-5",
+        "timeoutSeconds": 180
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775116800000,
-        "lastRunAtMs": 1775030400036,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 16910,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1775289600000,
+        "lastRunAtMs": 1775203200024,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 60177,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
       "id": "dafc366d-e8b0-4867-8657-5ee5e14b632d",
-      "agentId": "main",
+      "agentId": "ops",
       "sessionKey": "agent:main:main",
       "name": "morning-briefing",
       "enabled": true,
       "createdAtMs": 1772283294696,
-      "updatedAtMs": 1775041230428,
+      "updatedAtMs": 1775226849427,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -125,8 +128,8 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Morning briefing for Andy. Four parts:\n\n**PART 1: HEARTBEAT (always include, even if everything is fine)**\n1. Check gateway: openclaw status\n2. Check for errors in logs (last 1h)\n3. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault checkpoint\n4. Check ~/workspace/memory/commitments/ for pending items\n5. Note any stale tasks or blockers\n6. ALWAYS report heartbeat status. If all clear, say so. Never skip this section.\n\n**PART 2: CALENDAR**\nFetch today's events:\nsource ~/.openclaw/.env && curl -s -X POST -H 'Content-Type: application/json' -H \"X-Api-Token: $N8N_WEBHOOK_TOKEN\" -d '{\"service\":\"calendar\",\"action\":\"today\"}' https://n8n-andy.xyz/webhook/openclaw-google\nIf it returns events, list them with times in AST (GMT-4). If it fails or returns empty, say 'Calendar: no events today' or 'Calendar: not configured yet'. Do NOT skip this section.\n\n**PART 3: TASKS (Obsidian TaskNotes)**\n1. Scan Obsidian TaskNotes for open/in-progress tasks:\n   grep -rl 'status: open\\|status: in-progress' /home/clawd/vaults/TaskNotes/Tasks/ 2>/dev/null | while read f; do echo \"--- $(basename \"$f\" .md) ---\"; head -20 \"$f\"; done\n   List task titles, priorities, and due dates. Highlight overdue items.\n2. If no tasks found, say 'No open tasks in Obsidian.'\n\n**PART 4: BRIEFING**\n1. Check weather for Sint Maarten: curl -s 'wttr.in/Sint+Maarten?format=3'\n2. Any pending ClawVault commitments: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search 'commitments'\n\nFormat as a single concise morning update. Start with system health (one line if all good), then calendar events with times, then tasks, then weather, then commitments. Keep it punchy \u2014 no fluff.",
-        "model": "haiku",
-        "timeoutSeconds": 90
+        "model": "anthropic/claude-haiku-4-5",
+        "timeoutSeconds": 180
       },
       "delivery": {
         "mode": "announce",
@@ -134,24 +137,24 @@
         "to": "-1003709913328:98"
       },
       "state": {
-        "nextRunAtMs": 1775127600000,
-        "lastRunAtMs": 1775041200036,
+        "nextRunAtMs": 1775300400000,
+        "lastRunAtMs": 1775226817148,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 30392,
-        "lastDelivered": true,
+        "lastDurationMs": 32279,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
       "id": "43c6e119-4cb9-4d7f-920c-e1e36f2531c4",
-      "agentId": "main",
+      "agentId": "ops",
       "sessionKey": "agent:main:main",
       "name": "memory-hygiene",
       "enabled": true,
       "createdAtMs": 1772283019225,
-      "updatedAtMs": 1774760412569,
+      "updatedAtMs": 1775073475229,
       "schedule": {
         "kind": "cron",
         "expr": "0 1 * * 0",
@@ -162,7 +165,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Memory hygiene review. Go through ClawVault entries:\n1. Run: CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault search '*' to list all entries\n2. Review each category (decisions, lessons, commitments, facts, people, projects, patterns, preferences)\n3. Flag entries older than 30 days that are no longer relevant (outdated decisions, completed commitments, stale facts)\n4. Delete truly obsolete entries with clawvault forget\n5. Summarize what was cleaned up and what was kept\n6. Only report if something was actually cleaned or if there's something noteworthy. Otherwise stay silent.",
-        "model": "haiku",
+        "model": "anthropic/claude-haiku-4-5",
         "timeoutSeconds": 60
       },
       "delivery": {
@@ -183,12 +186,12 @@
     },
     {
       "id": "7063ca5d-7581-4cff-8ec2-a66899b1b5e4",
-      "agentId": "main",
+      "agentId": "ops",
       "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
       "name": "weekly-setup-review",
       "enabled": true,
       "createdAtMs": 1772605505065,
-      "updatedAtMs": 1774764027614,
+      "updatedAtMs": 1775214716014,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * 0",
@@ -198,8 +201,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Weekly setup review. Check the full OpenClaw environment and report only issues or actionable items.\n\n1. **Gateway health:** Run `openclaw status` \u2014 check version, session count, errors\n2. **Cron jobs:** List all cron jobs. Flag any that are disabled, failing, or have stale configs\n3. **System resources:** Check disk (`df -h /`), memory (`free -h`), uptime\n4. **QMD status:** Run `qmd status` \u2014 flag pending embeddings if >100\n5. **Git status:** `cd ~/workspace && git status --short` \u2014 flag uncommitted changes\n6. **Memory hygiene:** Check ~/workspace/memory/commitments/ for stale items, review current-weaknesses.md is still relevant\n7. **OpenClaw updates:** Compare installed vs latest (`openclaw status` shows this)\n\nFormat as a concise report. If everything is clean, say so in one line. Only flag things that actually need Andy's attention. Deliver the report \u2014 don't stay silent even if all clear.",
-        "model": "haiku",
+        "message": "Weekly setup review. Check the full OpenClaw environment and report only issues or actionable items.\n\n1. **Gateway health:** Run `openclaw status` \u2014 check version, session count, errors\n2. **Cron jobs:** List all cron jobs. Flag any that are disabled, failing, or have stale configs\n3. **System resources:** Check disk (`df -h /`), memory (`free -h`), uptime\n4. **QMD status:** Run `qmd status` \u2014 flag pending embeddings if >100\n5. **Git status:** `cd ~/workspace && git status --short` \u2014 flag uncommitted changes\n6. **Memory hygiene:** Check ~/workspace/memory/commitments/ for stale items, review current-weaknesses.md is still relevant\n7. **OpenClaw updates:** Compare installed vs latest (`openclaw status` shows this)\n8. **Stack-change audit:** Compare `ls ~/.agents/skills/` against ~/.agents/skills/dev-workflow/references/stack-manifest.md skill inventory. Flag any skills added/removed/renamed that aren't reflected in the manifest. Also diff ~/workspace/memory/andy-ai-stack.md for new services. If changes found, update stack-manifest.md and flag in report.\n\nFormat as a concise report. If everything is clean, say so in one line. Only flag things that actually need Andy's attention. Deliver the report \u2014 don't stay silent even if all clear.",
+        "model": "anthropic/claude-haiku-4-5",
         "timeoutSeconds": 120
       },
       "delivery": {
@@ -220,11 +223,11 @@
     },
     {
       "id": "fe42216c-e3cc-486d-82c3-50597146a671",
-      "agentId": "main",
+      "agentId": "ops",
       "name": "clawvault-update-check",
       "enabled": true,
       "createdAtMs": 1771116405246,
-      "updatedAtMs": 1774767610058,
+      "updatedAtMs": 1775073475283,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * 0",
@@ -235,7 +238,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Check for clawvault update - run `npm view clawvault version` to get latest, compare with `clawvault --version` for installed. Only reply if update available, otherwise stay silent.",
-        "model": "haiku",
+        "model": "anthropic/claude-haiku-4-5",
         "timeoutSeconds": 60
       },
       "state": {
@@ -256,12 +259,12 @@
     },
     {
       "id": "260f8441-0d77-4d8a-97aa-dcd6afb1cb44",
-      "agentId": "main",
+      "agentId": "ops",
       "sessionKey": "agent:main:telegram:group:-1003709913328:topic:102",
       "name": "clawvault-reflect",
       "enabled": true,
       "createdAtMs": 1772659182723,
-      "updatedAtMs": 1774774825047,
+      "updatedAtMs": 1775073475311,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * 0",
@@ -272,7 +275,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Run ClawVault reflection to promote stable observations into weekly reflections. Execute:\n\n1. `cd ~/workspace && CLAWVAULT_PATH=/home/clawd/workspace/memory clawvault reflect`\n2. If reflections were promoted, also run `clawvault reweave` to mark superseded observations\n3. Run `qmd update && qmd embed` to reindex\n4. `cd ~/workspace && git add -A && git commit -m \"clawvault: weekly reflection $(date +%Y-%m-%d)\" && ~/workspace/bin/safe-push --yes`\n5. Summarize what was reflected and reweaved. If nothing promoted, say so briefly.",
-        "model": "haiku",
+        "model": "anthropic/claude-haiku-4-5",
         "timeoutSeconds": 180
       },
       "delivery": {
@@ -298,7 +301,7 @@
       "name": "weekly-self-eval-report",
       "enabled": true,
       "createdAtMs": 1774477958229,
-      "updatedAtMs": 1774792974327,
+      "updatedAtMs": 1775086142145,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * 0",
@@ -335,7 +338,7 @@
       "name": "Weekly Update Check",
       "enabled": true,
       "createdAtMs": 1773524320472,
-      "updatedAtMs": 1774807256173,
+      "updatedAtMs": 1775073475407,
       "schedule": {
         "kind": "cron",
         "expr": "0 14 * * 0",
@@ -346,7 +349,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "WEEKLY UPDATE CHECK: Run `npm outdated -g 2>/dev/null`, `openclaw status | grep Update`, and check lossless-claw version vs `npm show @martian-engineering/lossless-claw version`. Summarize what's outdated and notify Andy via Telegram (-1003709913328 topic 1) with a concise update report. Only notify if there are actual updates available. Include severity (major/minor/patch) for each.",
-        "model": "anthropic/claude-sonnet-4-6",
+        "model": "anthropic/claude-haiku-4-5",
         "timeoutSeconds": 120
       },
       "delivery": {
@@ -369,5 +372,5 @@
   "limit": 10,
   "hasMore": false,
   "nextOffset": null,
-  "generated": 1775059723977
+  "generated": 1775242983387
 }

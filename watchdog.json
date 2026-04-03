@@ -1,35 +1,17 @@
 {
-  "generated": 1775059723977,
+  "generated": 1775242983387,
   "status": "active",
   "gateway": "up",
-  "last_check": "2026-04-01 02:02:16",
-  "failure_level": 0,
-  "crashes_24h": 33,
-  "repairs_24h": 1,
-  "crashCount24h": 33,
-  "repairAttempts24h": 1,
+  "last_check": "2026-04-02 18:22:32",
+  "failure_level": 1,
+  "crashes_24h": 0,
+  "repairs_24h": 0,
+  "crashCount24h": 0,
+  "repairAttempts24h": 0,
   "autoRepair": true,
   "notifications": true,
-  "uptime": "0d 14h 5m",
+  "uptime": "0d 21h 58m",
   "recentEvents": [
-    {
-      "timestamp": 1775006429000,
-      "message": "REPAIR LEVEL 5: Full reset",
-      "type": "watchdog",
-      "level": "warning"
-    },
-    {
-      "timestamp": 1775006479000,
-      "message": "Repair failed (level 5, status: 000)",
-      "type": "watchdog",
-      "level": "error"
-    },
-    {
-      "timestamp": 1775006779000,
-      "message": "Gateway check failed (attempt 27, status: 000)",
-      "type": "watchdog",
-      "level": "error"
-    },
     {
       "timestamp": 1775006779000,
       "message": "Attempting repair (attempt 25, level 5)",
@@ -191,6 +173,24 @@
       "message": "Repair successful (level 5)",
       "type": "watchdog",
       "level": "success"
+    },
+    {
+      "timestamp": 1775154141000,
+      "message": "Gateway down (status: 000). Repair level 1",
+      "type": "watchdog",
+      "level": "warning"
+    },
+    {
+      "timestamp": 1775154141000,
+      "message": "Level 1: Restarting gateway service...",
+      "type": "watchdog",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775154152000,
+      "message": "Repair level 1 succeeded",
+      "type": "watchdog",
+      "level": "warning"
     }
   ]
 }
