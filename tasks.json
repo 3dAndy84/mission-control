@@ -142,6 +142,18 @@
       "created": "2026-03-28T13:15:08Z",
       "updated": "2026-03-28T13:15:08Z",
       "started_at": "2026-03-28T13:15:08Z"
+    },
+    {
+      "id": "automatexm-domain",
+      "title": "Register automatexm.com domain",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "max",
+      "project": "automatexm",
+      "created": "2026-04-03T20:32:09Z",
+      "updated": "2026-04-03T20:32:09Z",
+      "started_at": "2026-04-03T20:32:09Z"
     }
   ]
 }
