@@ -217,13 +217,16 @@
       "id": "enforcement-hardening-fix-crons-hard-gates-two-sta",
       "title": "Enforcement hardening: fix crons, hard gates, two-stage review, cost tracking, memory nudge",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "infrastructure",
       "created": "2026-04-03T20:51:45Z",
-      "updated": "2026-04-03T20:51:45Z",
-      "started_at": "2026-04-03T20:51:45Z"
+      "updated": "2026-04-03T21:04:15Z",
+      "started_at": "2026-04-03T20:51:45Z",
+      "completed_at": "2026-04-03T21:04:15Z",
+      "proof": "All 5 changes live: gate-check --strict, Phase 4a/4b split, task --cost, memory-nudge.sh, 3 crons fixed. Verified: bash -n all scripts, test runs pass, both repos pushed.",
+      "cost": 0.85
     }
   ]
 }
