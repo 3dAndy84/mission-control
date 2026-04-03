@@ -198,6 +198,18 @@
       "started_at": "2026-04-03T20:32:18Z",
       "completed_at": "2026-04-03T20:32:20Z",
       "proof": "Live at feedz-sxm.com, 17 pages EN/FR, Astro + Tailwind, Phase 6/7 (Harden)"
+    },
+    {
+      "id": "mission-control-mobile",
+      "title": "Mobile optimize Mission Control",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "mission-control",
+      "created": "2026-04-03T20:32:21Z",
+      "updated": "2026-04-03T20:32:21Z",
+      "started_at": "2026-04-03T20:32:21Z"
     }
   ]
 }
