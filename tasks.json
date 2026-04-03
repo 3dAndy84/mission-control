@@ -82,8 +82,9 @@
       "agent": "max",
       "project": "shooting-range",
       "created": "2026-03-23T13:47:46Z",
-      "updated": "2026-03-23T13:47:47Z",
-      "completed_at": "2026-03-23T13:47:47Z"
+      "updated": "2026-04-03T20:31:46Z",
+      "completed_at": "2026-04-03T20:31:46Z",
+      "proof": "Detail page fixed and tested"
     },
     {
       "id": "hr-cyclus-v3-delete-existing-doc-fix",
