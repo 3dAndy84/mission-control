@@ -203,13 +203,15 @@
       "id": "mission-control-mobile",
       "title": "Mobile optimize Mission Control",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "mission-control",
       "created": "2026-04-03T20:32:21Z",
-      "updated": "2026-04-03T20:32:21Z",
-      "started_at": "2026-04-03T20:32:21Z"
+      "updated": "2026-04-03T20:32:22Z",
+      "started_at": "2026-04-03T20:32:21Z",
+      "completed_at": "2026-04-03T20:32:22Z",
+      "proof": "Mobile CSS deployed, tabs scrollable, tables responsive, deployed f03c3e4"
     }
   ]
 }
