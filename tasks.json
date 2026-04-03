@@ -69,8 +69,9 @@
       "agent": "max",
       "project": "shooting-range",
       "created": "2026-03-23T13:47:44Z",
-      "updated": "2026-03-23T13:47:45Z",
-      "completed_at": "2026-03-23T13:47:45Z"
+      "updated": "2026-04-03T20:31:44Z",
+      "completed_at": "2026-04-03T20:31:44Z",
+      "proof": "Resend integrated, emails sending"
     },
     {
       "id": "fix-booking-detail-page-range-booking",
