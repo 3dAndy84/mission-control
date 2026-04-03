@@ -156,6 +156,18 @@
       "started_at": "2026-04-03T20:32:09Z",
       "completed_at": "2026-04-03T20:32:11Z",
       "proof": "Domain registered, Cloudflare Email Routing active (jurandy@automatexm.com)"
+    },
+    {
+      "id": "automatexm-cal",
+      "title": "Set up Cal.com for AutomateXM",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "max",
+      "project": "automatexm",
+      "created": "2026-04-03T20:32:12Z",
+      "updated": "2026-04-03T20:32:12Z",
+      "started_at": "2026-04-03T20:32:12Z"
     }
   ]
 }
