@@ -184,6 +184,18 @@
       "started_at": "2026-04-03T20:32:15Z",
       "completed_at": "2026-04-03T20:32:17Z",
       "proof": "Skill live at ~/.agents/skills/proposal-generator/ with auto-incrementing AXM-### IDs"
+    },
+    {
+      "id": "feedz-website",
+      "title": "Feedz website delivery",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "max",
+      "project": "automatexm",
+      "created": "2026-04-03T20:32:18Z",
+      "updated": "2026-04-03T20:32:18Z",
+      "started_at": "2026-04-03T20:32:18Z"
     }
   ]
 }
