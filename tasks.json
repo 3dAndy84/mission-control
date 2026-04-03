@@ -95,8 +95,9 @@
       "agent": "max",
       "project": "n8n",
       "created": "2026-03-23T13:47:48Z",
-      "updated": "2026-03-23T13:47:49Z",
-      "completed_at": "2026-03-23T13:47:49Z"
+      "updated": "2026-04-03T20:31:47Z",
+      "completed_at": "2026-04-03T20:31:47Z",
+      "proof": "Delete flow working in production"
     },
     {
       "id": "admin-email-addresses-range-booking",
