@@ -175,13 +175,15 @@
       "id": "proposal-skill",
       "title": "Build proposal generator skill",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "automatexm",
       "created": "2026-04-03T20:32:15Z",
-      "updated": "2026-04-03T20:32:15Z",
-      "started_at": "2026-04-03T20:32:15Z"
+      "updated": "2026-04-03T20:32:17Z",
+      "started_at": "2026-04-03T20:32:15Z",
+      "completed_at": "2026-04-03T20:32:17Z",
+      "proof": "Skill live at ~/.agents/skills/proposal-generator/ with auto-incrementing AXM-### IDs"
     }
   ]
 }
