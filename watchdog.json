@@ -1,5 +1,5 @@
 {
-  "generated": 1775243056825,
+  "generated": 1775243506959,
   "status": "active",
   "gateway": "up",
   "last_check": "2026-04-02 18:22:32",
@@ -10,7 +10,7 @@
   "repairAttempts24h": 0,
   "autoRepair": true,
   "notifications": true,
-  "uptime": "0d 21h 59m",
+  "uptime": "0d 22h 7m",
   "recentEvents": [
     {
       "timestamp": 1775006779000,

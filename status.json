@@ -1,20 +1,20 @@
 {
-  "generated": 1775243056825,
+  "generated": 1775243506959,
   "gateway": {
     "version": "2026.4.2",
     "status": "online",
     "uptime_since": "Thu 2026-04-02 21:05:18",
     "sessions": 3,
-    "memory_files": 456,
+    "memory_files": 458,
     "heartbeat": "30m"
   },
   "system": {
     "disk_used": "71G",
     "disk_total": "193G",
     "disk_pct": "37%",
-    "mem_used": "4.8Gi",
+    "mem_used": "4.6Gi",
     "mem_total": "15Gi",
-    "load": "2.70 0.93 0.39",
+    "load": "1.54 0.74 0.45",
     "node_version": "v22.22.0"
   },
   "health": {
@@ -24,7 +24,7 @@
     "session_size": "unknown",
     "last_checkpoint_ms": null
   },
-  "uptime": "0d 21h 59m",
+  "uptime": "0d 22h 7m",
   "vectorDb": {
     "items": 366,
     "embedded": 1202
