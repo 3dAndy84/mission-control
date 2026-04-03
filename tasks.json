@@ -135,10 +135,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-03-23T14:08:47Z",
-      "updated": "2026-03-23T14:08:48Z",
+      "updated": "2026-04-03T20:31:50Z",
       "started_at": "2026-03-23T14:08:47Z",
-      "completed_at": "2026-03-23T14:08:48Z",
-      "proof": "test proof"
+      "completed_at": "2026-04-03T20:31:50Z",
+      "proof": "Self-eval completed, weaknesses logged"
     },
     {
       "id": "simplify-pass-2-refactor-lib-monster-functions-san",
