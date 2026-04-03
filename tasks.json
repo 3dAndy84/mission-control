@@ -55,9 +55,10 @@
       "agent": "max",
       "project": "shooting-range",
       "created": "2026-03-18T13:24:22Z",
-      "updated": "2026-03-23T13:47:43Z",
+      "updated": "2026-04-03T20:31:43Z",
       "started_at": "2026-03-18T13:24:22Z",
-      "completed_at": "2026-03-23T13:47:43Z"
+      "completed_at": "2026-04-03T20:31:43Z",
+      "proof": "Live at range.sxm.gov.nl, git commits deployed"
     },
     {
       "id": "resend-email-migration-range-booking",
