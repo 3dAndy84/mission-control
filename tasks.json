@@ -108,8 +108,9 @@
       "agent": "max",
       "project": "shooting-range",
       "created": "2026-03-23T13:47:50Z",
-      "updated": "2026-03-23T13:47:51Z",
-      "completed_at": "2026-03-23T13:47:51Z"
+      "updated": "2026-04-03T20:31:49Z",
+      "completed_at": "2026-04-03T20:31:49Z",
+      "proof": "Admin emails configured"
     },
     {
       "id": "build-enforcement-systems-task-gate-delegation-che",
