@@ -36,17 +36,6 @@
       "started_at": "2026-03-06T20:42:12Z"
     },
     {
-      "id": "n8n-calendar-response-mapping",
-      "title": "Update n8n Code node calendar response mapping",
-      "description": "Include full calendar event fields (start, end, id, status, htmlLink) in the Google Calendar webhook response",
-      "status": "todo",
-      "priority": "medium",
-      "agent": "andy",
-      "project": "n8n",
-      "created": "2026-03-05",
-      "updated": "2026-03-07"
-    },
-    {
       "id": "build-shooting-range-reservation-system-postgres-n",
       "title": "Build shooting range reservation system (Postgres + n8n + Telegram bot)",
       "description": "",
