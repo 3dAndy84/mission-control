@@ -170,6 +170,18 @@
       "started_at": "2026-04-03T20:32:12Z",
       "completed_at": "2026-04-03T20:32:14Z",
       "proof": "cal.com/automatexm live with 4 event types (Discovery, Audit, Strategy, Kickoff)"
+    },
+    {
+      "id": "proposal-skill",
+      "title": "Build proposal generator skill",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "max",
+      "project": "automatexm",
+      "created": "2026-04-03T20:32:15Z",
+      "updated": "2026-04-03T20:32:15Z",
+      "started_at": "2026-04-03T20:32:15Z"
     }
   ]
 }
