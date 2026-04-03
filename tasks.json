@@ -147,13 +147,15 @@
       "id": "automatexm-domain",
       "title": "Register automatexm.com domain",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "automatexm",
       "created": "2026-04-03T20:32:09Z",
-      "updated": "2026-04-03T20:32:09Z",
-      "started_at": "2026-04-03T20:32:09Z"
+      "updated": "2026-04-03T20:32:11Z",
+      "started_at": "2026-04-03T20:32:09Z",
+      "completed_at": "2026-04-03T20:32:11Z",
+      "proof": "Domain registered, Cloudflare Email Routing active (jurandy@automatexm.com)"
     }
   ]
 }
