@@ -246,13 +246,15 @@
       "id": "clawvault-nightly-observation-run",
       "title": "ClawVault nightly observation run",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "clawvault",
       "created": "2026-04-06T08:01:28Z",
-      "updated": "2026-04-06T08:01:28Z",
-      "started_at": "2026-04-06T08:01:28Z"
+      "updated": "2026-04-06T08:01:48Z",
+      "started_at": "2026-04-06T08:01:28Z",
+      "completed_at": "2026-04-06T08:01:48Z",
+      "proof": "Ran clawvault observe --cron; result: nothing new; HEAD 3d5fb6d"
     }
   ]
 }
