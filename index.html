@@ -1313,8 +1313,10 @@
     </div>
 
     <script>
-        const STATUS_API_URL = 'status.json';
-        const WATCHDOG_API_URL = 'watchdog.json';
+        const cacheBust = () => `?t=${Date.now()}`;
+        const withBust = (path) => `${path}${cacheBust()}`;
+        const STATUS_API_URL = () => withBust('status.json');
+        const WATCHDOG_API_URL = () => withBust('watchdog.json');
 
         let allTasks = [];
         let allCronJobs = [];
@@ -1334,7 +1336,7 @@
         async function loadData() {
             try {
                 // Load tasks (local file)
-                const tasksResponse = await fetch('tasks.json');
+                const tasksResponse = await fetch(withBust('tasks.json'));
                 if (tasksResponse.ok) {
                     const tasksData = await tasksResponse.json();
                     allTasks = tasksData.tasks || [];
@@ -1344,7 +1346,7 @@
 
                 // Load cron jobs (local file)
                 try {
-                    const cronResponse = await fetch('cron-jobs.json');
+                    const cronResponse = await fetch(withBust('cron-jobs.json'));
                     if (cronResponse.ok) {
                         const cronData = await cronResponse.json();
                         allCronJobs = cronData.jobs || [];
@@ -1357,7 +1359,7 @@
 
                 // Load system status (live API)
                 try {
-                    const statusResponse = await fetch(STATUS_API_URL);
+                    const statusResponse = await fetch(STATUS_API_URL());
                     if (statusResponse.ok) {
                         systemStatus = await statusResponse.json();
                     } else {
@@ -1370,7 +1372,7 @@
 
                 // Load watchdog data (live API)
                 try {
-                    const watchdogResponse = await fetch(WATCHDOG_API_URL);
+                    const watchdogResponse = await fetch(WATCHDOG_API_URL());
                     if (watchdogResponse.ok) {
                         watchdogData = await watchdogResponse.json();
                     } else {
@@ -1383,7 +1385,7 @@
 
                 // Load memory data (local file)
                 try {
-                    const memoryResponse = await fetch('memory.json');
+                    const memoryResponse = await fetch(withBust('memory.json'));
                     if (memoryResponse.ok) {
                         memoryData = await memoryResponse.json();
                     } else {
@@ -1395,7 +1397,7 @@
 
                 // Load projects data (local file)
                 try {
-                    const projectsResponse = await fetch('projects.json');
+                    const projectsResponse = await fetch(withBust('projects.json'));
                     if (projectsResponse.ok) {
                         projectsData = await projectsResponse.json();
                     } else {

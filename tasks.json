@@ -12,18 +12,71 @@
       "updated": "2026-03-01"
     },
     {
-      "id": "mission-control-dashboard",
-      "title": "Mission Control Dashboard",
-      "description": "Dashboard live but needs real-time data + alerting tabs",
+      "id": "build-task-lifecycle",
+      "title": "Build task lifecycle tracking system with proof artifacts and Telegram notifications",
+      "description": "",
       "status": "done",
-      "priority": "high",
+      "priority": "medium",
       "agent": "max",
-      "project": "mission-control",
-      "created": "2026-03-05T16:14:16Z",
-      "updated": "2026-04-03T20:31:55Z",
-      "started_at": "2026-03-06T20:42:08Z",
-      "completed_at": "2026-04-03T20:31:55Z",
-      "proof": "Live at task-dashboard-eosin.vercel.app with Tasks, Cron, Memory, Watchdog, Projects tabs"
+      "project": "general",
+      "created": "2026-03-03T19:05:49Z",
+      "updated": "2026-03-03T19:05:54Z",
+      "started_at": "2026-03-03T19:05:49Z",
+      "completed_at": "2026-03-03T19:05:54Z",
+      "proof": "Built and tested: ~/workspace/bin/task-track (CLI script, 6.1KB) + ~/.agents/skills/task-lifecycle/SKILL.md (skill file, 5.3KB). All commands verified: start, complete, fail, status, log. Proof enforcement confirmed \u2014 rejects completion without proof. JSONL audit trail at ~/workspace/memory/task-log.jsonl."
+    },
+    {
+      "id": "test-lifecycle-display",
+      "title": "Testing lifecycle on dashboard",
+      "description": "",
+      "status": "done",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-03T19:23:09Z",
+      "updated": "2026-03-03T19:26:00Z",
+      "started_at": "2026-03-03T19:23:09Z",
+      "completed_at": "2026-03-03T19:26:00Z",
+      "proof": "All lifecycle fields render correctly on dashboard cards - commits: index.html (lifecycle CSS + JS), task-track (updated), task-dashboard (fixed jq filters)"
+    },
+    {
+      "id": "mission-control",
+      "title": "Build Mission Control dashboard \u2014 agent monitoring, system health, calendar, task board",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-05T16:14:15Z",
+      "updated": "2026-03-05T16:14:15Z",
+      "started_at": "2026-03-05T16:14:15Z"
+    },
+    {
+      "id": "watchdog-auto-repair",
+      "title": "Build auto-repair watchdog engine with 5-level escalation, crash loop detection, JSON logging, and new Watchdog tab in Mission Control dashboard",
+      "description": "",
+      "status": "done",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-06T20:43:06Z",
+      "updated": "2026-03-06T21:29:45Z",
+      "started_at": "2026-03-06T20:43:06Z",
+      "completed_at": "2026-03-06T21:29:45Z",
+      "proof": "Commits bb23dd9 (workspace) + d596b51 (mission-control) pushed to GitHub. 5-level auto-repair engine, crash loop detection, JSON logging, Mission Control watchdog tab with event timeline + crash chart. Watchdog service running and monitoring."
+    },
+    {
+      "id": "build-consolidated-task-cli-audit-cron",
+      "title": "Commit 372b7a0: bin/task (unified CLI), scripts/task-audit.sh (cron every 10 min), updated SOUL.md + HEARTBEAT.md + both skill files. Old tools renamed to .old.",
+      "description": "",
+      "status": "done",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-18T10:59:20Z",
+      "updated": "2026-03-18T10:59:20Z",
+      "completed_at": "2026-03-18T10:59:20Z",
+      "proof": "Commit 372b7a0: bin/task (unified CLI), scripts/task-audit.sh (cron every 10 min), updated SOUL.md + HEARTBEAT.md + both skill files. Old tools renamed to .old."
     },
     {
       "id": "watchdog-auto-repair-mission-control-tab",
@@ -36,6 +89,20 @@
       "created": "2026-03-06T20:42:07Z",
       "updated": "2026-03-23T13:47:42Z",
       "started_at": "2026-03-06T20:42:12Z"
+    },
+    {
+      "id": "build-enforcement-systems-task-gate-delegation-che",
+      "title": "Build enforcement systems: task gate, delegation check, sub-agent watcher, topic router",
+      "description": "",
+      "status": "done",
+      "priority": "high",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-23T14:01:48Z",
+      "updated": "2026-03-23T14:10:05Z",
+      "started_at": "2026-03-23T14:01:48Z",
+      "completed_at": "2026-03-23T14:10:05Z",
+      "proof": "All 4 systems built, tested, committed (ba55a08). Gate blocks without task, topic router maps 12 topics, agent watcher escalates after 2min, scorecard tracks delegation rate."
     },
     {
       "id": "build-shooting-range-reservation-system-postgres-n",
@@ -104,18 +171,17 @@
       "proof": "Admin emails configured"
     },
     {
-      "id": "build-enforcement-systems-task-gate-delegation-che",
-      "title": "Build enforcement systems: task gate, delegation check, sub-agent watcher, topic router",
+      "id": "build-enforcement-systems-task-gate-delegation-check-sub",
+      "title": "Enforcement framework live, 20 scripts deleted, daily eval + weekly report active",
       "description": "",
       "status": "done",
-      "priority": "high",
+      "priority": "medium",
       "agent": "max",
       "project": "general",
-      "created": "2026-03-23T14:01:48Z",
-      "updated": "2026-03-23T14:10:05Z",
-      "started_at": "2026-03-23T14:01:48Z",
-      "completed_at": "2026-03-23T14:10:05Z",
-      "proof": "All 4 systems built, tested, committed (ba55a08). Gate blocks without task, topic router maps 12 topics, agent watcher escalates after 2min, scorecard tracks delegation rate."
+      "created": "2026-04-03T20:31:50Z",
+      "updated": "2026-04-03T20:31:50Z",
+      "completed_at": "2026-04-03T20:31:50Z",
+      "proof": "Enforcement framework live, 20 scripts deleted, daily eval + weekly report active"
     },
     {
       "id": "test-enforcement",
@@ -132,16 +198,18 @@
       "proof": "Self-eval completed, weaknesses logged"
     },
     {
-      "id": "simplify-pass-2-refactor-lib-monster-functions-san",
-      "title": "Simplify pass #2: refactor lib/ monster functions (sanitizer.js 199-line fn, access-control.js 3x 50+ line fns, frontier-scanner.js 2x 60+ line fns), clean duplicate code blocks in security-gate.js. Target: break into smaller functions, eliminate duplicates. 1,081 findings remaining.",
-      "description": "",
-      "status": "blocked",
-      "priority": "medium",
+      "id": "mission-control-dashboard",
+      "title": "Mission Control Dashboard",
+      "description": "Dashboard live but needs real-time data + alerting tabs",
+      "status": "done",
+      "priority": "high",
       "agent": "max",
-      "project": "general",
-      "created": "2026-03-28T13:15:08Z",
-      "updated": "2026-04-03T20:32:23Z",
-      "started_at": "2026-03-28T13:15:08Z"
+      "project": "mission-control",
+      "created": "2026-03-05T16:14:16Z",
+      "updated": "2026-04-03T20:31:55Z",
+      "started_at": "2026-03-06T20:42:08Z",
+      "completed_at": "2026-04-03T20:31:55Z",
+      "proof": "Live at task-dashboard-eosin.vercel.app with Tasks, Cron, Memory, Watchdog, Projects tabs"
     },
     {
       "id": "automatexm-domain",
@@ -212,6 +280,18 @@
       "started_at": "2026-04-03T20:32:21Z",
       "completed_at": "2026-04-03T20:32:22Z",
       "proof": "Mobile CSS deployed, tabs scrollable, tables responsive, deployed f03c3e4"
+    },
+    {
+      "id": "simplify-pass-2-refactor-lib-monster-functions-san",
+      "title": "Simplify pass #2: refactor lib/ monster functions (sanitizer.js 199-line fn, access-control.js 3x 50+ line fns, frontier-scanner.js 2x 60+ line fns), clean duplicate code blocks in security-gate.js. Target: break into smaller functions, eliminate duplicates. 1,081 findings remaining.",
+      "description": "Stalled - will restart with clearer scope",
+      "status": "blocked",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-03-28T13:15:08Z",
+      "updated": "2026-04-03T20:32:23Z",
+      "started_at": "2026-03-28T13:15:08Z"
     },
     {
       "id": "enforcement-hardening-fix-crons-hard-gates-two-sta",

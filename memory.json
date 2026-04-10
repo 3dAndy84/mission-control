@@ -1,39 +1,2335 @@
 {
-  "generated": 1775243506959,
-  "total": 278,
-  "vector_count": 1202,
+  "generated": 1775784306199,
+  "total": 565,
+  "vector_count": 0,
   "entries": [
     {
-      "title": "Mistakes",
+      "title": "2026 04 10",
       "category": "general",
-      "file": "mistakes.md",
-      "date": "mistakes.m",
-      "modified": 1775196268717,
-      "preview": "# Mistakes Journal  Active failure patterns. Pruned monthly \u2014 resolved entries move to `mistakes-archive.md`.  ## Format <!-- date | category | what happened | root cause | fix -->  ## Active  ### 202"
+      "file": "2026-04-10.md",
+      "date": "2026-04-10",
+      "modified": 1775783507285,
+      "preview": "- 2026-04-10 01:11 UTC: Investigated stale Mission Control dashboard. Durable finding: there are two task data paths with divergent freshness. `dashboard/tasks.json` was current (updated 2026-04-06) w"
     },
     {
-      "title": "Mistakes Archive",
-      "category": "general",
-      "file": "mistakes-archive.md",
-      "date": "mistakes-a",
-      "modified": 1775196245490,
-      "preview": "# Mistakes Archive  Resolved mistakes moved from mistakes.md after 30+ days or when demonstrably fixed.  ## Archived 2026-04-03 (30+ days old)  ### 2026-03-02 | #discipline | Didn't use task-dashboard"
+      "title": "Openclaw Update Requested After Session Save",
+      "category": "decisions",
+      "file": "decisions/openclaw-update-requested-after-session-save.md",
+      "date": "openclaw-u",
+      "modified": 1775709633715,
+      "preview": "--- title: OpenClaw update requested after session save date: '2026-04-09' memoryType: decision --- Andy requested that sessions be saved to memory first, then OpenClaw be updated to the latest availa"
+    },
+    {
+      "title": "Fire Station Schedule Constraint Rebuild",
+      "category": "projects",
+      "file": "projects/fire-station-schedule-constraint-rebuild.md",
+      "date": "fire-stati",
+      "modified": 1775709627947,
+      "preview": "--- title: Fire station schedule constraint rebuild date: '2026-04-09' memoryType: project --- Rebuilt the 2026 fire station rota from Google Drive under evolving hard constraints. Final clarified rul"
     },
     {
       "title": "Telegram Topic Structure",
       "category": "decisions",
       "file": "decisions/telegram-topic-structure.md",
       "date": "telegram-t",
-      "modified": 1775188884429,
-      "preview": "--- title: telegram-topic-structure date: '2026-04-03' memoryType: decision --- Max Workspace (-1003709913328) Telegram Topic Map: 1 \u2192 \ud83d\udcac General (default conversation, Andy's main channel) 3089 \u2192 n8n "
+      "modified": 1775707238696,
+      "preview": "--- title: telegram-topic-structure date: '2026-04-09' memoryType: decision --- Max Workspace (-1003709913328) Telegram Topic Map: 1 \u2192 \ud83d\udcac General (default conversation, Andy's main channel) 3089 \u2192 n8n "
+    },
+    {
+      "title": "2026 04 09",
+      "category": "general",
+      "file": "2026-04-09.md",
+      "date": "2026-04-09",
+      "modified": 1775707204444,
+      "preview": "## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Reflections: Theme: `assistant` kept surfacing across 65 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04"
+    },
+    {
+      "title": "2026 04 08",
+      "category": "lessons",
+      "file": "lessons/2026-04-08.md",
+      "date": "2026-04-08",
+      "modified": 1775682494639,
+      "preview": "--- title: 2026-04-08 date: '2026-04-08' memoryType: lesson --- - [lesson|c=0.98|i=0.92] 18:00 [telegram-group|topic-1] Topic IDs are already saved in `~/workspace/config/topic-map.json` and `~/worksp"
+    },
+    {
+      "title": "Mistakes Archive",
+      "category": "general",
+      "file": "mistakes-archive.md",
+      "date": "mistakes-a",
+      "modified": 1775628302294,
+      "preview": "# Mistakes Archive  Resolved mistakes moved from mistakes.md after 30+ days or when demonstrably fixed.  ## Archived 2026-04-04 (30+ days old)  ### 2026-03-03 | [[projects/2026-03-03]]e | Built task-t"
+    },
+    {
+      "title": "Mistakes",
+      "category": "general",
+      "file": "mistakes.md",
+      "date": "mistakes.m",
+      "modified": 1775628198355,
+      "preview": "# Mistakes Journal  Active failure patterns. Pruned monthly \u2014 resolved entries move to `mistakes-archive.md`.  ## Format <!-- date | category | what happened | root cause | fix -->  ## Active  *No act"
     },
     {
       "title": "Current Weaknesses",
       "category": "general",
       "file": "current-weaknesses.md",
       "date": "current-we",
-      "modified": 1775178952752,
-      "preview": "# Current Weaknesses  Max 3 items. Each must be a trigger \u2192 response pair.  1. **When asked about a person \u2192** search ClawVault (`qmd query`) FIRST, not LCM. Never guess relationships, roles, or prono"
+      "modified": 1775455358872,
+      "preview": "# Current Weaknesses  Max 3 items. Each must be a trigger \u2192 response pair.  1. **When a request turns into actual work \u2192** run `task start \"...\"` before any other execution or file-edit tool call, and"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "projects",
+      "file": "projects/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775426327294,
+      "preview": "# projects \u2014 2026-04-05  - [project|c=0.72|i=0.45] 13:01 [subagent] assistant: The seed summary contains the bulk of the information. The describe output already gave comprehensive detail. I have enou"
+    },
+    {
+      "title": "Assistant Now Let Me Get The Commit Hash And Update The Project State",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-get-the-commit-hash-and-update-the-project-state.md",
+      "date": "assistant-",
+      "modified": 1775426327293,
+      "preview": "--- created: '2026-04-05T21:58:47.293Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me get the commit hash and update the project state  [[observer]]  Auto-extracted"
+    },
+    {
+      "title": "Assistant Build Passes Successfully Now Let Me Commit All The Hardening Changes",
+      "category": "backlog",
+      "file": "backlog/assistant-build-passes-successfully-now-let-me-commit-all-the-hardening-changes.md",
+      "date": "assistant-",
+      "modified": 1775426327291,
+      "preview": "--- created: '2026-04-05T21:58:47.291Z' source: observer tags:   - open   - observer   - task --- # assistant: Build passes successfully. Now let me commit all the hardening changes  [[observer]]  Aut"
+    },
+    {
+      "title": "Assistant Files Created Now Let Me Verify The Build Passes",
+      "category": "backlog",
+      "file": "backlog/assistant-files-created-now-let-me-verify-the-build-passes.md",
+      "date": "assistant-",
+      "modified": 1775426327289,
+      "preview": "--- created: '2026-04-05T21:58:47.290Z' source: observer tags:   - open   - observer   - task --- # assistant: Files created. Now let me verify the build passes  [[observer]]  Auto-extracted by observ"
+    },
+    {
+      "title": "Assistant Now I Have All The Information Let Me Create The Improved Readmemd Envexample And License Files",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-all-the-information-let-me-create-the-improved-readmemd-envexample-and-license-files.md",
+      "date": "assistant-",
+      "modified": 1775426327287,
+      "preview": "--- created: '2026-04-05T21:58:47.288Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have all the information. Let me create the improved README.md, .env.example, and L"
+    },
+    {
+      "title": "Assistant Let Me Check One Of The Tipblog Post Files To Understand The Format",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-check-one-of-the-tipblog-post-files-to-understand-the-format.md",
+      "date": "assistant-",
+      "modified": 1775426327285,
+      "preview": "--- created: '2026-04-05T21:58:47.286Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me check one of the tip/blog post files to understand the format  [[observer]]  Auto-"
+    },
+    {
+      "title": "Assistant Now Let Me Check The Project Structure To Understand How Blog Poststips Are Organized",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-check-the-project-structure-to-understand-how-blog-poststips-are-organized.md",
+      "date": "assistant-",
+      "modified": 1775426327283,
+      "preview": "--- created: '2026-04-05T21:58:47.284Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me check the project structure to understand how blog posts/tips are organized  ["
+    },
+    {
+      "title": "Assistant Ill Complete Phase 5 Harden For The Feedz Website Let Me Start By Reading The Existing Files To Understan",
+      "category": "backlog",
+      "file": "backlog/assistant-ill-complete-phase-5-harden-for-the-feedz-website-let-me-start-by-reading-the-existing-files-to-understan.md",
+      "date": "assistant-",
+      "modified": 1775426327281,
+      "preview": "--- created: '2026-04-05T21:58:47.280Z' source: observer tags:   - open   - observer   - task --- # assistant: I'll complete Phase 5 (Harden) for the Feedz website. Let me start by reading the existin"
+    },
+    {
+      "title": "05",
+      "category": "ledger",
+      "file": "ledger/observations/2026/04/05.md",
+      "date": "",
+      "modified": 1775426327087,
+      "preview": "## 2026-03-22  - [fact|c=0.72|i=0.20] 12:58 [telegram-group] user: Conversation info (untrusted metadata): ```json { \"message_id\": \"4557\", \"sender_id\": \"690429893\", \"conversation_label\": \"Max Workspac"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "general",
+      "file": "2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775424223029,
+      "preview": "## 2026-04-05 21:23 UTC - Live config test: added initiative-biased systemPrompt at Telegram topic 1 (not agent-level) to reduce GPT permission-seeking; behavior goal is execute\u2192report, ban soft-offer"
+    },
+    {
+      "title": "Project Stack Recommendations 2026 04 05",
+      "category": "preferences",
+      "file": "preferences/project-stack-recommendations-2026-04-05.md",
+      "date": "project-st",
+      "modified": 1775412078397,
+      "preview": "# Project stack recommendations preference  - Date: 2026-04-05 - Owner: Andy  Andy wants these stack recommendations saved and proactively suggested when relevant during future project builds.  ## Def"
+    },
+    {
+      "title": "Week 2026 W14",
+      "category": "self-evals",
+      "file": "self-evals/week-2026-W14.md",
+      "date": "week-2026-",
+      "modified": 1775397761040,
+      "preview": "# Weekly Self-Eval: 2026-W14 (Mar 30 \u2013 Apr 5)  ## What Improved (with evidence)  1. **Self-eval system is finally sticking.** Daily evals ran Apr 2, 3, 4 \u2014 all committed (commits 2b12bbb, 3b61d41, d21"
+    },
+    {
+      "title": "2026 04 03",
+      "category": "facts",
+      "file": "facts/2026-04-03.md",
+      "date": "2026-04-03",
+      "modified": 1775394111733,
+      "preview": "# facts \u2014 2026-04-03  - [fact|c=0.72|i=0.60] 20:58 [unknown] user: [[[Fri]] 2026-04-03 20:58 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "Assistant The Integration Cant Create Top Level Workspace Pages Directly Ill Create The Automatexm Page Under Max",
+      "category": "backlog",
+      "file": "backlog/assistant-the-integration-cant-create-top-level-workspace-pages-directly-ill-create-the-automatexm-page-under-max.md",
+      "date": "assistant-",
+      "modified": 1775394110765,
+      "preview": "--- created: '2026-04-05T13:01:50.765Z' source: observer tags:   - open   - observer   - task --- # assistant: The integration can't create top-level workspace pages directly. I'll create the Automate"
+    },
+    {
+      "title": "2026 03 30",
+      "category": "people",
+      "file": "people/project-tracking/2026-03-30.md",
+      "date": "2026-03-30",
+      "modified": 1775394110626,
+      "preview": "# people/project-tracking \u2014 2026-03-30  - [relationship|c=0.72|i=0.60] 02:12 [unknown] user: [[[Mon]] 2026-03-30 02:12 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Resu"
+    },
+    {
+      "title": "Assistant Now I Have Everything I Need Let Me Create The Refresh Script And Fix Indexhtml",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-everything-i-need-let-me-create-the-refresh-script-and-fix-indexhtml.md",
+      "date": "assistant-",
+      "modified": 1775394108564,
+      "preview": "--- created: '2026-04-05T13:01:48.565Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have everything I need. Let me create the refresh script and fix index.html  [[obse"
+    },
+    {
+      "title": "Assistant Now I Have A Clear Picture The Js Expects Different Field Names Than Whats In Statusjson Ill Update Both",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-a-clear-picture-the-js-expects-different-field-names-than-whats-in-statusjson-ill-update-both.md",
+      "date": "assistant-",
+      "modified": 1775394108562,
+      "preview": "--- created: '2026-04-05T13:01:48.563Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have a clear picture. The JS expects different field names than what's in status.js"
+    },
+    {
+      "title": "2026 04 01",
+      "category": "facts",
+      "file": "facts/2026-04-01.md",
+      "date": "2026-04-01",
+      "modified": 1775394108430,
+      "preview": "# facts \u2014 2026-04-01  - [fact|c=0.72|i=0.60] 15:56 [unknown] user: [[[Wed]] 2026-04-01 15:56 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "2026 03 28",
+      "category": "facts",
+      "file": "facts/2026-03-28.md",
+      "date": "2026-03-28",
+      "modified": 1775394107269,
+      "preview": "# facts \u2014 2026-03-28  - [fact|c=0.72|i=0.60] 12:42 [unknown] user: [[[Sat]] 2026-03-28 12:42 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "Assistant Now I Need To Fix All The Jq Queries Throughout The Check Functions To Handle The Array Wrapper The Cleanest",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-need-to-fix-all-the-jq-queries-throughout-the-check-functions-to-handle-the-array-wrapper-the-cleanest.md",
+      "date": "assistant-",
+      "modified": 1775394106369,
+      "preview": "--- created: '2026-04-05T13:01:46.369Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I need to fix all the jq queries throughout the check functions to handle the array w"
+    },
+    {
+      "title": "Assistant Now Fix The Node Count Exports Are Wrapped In Array So Nodes Should Be Nodes",
+      "category": "backlog",
+      "file": "backlog/assistant-now-fix-the-node-count-exports-are-wrapped-in-array-so-nodes-should-be-nodes.md",
+      "date": "assistant-",
+      "modified": 1775394106367,
+      "preview": "--- created: '2026-04-05T13:01:46.368Z' source: observer tags:   - open   - observer   - task --- # assistant: Now fix the node count \u2014 exports are wrapped in array ``, so `.nodes[]?` should be `..nod"
+    },
+    {
+      "title": "Assistant The Export Wraps The Workflow In An Array The Node Count Is 0 Because Im Doing Nodes On The Root O",
+      "category": "backlog",
+      "file": "backlog/assistant-the-export-wraps-the-workflow-in-an-array-the-node-count-is-0-because-im-doing-nodes-on-the-root-o.md",
+      "date": "assistant-",
+      "modified": 1775394106365,
+      "preview": "--- created: '2026-04-05T13:01:46.366Z' source: observer tags:   - open   - observer   - task --- # assistant: The export wraps the workflow in an array ``. The node count is 0 because I'm doing `.nod"
+    },
+    {
+      "title": "Assistant The Audit Ran And Returned Results The Node Count Shows 0 Which Seems Off Let Me Quickly Check The Export",
+      "category": "backlog",
+      "file": "backlog/assistant-the-audit-ran-and-returned-results-the-node-count-shows-0-which-seems-off-let-me-quickly-check-the-export.md",
+      "date": "assistant-",
+      "modified": 1775394106363,
+      "preview": "--- created: '2026-04-05T13:01:46.364Z' source: observer tags:   - open   - observer   - task --- # assistant: The audit ran and returned results. The node count shows 0 which seems off \u2014 let me quick"
+    },
+    {
+      "title": "Assistant Now Ill Build All Three Components Let Me Start With The Audit Command For The Script Then The Reference D",
+      "category": "backlog",
+      "file": "backlog/assistant-now-ill-build-all-three-components-let-me-start-with-the-audit-command-for-the-script-then-the-reference-d.md",
+      "date": "assistant-",
+      "modified": 1775394106362,
+      "preview": "--- created: '2026-04-05T13:01:46.362Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I'll build all three components. Let me start with the audit command for the script, "
+    },
+    {
+      "title": "2026 04 05",
+      "category": "facts",
+      "file": "facts/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394103263,
+      "preview": "# facts \u2014 2026-04-05  - [fact|c=0.84|i=0.90] 13:01 [cron] assistant: **ClawVault [[Weekly Reflection]] \u2014 April 5, 2026** No new reflections promoted this week. The reflect scan found no observations m"
+    },
+    {
+      "title": "Assistant Works Great Let Me View The Final File To Confirm It Looks Clean",
+      "category": "backlog",
+      "file": "backlog/assistant-works-great-let-me-view-the-final-file-to-confirm-it-looks-clean.md",
+      "date": "assistant-",
+      "modified": 1775394103262,
+      "preview": "--- created: '2026-04-05T13:01:43.263Z' source: observer tags:   - open   - observer   - task --- # assistant: Works great. Let me view the final file to confirm it looks clean  [[observer]]  Auto-ext"
+    },
+    {
+      "title": "Assistant Qmd Search Is 12 Seconds Well Within The 3S Timeout Ill Use Qmd Search Bm25 Instead Of Qmd Query",
+      "category": "backlog",
+      "file": "backlog/assistant-qmd-search-is-12-seconds-well-within-the-3s-timeout-ill-use-qmd-search-bm25-instead-of-qmd-query.md",
+      "date": "assistant-",
+      "modified": 1775394103260,
+      "preview": "--- created: '2026-04-05T13:01:43.261Z' source: observer tags:   - open   - observer   - task --- # assistant: `qmd search` is ~1.2 seconds \u2014 well within the 3s timeout. I'll use `qmd search` (BM25) i"
+    },
+    {
+      "title": "Assistant Good Qmd Works And Exports Delegatecompactiontoruntime Correctly One Issue Qmd Query Takes 232S Due",
+      "category": "backlog",
+      "file": "backlog/assistant-good-qmd-works-and-exports-delegatecompactiontoruntime-correctly-one-issue-qmd-query-takes-232s-due.md",
+      "date": "assistant-",
+      "modified": 1775394103259,
+      "preview": "--- created: '2026-04-05T13:01:43.259Z' source: observer tags:   - open   - observer   - task --- # assistant: Good \u2014 QMD works and exports `delegateCompactionToRuntime` correctly. One issue: `qmd que"
+    },
+    {
+      "title": "Assistant Qmd Is Compiling On First Run Its Building Llamacpp Let Me Check What Delegatecompactiontoruntime Look",
+      "category": "backlog",
+      "file": "backlog/assistant-qmd-is-compiling-on-first-run-its-building-llamacpp-let-me-check-what-delegatecompactiontoruntime-look.md",
+      "date": "assistant-",
+      "modified": 1775394103257,
+      "preview": "--- created: '2026-04-05T13:01:43.258Z' source: observer tags:   - open   - observer   - task --- # assistant: QMD is compiling on first run (it's building llama.cpp). Let me check what `delegateCompa"
+    },
+    {
+      "title": "Assistant Good I Have Everything I Need Let Me Also Check If The Plugin Sdk Is Available Locally",
+      "category": "backlog",
+      "file": "backlog/assistant-good-i-have-everything-i-need-let-me-also-check-if-the-plugin-sdk-is-available-locally.md",
+      "date": "assistant-",
+      "modified": 1775394103256,
+      "preview": "--- created: '2026-04-05T13:01:43.256Z' source: observer tags:   - open   - observer   - task --- # assistant: Good, I have everything I need. Let me also check if the plugin-sdk is available locally "
+    },
+    {
+      "title": "Assistant Let Me Fetch The Reference Docs First Then Build The Plugin",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-fetch-the-reference-docs-first-then-build-the-plugin.md",
+      "date": "assistant-",
+      "modified": 1775394103254,
+      "preview": "--- created: '2026-04-05T13:01:43.254Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me fetch the reference docs first, then build the plugin  [[observer]]  Auto-extracte"
+    },
+    {
+      "title": "Assistant Now Let Me Check Security Hooksjs Line 238 More Carefully And Understand What Needs Changing",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-check-security-hooksjs-line-238-more-carefully-and-understand-what-needs-changing.md",
+      "date": "assistant-",
+      "modified": 1775394102265,
+      "preview": "--- created: '2026-04-05T13:01:42.265Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me check security-hooks.js line 238 more carefully and understand what needs chan"
+    },
+    {
+      "title": "Assistant Now Let Me Look At The Specific Lib File Sections More Carefully",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-look-at-the-specific-lib-file-sections-more-carefully.md",
+      "date": "assistant-",
+      "modified": 1775394102262,
+      "preview": "--- created: '2026-04-05T13:01:42.263Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me look at the specific lib file sections more carefully  [[observer]]  Auto-extr"
+    },
+    {
+      "title": "Assistant Good Generate Card Finaljs Exists At 169 Lines Now Let Me Read The Lib Files Before Making Changes",
+      "category": "backlog",
+      "file": "backlog/assistant-good-generate-card-finaljs-exists-at-169-lines-now-let-me-read-the-lib-files-before-making-changes.md",
+      "date": "assistant-",
+      "modified": 1775394102261,
+      "preview": "--- created: '2026-04-05T13:01:42.261Z' source: observer tags:   - open   - observer   - task --- # assistant: Good. `generate-card-final.js` exists at 169 lines. Now let me read the lib files before "
+    },
+    {
+      "title": "Assistant Now Let Me Set Up Follow Up Checks",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-set-up-follow-up-checks.md",
+      "date": "assistant-",
+      "modified": 1775394101311,
+      "preview": "--- created: '2026-04-05T13:01:41.311Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me set up follow-up checks  [[observer]]  Auto-extracted by observer from session"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "commitments",
+      "file": "commitments/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394101311,
+      "preview": "# commitments \u2014 2026-04-05  - [commitment|c=0.78|i=0.55] 13:01 [cron] assistant: 28 sessions checked, no observations crossed threshold. [[Nothing]] to commit. - [commitment|c=0.78|i=0.55] 13:01 [cron"
+    },
+    {
+      "title": "Assistant Got It Aa2009 On April 1 Let Me Check Flightstats For Any Early Status Info",
+      "category": "backlog",
+      "file": "backlog/assistant-got-it-aa2009-on-april-1-let-me-check-flightstats-for-any-early-status-info.md",
+      "date": "assistant-",
+      "modified": 1775394101309,
+      "preview": "--- created: '2026-04-05T13:01:41.309Z' source: observer tags:   - open   - observer   - task --- # assistant: Got it \u2014 AA2009 on April 1. Let me check FlightStats for any early status info  [[observe"
+    },
+    {
+      "title": "Assistant Good Thinking Heres What Id Suggest 1 Obsidian Topic Yes Create One Thats Where Task Management",
+      "category": "backlog",
+      "file": "backlog/assistant-good-thinking-heres-what-id-suggest-1-obsidian-topic-yes-create-one-thats-where-task-management.md",
+      "date": "assistant-",
+      "modified": 1775394100358,
+      "preview": "--- created: '2026-04-05T13:01:40.358Z' source: observer tags:   - open   - observer   - task --- # assistant: Good thinking. Here's what I'd suggest: 1. **Obsidian topic** \u2014 yes, create one. That's w"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "decisions",
+      "file": "decisions/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394100358,
+      "preview": "# decisions \u2014 2026-04-05  - [decision|c=0.90|i=0.90] 05:00 [cron] user: [cron:43c6e119-4cb9-4d7f-920c-e1e36f2531c4 memory-hygiene] [[Memory]] hygiene review. Go through ClawVault entries: 1. [[Run]]: "
+    },
+    {
+      "title": "2026 04 05",
+      "category": "preferences",
+      "file": "preferences/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394100356,
+      "preview": "# preferences \u2014 2026-04-05  - [preference|c=0.84|i=0.90] 13:01 [unknown] assistant: [[Honest]] answer: I don't have an active [[Patch]] session for the google-stitch skill. That \"[[Building]]: google-"
+    },
+    {
+      "title": "Assistant Yep 14 Minutes In And Still Going Probably In The Middle Of Testing The Api Call Stitch Generation Can Be",
+      "category": "backlog",
+      "file": "backlog/assistant-yep-14-minutes-in-and-still-going-probably-in-the-middle-of-testing-the-api-call-stitch-generation-can-be.md",
+      "date": "assistant-",
+      "modified": 1775394100354,
+      "preview": "--- created: '2026-04-05T13:01:40.354Z' source: observer tags:   - open   - observer   - task --- # assistant: Yep, 14 minutes in and still going. Probably in the middle of testing the API call \u2014 Stit"
+    },
+    {
+      "title": "Assistant Ok The Package Is Real At Least So The Plan Was Solid The Execution Was Nonexistent Say The Word And Ill",
+      "category": "backlog",
+      "file": "backlog/assistant-ok-the-package-is-real-at-least-so-the-plan-was-solid-the-execution-was-nonexistent-say-the-word-and-ill.md",
+      "date": "assistant-",
+      "modified": 1775394100351,
+      "preview": "--- created: '2026-04-05T13:01:40.351Z' source: observer tags:   - open   - observer   - task --- # assistant: OK, the package is real at least. So the plan was solid, the execution was nonexistent. S"
+    },
+    {
+      "title": "Assistant Yeah That Was Me Confidently Announcing A Plan And Then Not Executing It No Patch Was Spawned No Skill Was",
+      "category": "backlog",
+      "file": "backlog/assistant-yeah-that-was-me-confidently-announcing-a-plan-and-then-not-executing-it-no-patch-was-spawned-no-skill-was.md",
+      "date": "assistant-",
+      "modified": 1775394100348,
+      "preview": "--- created: '2026-04-05T13:01:40.349Z' source: observer tags:   - open   - observer   - task --- # assistant: Yeah, that was me confidently announcing a plan and then not executing it. No Patch was s"
+    },
+    {
+      "title": "Assistant Both Endpoints Working Let Me Confirm No More Errors",
+      "category": "backlog",
+      "file": "backlog/assistant-both-endpoints-working-let-me-confirm-no-more-errors.md",
+      "date": "assistant-",
+      "modified": 1775394100344,
+      "preview": "--- created: '2026-04-05T13:01:40.344Z' source: observer tags:   - open   - observer   - task --- # assistant: Both endpoints working. Let me confirm no more errors  [[observer]]  Auto-extracted by ob"
+    },
+    {
+      "title": "Assistant Let Me Verify The Status Endpoint Too",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-verify-the-status-endpoint-too.md",
+      "date": "assistant-",
+      "modified": 1775394100342,
+      "preview": "--- created: '2026-04-05T13:01:40.342Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me verify the status endpoint too  [[observer]]  Auto-extracted by observer from sess"
+    },
+    {
+      "title": "Assistant The Binary Data Isnt Base64 Its Raw Binary The Readbinaryfile Node Stores The File Content As Raw Bina",
+      "category": "backlog",
+      "file": "backlog/assistant-the-binary-data-isnt-base64-its-raw-binary-the-readbinaryfile-node-stores-the-file-content-as-raw-bina.md",
+      "date": "assistant-",
+      "modified": 1775394100340,
+      "preview": "--- created: '2026-04-05T13:01:40.340Z' source: observer tags:   - open   - observer   - task --- # assistant: The binary data isn't base64 \u2014 it's raw binary. The `readBinaryFile` node stores the file"
+    },
+    {
+      "title": "Assistant Code Looks Correct In Both Places The Might Be From The Task Runner Sandbox Rewriting Let Me Try A Simp",
+      "category": "backlog",
+      "file": "backlog/assistant-code-looks-correct-in-both-places-the-might-be-from-the-task-runner-sandbox-rewriting-let-me-try-a-simp.md",
+      "date": "assistant-",
+      "modified": 1775394100337,
+      "preview": "--- created: '2026-04-05T13:01:40.338Z' source: observer tags:   - open   - observer   - task --- # assistant: Code looks correct in both places. The `~` might be from the task runner sandbox rewritin"
+    },
+    {
+      "title": "Assistant Code Looks Fine The Token Error Might Be From The Sandbox Rewriting Input Let Me Check If The Publis",
+      "category": "backlog",
+      "file": "backlog/assistant-code-looks-fine-the-token-error-might-be-from-the-sandbox-rewriting-input-let-me-check-if-the-publis.md",
+      "date": "assistant-",
+      "modified": 1775394100334,
+      "preview": "--- created: '2026-04-05T13:01:40.335Z' source: observer tags:   - open   - observer   - task --- # assistant: Code looks fine. The `~` token error might be from the sandbox rewriting `$input`. Let me"
+    },
+    {
+      "title": "Assistant Unexpected Token The Code Node Js Has A Syntax Error The Input Reference Probably Got Mangled",
+      "category": "backlog",
+      "file": "backlog/assistant-unexpected-token-the-code-node-js-has-a-syntax-error-the-input-reference-probably-got-mangled.md",
+      "date": "assistant-",
+      "modified": 1775394100332,
+      "preview": "--- created: '2026-04-05T13:01:40.333Z' source: observer tags:   - open   - observer   - task --- # assistant: **Unexpected token '~'** \u2014 the Code node JS has a syntax error. The `$input` reference pr"
+    },
+    {
+      "title": "Assistant Path Is Now Correct But Still Erroring Let Me Get The New Error Message",
+      "category": "backlog",
+      "file": "backlog/assistant-path-is-now-correct-but-still-erroring-let-me-get-the-new-error-message.md",
+      "date": "assistant-",
+      "modified": 1775394100330,
+      "preview": "--- created: '2026-04-05T13:01:40.331Z' source: observer tags:   - open   - observer   - task --- # assistant: Path is now correct. But still erroring. Let me get the new error message  [[observer]]  "
+    },
+    {
+      "title": "Assistant Found It The Workflow History Tables Published Version Still Has The Old Paths Let Me Update That Too",
+      "category": "backlog",
+      "file": "backlog/assistant-found-it-the-workflow_history-tables-published-version-still-has-the-old-paths-let-me-update-that-too.md",
+      "date": "assistant-",
+      "modified": 1775394100328,
+      "preview": "--- created: '2026-04-05T13:01:40.328Z' source: observer tags:   - open   - observer   - task --- # assistant: Found it. The `workflow_history` table's published version still has the old paths. Let m"
+    },
+    {
+      "title": "Assistant The Published Version Still Has The Old Path The Publishworkflow Cli Is Reading From The Execution Data",
+      "category": "backlog",
+      "file": "backlog/assistant-the-published-version-still-has-the-old-path-the-publishworkflow-cli-is-reading-from-the-execution-data.md",
+      "date": "assistant-",
+      "modified": 1775394100325,
+      "preview": "--- created: '2026-04-05T13:01:40.326Z' source: observer tags:   - open   - observer   - task --- # assistant: The published version STILL has the old path. The `publish:workflow` CLI is reading from "
+    },
+    {
+      "title": "Assistant The Execution Used The Old Path The Publishworkflow Command Ran Before Docker Restart So The Publi",
+      "category": "backlog",
+      "file": "backlog/assistant-the-execution-used-the-old-path-the-publishworkflow-command-ran-before-docker-restart-so-the-publi.md",
+      "date": "assistant-",
+      "modified": 1775394100323,
+      "preview": "--- created: '2026-04-05T13:01:40.323Z' source: observer tags:   - open   - observer   - task --- # assistant: The execution used the **old** path. The `publish:workflow` command ran before `docker re"
+    },
+    {
+      "title": "Assistant Paths Are Correct In The Draft The Published Version Must Still Have The Old Path Let Me Check And Fix",
+      "category": "backlog",
+      "file": "backlog/assistant-paths-are-correct-in-the-draft-the-published-version-must-still-have-the-old-path-let-me-check-and-fix.md",
+      "date": "assistant-",
+      "modified": 1775394100321,
+      "preview": "--- created: '2026-04-05T13:01:40.321Z' source: observer tags:   - open   - observer   - task --- # assistant: Paths are correct in the draft. The published version must still have the old path. Let m"
+    },
+    {
+      "title": "Assistant Still The Same Old Error Homenoden8N Files The Db Update To The Path Didnt Stick Because The Publis",
+      "category": "backlog",
+      "file": "backlog/assistant-still-the-same-old-error-homenoden8n-files-the-db-update-to-the-path-didnt-stick-because-the-publis.md",
+      "date": "assistant-",
+      "modified": 1775394100319,
+      "preview": "--- created: '2026-04-05T13:01:40.319Z' source: observer tags:   - open   - observer   - task --- # assistant: Still the same old error \u2014 `/home/node/.n8n-files`. The DB update to the path didn't stic"
+    },
+    {
+      "title": "Assistant The 8580 Success Is The Error Trigger Execution Sending The Telegram Alert That Succeeded The Actual W",
+      "category": "backlog",
+      "file": "backlog/assistant-the-8580-success-is-the-error-trigger-execution-sending-the-telegram-alert-that-succeeded-the-actual-w.md",
+      "date": "assistant-",
+      "modified": 1775394100316,
+      "preview": "--- created: '2026-04-05T13:01:40.317Z' source: observer tags:   - open   - observer   - task --- # assistant: The 8580 \"success\" is the error trigger execution (sending the Telegram alert) \u2014 that suc"
+    },
+    {
+      "title": "Assistant Still 500 The Code Node Parse Is Failing Let Me Check If Readbinaryfile Actually Outputs Data In The Expe",
+      "category": "backlog",
+      "file": "backlog/assistant-still-500-the-code-node-parse-is-failing-let-me-check-if-readbinaryfile-actually-outputs-data-in-the-expe.md",
+      "date": "assistant-",
+      "modified": 1775394100314,
+      "preview": "--- created: '2026-04-05T13:01:40.315Z' source: observer tags:   - open   - observer   - task --- # assistant: Still 500. The Code node parse is failing. Let me check if `readBinaryFile` actually outp"
+    },
+    {
+      "title": "Assistant Interesting There Are Success Executions Mixed In The Latest 8580 Is Success But 8579 Errored",
+      "category": "backlog",
+      "file": "backlog/assistant-interesting-there-are-success-executions-mixed-in-the-latest-8580-is-success-but-8579-errored.md",
+      "date": "assistant-",
+      "modified": 1775394100312,
+      "preview": "--- created: '2026-04-05T13:01:40.313Z' source: observer tags:   - open   - observer   - task --- # assistant: Interesting \u2014 there are **success** executions mixed in. The latest (8580) is **success**"
+    },
+    {
+      "title": "Assistant That Might Be The Cached Old Error Let Me Check If A New Execution Actually Ran",
+      "category": "backlog",
+      "file": "backlog/assistant-that-might-be-the-cached-old-error-let-me-check-if-a-new-execution-actually-ran.md",
+      "date": "assistant-",
+      "modified": 1775394100310,
+      "preview": "--- created: '2026-04-05T13:01:40.310Z' source: observer tags:   - open   - observer   - task --- # assistant: That might be the cached old error. Let me check if a new execution actually ran  [[obser"
+    },
+    {
+      "title": "Assistant The File Path Restriction Files Must Be In Homenoden8N Files Not Homenoden8Nmission Control",
+      "category": "backlog",
+      "file": "backlog/assistant-the-file-path-restriction-files-must-be-in-homenoden8n-files-not-homenoden8nmission-control.md",
+      "date": "assistant-",
+      "modified": 1775394100307,
+      "preview": "--- created: '2026-04-05T13:01:40.308Z' source: observer tags:   - open   - observer   - task --- # assistant: The file path restriction. Files must be in `/home/node/.n8n-files`, not `/home/node/.n8n"
+    },
+    {
+      "title": "Assistant Webhooks Are Now Registered The Workflow Is Activating The Error Is From The Code Node Logic Let Me Check",
+      "category": "backlog",
+      "file": "backlog/assistant-webhooks-are-now-registered-the-workflow-is-activating-the-error-is-from-the-code-node-logic-let-me-check.md",
+      "date": "assistant-",
+      "modified": 1775394100305,
+      "preview": "--- created: '2026-04-05T13:01:40.306Z' source: observer tags:   - open   - observer   - task --- # assistant: Webhooks are now registered \u2014 the workflow is activating. The error is from the Code node"
+    },
+    {
+      "title": "Assistant Readwritefile Is Available Under Files Its Just At A Different Path The Node Type Might Be N8N Node",
+      "category": "backlog",
+      "file": "backlog/assistant-readwritefile-is-available-under-files-its-just-at-a-different-path-the-node-type-might-be-n8n-node.md",
+      "date": "assistant-",
+      "modified": 1775394100303,
+      "preview": "--- created: '2026-04-05T13:01:40.304Z' source: observer tags:   - open   - observer   - task --- # assistant: `ReadWriteFile` IS available under `Files/` \u2014 it's just at a different path. The node typ"
+    },
+    {
+      "title": "Assistant It Was Activated In A Previous Restart But Not In The Latest One The Import Broke Something Silently Let M",
+      "category": "backlog",
+      "file": "backlog/assistant-it-was-activated-in-a-previous-restart-but-not-in-the-latest-one-the-import-broke-something-silently-let-m.md",
+      "date": "assistant-",
+      "modified": 1775394100301,
+      "preview": "--- created: '2026-04-05T13:01:40.302Z' source: observer tags:   - open   - observer   - task --- # assistant: It was activated in a previous restart but not in the latest one \u2014 the import broke somet"
+    },
+    {
+      "title": "Assistant Mission Control Api Is Completely Missing From The Activation List N8N Is Silently Skipping It Let Me Check",
+      "category": "backlog",
+      "file": "backlog/assistant-mission-control-api-is-completely-missing-from-the-activation-list-n8n-is-silently-skipping-it-let-me-check.md",
+      "date": "assistant-",
+      "modified": 1775394100299,
+      "preview": "--- created: '2026-04-05T13:01:40.300Z' source: observer tags:   - open   - observer   - task --- # assistant: Mission Control API is completely missing from the activation list. n8n is silently skipp"
+    },
+    {
+      "title": "Assistant There It Is This N8N Version Doesnt Have Readwritefile It Has Readbinaryfile And Readbinaryfiles L",
+      "category": "backlog",
+      "file": "backlog/assistant-there-it-is-this-n8n-version-doesnt-have-readwritefile-it-has-readbinaryfile-and-readbinaryfiles-l.md",
+      "date": "assistant-",
+      "modified": 1775394100297,
+      "preview": "--- created: '2026-04-05T13:01:40.298Z' source: observer tags:   - open   - observer   - task --- # assistant: There it is \u2014 this n8n version doesn't have `readWriteFile`. It has `ReadBinaryFile` and "
+    },
+    {
+      "title": "Assistant It Says Activated But Webhooks Arent Registering Could Be The Readwritefile Node Type Doesnt Exist In Th",
+      "category": "backlog",
+      "file": "backlog/assistant-it-says-activated-but-webhooks-arent-registering-could-be-the-readwritefile-node-type-doesnt-exist-in-th.md",
+      "date": "assistant-",
+      "modified": 1775394100295,
+      "preview": "--- created: '2026-04-05T13:01:40.296Z' source: observer tags:   - open   - observer   - task --- # assistant: It says activated but webhooks aren't registering. Could be the `readWriteFile` node type"
+    },
+    {
+      "title": "Assistant Mission Control Api Isnt Activating Despite Being Marked Active In Db Let Me Check Whats Blocking It",
+      "category": "backlog",
+      "file": "backlog/assistant-mission-control-api-isnt-activating-despite-being-marked-active-in-db-let-me-check-whats-blocking-it.md",
+      "date": "assistant-",
+      "modified": 1775394100293,
+      "preview": "--- created: '2026-04-05T13:01:40.294Z' source: observer tags:   - open   - observer   - task --- # assistant: Mission Control API isn't activating despite being marked active in DB. Let me check what"
+    },
+    {
+      "title": "Assistant Workflow Didnt Activate Properly Let Me Fix The Published Version Pointer",
+      "category": "backlog",
+      "file": "backlog/assistant-workflow-didnt-activate-properly-let-me-fix-the-published-version-pointer.md",
+      "date": "assistant-",
+      "modified": 1775394100291,
+      "preview": "--- created: '2026-04-05T13:01:40.292Z' source: observer tags:   - open   - observer   - task --- # assistant: Workflow didn't activate properly. Let me fix the published version pointer  [[observer]]"
+    },
+    {
+      "title": "Assistant Now Let Me Verify By Hitting The Webhooks After N8N Restarts",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-verify-by-hitting-the-webhooks-after-n8n-restarts.md",
+      "date": "assistant-",
+      "modified": 1775394100289,
+      "preview": "--- created: '2026-04-05T13:01:40.290Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me verify by hitting the webhooks after n8n restarts  [[observer]]  Auto-extracte"
+    },
+    {
+      "title": "Assistant Backup Has The Deprecation Warning Mixed In Let Me Export Cleanly",
+      "category": "backlog",
+      "file": "backlog/assistant-backup-has-the-deprecation-warning-mixed-in-let-me-export-cleanly.md",
+      "date": "assistant-",
+      "modified": 1775394100287,
+      "preview": "--- created: '2026-04-05T13:01:40.288Z' source: observer tags:   - open   - observer   - task --- # assistant: Backup has the deprecation warning mixed in. Let me export cleanly  [[observer]]  Auto-ex"
+    },
+    {
+      "title": "Assistant Good Data Directory Set Up Now Let Me Rebuild The Workflow With Native Read File Nodes Instead Of Require",
+      "category": "backlog",
+      "file": "backlog/assistant-good-data-directory-set-up-now-let-me-rebuild-the-workflow-with-native-read-file-nodes-instead-of-require.md",
+      "date": "assistant-",
+      "modified": 1775394100284,
+      "preview": "--- created: '2026-04-05T13:01:40.285Z' source: observer tags:   - open   - observer   - task --- # assistant: Good, data directory set up. Now let me rebuild the workflow with native Read File nodes "
+    },
+    {
+      "title": "Assistant On It Let Me Backup Create The Missing Data Directory And Rebuild Those Nodes",
+      "category": "backlog",
+      "file": "backlog/assistant-on-it-let-me-backup-create-the-missing-data-directory-and-rebuild-those-nodes.md",
+      "date": "assistant-",
+      "modified": 1775394100282,
+      "preview": "--- created: '2026-04-05T13:01:40.283Z' source: observer tags:   - open   - observer   - task --- # assistant: On it. Let me backup, create the missing data directory, and rebuild those nodes  [[obser"
+    },
+    {
+      "title": "Assistant Found It The Mission Control Api Workflow Reads From Datamission Controlwatchdogjson And Datamissio",
+      "category": "backlog",
+      "file": "backlog/assistant-found-it-the-mission-control-api-workflow-reads-from-datamission-controlwatchdogjson-and-datamissio.md",
+      "date": "assistant-",
+      "modified": 1775394100279,
+      "preview": "--- created: '2026-04-05T13:01:40.280Z' source: observer tags:   - open   - observer   - task --- # assistant: Found it. The Mission Control API workflow reads from `/data/mission-control/watchdog.jso"
+    },
+    {
+      "title": "Assistant All Errors Are From Mission Control Api Its Been Failing Repeatedly Let Me Get The Error Details",
+      "category": "backlog",
+      "file": "backlog/assistant-all-errors-are-from-mission-control-api-its-been-failing-repeatedly-let-me-get-the-error-details.md",
+      "date": "assistant-",
+      "modified": 1775394100277,
+      "preview": "--- created: '2026-04-05T13:01:40.278Z' source: observer tags:   - open   - observer   - task --- # assistant: All errors are from **Mission Control API** \u2014 it's been failing repeatedly. Let me get th"
+    },
+    {
+      "title": "Assistant Andy Mentioned The Relevant Topic Let Me Check Recent N8N Execution Errors Directly And Also Look At Wha",
+      "category": "backlog",
+      "file": "backlog/assistant-andy-mentioned-the-relevant-topic-let-me-check-recent-n8n-execution-errors-directly-and-also-look-at-wha.md",
+      "date": "assistant-",
+      "modified": 1775394100275,
+      "preview": "--- created: '2026-04-05T13:01:40.276Z' source: observer tags:   - open   - observer   - task --- # assistant: Andy mentioned \"the relevant topic\" \u2014 let me check recent n8n execution errors directly, "
+    },
+    {
+      "title": "Assistant Let Me Find The N8N Error Messages Ill Check Recent Conversations And The N8N Logs",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-find-the-n8n-error-messages-ill-check-recent-conversations-and-the-n8n-logs.md",
+      "date": "assistant-",
+      "modified": 1775394100273,
+      "preview": "--- created: '2026-04-05T13:01:40.274Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me find the n8n error messages. I'll check recent conversations and the n8n logs  [[o"
+    },
+    {
+      "title": "Assistant Morning Andy Let Me Pull Up The N8N Doctor Skill And Check The Error Topic",
+      "category": "backlog",
+      "file": "backlog/assistant-morning-andy-let-me-pull-up-the-n8n-doctor-skill-and-check-the-error-topic.md",
+      "date": "assistant-",
+      "modified": 1775394100271,
+      "preview": "--- created: '2026-04-05T13:01:40.271Z' source: observer tags:   - open   - observer   - task --- # assistant: Morning Andy. Let me pull up the n8n-doctor skill and check the error topic  [[observer]]"
+    },
+    {
+      "title": "Assistant Now Ill Write All Five Files",
+      "category": "backlog",
+      "file": "backlog/assistant-now-ill-write-all-five-files.md",
+      "date": "assistant-",
+      "modified": 1775394099427,
+      "preview": "--- created: '2026-04-05T13:01:39.428Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I'll write all five files  [[observer]]  Auto-extracted by observer from session tran"
+    },
+    {
+      "title": "Assistant Good I Can See All 68 Nodes Now Let Me Write A Python Script To Make All The Modifications",
+      "category": "backlog",
+      "file": "backlog/assistant-good-i-can-see-all-68-nodes-now-let-me-write-a-python-script-to-make-all-the-modifications.md",
+      "date": "assistant-",
+      "modified": 1775394098661,
+      "preview": "--- created: '2026-04-05T13:01:38.661Z' source: observer tags:   - open   - observer   - task --- # assistant: Good - I can see all 68 nodes. Now let me write a Python script to make all the modificat"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "people",
+      "file": "people/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394097903,
+      "preview": "# people \u2014 2026-04-05  - [relationship|c=0.72|i=0.45] 13:01 [subagent] assistant: That was a leaf with no further expansion. I have sufficient information from the two seed summaries. [[Here]]'s the a"
+    },
+    {
+      "title": "Assistant Now Add The Renderprojects Function Let Me Find A Good Spot Near Switchtab",
+      "category": "backlog",
+      "file": "backlog/assistant-now-add-the-renderprojects-function-let-me-find-a-good-spot-near-switchtab.md",
+      "date": "assistant-",
+      "modified": 1775394097902,
+      "preview": "--- created: '2026-04-05T13:01:37.903Z' source: observer tags:   - open   - observer   - task --- # assistant: Now add the renderProjects function. Let me find a good spot near switchTab  [[observer]]"
+    },
+    {
+      "title": "Assistant Now Ill Add The Projects Tab Button And Panel Html Plus The Js Let Me Make All The Edits",
+      "category": "backlog",
+      "file": "backlog/assistant-now-ill-add-the-projects-tab-button-and-panel-html-plus-the-js-let-me-make-all-the-edits.md",
+      "date": "assistant-",
+      "modified": 1775394097899,
+      "preview": "--- created: '2026-04-05T13:01:37.900Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I'll add the Projects tab button and panel HTML, plus the JS. Let me make all the edi"
+    },
+    {
+      "title": "Assistant Now Let Me Find Where The Watchdog Tab Ends To Add Projects Tab After It",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-find-where-the-watchdog-tab-ends-to-add-projects-tab-after-it.md",
+      "date": "assistant-",
+      "modified": 1775394097897,
+      "preview": "--- created: '2026-04-05T13:01:37.898Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me find where the watchdog tab ends (to add projects tab after it)  [[observer]] "
+    },
+    {
+      "title": "Assistant Now Add The Projects Panel To Indexhtml First Let Me See The Tab Buttons And The End Of The Watchdog Tab",
+      "category": "backlog",
+      "file": "backlog/assistant-now-add-the-projects-panel-to-indexhtml-first-let-me-see-the-tab-buttons-and-the-end-of-the-watchdog-tab.md",
+      "date": "assistant-",
+      "modified": 1775394097896,
+      "preview": "--- created: '2026-04-05T13:01:37.896Z' source: observer tags:   - open   - observer   - task --- # assistant: Now add the Projects panel to index.html. First let me see the tab buttons and the end of"
+    },
+    {
+      "title": "Assistant Now I Have Enough Context Let Me Implement All The Changes",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-enough-context-let-me-implement-all-the-changes.md",
+      "date": "assistant-",
+      "modified": 1775394097893,
+      "preview": "--- created: '2026-04-05T13:01:37.894Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have enough context. Let me implement all the changes  [[observer]]  Auto-extracted"
+    },
+    {
+      "title": "Assistant Now Let Me Read The Dashboard Html To Understand The Structure",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-read-the-dashboard-html-to-understand-the-structure.md",
+      "date": "assistant-",
+      "modified": 1775394097892,
+      "preview": "--- created: '2026-04-05T13:01:37.892Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me read the dashboard HTML to understand the structure  [[observer]]  Auto-extrac"
+    },
+    {
+      "title": "2026 04 04",
+      "category": "facts",
+      "file": "facts/2026-04-04.md",
+      "date": "2026-04-04",
+      "modified": 1775394097166,
+      "preview": "# facts \u2014 2026-04-04  - [fact|c=0.72|i=0.60] 13:01 [unknown] assistant: Now I have everything I need for a complete audit. --- ## AutomateXM [[Voice Agent]] \u2014 [[Audit Report]] **[[Date]]:** 2026-04-04"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "people",
+      "file": "people/record-found/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394096424,
+      "preview": "# people/record-found \u2014 2026-04-05  - [relationship|c=0.72|i=0.45] 13:01 [unknown] assistant: --- ## \ud83d\udea6 GATE READY \u2014 [[Phase]] 1: SCOPE **[[Project]]:** [[Feedz Website]] **[[Client]]:** [[Feedz]] ([[I"
+    },
+    {
+      "title": "Assistant Now I Have All The Research Let Me Write The Scope Document Gate Report And Update The Project State",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-all-the-research-let-me-write-the-scope-document-gate-report-and-update-the-project-state.md",
+      "date": "assistant-",
+      "modified": 1775394096423,
+      "preview": "--- created: '2026-04-05T13:01:36.424Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have all the research. Let me write the scope document, gate report, and update the"
+    },
+    {
+      "title": "Assistant Good Data I Have Everything I Need Now Let Me Create All The Files",
+      "category": "backlog",
+      "file": "backlog/assistant-good-data-i-have-everything-i-need-now-let-me-create-all-the-files.md",
+      "date": "assistant-",
+      "modified": 1775394096422,
+      "preview": "--- created: '2026-04-05T13:01:36.422Z' source: observer tags:   - open   - observer   - task --- # assistant: Good data. I have everything I need. Now let me create all the files  [[observer]]  Auto-"
+    },
+    {
+      "title": "Assistant Now Let Me Query Notion And Do Competitor Research Simultaneously",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-query-notion-and-do-competitor-research-simultaneously.md",
+      "date": "assistant-",
+      "modified": 1775394096420,
+      "preview": "--- created: '2026-04-05T13:01:36.421Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me query Notion and do competitor research simultaneously  [[observer]]  Auto-ext"
+    },
+    {
+      "title": "Assistant Ill Start By Reading The Required Skill Files And Checking Existing State Simultaneously",
+      "category": "backlog",
+      "file": "backlog/assistant-ill-start-by-reading-the-required-skill-files-and-checking-existing-state-simultaneously.md",
+      "date": "assistant-",
+      "modified": 1775394096419,
+      "preview": "--- created: '2026-04-05T13:01:36.419Z' source: observer tags:   - open   - observer   - task --- # assistant: I'll start by reading the required skill files and checking existing state simultaneously"
+    },
+    {
+      "title": "2026 04 03",
+      "category": "people",
+      "file": "people/work/2026-04-03.md",
+      "date": "2026-04-03",
+      "modified": 1775394096351,
+      "preview": "# people/work \u2014 2026-04-03  - [relationship|c=0.72|i=0.60] 14:15 [unknown] user: [[[Fri]] 2026-04-03 14:15 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-a"
+    },
+    {
+      "title": "2026 03 29",
+      "category": "decisions",
+      "file": "decisions/2026-03-29.md",
+      "date": "2026-03-29",
+      "modified": 1775394095740,
+      "preview": "# decisions \u2014 2026-03-29  - [decision|c=0.90|i=0.90] 05:00 [unknown] user: [cron:43c6e119-4cb9-4d7f-920c-e1e36f2531c4 memory-hygiene] [[Memory]] hygiene review. Go through ClawVault entries: 1. [[Run]"
+    },
+    {
+      "title": "Assistant Done Monthly Report Now Fires On The 15Th At 0800 Instead Of The 1St Still Reports The Previous Month",
+      "category": "backlog",
+      "file": "backlog/assistant-done-monthly-report-now-fires-on-the-15th-at-0800-instead-of-the-1st-still-reports-the-previous-month.md",
+      "date": "assistant-",
+      "modified": 1775394095233,
+      "preview": "--- created: '2026-04-05T13:01:35.234Z' source: observer tags:   - open   - observer   - task --- # assistant: Done. Monthly report now fires on the **15th at 08:00** instead of the 1st. Still reports"
+    },
+    {
+      "title": "Assistant Binary Data Key Is Data Base64 Encoded Now Ill Swap The Gmail Node For A Resend Http Request",
+      "category": "backlog",
+      "file": "backlog/assistant-binary-data-key-is-data-base64-encoded-now-ill-swap-the-gmail-node-for-a-resend-http-request.md",
+      "date": "assistant-",
+      "modified": 1775394095231,
+      "preview": "--- created: '2026-04-05T13:01:35.232Z' source: observer tags:   - open   - observer   - task --- # assistant: Binary data key is `data`, base64 encoded. Now I'll swap the Gmail node for a Resend HTTP"
+    },
+    {
+      "title": "Assistant Good I Have The Full Picture Now Ill Delegate The Implementation To Patch",
+      "category": "backlog",
+      "file": "backlog/assistant-good-i-have-the-full-picture-now-ill-delegate-the-implementation-to-patch.md",
+      "date": "assistant-",
+      "modified": 1775394095227,
+      "preview": "--- created: '2026-04-05T13:01:35.228Z' source: observer tags:   - open   - observer   - task --- # assistant: Good, I have the full picture. Now I'll delegate the implementation to Patch  [[observer]"
+    },
+    {
+      "title": "Assistant Clean No Friction Clean Separation Let Me Get The Current Workflow And Build It",
+      "category": "backlog",
+      "file": "backlog/assistant-clean-no-friction-clean-separation-let-me-get-the-current-workflow-and-build-it.md",
+      "date": "assistant-",
+      "modified": 1775394095226,
+      "preview": "--- created: '2026-04-05T13:01:35.227Z' source: observer tags:   - open   - observer   - task --- # assistant: Clean. No friction, clean separation. Let me get the current workflow and build it  [[obs"
+    },
+    {
+      "title": "Assistant Both Patches Running In Parallel Sick Leave 3 Http Nodes 13 Code Nodes Description 6 Sticky Not",
+      "category": "backlog",
+      "file": "backlog/assistant-both-patches-running-in-parallel-sick-leave-3-http-nodes-13-code-nodes-description-6-sticky-not.md",
+      "date": "assistant-",
+      "modified": 1775394095223,
+      "preview": "--- created: '2026-04-05T13:01:35.224Z' source: observer tags:   - open   - observer   - task --- # assistant: Both Patches running in parallel: - **Sick Leave:** 3 HTTP nodes + 13 Code nodes + descri"
+    },
+    {
+      "title": "Assistant All Changes Are Live The Audit Script Just Checks Node Level Json Structure Differently Let Me Verify What",
+      "category": "backlog",
+      "file": "backlog/assistant-all-changes-are-live-the-audit-script-just-checks-node-level-json-structure-differently-let-me-verify-what.md",
+      "date": "assistant-",
+      "modified": 1775394095221,
+      "preview": "--- created: '2026-04-05T13:01:35.222Z' source: observer tags:   - open   - observer   - task --- # assistant: All changes are live \u2014 the audit script just checks node-level JSON structure differently"
+    },
+    {
+      "title": "Assistant Webhooks Are Back Let Me Run The Full Stack Test Audit Again",
+      "category": "backlog",
+      "file": "backlog/assistant-webhooks-are-back-let-me-run-the-full-stack-test-audit-again.md",
+      "date": "assistant-",
+      "modified": 1775394095220,
+      "preview": "--- created: '2026-04-05T13:01:35.220Z' source: observer tags:   - open   - observer   - task --- # assistant: Webhooks are back. Let me run the full stack test + audit again  [[observer]]  Auto-extra"
+    },
+    {
+      "title": "Assistant Pushed To Main And The Site Is Live At Sxm Range Bookingvercelapp Since The Repo Is Connected To Verce",
+      "category": "backlog",
+      "file": "backlog/assistant-pushed-to-main-and-the-site-is-live-at-sxm-range-bookingvercelapp-since-the-repo-is-connected-to-verce.md",
+      "date": "assistant-",
+      "modified": 1775394095217,
+      "preview": "--- created: '2026-04-05T13:01:35.217Z' source: observer tags:   - open   - observer   - task --- # assistant: Pushed to `main` and the site is live at `sxm-range-booking.vercel.app`. Since the repo i"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "people",
+      "file": "people/delivery-process/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394095217,
+      "preview": "# people/delivery-process \u2014 2026-04-05  - [relationship|c=0.72|i=0.45] 13:01 [unknown] assistant: [[Different]] things, honestly. The AXM workflow is a *client delivery process* \u2014 how you take on work"
+    },
+    {
+      "title": "Assistant Its On Vercel At Sxm Range Bookingvercelapp And Likely Has Github Auto Deploy The Push Should Trigger I",
+      "category": "backlog",
+      "file": "backlog/assistant-its-on-vercel-at-sxm-range-bookingvercelapp-and-likely-has-github-auto-deploy-the-push-should-trigger-i.md",
+      "date": "assistant-",
+      "modified": 1775394095215,
+      "preview": "--- created: '2026-04-05T13:01:35.215Z' source: observer tags:   - open   - observer   - task --- # assistant: It's on Vercel at `sxm-range-booking.vercel.app` and likely has GitHub auto-deploy. The p"
+    },
+    {
+      "title": "Assistant Delegated To Patch Sonnet Hes Doing A Full Humanizer Audit On The Range Booking Frontend Hell Read The",
+      "category": "backlog",
+      "file": "backlog/assistant-delegated-to-patch-sonnet-hes-doing-a-full-humanizer-audit-on-the-range-booking-frontend-hell-read-the.md",
+      "date": "assistant-",
+      "modified": 1775394095213,
+      "preview": "--- created: '2026-04-05T13:01:35.213Z' source: observer tags:   - open   - observer   - task --- # assistant: Delegated to Patch (Sonnet) \u2014 he's doing a full humanizer audit on the range booking fron"
+    },
+    {
+      "title": "Assistant Good I Have A Clear Picture Now This Is A 2700 Line Nextjs Tailwind 4 Frontend With A Dark Theme Let M",
+      "category": "backlog",
+      "file": "backlog/assistant-good-i-have-a-clear-picture-now-this-is-a-2700-line-nextjs-tailwind-4-frontend-with-a-dark-theme-let-m.md",
+      "date": "assistant-",
+      "modified": 1775394095211,
+      "preview": "--- created: '2026-04-05T13:01:35.211Z' source: observer tags:   - open   - observer   - task --- # assistant: Good, I have a clear picture now. This is a ~2700 line Next.js + Tailwind 4 frontend with"
+    },
+    {
+      "title": "Assistant This Is A Decent Sized Frontend 2700 Lines Across All Components Let Me Read The Key Files And The Current",
+      "category": "backlog",
+      "file": "backlog/assistant-this-is-a-decent-sized-frontend-2700-lines-across-all-components-let-me-read-the-key-files-and-the-current.md",
+      "date": "assistant-",
+      "modified": 1775394095209,
+      "preview": "--- created: '2026-04-05T13:01:35.210Z' source: observer tags:   - open   - observer   - task --- # assistant: This is a decent-sized frontend. ~2700 lines across all components. Let me read the key f"
+    },
+    {
+      "title": "Assistant Now Let Me Find The Range Scheduler Frontend Code",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-find-the-range-scheduler-frontend-code.md",
+      "date": "assistant-",
+      "modified": 1775394095206,
+      "preview": "--- created: '2026-04-05T13:01:35.207Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me find the range scheduler frontend code  [[observer]]  Auto-extracted by observ"
+    },
+    {
+      "title": "Assistant Right Let Me Verify Thats In The Code Too",
+      "category": "backlog",
+      "file": "backlog/assistant-right-let-me-verify-thats-in-the-code-too.md",
+      "date": "assistant-",
+      "modified": 1775394095205,
+      "preview": "--- created: '2026-04-05T13:01:35.205Z' source: observer tags:   - open   - observer   - task --- # assistant: Right, let me verify that's in the code too  [[observer]]  Auto-extracted by observer fro"
+    },
+    {
+      "title": "Assistant Good Thinking Let Me Check What The Bot Actually Recognizes",
+      "category": "backlog",
+      "file": "backlog/assistant-good-thinking-let-me-check-what-the-bot-actually-recognizes.md",
+      "date": "assistant-",
+      "modified": 1775394095203,
+      "preview": "--- created: '2026-04-05T13:01:35.204Z' source: observer tags:   - open   - observer   - task --- # assistant: Good thinking. Let me check what the bot actually recognizes  [[observer]]  Auto-extracte"
+    },
+    {
+      "title": "Assistant Good Call Updated Sick Leave How It Works When You Report Sick Two Important Dates Come Into",
+      "category": "backlog",
+      "file": "backlog/assistant-good-call-updated-sick-leave-how-it-works-when-you-report-sick-two-important-dates-come-into.md",
+      "date": "assistant-",
+      "modified": 1775394095201,
+      "preview": "--- created: '2026-04-05T13:01:35.202Z' source: observer tags:   - open   - observer   - task --- # assistant: Good call. Updated: --- \ud83d\udccb **Sick Leave \u2014 How It Works** When you report sick, two importa"
+    },
+    {
+      "title": "Assistant Heres A Message Ready To Send To Personnel Sick Leave How It Works When You Report Sick Two I",
+      "category": "backlog",
+      "file": "backlog/assistant-heres-a-message-ready-to-send-to-personnel-sick-leave-how-it-works-when-you-report-sick-two-i.md",
+      "date": "assistant-",
+      "modified": 1775394095200,
+      "preview": "--- created: '2026-04-05T13:01:35.200Z' source: observer tags:   - open   - observer   - task --- # assistant: Here's a message ready to send to personnel: --- \ud83d\udccb **Sick Leave \u2014 How It Works** When you"
+    },
+    {
+      "title": "Assistant Fair Point Let Me Create It Now",
+      "category": "backlog",
+      "file": "backlog/assistant-fair-point-let-me-create-it-now.md",
+      "date": "assistant-",
+      "modified": 1775394095198,
+      "preview": "--- created: '2026-04-05T13:01:35.199Z' source: observer tags:   - open   - observer   - task --- # assistant: Fair point. Let me create it now  [[observer]]  Auto-extracted by observer from session t"
+    },
+    {
+      "title": "Assistant All Working Let Me Clean Up",
+      "category": "backlog",
+      "file": "backlog/assistant-all-working-let-me-clean-up.md",
+      "date": "assistant-",
+      "modified": 1775394095196,
+      "preview": "--- created: '2026-04-05T13:01:35.196Z' source: observer tags:   - open   - observer   - task --- # assistant: All working. Let me clean up  [[observer]]  Auto-extracted by observer from session trans"
+    },
+    {
+      "title": "Assistant Now Let Me Verify The Changes And Fix The Sick Day Counting Logic",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-verify-the-changes-and-fix-the-sick-day-counting-logic.md",
+      "date": "assistant-",
+      "modified": 1775394095193,
+      "preview": "--- created: '2026-04-05T13:01:35.194Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me verify the changes and fix the sick day counting logic  [[observer]]  Auto-ext"
+    },
+    {
+      "title": "Assistant Got It So The Doctors Date Should Be Called Expected Recovery Date Instead Of Last Sick Date Makes Mo",
+      "category": "backlog",
+      "file": "backlog/assistant-got-it-so-the-doctors-date-should-be-called-expected-recovery-date-instead-of-last-sick-date-makes-mo.md",
+      "date": "assistant-",
+      "modified": 1775394095192,
+      "preview": "--- created: '2026-04-05T13:01:35.192Z' source: observer tags:   - open   - observer   - task --- # assistant: Got it \u2014 so the doctor's date should be called \"Expected Recovery Date\" instead of \"Last "
+    },
+    {
+      "title": "Assistant Let Me Verify The Airtable Record Was Written Correctly",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-verify-the-airtable-record-was-written-correctly.md",
+      "date": "assistant-",
+      "modified": 1775394095189,
+      "preview": "--- created: '2026-04-05T13:01:35.189Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me verify the Airtable record was written correctly  [[observer]]  Auto-extracted by "
+    },
+    {
+      "title": "Assistant Test Worked The Fast Path Correctly Handled I Am Back Detected Recovery Intent Checked For Active Sick",
+      "category": "backlog",
+      "file": "backlog/assistant-test-worked-the-fast-path-correctly-handled-i-am-back-detected-recovery-intent-checked-for-active-sick.md",
+      "date": "assistant-",
+      "modified": 1775394095187,
+      "preview": "--- created: '2026-04-05T13:01:35.188Z' source: observer tags:   - open   - observer   - task --- # assistant: Test worked. The fast path correctly handled \"I am back\" \u2192 detected RECOVERY intent \u2192 che"
+    },
+    {
+      "title": "Assistant There It Is Now Let Me Test",
+      "category": "backlog",
+      "file": "backlog/assistant-there-it-is-now-let-me-test.md",
+      "date": "assistant-",
+      "modified": 1775394095185,
+      "preview": "--- created: '2026-04-05T13:01:35.186Z' source: observer tags:   - open   - observer   - task --- # assistant: There it is. Now let me test  [[observer]]  Auto-extracted by observer from session trans"
+    },
+    {
+      "title": "Assistant Wait It Did Activate But Something Crashed It After Let Me Check More Carefully",
+      "category": "backlog",
+      "file": "backlog/assistant-wait-it-did-activate-but-something-crashed-it-after-let-me-check-more-carefully.md",
+      "date": "assistant-",
+      "modified": 1775394095184,
+      "preview": "--- created: '2026-04-05T13:01:35.185Z' source: observer tags:   - open   - observer   - task --- # assistant: Wait \u2014 it DID activate. But something crashed it after. Let me check more carefully  [[ob"
+    },
+    {
+      "title": "Assistant Workflow Imported And Active Let Me Test It",
+      "category": "backlog",
+      "file": "backlog/assistant-workflow-imported-and-active-let-me-test-it.md",
+      "date": "assistant-",
+      "modified": 1775394095182,
+      "preview": "--- created: '2026-04-05T13:01:35.182Z' source: observer tags:   - open   - observer   - task --- # assistant: Workflow imported and active. Let me test it  [[observer]]  Auto-extracted by observer fr"
+    },
+    {
+      "title": "Assistant Token Doesnt Have Schema Write Permissions Thats Fine Youll Need To Create The Field Manually Now Let",
+      "category": "backlog",
+      "file": "backlog/assistant-token-doesnt-have-schema-write-permissions-thats-fine-youll-need-to-create-the-field-manually-now-let.md",
+      "date": "assistant-",
+      "modified": 1775394095180,
+      "preview": "--- created: '2026-04-05T13:01:35.181Z' source: observer tags:   - open   - observer   - task --- # assistant: Token doesn't have schema write permissions. That's fine \u2014 you'll need to create the fiel"
+    },
+    {
+      "title": "Assistant All Looks Clean Now Let Me Also Quickly Check The Airtable Daily Query Fetches The Right Fields",
+      "category": "backlog",
+      "file": "backlog/assistant-all-looks-clean-now-let-me-also-quickly-check-the-airtable-daily-query-fetches-the-right-fields.md",
+      "date": "assistant-",
+      "modified": 1775394095179,
+      "preview": "--- created: '2026-04-05T13:01:35.179Z' source: observer tags:   - open   - observer   - task --- # assistant: All looks clean. Now let me also quickly check the Airtable daily query fetches the right"
+    },
+    {
+      "title": "Assistant Good Field Is Now Last Sick Date Let Me Verify The Daily Check And System Prompts",
+      "category": "backlog",
+      "file": "backlog/assistant-good-field-is-now-last-sick-date-let-me-verify-the-daily-check-and-system-prompts.md",
+      "date": "assistant-",
+      "modified": 1775394095177,
+      "preview": "--- created: '2026-04-05T13:01:35.178Z' source: observer tags:   - open   - observer   - task --- # assistant: Good \u2014 field is now `'Last Sick Date'`. Let me verify the daily check and system prompts "
+    },
+    {
+      "title": "Assistant Let Me Verify The Output Before Delivering",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-verify-the-output-before-delivering.md",
+      "date": "assistant-",
+      "modified": 1775394095175,
+      "preview": "--- created: '2026-04-05T13:01:35.176Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me verify the output before delivering  [[observer]]  Auto-extracted by observer from"
+    },
+    {
+      "title": "Assistant Good Backup Saved Now Let Me Extract The Full Workflow Json Make All Changes And Push It Back",
+      "category": "backlog",
+      "file": "backlog/assistant-good-backup-saved-now-let-me-extract-the-full-workflow-json-make-all-changes-and-push-it-back.md",
+      "date": "assistant-",
+      "modified": 1775394095174,
+      "preview": "--- created: '2026-04-05T13:01:35.175Z' source: observer tags:   - open   - observer   - task --- # assistant: Good, backup saved. Now let me extract the full workflow JSON, make all changes, and push"
+    },
+    {
+      "title": "Assistant On It Let Me Back Up The Current Workflow First Then Make All The Changes",
+      "category": "backlog",
+      "file": "backlog/assistant-on-it-let-me-back-up-the-current-workflow-first-then-make-all-the-changes.md",
+      "date": "assistant-",
+      "modified": 1775394095172,
+      "preview": "--- created: '2026-04-05T13:01:35.173Z' source: observer tags:   - open   - observer   - task --- # assistant: On it. Let me back up the current workflow first, then make all the changes  [[observer]]"
+    },
+    {
+      "title": "Assistant Got It I Was Overcomplicating It Much Simpler The Model Doctor Gives Last Sick Date End Of Si",
+      "category": "backlog",
+      "file": "backlog/assistant-got-it-i-was-overcomplicating-it-much-simpler-the-model-doctor-gives-last-sick-date-end-of-si.md",
+      "date": "assistant-",
+      "modified": 1775394095170,
+      "preview": "--- created: '2026-04-05T13:01:35.171Z' source: observer tags:   - open   - observer   - task --- # assistant: Got it \u2014 I was overcomplicating it. Much simpler: **The model:** - Doctor gives **Last Si"
+    },
+    {
+      "title": "Assistant Now Let Me Also Check The Airtable Fields And The Fast Path Recovery Logic",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-also-check-the-airtable-fields-and-the-fast-path-recovery-logic.md",
+      "date": "assistant-",
+      "modified": 1775394095169,
+      "preview": "--- created: '2026-04-05T13:01:35.170Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me also check the Airtable fields and the fast path recovery logic  [[observer]] "
+    },
+    {
+      "title": "Assistant Now Let Me Check The Daily Trigger Logic And The Ai Agents System Prompt",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-check-the-daily-trigger-logic-and-the-ai-agents-system-prompt.md",
+      "date": "assistant-",
+      "modified": 1775394095167,
+      "preview": "--- created: '2026-04-05T13:01:35.168Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me check the daily trigger logic and the AI agent's system prompt  [[observer]]  "
+    },
+    {
+      "title": "Assistant Let Me Look At What We Have For The Sick Leave Bot First",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-look-at-what-we-have-for-the-sick-leave-bot-first.md",
+      "date": "assistant-",
+      "modified": 1775394095166,
+      "preview": "--- created: '2026-04-05T13:01:35.167Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me look at what we have for the sick leave bot first  [[observer]]  Auto-extracted by"
+    },
+    {
+      "title": "2026 03 28",
+      "category": "people",
+      "file": "people/project-workflow/2026-03-28.md",
+      "date": "2026-03-28",
+      "modified": 1775394095122,
+      "preview": "# people/project-workflow \u2014 2026-03-28  - [relationship|c=0.72|i=0.45] 13:01 [unknown] assistant: \ud83d\udccb **AXM [[Client Project]] [[Workflow]] \u2014 [[Agreed]] 2026-03-28** **[[Process]] for every new client e"
+    },
+    {
+      "title": "Assistant The Record Shows Start Date 2026 03 25 Registered Sick Today Recovery Date 2026 03 25 Regis",
+      "category": "backlog",
+      "file": "backlog/assistant-the-record-shows-start-date-2026-03-25-registered-sick-today-recovery-date-2026-03-25-regis.md",
+      "date": "assistant-",
+      "modified": 1775394095120,
+      "preview": "--- created: '2026-04-05T13:01:35.120Z' source: observer tags:   - open   - observer   - task --- # assistant: The record shows: - **Start Date:** 2026-03-25 (registered sick today) - **Recovery Date:"
+    },
+    {
+      "title": "2026 03 29",
+      "category": "facts",
+      "file": "facts/2026-03-29.md",
+      "date": "2026-03-29",
+      "modified": 1775394094491,
+      "preview": "# facts \u2014 2026-03-29  - [fact|c=0.72|i=0.60] 01:06 [unknown] user: [[[Sun]] 2026-03-29 01:06 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "Assistant Vercel Authentication Is Needed Let Me Start The Login Process",
+      "category": "backlog",
+      "file": "backlog/assistant-vercel-authentication-is-needed-let-me-start-the-login-process.md",
+      "date": "assistant-",
+      "modified": 1775394094018,
+      "preview": "--- created: '2026-04-05T13:01:34.019Z' source: observer tags:   - open   - observer   - task --- # assistant: Vercel authentication is needed. Let me start the login process  [[observer]]  Auto-extra"
+    },
+    {
+      "title": "Assistant Vercel Cli Is Installed The Project Exists With A Dist Folder Let Me Proceed With The Production Deploym",
+      "category": "backlog",
+      "file": "backlog/assistant-vercel-cli-is-installed-the-project-exists-with-a-dist-folder-let-me-proceed-with-the-production-deploym.md",
+      "date": "assistant-",
+      "modified": 1775394094016,
+      "preview": "--- created: '2026-04-05T13:01:34.017Z' source: observer tags:   - open   - observer   - task --- # assistant: Vercel CLI is installed. The project exists with a `dist/` folder. Let me proceed with th"
+    },
+    {
+      "title": "Assistant Ill Continue With The Vercel Deployment For The Feedz Website Let Me Start By Checking The Project And Verc",
+      "category": "backlog",
+      "file": "backlog/assistant-ill-continue-with-the-vercel-deployment-for-the-feedz-website-let-me-start-by-checking-the-project-and-verc.md",
+      "date": "assistant-",
+      "modified": 1775394094014,
+      "preview": "--- created: '2026-04-05T13:01:34.015Z' source: observer tags:   - open   - observer   - task --- # assistant: I'll continue with the Vercel deployment for the Feedz website. Let me start by checking "
+    },
+    {
+      "title": "2026 04 03",
+      "category": "projects",
+      "file": "projects/2026-04-03.md",
+      "date": "2026-04-03",
+      "modified": 1775394093977,
+      "preview": "# projects \u2014 2026-04-03  - [project|c=0.72|i=0.60] 14:32 [unknown] user: [[[Fri]] 2026-04-03 14:32 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce "
+    },
+    {
+      "title": "Assistant Clean Build Let Me Do A Quick Self Audit Against The Banned Patterns",
+      "category": "backlog",
+      "file": "backlog/assistant-clean-build-let-me-do-a-quick-self-audit-against-the-banned-patterns.md",
+      "date": "assistant-",
+      "modified": 1775394093538,
+      "preview": "--- created: '2026-04-05T13:01:33.538Z' source: observer tags:   - open   - observer   - task --- # assistant: Clean build. Let me do a quick self-audit against the banned patterns  [[observer]]  Auto"
+    },
+    {
+      "title": "Assistant Now Fix The Landing Page Icon Currently Has Rounded Full With Target Icon Centered I Already Removed Tha",
+      "category": "backlog",
+      "file": "backlog/assistant-now-fix-the-landing-page-icon-currently-has-rounded-full-with-target-icon-centered-i-already-removed-tha.md",
+      "date": "assistant-",
+      "modified": 1775394093536,
+      "preview": "--- created: '2026-04-05T13:01:33.537Z' source: observer tags:   - open   - observer   - task --- # assistant: Now fix the landing page icon \u2014 currently has `rounded-full` with Target icon centered. I"
+    },
+    {
+      "title": "Assistant The Admin Pages Have Many Rounded Xl Instances Per The Task Guidelines Dont Change Admin Radically Il",
+      "category": "backlog",
+      "file": "backlog/assistant-the-admin-pages-have-many-rounded-xl-instances-per-the-task-guidelines-dont-change-admin-radically-il.md",
+      "date": "assistant-",
+      "modified": 1775394093534,
+      "preview": "--- created: '2026-04-05T13:01:33.534Z' source: observer tags:   - open   - observer   - task --- # assistant: The admin pages have many `rounded-xl` instances. Per the task guidelines, don't change a"
+    },
+    {
+      "title": "Assistant Now I Have A Full Picture Of The Codebase Let Me Plan And Execute The Changes Systematically 1 Globalsc",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-a-full-picture-of-the-codebase-let-me-plan-and-execute-the-changes-systematically-1-globalsc.md",
+      "date": "assistant-",
+      "modified": 1775394093531,
+      "preview": "--- created: '2026-04-05T13:01:33.532Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have a full picture of the codebase. Let me plan and execute the changes systematic"
+    },
+    {
+      "title": "Assistant Now Let Me Explore The Project Structure",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-explore-the-project-structure.md",
+      "date": "assistant-",
+      "modified": 1775394093529,
+      "preview": "--- created: '2026-04-05T13:01:33.529Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me explore the project structure  [[observer]]  Auto-extracted by observer from s"
+    },
+    {
+      "title": "2026 03 26",
+      "category": "facts",
+      "file": "facts/2026-03-26.md",
+      "date": "2026-03-26",
+      "modified": 1775394093479,
+      "preview": "# facts \u2014 2026-03-26  - [fact|c=0.72|i=0.60] 19:14 [unknown] user: [[[Thu]] 2026-03-26 19:14 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "2026 03 30",
+      "category": "facts",
+      "file": "facts/2026-03-30.md",
+      "date": "2026-03-30",
+      "modified": 1775394093059,
+      "preview": "# facts \u2014 2026-03-30  - [fact|c=0.72|i=0.60] 22:54 [unknown] user: [[[Mon]] 2026-03-30 22:54 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "Assistant Good Now I Have Everything I Need Let Me Write All 5 Files",
+      "category": "backlog",
+      "file": "backlog/assistant-good-now-i-have-everything-i-need-let-me-write-all-5-files.md",
+      "date": "assistant-",
+      "modified": 1775394092753,
+      "preview": "--- created: '2026-04-05T13:01:32.754Z' source: observer tags:   - open   - observer   - task --- # assistant: Good. Now I have everything I need. Let me write all 5 files  [[observer]]  Auto-extracte"
+    },
+    {
+      "title": "Assistant Now Let Me Read The Current Task Binarys Cmd Done More Carefully And Check If The Scripts Directory Exists",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-read-the-current-task-binarys-cmd_done-more-carefully-and-check-if-the-scripts-directory-exists.md",
+      "date": "assistant-",
+      "modified": 1775394092752,
+      "preview": "--- created: '2026-04-05T13:01:32.753Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me read the current task binary's cmd_done more carefully and check if the script"
+    },
+    {
+      "title": "Assistant Let Me Read All The Existing Files First To Understand What Im Working With",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-read-all-the-existing-files-first-to-understand-what-im-working-with.md",
+      "date": "assistant-",
+      "modified": 1775394092751,
+      "preview": "--- created: '2026-04-05T13:01:32.752Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me read all the existing files first to understand what I'm working with  [[observer]"
+    },
+    {
+      "title": "Assistant Now Let Me Write The Full Transformation Script",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-write-the-full-transformation-script.md",
+      "date": "assistant-",
+      "modified": 1775394092354,
+      "preview": "--- created: '2026-04-05T13:01:32.354Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me write the full transformation script  [[observer]]  Auto-extracted by observer"
+    },
+    {
+      "title": "Assistant Good None Of The Code Nodes Have Trycatch Yet Now Let Me Write The Full Transformation Script",
+      "category": "backlog",
+      "file": "backlog/assistant-good-none-of-the-code-nodes-have-trycatch-yet-now-let-me-write-the-full-transformation-script.md",
+      "date": "assistant-",
+      "modified": 1775394092352,
+      "preview": "--- created: '2026-04-05T13:01:32.353Z' source: observer tags:   - open   - observer   - task --- # assistant: Good, none of the code nodes have try/catch yet. Now let me write the full transformation"
+    },
+    {
+      "title": "2026 03 31",
+      "category": "people",
+      "file": "people/workflow-skill/2026-03-31.md",
+      "date": "2026-03-31",
+      "modified": 1775394091985,
+      "preview": "# people/workflow-skill \u2014 2026-03-31  - [relationship|c=0.72|i=0.60] 14:59 [unknown] user: [[[Tue]] 2026-03-31 14:59 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Result"
+    },
+    {
+      "title": "Assistant Build Successful Now Let Me Finalize The Project",
+      "category": "backlog",
+      "file": "backlog/assistant-build-successful-now-let-me-finalize-the-project.md",
+      "date": "assistant-",
+      "modified": 1775394091704,
+      "preview": "--- created: '2026-04-05T13:01:31.704Z' source: observer tags:   - open   - observer   - task --- # assistant: Build successful. Now let me finalize the project  [[observer]]  Auto-extracted by observ"
+    },
+    {
+      "title": "Assistant Let Me Fix The French Tips Slug Issue",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-fix-the-french-tips-slug-issue.md",
+      "date": "assistant-",
+      "modified": 1775394091702,
+      "preview": "--- created: '2026-04-05T13:01:31.703Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me fix the French tips slug issue  [[observer]]  Auto-extracted by observer from sess"
+    },
+    {
+      "title": "Assistant Now Let Me Set Up The Project Structure And All Files",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-set-up-the-project-structure-and-all-files.md",
+      "date": "assistant-",
+      "modified": 1775394091701,
+      "preview": "--- created: '2026-04-05T13:01:31.701Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me set up the project structure and all files  [[observer]]  Auto-extracted by ob"
+    },
+    {
+      "title": "Assistant Now I Have A Full Picture Of The Spec Let Me Build The Feedz Website Ill Create The Astro Project And All",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-a-full-picture-of-the-spec-let-me-build-the-feedz-website-ill-create-the-astro-project-and-all.md",
+      "date": "assistant-",
+      "modified": 1775394091699,
+      "preview": "--- created: '2026-04-05T13:01:31.699Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have a full picture of the spec. Let me build the Feedz website. I'll create the As"
+    },
+    {
+      "title": "Assistant List Screens Returns Empty Probably A Separate Api Limitation But All Other Commands Work Let Me Do A F",
+      "category": "backlog",
+      "file": "backlog/assistant-list_screens-returns-empty-probably-a-separate-api-limitation-but-all-other-commands-work-let-me-do-a-f.md",
+      "date": "assistant-",
+      "modified": 1775394091035,
+      "preview": "--- created: '2026-04-05T13:01:31.035Z' source: observer tags:   - open   - observer   - task --- # assistant: `list_screens` returns empty (probably a separate API limitation), but all other commands"
+    },
+    {
+      "title": "Assistant Both Files Saved Let Me Also Quickly Test List",
+      "category": "backlog",
+      "file": "backlog/assistant-both-files-saved-let-me-also-quickly-test-list.md",
+      "date": "assistant-",
+      "modified": 1775394091034,
+      "preview": "--- created: '2026-04-05T13:01:31.034Z' source: observer tags:   - open   - observer   - task --- # assistant: Both files saved. Let me also quickly test `list`  [[observer]]  Auto-extracted by observ"
+    },
+    {
+      "title": "Assistant It Works End To End Let Me Verify The Files Were Saved Properly",
+      "category": "backlog",
+      "file": "backlog/assistant-it-works-end-to-end-let-me-verify-the-files-were-saved-properly.md",
+      "date": "assistant-",
+      "modified": 1775394091032,
+      "preview": "--- created: '2026-04-05T13:01:31.033Z' source: observer tags:   - open   - observer   - task --- # assistant: It works end-to-end. Let me verify the files were saved properly  [[observer]]  Auto-extr"
+    },
+    {
+      "title": "Assistant Now I Understand The Actual Api Shape The Get Screen Response Gives Htmlcodedownloadurl And Screenshot",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-understand-the-actual-api-shape-the-get_screen-response-gives-htmlcodedownloadurl-and-screenshot.md",
+      "date": "assistant-",
+      "modified": 1775394091031,
+      "preview": "--- created: '2026-04-05T13:01:31.031Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I understand the actual API shape. The `get_screen` response gives `htmlCode.download"
+    },
+    {
+      "title": "Assistant Let Me Get The Full Raw Response From Generate Screen From Text",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-get-the-full-raw-response-from-generate_screen_from_text.md",
+      "date": "assistant-",
+      "modified": 1775394091029,
+      "preview": "--- created: '2026-04-05T13:01:31.030Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me get the full raw response from `generate_screen_from_text`  [[observer]]  Auto-ext"
+    },
+    {
+      "title": "Assistant The Sdks Projectgenerate Expects Rawoutputcomponentsdesignscreens But The Actual Response Only Has",
+      "category": "backlog",
+      "file": "backlog/assistant-the-sdks-projectgenerate-expects-rawoutputcomponentsdesignscreens-but-the-actual-response-only-has.md",
+      "date": "assistant-",
+      "modified": 1775394091027,
+      "preview": "--- created: '2026-04-05T13:01:31.028Z' source: observer tags:   - open   - observer   - task --- # assistant: The SDK's `project.generate()` expects `raw.outputComponents.design.screens` but the actu"
+    },
+    {
+      "title": "Assistant The Sdks Projectgenerate Is Erroring Because The Mcp Response Format Is Different Let Me Look At The R",
+      "category": "backlog",
+      "file": "backlog/assistant-the-sdks-projectgenerate-is-erroring-because-the-mcp-response-format-is-different-let-me-look-at-the-r.md",
+      "date": "assistant-",
+      "modified": 1775394091026,
+      "preview": "--- created: '2026-04-05T13:01:31.027Z' source: observer tags:   - open   - observer   - task --- # assistant: The SDK's `project.generate()` is erroring because the MCP response format is different. "
+    },
+    {
+      "title": "Assistant Ipv6 Works Actually Just Takes Longer The Issue Was Likely A Timeout In A Previous Test Let Me Check The",
+      "category": "backlog",
+      "file": "backlog/assistant-ipv6-works-actually-just-takes-longer-the-issue-was-likely-a-timeout-in-a-previous-test-let-me-check-the.md",
+      "date": "assistant-",
+      "modified": 1775394091025,
+      "preview": "--- created: '2026-04-05T13:01:31.026Z' source: observer tags:   - open   - observer   - task --- # assistant: IPv6 works actually (just takes longer). The issue was likely a timeout in a previous tes"
+    },
+    {
+      "title": "Assistant Ipv6 Timeout Let Me Check The Sdk Client Config",
+      "category": "backlog",
+      "file": "backlog/assistant-ipv6-timeout-let-me-check-the-sdk-client-config.md",
+      "date": "assistant-",
+      "modified": 1775394091024,
+      "preview": "--- created: '2026-04-05T13:01:31.025Z' source: observer tags:   - open   - observer   - task --- # assistant: IPv6 timeout. Let me check the SDK client config  [[observer]]  Auto-extracted by observe"
+    },
+    {
+      "title": "Assistant The Sdk Works Perfectly The Error In The Script Was From Somewhere Else Let Me Re Check By Looking At What",
+      "category": "backlog",
+      "file": "backlog/assistant-the-sdk-works-perfectly-the-error-in-the-script-was-from-somewhere-else-let-me-re-check-by-looking-at-what.md",
+      "date": "assistant-",
+      "modified": 1775394091023,
+      "preview": "--- created: '2026-04-05T13:01:31.023Z' source: observer tags:   - open   - observer   - task --- # assistant: The SDK works perfectly. The error in the script was from somewhere else. Let me re-check"
+    },
+    {
+      "title": "Assistant Good Progress Screen Has Client Projectid Screenid Data The Gethtmlgetimage Methods Exis",
+      "category": "backlog",
+      "file": "backlog/assistant-good-progress-screen-has-client-projectid-screenid-data-the-gethtmlgetimage-methods-exis.md",
+      "date": "assistant-",
+      "modified": 1775394091021,
+      "preview": "--- created: '2026-04-05T13:01:31.022Z' source: observer tags:   - open   - observer   - task --- # assistant: Good progress \u2014 `screen` has `client`, `projectId`, `screenId`, `data`. The `getHtml`/`ge"
+    },
+    {
+      "title": "Assistant Good Project Creation Works The Generate Call Returned Something Unexpected Let Me Debug The Sdks Retur",
+      "category": "backlog",
+      "file": "backlog/assistant-good-project-creation-works-the-generate-call-returned-something-unexpected-let-me-debug-the-sdks-retur.md",
+      "date": "assistant-",
+      "modified": 1775394091020,
+      "preview": "--- created: '2026-04-05T13:01:31.021Z' source: observer tags:   - open   - observer   - task --- # assistant: Good, project creation works. The `generate` call returned something unexpected. Let me d"
+    },
+    {
+      "title": "Assistant Now Let Me Write The New Stitchjs Script With The Requested Interface",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-write-the-new-stitchjs-script-with-the-requested-interface.md",
+      "date": "assistant-",
+      "modified": 1775394091018,
+      "preview": "--- created: '2026-04-05T13:01:31.019Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me write the new `stitch.js` script with the requested interface  [[observer]]  A"
+    },
+    {
+      "title": "Assistant Theres Already A Google Stitch Skill But The Task Wants A New Stitch Skill With A Different Interface N",
+      "category": "backlog",
+      "file": "backlog/assistant-theres-already-a-google-stitch-skill-but-the-task-wants-a-new-stitch-skill-with-a-different-interface-n.md",
+      "date": "assistant-",
+      "modified": 1775394091017,
+      "preview": "--- created: '2026-04-05T13:01:31.017Z' source: observer tags:   - open   - observer   - task --- # assistant: There's already a `google-stitch` skill but the task wants a new `stitch` skill with a di"
+    },
+    {
+      "title": "Assistant Theres Already A Google Stitch Skill And Googlestitch Sdk Is In Workspace Node Modules Let Me Check W",
+      "category": "backlog",
+      "file": "backlog/assistant-theres-already-a-google-stitch-skill-and-googlestitch-sdk-is-in-workspace-node_modules-let-me-check-w.md",
+      "date": "assistant-",
+      "modified": 1775394091015,
+      "preview": "--- created: '2026-04-05T13:01:31.016Z' source: observer tags:   - open   - observer   - task --- # assistant: There's already a `google-stitch` skill and `@google/stitch-sdk` is in workspace node_mod"
+    },
+    {
+      "title": "2026 03 27",
+      "category": "facts",
+      "file": "facts/2026-03-27.md",
+      "date": "2026-03-27",
+      "modified": 1775394090985,
+      "preview": "# facts \u2014 2026-03-27  - [fact|c=0.72|i=0.60] 14:09 [unknown] user: [[[Fri]] 2026-03-27 14:09 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "Assistant Done Heres The Summary Scores Indexhtml 710 Sales Onepagerhtml 810 Top Findings 1 Missin",
+      "category": "backlog",
+      "file": "backlog/assistant-done-heres-the-summary-scores-indexhtml-710-sales-onepagerhtml-810-top-findings-1-missin.md",
+      "date": "assistant-",
+      "modified": 1775394090693,
+      "preview": "--- created: '2026-04-05T13:01:30.694Z' source: observer tags:   - open   - observer   - task --- # assistant: Done. Here's the summary: **Scores:** index.html 7/10, sales-onepager.html 8/10 **Top fin"
+    },
+    {
+      "title": "Assistant Now I Have Everything Let Me Compile The Full Audit Report",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-everything-let-me-compile-the-full-audit-report.md",
+      "date": "assistant-",
+      "modified": 1775394090692,
+      "preview": "--- created: '2026-04-05T13:01:30.693Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have everything. Let me compile the full audit report  [[observer]]  Auto-extracted"
+    },
+    {
+      "title": "Assistant Now Let Me Run The Simplify Script And Read The Frontend Humanizer References In Parallel",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-run-the-simplify-script-and-read-the-frontend-humanizer-references-in-parallel.md",
+      "date": "assistant-",
+      "modified": 1775394090691,
+      "preview": "--- created: '2026-04-05T13:01:30.691Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me run the simplify script and read the frontend-humanizer references in parallel"
+    },
+    {
+      "title": "Assistant Starting The Full Audit Let Me Run Everything In Parallel",
+      "category": "backlog",
+      "file": "backlog/assistant-starting-the-full-audit-let-me-run-everything-in-parallel.md",
+      "date": "assistant-",
+      "modified": 1775394090689,
+      "preview": "--- created: '2026-04-05T13:01:30.690Z' source: observer tags:   - open   - observer   - task --- # assistant: Starting the full audit. Let me run everything in parallel  [[observer]]  Auto-extracted "
+    },
+    {
+      "title": "Assistant Ill Run The Weekly Setup Review Now",
+      "category": "backlog",
+      "file": "backlog/assistant-ill-run-the-weekly-setup-review-now.md",
+      "date": "assistant-",
+      "modified": 1775394089526,
+      "preview": "--- created: '2026-04-05T13:01:29.527Z' source: observer tags:   - open   - observer   - task --- # assistant: I'll run the weekly setup review now  [[observer]]  Auto-extracted by observer from sessi"
+    },
+    {
+      "title": "Assistant Now Let Me Get The Projects Data Source Id And Update Its Properties",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-get-the-projects-data-source-id-and-update-its-properties.md",
+      "date": "assistant-",
+      "modified": 1775394088894,
+      "preview": "--- created: '2026-04-05T13:01:28.895Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me get the Projects data source ID and update its properties  [[observer]]  Auto-"
+    },
+    {
+      "title": "Assistant So The Data Source Has The Properties I Need To Patch The Data Source To Add Properties Let Me Also Rename",
+      "category": "backlog",
+      "file": "backlog/assistant-so-the-data-source-has-the-properties-i-need-to-patch-the-data-source-to-add-properties-let-me-also-rename.md",
+      "date": "assistant-",
+      "modified": 1775394088892,
+      "preview": "--- created: '2026-04-05T13:01:28.892Z' source: observer tags:   - open   - observer   - task --- # assistant: So the data source has the properties. I need to PATCH the data source to add properties."
+    },
+    {
+      "title": "2026 04 05",
+      "category": "people",
+      "file": "people/and-create/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394088892,
+      "preview": "# people/and-create \u2014 2026-04-05  - [relationship|c=0.72|i=0.45] 13:01 [unknown] assistant: [[All]] properties added. Now add the sample client and create the [[Projects]] data source. "
+    },
+    {
+      "title": "Assistant The Sample Client Failed Likely The Property Names Are Different In The Api Response Let Me Check The Actu",
+      "category": "backlog",
+      "file": "backlog/assistant-the-sample-client-failed-likely-the-property-names-are-different-in-the-api-response-let-me-check-the-actu.md",
+      "date": "assistant-",
+      "modified": 1775394088890,
+      "preview": "--- created: '2026-04-05T13:01:28.890Z' source: observer tags:   - open   - observer   - task --- # assistant: The sample client failed \u2014 likely the property names are different in the API response. L"
+    },
+    {
+      "title": "2026 03 31",
+      "category": "projects",
+      "file": "projects/2026-03-31.md",
+      "date": "2026-03-31",
+      "modified": 1775394088864,
+      "preview": "# projects \u2014 2026-03-31  - [project|c=0.72|i=0.60] 02:41 [unknown] user: [[[Tue]] 2026-03-31 02:41 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce "
+    },
+    {
+      "title": "Assistant Now I Have The Full Constitution Let Me Write The Python Script To Generate The Redline Document",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-the-full-constitution-let-me-write-the-python-script-to-generate-the-redline-document.md",
+      "date": "assistant-",
+      "modified": 1775394088600,
+      "preview": "--- created: '2026-04-05T13:01:28.601Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have the full constitution. Let me write the Python script to generate the redline "
+    },
+    {
+      "title": "2026 04 02",
+      "category": "facts",
+      "file": "facts/2026-04-02.md",
+      "date": "2026-04-02",
+      "modified": 1775394088580,
+      "preview": "# facts \u2014 2026-04-02  - [fact|c=0.72|i=0.60] 17:00 [unknown] user: [[[Thu]] 2026-04-02 17:00 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce to you"
+    },
+    {
+      "title": "Assistant Let Me Verify Both Files Look Correct After Edits",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-verify-both-files-look-correct-after-edits.md",
+      "date": "assistant-",
+      "modified": 1775394088095,
+      "preview": "--- created: '2026-04-05T13:01:28.096Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me verify both files look correct after edits  [[observer]]  Auto-extracted by observ"
+    },
+    {
+      "title": "Assistant Now Let Me Also Check The Minimalist Review Description For Trigger Coverage And Harden It",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-also-check-the-minimalist-review-description-for-trigger-coverage-and-harden-it.md",
+      "date": "assistant-",
+      "modified": 1775394088094,
+      "preview": "--- created: '2026-04-05T13:01:28.095Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me also check the minimalist-review description for trigger coverage and harden i"
+    },
+    {
+      "title": "Assistant Both Skills Are Skillmd Only With No Bundled Resources Let Me Run The Three Passes Skill 1 Pricing",
+      "category": "backlog",
+      "file": "backlog/assistant-both-skills-are-skillmd-only-with-no-bundled-resources-let-me-run-the-three-passes-skill-1-pricing.md",
+      "date": "assistant-",
+      "modified": 1775394088093,
+      "preview": "--- created: '2026-04-05T13:01:28.094Z' source: observer tags:   - open   - observer   - task --- # assistant: Both skills are SKILL.md-only with no bundled resources. Let me run the three passes. ---"
+    },
+    {
+      "title": "Assistant Now Let Me Read Both Target Skills And Their Bundled Resources",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-read-both-target-skills-and-their-bundled-resources.md",
+      "date": "assistant-",
+      "modified": 1775394088092,
+      "preview": "--- created: '2026-04-05T13:01:28.092Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me read both target skills and their bundled resources  [[observer]]  Auto-extrac"
+    },
+    {
+      "title": "Assistant All 4 Files Generated Clean Let Me Do A Quick Sanity Check On The Output",
+      "category": "backlog",
+      "file": "backlog/assistant-all-4-files-generated-clean-let-me-do-a-quick-sanity-check-on-the-output.md",
+      "date": "assistant-",
+      "modified": 1775394087807,
+      "preview": "--- created: '2026-04-05T13:01:27.808Z' source: observer tags:   - open   - observer   - task --- # assistant: All 4 files generated clean. Let me do a quick sanity check on the output  [[observer]]  "
+    },
+    {
+      "title": "Assistant Now I Have Everything I Need Let Me Write The Rebuilt Generator",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-everything-i-need-let-me-write-the-rebuilt-generator.md",
+      "date": "assistant-",
+      "modified": 1775394087806,
+      "preview": "--- created: '2026-04-05T13:01:27.807Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have everything I need. Let me write the rebuilt generator  [[observer]]  Auto-extr"
+    },
+    {
+      "title": "Assistant Let Me Continue And Complete The Audit",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-continue-and-complete-the-audit.md",
+      "date": "assistant-",
+      "modified": 1775394087320,
+      "preview": "--- created: '2026-04-05T13:01:27.321Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me continue and complete the audit  [[observer]]  Auto-extracted by observer from ses"
+    },
+    {
+      "title": "Assistant Now Let Me Check For Key Issues In Detail",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-check-for-key-issues-in-detail.md",
+      "date": "assistant-",
+      "modified": 1775394087319,
+      "preview": "--- created: '2026-04-05T13:01:27.320Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me check for key issues in detail  [[observer]]  Auto-extracted by observer from "
+    },
+    {
+      "title": "2026 04 04",
+      "category": "projects",
+      "file": "projects/2026-04-04.md",
+      "date": "2026-04-04",
+      "modified": 1775394087303,
+      "preview": "# projects \u2014 2026-04-04  - [project|c=0.72|i=0.60] 22:52 [unknown] user: [[[Sat]] 2026-04-04 22:52 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announce "
+    },
+    {
+      "title": "Assistant Both Files Are Ready Let Me Verify The Outputs",
+      "category": "backlog",
+      "file": "backlog/assistant-both-files-are-ready-let-me-verify-the-outputs.md",
+      "date": "assistant-",
+      "modified": 1775394086742,
+      "preview": "--- created: '2026-04-05T13:01:26.742Z' source: observer tags:   - open   - observer   - task --- # assistant: Both files are ready. Let me verify the outputs  [[observer]]  Auto-extracted by observer"
+    },
+    {
+      "title": "Assistant The Heredoc Approach Keeps Getting Flagged As Obfuscation Due To Sheer Length Let Me Write The Script To A F",
+      "category": "backlog",
+      "file": "backlog/assistant-the-heredoc-approach-keeps-getting-flagged-as-obfuscation-due-to-sheer-length-let-me-write-the-script-to-a-f.md",
+      "date": "assistant-",
+      "modified": 1775394086740,
+      "preview": "--- created: '2026-04-05T13:01:26.741Z' source: observer tags:   - open   - observer   - task --- # assistant: The heredoc approach keeps getting flagged as obfuscation due to sheer length. Let me wri"
+    },
+    {
+      "title": "Assistant Ill Write The Script To A File First Then Execute It",
+      "category": "backlog",
+      "file": "backlog/assistant-ill-write-the-script-to-a-file-first-then-execute-it.md",
+      "date": "assistant-",
+      "modified": 1775394086739,
+      "preview": "--- created: '2026-04-05T13:01:26.739Z' source: observer tags:   - open   - observer   - task --- # assistant: I'll write the script to a file first, then execute it  [[observer]]  Auto-extracted by o"
+    },
+    {
+      "title": "Assistant All 24 Pages Ocrd Now Ill Organize The Content In Document Order And Create Both The Text File And Word Do",
+      "category": "backlog",
+      "file": "backlog/assistant-all-24-pages-ocrd-now-ill-organize-the-content-in-document-order-and-create-both-the-text-file-and-word-do.md",
+      "date": "assistant-",
+      "modified": 1775394086737,
+      "preview": "--- created: '2026-04-05T13:01:26.738Z' source: observer tags:   - open   - observer   - task --- # assistant: All 24 pages OCR'd. Now I'll organize the content in document order and create both the t"
+    },
+    {
+      "title": "Assistant Ill Process The 24 Pages In Batches Of 3 Starting With The First 8 Batches Simultaneously Where Possible",
+      "category": "backlog",
+      "file": "backlog/assistant-ill-process-the-24-pages-in-batches-of-3-starting-with-the-first-8-batches-simultaneously-where-possible.md",
+      "date": "assistant-",
+      "modified": 1775394086736,
+      "preview": "--- created: '2026-04-05T13:01:26.736Z' source: observer tags:   - open   - observer   - task --- # assistant: I'll process the 24 pages in batches of 3. Starting with the first 8 batches simultaneous"
+    },
+    {
+      "title": "Assistant Need To Add A Test File For The Pre Commit Hook Let Me Create One",
+      "category": "backlog",
+      "file": "backlog/assistant-need-to-add-a-test-file-for-the-pre-commit-hook-let-me-create-one.md",
+      "date": "assistant-",
+      "modified": 1775394086267,
+      "preview": "--- created: '2026-04-05T13:01:26.268Z' source: observer tags:   - open   - observer   - task --- # assistant: Need to add a test file for the pre-commit hook. Let me create one  [[observer]]  Auto-ex"
+    },
+    {
+      "title": "Assistant Now Ill Add The Cmd Costs Function After Cmd Fail Let Me Read The Current State First",
+      "category": "backlog",
+      "file": "backlog/assistant-now-ill-add-the-cmd_costs-function-after-cmd_fail-let-me-read-the-current-state-first.md",
+      "date": "assistant-",
+      "modified": 1775394086266,
+      "preview": "--- created: '2026-04-05T13:01:26.267Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I'll add the cmd_costs function after cmd_fail. Let me read the current state first  "
+    },
+    {
+      "title": "Assistant Now Ill Update The Task Cli With The Cost Tracking Features",
+      "category": "backlog",
+      "file": "backlog/assistant-now-ill-update-the-task-cli-with-the-cost-tracking-features.md",
+      "date": "assistant-",
+      "modified": 1775394086265,
+      "preview": "--- created: '2026-04-05T13:01:26.265Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I'll update the task CLI with the cost tracking features  [[observer]]  Auto-extracte"
+    },
+    {
+      "title": "Assistant Now Ill Make All The Changes In Parallel",
+      "category": "backlog",
+      "file": "backlog/assistant-now-ill-make-all-the-changes-in-parallel.md",
+      "date": "assistant-",
+      "modified": 1775394086263,
+      "preview": "--- created: '2026-04-05T13:01:26.264Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I'll make all the changes in parallel  [[observer]]  Auto-extracted by observer from "
+    },
+    {
+      "title": "Assistant Let Me Read The Relevant Files First",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-read-the-relevant-files-first.md",
+      "date": "assistant-",
+      "modified": 1775394086262,
+      "preview": "--- created: '2026-04-05T13:01:26.263Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me read the relevant files first  [[observer]]  Auto-extracted by observer from sessi"
+    },
+    {
+      "title": "Assistant Now I Have A Clear Picture Of The Skill Format And The Automatexm Ecosystem Let Me Build Both Skills",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-a-clear-picture-of-the-skill-format-and-the-automatexm-ecosystem-let-me-build-both-skills.md",
+      "date": "assistant-",
+      "modified": 1775394086048,
+      "preview": "--- created: '2026-04-05T13:01:26.048Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have a clear picture of the skill format and the AutomateXM ecosystem. Let me build"
+    },
+    {
+      "title": "2026 04 02",
+      "category": "people",
+      "file": "people/2026-04-02.md",
+      "date": "2026-04-02",
+      "modified": 1775394086032,
+      "preview": "# people \u2014 2026-04-02  - [relationship|c=0.72|i=0.60] 11:46 [unknown] user: [[[Thu]] 2026-04-02 11:46 UTC] [[[Subagent Context]]] [[You]] are running as a subagent (depth 1/1). [[Results]] auto-announ"
+    },
+    {
+      "title": "Assistant Workflow Is Active Let Me Verify The Changes Look Correct",
+      "category": "backlog",
+      "file": "backlog/assistant-workflow-is-active-let-me-verify-the-changes-look-correct.md",
+      "date": "assistant-",
+      "modified": 1775394085346,
+      "preview": "--- created: '2026-04-05T13:01:25.346Z' source: observer tags:   - open   - observer   - task --- # assistant: Workflow is active. Let me verify the changes look correct  [[observer]]  Auto-extracted "
+    },
+    {
+      "title": "Assistant Now Ill Write The Updated Build Agent Input Code That Handles Manager Messages",
+      "category": "backlog",
+      "file": "backlog/assistant-now-ill-write-the-updated-build-agent-input-code-that-handles-manager-messages.md",
+      "date": "assistant-",
+      "modified": 1775394085345,
+      "preview": "--- created: '2026-04-05T13:01:25.345Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I'll write the updated \"Build Agent Input\" code that handles manager messages  [[obse"
+    },
+    {
+      "title": "Assistant Now Let Me Check The Airtable Employee Table Structure To See What Roles Look Like",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-check-the-airtable-employee-table-structure-to-see-what-roles-look-like.md",
+      "date": "assistant-",
+      "modified": 1775394085344,
+      "preview": "--- created: '2026-04-05T13:01:25.344Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me check the Airtable employee table structure to see what roles look like  [[obs"
+    },
+    {
+      "title": "Assistant Now Let Me See The System Message Construction And The Routing Logic",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-see-the-system-message-construction-and-the-routing-logic.md",
+      "date": "assistant-",
+      "modified": 1775394085343,
+      "preview": "--- created: '2026-04-05T13:01:25.343Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me see the system message construction and the routing logic  [[observer]]  Auto-"
+    },
+    {
+      "title": "Assistant Clear Let Me Pull The Workflow And See How The Ai Agent Is Configured",
+      "category": "backlog",
+      "file": "backlog/assistant-clear-let-me-pull-the-workflow-and-see-how-the-ai-agent-is-configured.md",
+      "date": "assistant-",
+      "modified": 1775394085342,
+      "preview": "--- created: '2026-04-05T13:01:25.342Z' source: observer tags:   - open   - observer   - task --- # assistant: Clear. Let me pull the workflow and see how the AI agent is configured  [[observer]]  Aut"
+    },
+    {
+      "title": "Assistant Now I Have A Clear Picture Let Me Write The New Mistakes And Update Current Weaknessesmd",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-a-clear-picture-let-me-write-the-new-mistakes-and-update-current-weaknessesmd.md",
+      "date": "assistant-",
+      "modified": 1775394085068,
+      "preview": "--- created: '2026-04-05T13:01:25.069Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have a clear picture. Let me write the new mistakes and update current-weaknesses.m"
+    },
+    {
+      "title": "2026 03 25",
+      "category": "commitments",
+      "file": "commitments/2026-03-25.md",
+      "date": "2026-03-25",
+      "modified": 1775394085052,
+      "preview": "# commitments \u2014 2026-03-25  - [commitment|c=0.83|i=0.55] 18:22 [cron] assistant: **[[Self]]-[[Eval]]: March 25, 18:22 UTC \u2014 [[Complete]]** --- **[[Sessions]] reviewed:** [[Mar]] 25, 06:00 UTC \u2192 18:22 "
+    },
+    {
+      "title": "2026 04 05",
+      "category": "people",
+      "file": "people/moved/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394084804,
+      "preview": "# people/moved \u2014 2026-04-05  - [relationship|c=0.84|i=0.90] 13:01 [telegram-group] assistant: \ud83d\udccb **AutomateSXM \u2014 [[Pricing]] & [[Business Review]]** [[Moved]] from [[General]] topic. [[Here]]'s where w"
+    },
+    {
+      "title": "Assistant Now I Have Enough Data Let Me Write The Weekly Report",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-enough-data-let-me-write-the-weekly-report.md",
+      "date": "assistant-",
+      "modified": 1775394084136,
+      "preview": "--- created: '2026-04-05T13:01:24.137Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have enough data. Let me write the weekly report  [[observer]]  Auto-extracted by o"
+    },
+    {
+      "title": "Assistant The Seed Summaries Already Contain Rich Detail About The Tdd Skill Let Me Expand The Most Relevant Leaf For",
+      "category": "backlog",
+      "file": "backlog/assistant-the-seed-summaries-already-contain-rich-detail-about-the-tdd-skill-let-me-expand-the-most-relevant-leaf-for.md",
+      "date": "assistant-",
+      "modified": 1775394083914,
+      "preview": "--- created: '2026-04-05T13:01:23.914Z' source: observer tags:   - open   - observer   - task --- # assistant: The seed summaries already contain rich detail about the TDD skill. Let me expand the mos"
+    },
+    {
+      "title": "Assistant The Condensed Summary Sum 41C6C14058117732 Already Contains Comprehensive Detail Let Me Also Check The Rem",
+      "category": "backlog",
+      "file": "backlog/assistant-the-condensed-summary-sum_41c6c14058117732-already-contains-comprehensive-detail-let-me-also-check-the-rem.md",
+      "date": "assistant-",
+      "modified": 1775394083416,
+      "preview": "--- created: '2026-04-05T13:01:23.417Z' source: observer tags:   - open   - observer   - task --- # assistant: The condensed summary `sum_41c6c14058117732` already contains comprehensive detail. Let m"
+    },
+    {
+      "title": "Assistant The Expansion Is Showing Token Counts But Not The Actual Message Content Let Me Try Grep For More Specific D",
+      "category": "backlog",
+      "file": "backlog/assistant-the-expansion-is-showing-token-counts-but-not-the-actual-message-content-let-me-try-grep-for-more-specific-d.md",
+      "date": "assistant-",
+      "modified": 1775394083220,
+      "preview": "--- created: '2026-04-05T13:01:23.220Z' source: observer tags:   - open   - observer   - task --- # assistant: The expansion is showing token counts but not the actual message content. Let me try grep"
+    },
+    {
+      "title": "Assistant Let Me Look At The Messages Around The Actual Send Operation Msg20049 20053 Which Is When The Message Was",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-look-at-the-messages-around-the-actual-send-operation-msg20049-20053-which-is-when-the-message-was.md",
+      "date": "assistant-",
+      "modified": 1775394083219,
+      "preview": "--- created: '2026-04-05T13:01:23.219Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me look at the messages around the actual send operation (msg#20049-20053, which is w"
+    },
+    {
+      "title": "Assistant Now Let Me Check What Topic 5974 Is",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-check-what-topic-5974-is.md",
+      "date": "assistant-",
+      "modified": 1775394082785,
+      "preview": "--- created: '2026-04-05T13:01:22.785Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me check what topic 5974 is  [[observer]]  Auto-extracted by observer from sessio"
+    },
+    {
+      "title": "Assistant This Is Still About Business Cards The Websitelanding Page Content Seems To Be In Active Messages Not Yet",
+      "category": "backlog",
+      "file": "backlog/assistant-this-is-still-about-business-cards-the-websitelanding-page-content-seems-to-be-in-active-messages-not-yet.md",
+      "date": "assistant-",
+      "modified": 1775394082600,
+      "preview": "--- created: '2026-04-05T13:01:22.600Z' source: observer tags:   - open   - observer   - task --- # assistant: This is still about business cards. The website/landing page content seems to be in activ"
+    },
+    {
+      "title": "Assistant Now Let Me Look At The Earlier Website Related Data The Msg20516 Mentioned Sub Agent Spawns For Website I",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-look-at-the-earlier-website-related-data-the-msg20516-mentioned-sub-agent-spawns-for-website-i.md",
+      "date": "assistant-",
+      "modified": 1775394082599,
+      "preview": "--- created: '2026-04-05T13:01:22.599Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me look at the earlier website-related data. The msg#20516 mentioned \"sub-agent s"
+    },
+    {
+      "title": "Assistant Let Me Search More Specifically For The Website Build With Different Terms",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-search-more-specifically-for-the-website-build-with-different-terms.md",
+      "date": "assistant-",
+      "modified": 1775394082598,
+      "preview": "--- created: '2026-04-05T13:01:22.599Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me search more specifically for the website build with different terms  [[observer]] "
+    },
+    {
+      "title": "Assistant Let Me Check For More Recent Summaries About Website Building Around March 30 When The Messages Are",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-check-for-more-recent-summaries-about-website-building-around-march-30-when-the-messages-are.md",
+      "date": "assistant-",
+      "modified": 1775394082597,
+      "preview": "--- created: '2026-04-05T13:01:22.598Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me check for more recent summaries about website building (around March 30 when the m"
+    },
+    {
+      "title": "Assistant This Is All About Business Cards Let Me Search More Specifically For The Automatexm Website Build",
+      "category": "backlog",
+      "file": "backlog/assistant-this-is-all-about-business-cards-let-me-search-more-specifically-for-the-automatexm-website-build.md",
+      "date": "assistant-",
+      "modified": 1775394082596,
+      "preview": "--- created: '2026-04-05T13:01:22.596Z' source: observer tags:   - open   - observer   - task --- # assistant: This is all about business cards. Let me search more specifically for the AutomateXM webs"
+    },
+    {
+      "title": "Assistant These Are All About Business Cards Let Me Look At The Condensed Summary That Should Contain The Website Buil",
+      "category": "backlog",
+      "file": "backlog/assistant-these-are-all-about-business-cards-let-me-look-at-the-condensed-summary-that-should-contain-the-website-buil.md",
+      "date": "assistant-",
+      "modified": 1775394082595,
+      "preview": "--- created: '2026-04-05T13:01:22.596Z' source: observer tags:   - open   - observer   - task --- # assistant: These are all about business cards. Let me look at the condensed summary that should cont"
+    },
+    {
+      "title": "Assistant Leaf Nodes With No Children Let Me Describe Them Directly",
+      "category": "backlog",
+      "file": "backlog/assistant-leaf-nodes-with-no-children-let-me-describe-them-directly.md",
+      "date": "assistant-",
+      "modified": 1775394082593,
+      "preview": "--- created: '2026-04-05T13:01:22.594Z' source: observer tags:   - open   - observer   - task --- # assistant: Leaf nodes with no children. Let me describe them directly  [[observer]]  Auto-extracted "
+    },
+    {
+      "title": "Assistant Let Me Look At The Earliest Summaries That Mention Website Those Likely Contain The Initial Website Build",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-look-at-the-earliest-summaries-that-mention-website-those-likely-contain-the-initial-website-build.md",
+      "date": "assistant-",
+      "modified": 1775394082592,
+      "preview": "--- created: '2026-04-05T13:01:22.593Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me look at the earliest summaries that mention website \u2014 those likely contain the ini"
+    },
+    {
+      "title": "Assistant Now Let Me Look At The More Recent Automatexm Summaries That Likely Contain Websitelanding Page Details",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-look-at-the-more-recent-automatexm-summaries-that-likely-contain-websitelanding-page-details.md",
+      "date": "assistant-",
+      "modified": 1775394082591,
+      "preview": "--- created: '2026-04-05T13:01:22.591Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me look at the more recent AutomateXM summaries that likely contain website/landi"
+    },
+    {
+      "title": "Assistant Now Let Me Search For The Actual Websitelanding Page Build Details",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-search-for-the-actual-websitelanding-page-build-details.md",
+      "date": "assistant-",
+      "modified": 1775394082591,
+      "preview": "--- created: '2026-04-05T13:01:22.592Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me search for the actual website/landing page build details  [[observer]]  Auto-e"
+    },
+    {
+      "title": "Assistant The Seed Summaries Are About Business Card Projects Not Automatexm Let Me Search For Automatexm Content",
+      "category": "backlog",
+      "file": "backlog/assistant-the-seed-summaries-are-about-business-card-projects-not-automatexm-let-me-search-for-automatexm-content.md",
+      "date": "assistant-",
+      "modified": 1775394082590,
+      "preview": "--- created: '2026-04-05T13:01:22.590Z' source: observer tags:   - open   - observer   - task --- # assistant: The seed summaries are about business card projects, not AutomateXM. Let me search for Au"
+    },
+    {
+      "title": "Assistant The Landing Page Build Appears To Be In The Active Context Messages From 2026 03 30 That Havent Been Compa",
+      "category": "backlog",
+      "file": "backlog/assistant-the-landing-page-build-appears-to-be-in-the-active-context-messages-from-2026-03-30-that-havent-been-compa.md",
+      "date": "assistant-",
+      "modified": 1775394082583,
+      "preview": "--- created: '2026-04-05T13:01:22.584Z' source: observer tags:   - open   - observer   - task --- # assistant: The landing page build appears to be in the active context (messages from 2026-03-30) tha"
+    },
+    {
+      "title": "Assistant The Information About The Automatexm Landing Page Website Build Seems To Be Primarily In Active Non Compac",
+      "category": "backlog",
+      "file": "backlog/assistant-the-information-about-the-automatexm-landing-page-website-build-seems-to-be-primarily-in-active-non-compac.md",
+      "date": "assistant-",
+      "modified": 1775394082582,
+      "preview": "--- created: '2026-04-05T13:01:22.583Z' source: observer tags:   - open   - observer   - task --- # assistant: The information about the AutomateXM landing page / website build seems to be primarily i"
+    },
+    {
+      "title": "Assistant The Websitelanding Page Build Appears To Be Mostly In Active Non Compacted Messages From 2026 03 30 Let M",
+      "category": "backlog",
+      "file": "backlog/assistant-the-websitelanding-page-build-appears-to-be-mostly-in-active-non-compacted-messages-from-2026-03-30-let-m.md",
+      "date": "assistant-",
+      "modified": 1775394082581,
+      "preview": "--- created: '2026-04-05T13:01:22.581Z' source: observer tags:   - open   - observer   - task --- # assistant: The website/landing page build appears to be mostly in active (non-compacted) messages fr"
+    },
+    {
+      "title": "Assistant The Term Landing Page Doesnt Appear In Any Summaries Let Me Check The Condensed Summary That Covers The 2",
+      "category": "backlog",
+      "file": "backlog/assistant-the-term-landing-page-doesnt-appear-in-any-summaries-let-me-check-the-condensed-summary-that-covers-the-2.md",
+      "date": "assistant-",
+      "modified": 1775394082579,
+      "preview": "--- created: '2026-04-05T13:01:22.580Z' source: observer tags:   - open   - observer   - task --- # assistant: The term \"landing page\" doesn't appear in any summaries. Let me check the condensed summa"
+    },
+    {
+      "title": "Assistant The Earliest Mentions Are From 2026 03 27 Let Me Check The Relevant Summaries Around That Time And The March",
+      "category": "backlog",
+      "file": "backlog/assistant-the-earliest-mentions-are-from-2026-03-27-let-me-check-the-relevant-summaries-around-that-time-and-the-march.md",
+      "date": "assistant-",
+      "modified": 1775394082578,
+      "preview": "--- created: '2026-04-05T13:01:22.579Z' source: observer tags:   - open   - observer   - task --- # assistant: The earliest mentions are from 2026-03-27. Let me check the relevant summaries around tha"
+    },
+    {
+      "title": "Assistant This Comprehensive Summary Covers The Full Timeframe But Mentions Finding Hardcoded Credentials In N8N Au",
+      "category": "backlog",
+      "file": "backlog/assistant-this-comprehensive-summary-covers-the-full-timeframe-but-mentions-finding-hardcoded-credentials-in-n8n-au.md",
+      "date": "assistant-",
+      "modified": 1775394082329,
+      "preview": "--- created: '2026-04-05T13:01:22.329Z' source: observer tags:   - open   - observer   - task --- # assistant: This comprehensive summary covers the full timeframe but mentions **finding** hardcoded c"
+    },
+    {
+      "title": "Assistant The Messages From Msg245282453224536 Reference Credential Exposures But These Seem To Be In Self Evalweak",
+      "category": "backlog",
+      "file": "backlog/assistant-the-messages-from-msg245282453224536-reference-credential-exposures-but-these-seem-to-be-in-self-evalweak.md",
+      "date": "assistant-",
+      "modified": 1775394082328,
+      "preview": "--- created: '2026-04-05T13:01:22.329Z' source: observer tags:   - open   - observer   - task --- # assistant: The messages from msg#24528/24532/24536 reference credential exposures but these seem to "
+    },
+    {
+      "title": "Assistant The Messages At Msg245282453224536 Reference Password Exposures During Troubleshooting These Mention N8N",
+      "category": "backlog",
+      "file": "backlog/assistant-the-messages-at-msg245282453224536-reference-password-exposures-during-troubleshooting-these-mention-n8n.md",
+      "date": "assistant-",
+      "modified": 1775394082327,
+      "preview": "--- created: '2026-04-05T13:01:22.328Z' source: observer tags:   - open   - observer   - task --- # assistant: The messages at msg#24528/24532/24536 reference password exposures during troubleshooting"
+    },
+    {
+      "title": "Assistant This Summary Covers 329 330 But Doesnt Mention Password Changes Let Me Check The Earlier Condensed Summar",
+      "category": "backlog",
+      "file": "backlog/assistant-this-summary-covers-329-330-but-doesnt-mention-password-changes-let-me-check-the-earlier-condensed-summar.md",
+      "date": "assistant-",
+      "modified": 1775394082326,
+      "preview": "--- created: '2026-04-05T13:01:22.327Z' source: observer tags:   - open   - observer   - task --- # assistant: This summary covers 3/29-3/30 but doesn't mention password changes. Let me check the earl"
+    },
+    {
+      "title": "Assistant Let Me Search More Specifically For Password Change Operations",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-search-more-specifically-for-password-change-operations.md",
+      "date": "assistant-",
+      "modified": 1775394082325,
+      "preview": "--- created: '2026-04-05T13:01:22.326Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me search more specifically for password change operations  [[observer]]  Auto-extrac"
+    },
+    {
+      "title": "Assistant None Of The Seed Summaries Mention Password Changes Let Me Search More Broadly",
+      "category": "backlog",
+      "file": "backlog/assistant-none-of-the-seed-summaries-mention-password-changes-let-me-search-more-broadly.md",
+      "date": "assistant-",
+      "modified": 1775394082323,
+      "preview": "--- created: '2026-04-05T13:01:22.324Z' source: observer tags:   - open   - observer   - task --- # assistant: None of the seed summaries mention password changes. Let me search more broadly  [[observ"
+    },
+    {
+      "title": "Assistant The Summaries Dont Explicitly Mention Password Changes Let Me Look At The Condensed Summary From 2026 03 30",
+      "category": "backlog",
+      "file": "backlog/assistant-the-summaries-dont-explicitly-mention-password-changes-let-me-look-at-the-condensed-summary-from-2026-03-30.md",
+      "date": "assistant-",
+      "modified": 1775394082319,
+      "preview": "--- created: '2026-04-05T13:01:22.319Z' source: observer tags:   - open   - observer   - task --- # assistant: The summaries don't explicitly mention password changes. Let me look at the condensed sum"
+    },
+    {
+      "title": "Assistant Let Me Look At The Msg24528 Area Summaries Those Messages Are From 2026 03 29 1139 Utc Let Me Search For",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-look-at-the-msg24528-area-summaries-those-messages-are-from-2026-03-29-1139-utc-let-me-search-for.md",
+      "date": "assistant-",
+      "modified": 1775394082318,
+      "preview": "--- created: '2026-04-05T13:01:22.319Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me look at the msg#24528 area summaries. Those messages are from 2026-03-29 11:39 UTC"
+    },
+    {
+      "title": "Assistant The Messages From 2026 03 29 1139 Mentioning Passwordsparamikocredentials Would Be Covered By A Summary Fr",
+      "category": "backlog",
+      "file": "backlog/assistant-the-messages-from-2026-03-29-1139-mentioning-passwordsparamikocredentials-would-be-covered-by-a-summary-fr.md",
+      "date": "assistant-",
+      "modified": 1775394082317,
+      "preview": "--- created: '2026-04-05T13:01:22.318Z' source: observer tags:   - open   - observer   - task --- # assistant: The messages from 2026-03-29 11:39 mentioning passwords/paramiko/credentials would be cov"
+    },
+    {
+      "title": "Assistant The Message Snippets From Msg245282453224536 Mention Password Changes During Troubleshooting Let Me Look",
+      "category": "backlog",
+      "file": "backlog/assistant-the-message-snippets-from-msg245282453224536-mention-password-changes-during-troubleshooting-let-me-look.md",
+      "date": "assistant-",
+      "modified": 1775394082316,
+      "preview": "--- created: '2026-04-05T13:01:22.317Z' source: observer tags:   - open   - observer   - task --- # assistant: The message snippets from msg#24528/24532/24536 mention password changes during troublesh"
+    },
+    {
+      "title": "Assistant Based On The Summary Content And Grep Results I Have Enough Evidence The Summary Itself Contains The Detail",
+      "category": "backlog",
+      "file": "backlog/assistant-based-on-the-summary-content-and-grep-results-i-have-enough-evidence-the-summary-itself-contains-the-detail.md",
+      "date": "assistant-",
+      "modified": 1775394082100,
+      "preview": "--- created: '2026-04-05T13:01:22.101Z' source: observer tags:   - open   - observer   - task --- # assistant: Based on the summary content and grep results, I have enough evidence. The summary itself"
+    },
+    {
+      "title": "2026 04 05",
+      "category": "people",
+      "file": "people/projects-database/2026-04-05.md",
+      "date": "2026-04-05",
+      "modified": 1775394082100,
+      "preview": "# people/projects-database \u2014 2026-04-05  - [relationship|c=0.72|i=0.45] 13:01 [subagent] assistant: I have sufficient evidence now from the summary and grep results to answer comprehensively. ```json "
+    },
+    {
+      "title": "Assistant The Lcm Compacted History Only Goes Up To 1454 Utc On Mar 30 The Timestamps Asked About 1513 2005 22",
+      "category": "backlog",
+      "file": "backlog/assistant-the-lcm-compacted-history-only-goes-up-to-1454-utc-on-mar-30-the-timestamps-asked-about-1513-2005-22.md",
+      "date": "assistant-",
+      "modified": 1775394081860,
+      "preview": "--- created: '2026-04-05T13:01:21.861Z' source: observer tags:   - open   - observer   - task --- # assistant: The LCM compacted history only goes up to ~14:54 UTC on Mar 30. The timestamps asked abou"
+    },
+    {
+      "title": "Assistant Its A Leaf Node The Describe Content Is The Full Detail Let Me Grep For More Related Discussions About Th",
+      "category": "backlog",
+      "file": "backlog/assistant-its-a-leaf-node-the-describe-content-is-the-full-detail-let-me-grep-for-more-related-discussions-about-th.md",
+      "date": "assistant-",
+      "modified": 1775394081149,
+      "preview": "--- created: '2026-04-05T13:01:21.150Z' source: observer tags:   - open   - observer   - task --- # assistant: It's a leaf node \u2014 the describe content is the full detail. Let me grep for more related "
+    },
+    {
+      "title": "Assistant This Summary Contains Rich Content Already Let Me Expand It To Get The Specific Details About Each Skills P",
+      "category": "backlog",
+      "file": "backlog/assistant-this-summary-contains-rich-content-already-let-me-expand-it-to-get-the-specific-details-about-each-skills-p.md",
+      "date": "assistant-",
+      "modified": 1775394081148,
+      "preview": "--- created: '2026-04-05T13:01:21.149Z' source: observer tags:   - open   - observer   - task --- # assistant: This summary contains rich content already. Let me expand it to get the specific details "
+    },
+    {
+      "title": "Assistant Let Me Check The Additional Leaf Summary And Expand Sum 8D99E1B9C52E0D35 For More Detail On Axel Setup",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-check-the-additional-leaf-summary-and-expand-sum_8d99e1b9c52e0d35-for-more-detail-on-axel-setup.md",
+      "date": "assistant-",
+      "modified": 1775394080877,
+      "preview": "--- created: '2026-04-05T13:01:20.878Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me check the additional leaf summary and expand sum_8d99e1b9c52e0d35 for more detail "
+    },
+    {
+      "title": "Assistant Now Let Me Grep For More Specific Evidence About Axels Actual Configuration Status",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-grep-for-more-specific-evidence-about-axels-actual-configuration-status.md",
+      "date": "assistant-",
+      "modified": 1775394080876,
+      "preview": "--- created: '2026-04-05T13:01:20.877Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me grep for more specific evidence about Axel's actual configuration status  [[ob"
+    },
+    {
+      "title": "Assistant I Have Enough From The Seed Summaries And The Described Summaries Let Me Compile The Answer Json Answ",
+      "category": "backlog",
+      "file": "backlog/assistant-i-have-enough-from-the-seed-summaries-and-the-described-summaries-let-me-compile-the-answer-json-answ.md",
+      "date": "assistant-",
+      "modified": 1775394080549,
+      "preview": "--- created: '2026-04-05T13:01:20.549Z' source: observer tags:   - open   - observer   - task --- # assistant: I have enough from the seed summaries and the described summaries. Let me compile the ans"
+    },
+    {
+      "title": "Assistant Now Let Me Get Feedz Details From The Source Messages",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-get-feedz-details-from-the-source-messages.md",
+      "date": "assistant-",
+      "modified": 1775394080547,
+      "preview": "--- created: '2026-04-05T13:01:20.548Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me get Feedz details from the source messages  [[observer]]  Auto-extracted by ob"
+    },
+    {
+      "title": "Assistant Now Let Me Grep For More Details On Feedz And Axels Specific Tasks",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-grep-for-more-details-on-feedz-and-axels-specific-tasks.md",
+      "date": "assistant-",
+      "modified": 1775394080546,
+      "preview": "--- created: '2026-04-05T13:01:20.547Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me grep for more details on Feedz and Axel's specific tasks  [[observer]]  Auto-e"
+    },
+    {
+      "title": "Assistant Now Let Me Grep For More Specific Sxm Range Booking Tech Stack Details",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-grep-for-more-specific-sxm-range-booking-tech-stack-details.md",
+      "date": "assistant-",
+      "modified": 1775394080336,
+      "preview": "--- created: '2026-04-05T13:01:20.337Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me grep for more specific SXM Range Booking tech stack details  [[observer]]  Aut"
+    },
+    {
+      "title": "Assistant I Now Have Enough Evidence Let Me Compile The Answer Json Answer Sxm Range Booking Current St",
+      "category": "backlog",
+      "file": "backlog/assistant-i-now-have-enough-evidence-let-me-compile-the-answer-json-answer-sxm-range-booking-current-st.md",
+      "date": "assistant-",
+      "modified": 1775394080333,
+      "preview": "--- created: '2026-04-05T13:01:20.334Z' source: observer tags:   - open   - observer   - task --- # assistant: I now have enough evidence. Let me compile the answer. ```json { \"answer\": \"## SXM Range "
+    },
+    {
+      "title": "Assistant I Have Enough From The Seed Summaries Let Me Also Check For The Axel Briefing Topic Reference And Any More F",
+      "category": "backlog",
+      "file": "backlog/assistant-i-have-enough-from-the-seed-summaries-let-me-also-check-for-the-axel-briefing-topic-reference-and-any-more-f.md",
+      "date": "assistant-",
+      "modified": 1775394080086,
+      "preview": "--- created: '2026-04-05T13:01:20.087Z' source: observer tags:   - open   - observer   - task --- # assistant: I have enough from the seed summaries. Let me also check for the Axel briefing topic refe"
+    },
+    {
+      "title": "Assistant The Seed Summaries Already Contain Good Detail About Gate Checksh The Key Mention Is Gate Checksh Status",
+      "category": "backlog",
+      "file": "backlog/assistant-the-seed-summaries-already-contain-good-detail-about-gate-checksh-the-key-mention-is-gate-checksh-status.md",
+      "date": "assistant-",
+      "modified": 1775394079920,
+      "preview": "--- created: '2026-04-05T13:01:19.920Z' source: observer tags:   - open   - observer   - task --- # assistant: The seed summaries already contain good detail about gate-check.sh. The key mention is: \""
+    },
+    {
+      "title": "Assistant I Have Enough Evidence From The Summaries The Content Is Clear About Gate Checksh Let Me Compile The Answe",
+      "category": "backlog",
+      "file": "backlog/assistant-i-have-enough-evidence-from-the-summaries-the-content-is-clear-about-gate-checksh-let-me-compile-the-answe.md",
+      "date": "assistant-",
+      "modified": 1775394079916,
+      "preview": "--- created: '2026-04-05T13:01:19.917Z' source: observer tags:   - open   - observer   - task --- # assistant: I have enough evidence from the summaries. The content is clear about gate-check.sh. Let "
+    },
+    {
+      "title": "Assistant Now Let Me Check For What Andy Was Planning To Send To Axel",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-check-for-what-andy-was-planning-to-send-to-axel.md",
+      "date": "assistant-",
+      "modified": 1775394079767,
+      "preview": "--- created: '2026-04-05T13:01:19.767Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me check for what Andy was planning to send to Axel  [[observer]]  Auto-extracted"
+    },
+    {
+      "title": "Assistant Leaves Have No Children To Expand Let Me Describe Them For Content",
+      "category": "backlog",
+      "file": "backlog/assistant-leaves-have-no-children-to-expand-let-me-describe-them-for-content.md",
+      "date": "assistant-",
+      "modified": 1775394079766,
+      "preview": "--- created: '2026-04-05T13:01:19.767Z' source: observer tags:   - open   - observer   - task --- # assistant: Leaves have no children to expand. Let me describe them for content  [[observer]]  Auto-e"
+    },
+    {
+      "title": "Assistant Let Me Expand A Few Of The Most Recent Summaries That I Havent Seen Yet",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-expand-a-few-of-the-most-recent-summaries-that-i-havent-seen-yet.md",
+      "date": "assistant-",
+      "modified": 1775394079765,
+      "preview": "--- created: '2026-04-05T13:01:19.766Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me expand a few of the most recent summaries that I haven't seen yet  [[observer]]  A"
+    },
+    {
+      "title": "Assistant Now Let Me Grep For More Specific Feedz Details To Ensure Completeness",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-grep-for-more-specific-feedz-details-to-ensure-completeness.md",
+      "date": "assistant-",
+      "modified": 1775394079764,
+      "preview": "--- created: '2026-04-05T13:01:19.765Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me grep for more specific Feedz details to ensure completeness  [[observer]]  Aut"
+    },
+    {
+      "title": "2026 04 01",
+      "category": "people",
+      "file": "people/2026-04-01.md",
+      "date": "2026-04-01",
+      "modified": 1775394079762,
+      "preview": "# people \u2014 2026-04-01  - [relationship|c=0.72|i=0.45] 13:01 [subagent] assistant: I already have sum_db37ce1cf0f452ce (the most recent, mentions [[Andy]] asking about sending a summary to [[Axel]]) an"
+    },
+    {
+      "title": "Assistant The Seed Summaries Already Contain Comprehensive Information Let Me Expand Sum 30A605751727Ab7B Briefly To G",
+      "category": "backlog",
+      "file": "backlog/assistant-the-seed-summaries-already-contain-comprehensive-information-let-me-expand-sum_30a605751727ab7b-briefly-to-g.md",
+      "date": "assistant-",
+      "modified": 1775394079630,
+      "preview": "--- created: '2026-04-05T13:01:19.631Z' source: observer tags:   - open   - observer   - task --- # assistant: The seed summaries already contain comprehensive information. Let me expand sum_30a605751"
+    },
+    {
+      "title": "Assistant Let Me Check Msg24066 Which Was The Assistant Response About The Business Plan And Msg29611 Which Is The M",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-check-msg24066-which-was-the-assistant-response-about-the-business-plan-and-msg29611-which-is-the-m.md",
+      "date": "assistant-",
+      "modified": 1775394079494,
+      "preview": "--- created: '2026-04-05T13:01:19.495Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me check msg#24066 which was the assistant response about the business plan, and msg#"
+    },
+    {
+      "title": "Assistant Those Are All Automatexm Related Not Crazy Conez Let Me Search For The Actual Crazy Conez Business Plan Con",
+      "category": "backlog",
+      "file": "backlog/assistant-those-are-all-automatexm-related-not-crazy-conez-let-me-search-for-the-actual-crazy-conez-business-plan-con.md",
+      "date": "assistant-",
+      "modified": 1775394079493,
+      "preview": "--- created: '2026-04-05T13:01:19.494Z' source: observer tags:   - open   - observer   - task --- # assistant: Those are all AutomateXM-related, not Crazy Conez. Let me search for the actual Crazy Con"
+    },
+    {
+      "title": "Assistant Those Are About Automatexm Not Crazy Conez Let Me Check The Recent Crazy Conez Menu Related Summaries",
+      "category": "backlog",
+      "file": "backlog/assistant-those-are-about-automatexm-not-crazy-conez-let-me-check-the-recent-crazy-conez-menu-related-summaries.md",
+      "date": "assistant-",
+      "modified": 1775394079492,
+      "preview": "--- created: '2026-04-05T13:01:19.493Z' source: observer tags:   - open   - observer   - task --- # assistant: Those are about AutomateXM, not Crazy Conez. Let me check the recent Crazy Conez menu-rel"
+    },
+    {
+      "title": "Assistant There Are Recent Summaries About Menus Let Me Look At The Most Relevant Ones",
+      "category": "backlog",
+      "file": "backlog/assistant-there-are-recent-summaries-about-menus-let-me-look-at-the-most-relevant-ones.md",
+      "date": "assistant-",
+      "modified": 1775394079489,
+      "preview": "--- created: '2026-04-05T13:01:19.490Z' source: observer tags:   - open   - observer   - task --- # assistant: There are recent summaries about menus. Let me look at the most relevant ones  [[observer"
+    },
+    {
+      "title": "Assistant These Messages Are From Before The Earliest Summary 0133 Utc Vs Sum Starting At 0159 Utc Let Me Check If",
+      "category": "backlog",
+      "file": "backlog/assistant-these-messages-are-from-before-the-earliest-summary-0133-utc-vs-sum-starting-at-0159-utc-let-me-check-if.md",
+      "date": "assistant-",
+      "modified": 1775394079487,
+      "preview": "--- created: '2026-04-05T13:01:19.488Z' source: observer tags:   - open   - observer   - task --- # assistant: These messages are from before the earliest summary (01:33 UTC vs sum starting at 01:59 U"
+    },
+    {
+      "title": "Assistant Now Let Me Look At The Business Plan Document Reference And The Obsidian Note",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-look-at-the-business-plan-document-reference-and-the-obsidian-note.md",
+      "date": "assistant-",
+      "modified": 1775394079486,
+      "preview": "--- created: '2026-04-05T13:01:19.486Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me look at the business plan document reference and the Obsidian note  [[observer"
+    },
+    {
+      "title": "Assistant Now Let Me Search For The Obsidian Vault Note About Crazy Conez And Any Broader Business Plan Details",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-search-for-the-obsidian-vault-note-about-crazy-conez-and-any-broader-business-plan-details.md",
+      "date": "assistant-",
+      "modified": 1775394079483,
+      "preview": "--- created: '2026-04-05T13:01:19.484Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me search for the Obsidian vault note about Crazy Conez and any broader business "
+    },
+    {
+      "title": "Assistant Let Me Expand The Leaf Summaries That Likely Contain The Most Detail About Crazy Conez",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-expand-the-leaf-summaries-that-likely-contain-the-most-detail-about-crazy-conez.md",
+      "date": "assistant-",
+      "modified": 1775394079482,
+      "preview": "--- created: '2026-04-05T13:01:19.482Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me expand the leaf summaries that likely contain the most detail about Crazy Conez  ["
+    },
+    {
+      "title": "Assistant Now Let Me Grep For More Specific Crazy Conez Content To Find Business Plan Details",
+      "category": "backlog",
+      "file": "backlog/assistant-now-let-me-grep-for-more-specific-crazy-conez-content-to-find-business-plan-details.md",
+      "date": "assistant-",
+      "modified": 1775394079481,
+      "preview": "--- created: '2026-04-05T13:01:19.481Z' source: observer tags:   - open   - observer   - task --- # assistant: Now let me grep for more specific Crazy Conez content to find business plan details  [[ob"
+    },
+    {
+      "title": "2026 03 29",
+      "category": "projects",
+      "file": "projects/2026-03-29.md",
+      "date": "2026-03-29",
+      "modified": 1775394079479,
+      "preview": "# projects \u2014 2026-03-29  - [project|c=0.72|i=0.45] 13:01 [subagent] assistant: Now I have enough information to synthesize a comprehensive answer. The key data comes from the seed summaries and the bu"
+    },
+    {
+      "title": "Assistant The Earlier Summaries From 2026 03 28 With Philipsburg Likely Contain The Business Plan Details Let Me Che",
+      "category": "backlog",
+      "file": "backlog/assistant-the-earlier-summaries-from-2026-03-28-with-philipsburg-likely-contain-the-business-plan-details-let-me-che.md",
+      "date": "assistant-",
+      "modified": 1775394079478,
+      "preview": "--- created: '2026-04-05T13:01:19.478Z' source: observer tags:   - open   - observer   - task --- # assistant: The earlier summaries (from 2026-03-28) with Philipsburg likely contain the business plan"
+    },
+    {
+      "title": "Assistant The Project Runner Skill Exists Let Me Update The Stack Manifest To Include It",
+      "category": "backlog",
+      "file": "backlog/assistant-the-project-runner-skill-exists-let-me-update-the-stack-manifest-to-include-it.md",
+      "date": "assistant-",
+      "modified": 1775394079075,
+      "preview": "--- created: '2026-04-05T13:01:19.075Z' source: observer tags:   - open   - observer   - task --- # assistant: The `project-runner` skill exists. Let me update the stack manifest to include it  [[obse"
+    },
+    {
+      "title": "Assistant Let Me Check For Any Task Issues And Get More Details On The Cron Error",
+      "category": "backlog",
+      "file": "backlog/assistant-let-me-check-for-any-task-issues-and-get-more-details-on-the-cron-error.md",
+      "date": "assistant-",
+      "modified": 1775394079073,
+      "preview": "--- created: '2026-04-05T13:01:19.074Z' source: observer tags:   - open   - observer   - task --- # assistant: Let me check for any task issues and get more details on the cron error  [[observer]]  Au"
+    },
+    {
+      "title": "Assistant Only The Cron Session Itself Is Running Looking At Git Log From Earlier Last Commits Were Apr 4 Agents Rou",
+      "category": "backlog",
+      "file": "backlog/assistant-only-the-cron-session-itself-is-running-looking-at-git-log-from-earlier-last-commits-were-apr-4-agents-rou.md",
+      "date": "assistant-",
+      "modified": 1775394078867,
+      "preview": "--- created: '2026-04-05T13:01:18.867Z' source: observer tags:   - open   - observer   - task --- # assistant: Only the cron session itself is running. Looking at git log from earlier, last commits we"
+    },
+    {
+      "title": "Assistant Now I Have Comprehensive Evidence Let Me Compose The Answer Json Answer The Automatexm Voice Agent",
+      "category": "backlog",
+      "file": "backlog/assistant-now-i-have-comprehensive-evidence-let-me-compose-the-answer-json-answer-the-automatexm-voice-agent.md",
+      "date": "assistant-",
+      "modified": 1775394077974,
+      "preview": "--- created: '2026-04-05T13:01:17.970Z' source: observer tags:   - open   - observer   - task --- # assistant: Now I have comprehensive evidence. Let me compose the answer. ```json { \"answer\": \"The Au"
+    },
+    {
+      "title": "2026 04 05 1301",
+      "category": "general",
+      "file": "2026-04-05-1301.md",
+      "date": "2026-04-05",
+      "modified": 1775394076056,
+      "preview": "# Session: 2026-04-05 13:01:15 UTC  - **Session Key**: agent:ops:telegram:group:-1003709913328:topic:1 - **Session ID**: e68c4527-a182-45fc-806b-60686654c580 - **Source**: telegram  ## Conversation Su"
+    },
+    {
+      "title": "2026 04 04",
+      "category": "general",
+      "file": "2026-04-04.md",
+      "date": "2026-04-04",
+      "modified": 1775346954493,
+      "preview": "# 2026-04-04 Memory  ## Vapi Webhook Workflow (n8n) - **Issue:** Andy reports the Vapi webhook workflow only has 1 code node \u2014 the complex nodes (IF \u2192 Notion \u2192 Telegram) were lost during JSON import -"
     },
     {
       "title": "Automatexm Security Checklist",

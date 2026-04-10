@@ -1,33 +1,33 @@
 {
-  "generated": 1775243506959,
+  "generated": 1775784306199,
   "gateway": {
-    "version": "2026.4.2",
-    "status": "online",
-    "uptime_since": "Thu 2026-04-02 21:05:18",
-    "sessions": 3,
-    "memory_files": 458,
+    "version": "unknown",
+    "status": "offline",
+    "uptime_since": "",
+    "sessions": 0,
+    "memory_files": 0,
     "heartbeat": "30m"
   },
   "system": {
-    "disk_used": "71G",
+    "disk_used": "76G",
     "disk_total": "193G",
-    "disk_pct": "37%",
-    "mem_used": "4.6Gi",
-    "mem_total": "15Gi",
-    "load": "1.54 0.74 0.45",
-    "node_version": "v22.22.0"
+    "disk_pct": "39%",
+    "mem_used": "unknown",
+    "mem_total": "unknown",
+    "load": "0.02 0.07 0.17",
+    "node_version": "v18.20.4"
   },
   "health": {
-    "vector_db": 366,
-    "vector_db_embedded": 1202,
-    "cron_jobs_active": 10,
+    "vector_db": 0,
+    "vector_db_embedded": 0,
+    "cron_jobs_active": 0,
     "session_size": "unknown",
     "last_checkpoint_ms": null
   },
-  "uptime": "0d 22h 7m",
+  "uptime": "unknown",
   "vectorDb": {
-    "items": 366,
-    "embedded": 1202
+    "items": 0,
+    "embedded": 0
   },
   "costs": {}
 }
