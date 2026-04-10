@@ -1,11 +1,12 @@
 {
-  "generated": 1775784306199,
+  "generated": 1775815351622,
   "gateway": {
     "version": "unknown",
-    "status": "offline",
+    "status": "unknown",
+    "source": "unavailable",
     "uptime_since": "",
-    "sessions": 0,
-    "memory_files": 0,
+    "sessions": null,
+    "memory_files": null,
     "heartbeat": "30m"
   },
   "system": {
@@ -14,20 +15,20 @@
     "disk_pct": "39%",
     "mem_used": "unknown",
     "mem_total": "unknown",
-    "load": "0.02 0.07 0.17",
+    "load": "0.21 0.23 0.16",
     "node_version": "v18.20.4"
   },
   "health": {
-    "vector_db": 0,
-    "vector_db_embedded": 0,
-    "cron_jobs_active": 0,
+    "vector_db": null,
+    "vector_db_embedded": null,
+    "cron_jobs_active": null,
     "session_size": "unknown",
     "last_checkpoint_ms": null
   },
   "uptime": "unknown",
   "vectorDb": {
-    "items": 0,
-    "embedded": 0
+    "items": null,
+    "embedded": null
   },
   "costs": {}
 }

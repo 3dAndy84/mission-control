@@ -1,5 +1,5 @@
 {
-  "generated": 1775784306199,
+  "generated": 1775815351622,
   "total": 565,
   "vector_count": 0,
   "entries": [
@@ -8,7 +8,7 @@
       "category": "general",
       "file": "2026-04-10.md",
       "date": "2026-04-10",
-      "modified": 1775783507285,
+      "modified": 1775811606027,
       "preview": "- 2026-04-10 01:11 UTC: Investigated stale Mission Control dashboard. Durable finding: there are two task data paths with divergent freshness. `dashboard/tasks.json` was current (updated 2026-04-06) w"
     },
     {
