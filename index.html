@@ -1315,8 +1315,9 @@
     <script>
         const cacheBust = () => `?t=${Date.now()}`;
         const withBust = (path) => `${path}${cacheBust()}`;
-        const STATUS_API_URL = () => withBust('status.json');
-        const WATCHDOG_API_URL = () => withBust('watchdog.json');
+        const apiUrl = (path) => withBust(`/api/${path}`);
+        const STATUS_API_URL = () => apiUrl('status');
+        const WATCHDOG_API_URL = () => apiUrl('watchdog');
 
         let allTasks = [];
         let allCronJobs = [];
@@ -1335,8 +1336,8 @@
 
         async function loadData() {
             try {
-                // Load tasks (local file)
-                const tasksResponse = await fetch(withBust('tasks.json'));
+                // Load tasks
+                const tasksResponse = await fetch(apiUrl('tasks'));
                 if (tasksResponse.ok) {
                     const tasksData = await tasksResponse.json();
                     allTasks = tasksData.tasks || [];
@@ -1344,9 +1345,9 @@
                     allTasks = [];
                 }
 
-                // Load cron jobs (local file)
+                // Load cron jobs
                 try {
-                    const cronResponse = await fetch(withBust('cron-jobs.json'));
+                    const cronResponse = await fetch(apiUrl('cron-jobs'));
                     if (cronResponse.ok) {
                         const cronData = await cronResponse.json();
                         allCronJobs = cronData.jobs || [];
@@ -1383,9 +1384,9 @@
                     watchdogData = null;
                 }
 
-                // Load memory data (local file)
+                // Load memory data
                 try {
-                    const memoryResponse = await fetch(withBust('memory.json'));
+                    const memoryResponse = await fetch(apiUrl('memory'));
                     if (memoryResponse.ok) {
                         memoryData = await memoryResponse.json();
                     } else {
@@ -1395,9 +1396,9 @@
                     memoryData = null;
                 }
 
-                // Load projects data (local file)
+                // Load projects data
                 try {
-                    const projectsResponse = await fetch(withBust('projects.json'));
+                    const projectsResponse = await fetch(apiUrl('projects'));
                     if (projectsResponse.ok) {
                         projectsData = await projectsResponse.json();
                     } else {

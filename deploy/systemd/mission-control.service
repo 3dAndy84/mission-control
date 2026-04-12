@@ -1,0 +1,15 @@
+[Unit]
+Description=Mission Control dashboard local API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/workspace/dashboard
+EnvironmentFile=-%h/.config/mission-control/mission-control.env
+Environment=PORT=3000
+ExecStart=/usr/bin/env node server.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
