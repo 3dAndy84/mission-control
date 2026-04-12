@@ -354,13 +354,15 @@
       "id": "weekly-update-check",
       "title": "Weekly update check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "Max",
       "project": "general",
       "created": "2026-04-12T18:00:38Z",
-      "updated": "2026-04-12T18:00:38Z",
-      "started_at": "2026-04-12T18:00:38Z"
+      "updated": "2026-04-12T18:01:30Z",
+      "started_at": "2026-04-12T18:00:38Z",
+      "completed_at": "2026-04-12T18:01:30Z",
+      "proof": "Sent Telegram update to -1003709913328/topic 1 with 6 available global npm updates; OpenClaw up to date; lossless-claw not installed globally, latest 0.8.2"
     }
   ]
 }
