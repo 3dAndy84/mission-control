@@ -23,7 +23,7 @@
       "updated": "2026-03-03T19:05:54Z",
       "started_at": "2026-03-03T19:05:49Z",
       "completed_at": "2026-03-03T19:05:54Z",
-      "proof": "Built and tested: ~/workspace/bin/task-track (CLI script, 6.1KB) + ~/.agents/skills/task-lifecycle/SKILL.md (skill file, 5.3KB). All commands verified: start, complete, fail, status, log. Proof enforcement confirmed \u2014 rejects completion without proof. JSONL audit trail at ~/workspace/memory/task-log.jsonl."
+      "proof": "Built and tested: ~/workspace/bin/task-track (CLI script, 6.1KB) + ~/.agents/skills/task-lifecycle/SKILL.md (skill file, 5.3KB). All commands verified: start, complete, fail, status, log. Proof enforcement confirmed — rejects completion without proof. JSONL audit trail at ~/workspace/memory/task-log.jsonl."
     },
     {
       "id": "test-lifecycle-display",
@@ -41,7 +41,7 @@
     },
     {
       "id": "mission-control",
-      "title": "Build Mission Control dashboard \u2014 agent monitoring, system health, calendar, task board",
+      "title": "Build Mission Control dashboard — agent monitoring, system health, calendar, task board",
       "description": "",
       "status": "in-progress",
       "priority": "medium",
@@ -335,6 +335,18 @@
       "started_at": "2026-04-06T08:01:28Z",
       "completed_at": "2026-04-06T08:01:48Z",
       "proof": "Ran clawvault observe --cron; result: nothing new; HEAD 3d5fb6d"
+    },
+    {
+      "id": "weekly-self-eval-report",
+      "title": "weekly self-eval report",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-12T16:51:34Z",
+      "updated": "2026-04-12T16:51:34Z",
+      "started_at": "2026-04-12T16:51:34Z"
     }
   ]
 }
