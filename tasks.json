@@ -450,13 +450,15 @@
       "id": "check-and-fix-dream-feature-detection",
       "title": "Check and fix dream feature detection",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-13T10:52:52Z",
-      "updated": "2026-04-13T10:52:52Z",
-      "started_at": "2026-04-13T10:52:52Z"
+      "updated": "2026-04-13T10:54:23Z",
+      "started_at": "2026-04-13T10:52:52Z",
+      "completed_at": "2026-04-13T10:54:23Z",
+      "proof": "Verified live config path plugins.entries.memory-core.config.dreaming.enabled=true and added bin/dream-status helper for future checks"
     }
   ]
 }
