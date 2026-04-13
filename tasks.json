@@ -464,13 +464,15 @@
       "id": "update-openclaw-self",
       "title": "update openclaw self",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-13T16:55:15Z",
-      "updated": "2026-04-13T16:55:15Z",
-      "started_at": "2026-04-13T16:55:15Z"
+      "updated": "2026-04-13T17:06:37Z",
+      "started_at": "2026-04-13T16:55:15Z",
+      "completed_at": "2026-04-13T17:06:37Z",
+      "proof": "Gateway updated from 2026.4.11 → 2026.4.12, restarted, running. Task maintenance cleaned 80 audit warnings. 12 audit errors remain (bundled plugin deps still missing — postinstall still running)."
     }
   ]
 }
