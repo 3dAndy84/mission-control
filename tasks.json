@@ -403,6 +403,18 @@
       "created": "2026-04-13T02:17:01Z",
       "updated": "2026-04-13T02:17:01Z",
       "started_at": "2026-04-13T02:17:01Z"
+    },
+    {
+      "id": "fix-mission-control-public-data-path",
+      "title": "Fix Mission Control public data path",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-13T02:22:00Z",
+      "updated": "2026-04-13T02:22:00Z",
+      "started_at": "2026-04-13T02:22:00Z"
     }
   ]
 }
