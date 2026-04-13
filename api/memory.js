@@ -1,2 +1,2 @@
 const { createDataHandler } = require('./_lib');
-module.exports = createDataHandler('memory.json');
+module.exports = createDataHandler('memory.json', () => require('../memory.json'));

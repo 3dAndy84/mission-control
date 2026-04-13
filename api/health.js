@@ -1,26 +1,20 @@
-const fs = require('fs/promises');
-const path = require('path');
-const { ROOT_DIR } = require('./_lib');
-
-const dataFiles = [
-  'status.json',
-  'watchdog.json',
-  'tasks.json',
-  'cron-jobs.json',
-  'memory.json',
-  'projects.json',
-];
+const loaders = {
+  'status.json': () => require('../status.json'),
+  'watchdog.json': () => require('../watchdog.json'),
+  'tasks.json': () => require('../tasks.json'),
+  'cron-jobs.json': () => require('../cron-jobs.json'),
+  'memory.json': () => require('../memory.json'),
+  'projects.json': () => require('../projects.json'),
+};
 
 module.exports = async function handler(_req, res) {
-  const files = {};
-
-  await Promise.all(
-    dataFiles.map(async (fileName) => {
+  const files = Object.fromEntries(
+    Object.entries(loaders).map(([fileName, load]) => {
       try {
-        await fs.access(path.join(ROOT_DIR, fileName));
-        files[fileName] = true;
+        load();
+        return [fileName, true];
       } catch {
-        files[fileName] = false;
+        return [fileName, false];
       }
     })
   );

@@ -1,2 +1,2 @@
 const { createDataHandler } = require('./_lib');
-module.exports = createDataHandler('cron-jobs.json');
+module.exports = createDataHandler('cron-jobs.json', () => require('../cron-jobs.json'));
