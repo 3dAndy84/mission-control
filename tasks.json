@@ -408,13 +408,15 @@
       "id": "fix-mission-control-public-data-path",
       "title": "Fix Mission Control public data path",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-13T02:22:00Z",
-      "updated": "2026-04-13T02:22:00Z",
-      "started_at": "2026-04-13T02:22:00Z"
+      "updated": "2026-04-13T02:26:10Z",
+      "started_at": "2026-04-13T02:22:00Z",
+      "completed_at": "2026-04-13T02:26:10Z",
+      "proof": "Changed Vercel API routes to bundle data per route via require('../*.json'), committed 919d03f, pushed to mission-control, new deployment mission-control-5l5cpwupa is ready, task-dashboard-eosin /api/health now returns ok:true and /api/tasks returns live task data"
     }
   ]
 }
