@@ -377,6 +377,18 @@
       "started_at": "2026-04-13T00:28:43Z",
       "completed_at": "2026-04-13T00:30:33Z",
       "proof": "Added Vercel API handlers under dashboard/api, committed c80d16d, pushed to github, local health/status handlers verified, public /api/* still 404 immediately after push"
+    },
+    {
+      "id": "check-mission-control-vercel-linkage-and-deploy-st",
+      "title": "Check Mission Control Vercel linkage and deploy state",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-13T00:33:15Z",
+      "updated": "2026-04-13T00:33:15Z",
+      "started_at": "2026-04-13T00:33:15Z"
     }
   ]
 }
