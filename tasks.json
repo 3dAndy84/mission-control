@@ -391,6 +391,18 @@
       "started_at": "2026-04-13T00:33:15Z",
       "completed_at": "2026-04-13T00:37:21Z",
       "proof": "No .vercel link in repo, Vercel CLI has no credentials, no VERCEL_* env on host, memory confirms app was previously linked to task-dashboard not mission-control, public site still serves old static deployment with /api/* 404"
+    },
+    {
+      "id": "inspect-mission-control-vercel-project-settings",
+      "title": "Inspect Mission Control Vercel project settings",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-13T02:17:01Z",
+      "updated": "2026-04-13T02:17:01Z",
+      "started_at": "2026-04-13T02:17:01Z"
     }
   ]
 }
