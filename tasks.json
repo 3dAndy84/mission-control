@@ -417,6 +417,18 @@
       "started_at": "2026-04-13T02:22:00Z",
       "completed_at": "2026-04-13T02:26:10Z",
       "proof": "Changed Vercel API routes to bundle data per route via require('../*.json'), committed 919d03f, pushed to mission-control, new deployment mission-control-5l5cpwupa is ready, task-dashboard-eosin /api/health now returns ok:true and /api/tasks returns live task data"
+    },
+    {
+      "id": "create-project-planner-skill-for-project-build-pla",
+      "title": "Create project-planner skill for project build planning",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-13T10:45:36Z",
+      "updated": "2026-04-13T10:45:36Z",
+      "started_at": "2026-04-13T10:45:36Z"
     }
   ]
 }
