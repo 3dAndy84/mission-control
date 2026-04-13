@@ -459,6 +459,18 @@
       "started_at": "2026-04-13T10:52:52Z",
       "completed_at": "2026-04-13T10:54:23Z",
       "proof": "Verified live config path plugins.entries.memory-core.config.dreaming.enabled=true and added bin/dream-status helper for future checks"
+    },
+    {
+      "id": "update-openclaw-self",
+      "title": "update openclaw self",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-13T16:55:15Z",
+      "updated": "2026-04-13T16:55:15Z",
+      "started_at": "2026-04-13T16:55:15Z"
     }
   ]
 }
