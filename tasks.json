@@ -431,6 +431,18 @@
       "started_at": "2026-04-13T10:45:36Z",
       "completed_at": "2026-04-13T10:47:03Z",
       "proof": "Created /home/clawd/.agents/skills/project-planner/SKILL.md and references/project-pack-template.md for personal, AutomateXM internal, and client build planning"
+    },
+    {
+      "id": "fix-external-skill-file-write-workflow",
+      "title": "Fix external skill file write workflow",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-13T10:49:35Z",
+      "updated": "2026-04-13T10:49:35Z",
+      "started_at": "2026-04-13T10:49:35Z"
     }
   ]
 }
