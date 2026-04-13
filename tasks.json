@@ -422,13 +422,15 @@
       "id": "create-project-planner-skill-for-project-build-pla",
       "title": "Create project-planner skill for project build planning",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-13T10:45:36Z",
-      "updated": "2026-04-13T10:45:36Z",
-      "started_at": "2026-04-13T10:45:36Z"
+      "updated": "2026-04-13T10:47:03Z",
+      "started_at": "2026-04-13T10:45:36Z",
+      "completed_at": "2026-04-13T10:47:03Z",
+      "proof": "Created /home/clawd/.agents/skills/project-planner/SKILL.md and references/project-pack-template.md for personal, AutomateXM internal, and client build planning"
     }
   ]
 }
