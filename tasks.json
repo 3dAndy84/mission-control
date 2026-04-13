@@ -436,13 +436,15 @@
       "id": "fix-external-skill-file-write-workflow",
       "title": "Fix external skill file write workflow",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-13T10:49:35Z",
-      "updated": "2026-04-13T10:49:35Z",
-      "started_at": "2026-04-13T10:49:35Z"
+      "updated": "2026-04-13T10:50:09Z",
+      "started_at": "2026-04-13T10:49:35Z",
+      "completed_at": "2026-04-13T10:50:09Z",
+      "proof": "Added bin/write-external, verified it writes safely outside workspace, will use it for ~/.agents/skills and other external paths"
     }
   ]
 }
