@@ -445,6 +445,18 @@
       "started_at": "2026-04-13T10:49:35Z",
       "completed_at": "2026-04-13T10:50:09Z",
       "proof": "Added bin/write-external, verified it writes safely outside workspace, will use it for ~/.agents/skills and other external paths"
+    },
+    {
+      "id": "check-and-fix-dream-feature-detection",
+      "title": "Check and fix dream feature detection",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-13T10:52:52Z",
+      "updated": "2026-04-13T10:52:52Z",
+      "started_at": "2026-04-13T10:52:52Z"
     }
   ]
 }
