@@ -562,13 +562,15 @@
       "id": "investigate-repeated-n8n-sick-leave-error",
       "title": "Investigate repeated n8n sick leave error",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T14:35:18Z",
-      "updated": "2026-04-16T14:35:18Z",
-      "started_at": "2026-04-16T14:35:18Z"
+      "updated": "2026-04-16T14:39:41Z",
+      "started_at": "2026-04-16T14:35:18Z",
+      "completed_at": "2026-04-16T14:39:41Z",
+      "proof": "Investigated execution 14708. Build Report Data and Generate PDF now succeed. Current manual failure is narrowed to [Monthly] 7 Email Report to Manager, where n8n reported invalid expression syntax in the JSON body. Patched the email node syntax and updated workflow. Also confirmed webhook path evolution-whatsapp still exists in workflow export, but n8n startup continues not to list ILTT among activated workflows, causing unknown-webhook errors; published version pointer now matches current version."
     }
   ]
 }
