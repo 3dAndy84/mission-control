@@ -501,6 +501,18 @@
       "started_at": "2026-04-16T11:47:23Z",
       "completed_at": "2026-04-16T11:47:44Z",
       "proof": "Created /home/clawd/vaults/Templates/Meeting Note Templater.md and committed workspace copy at templates/obsidian-meeting-note-templater.md (git 75d6fc5)"
+    },
+    {
+      "id": "diagnose-monthly-sick-leave-report-email-delivery-",
+      "title": "Diagnose monthly sick leave report email delivery in n8n",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T14:03:11Z",
+      "updated": "2026-04-16T14:03:11Z",
+      "started_at": "2026-04-16T14:03:11Z"
     }
   ]
 }
