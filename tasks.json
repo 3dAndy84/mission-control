@@ -487,6 +487,18 @@
       "started_at": "2026-04-16T11:31:02Z",
       "completed_at": "2026-04-16T11:31:48Z",
       "proof": "Created /home/clawd/vaults/Templates/Meeting Note Template.md and committed workspace copy at templates/obsidian-meeting-note-template.md (git f4be8f7)"
+    },
+    {
+      "id": "create-templater-auto-create-meeting-template-for-",
+      "title": "Create Templater auto-create meeting template for Andy",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T11:47:23Z",
+      "updated": "2026-04-16T11:47:23Z",
+      "started_at": "2026-04-16T11:47:23Z"
     }
   ]
 }
