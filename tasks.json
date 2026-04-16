@@ -588,13 +588,15 @@
       "id": "inspect-latest-iltt-failure-after-webhook-and-emai",
       "title": "Inspect latest ILTT failure after webhook and email fixes",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T14:48:03Z",
-      "updated": "2026-04-16T14:48:03Z",
-      "started_at": "2026-04-16T14:48:03Z"
+      "updated": "2026-04-16T14:49:05Z",
+      "started_at": "2026-04-16T14:48:03Z",
+      "completed_at": "2026-04-16T14:49:05Z",
+      "proof": "Inspected latest execution 14710. Root cause was real Resend 422 invalid_attachment: n8n built attachments with filename only because binary content was dropped at email node. Patched [Monthly] 6 Generate PDF to place attachment base64 directly into email_payload.attachments and simplified [Monthly] 7 Email Report to Manager to send {{.email_payload}} verbatim. Workflow updated, republished, and n8n restarted."
     }
   ]
 }
