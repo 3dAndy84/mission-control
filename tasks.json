@@ -492,13 +492,15 @@
       "id": "create-templater-auto-create-meeting-template-for-",
       "title": "Create Templater auto-create meeting template for Andy",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T11:47:23Z",
-      "updated": "2026-04-16T11:47:23Z",
-      "started_at": "2026-04-16T11:47:23Z"
+      "updated": "2026-04-16T11:47:44Z",
+      "started_at": "2026-04-16T11:47:23Z",
+      "completed_at": "2026-04-16T11:47:44Z",
+      "proof": "Created /home/clawd/vaults/Templates/Meeting Note Templater.md and committed workspace copy at templates/obsidian-meeting-note-templater.md (git 75d6fc5)"
     }
   ]
 }
