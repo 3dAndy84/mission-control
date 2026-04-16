@@ -724,13 +724,15 @@
       "id": "run-openclaw-doctor-non-interactive",
       "title": "run-openclaw-doctor-non-interactive",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T22:45:54Z",
-      "updated": "2026-04-16T22:45:54Z",
-      "started_at": "2026-04-16T22:45:54Z"
+      "updated": "2026-04-16T22:46:19Z",
+      "started_at": "2026-04-16T22:45:54Z",
+      "completed_at": "2026-04-16T22:46:19Z",
+      "proof": "Ran openclaw doctor --non-interactive. Main findings: active-memory config warning persists; Claude CLI auth profile missing in /home/clawd/.openclaw/agents/main/agent/auth-profiles.json; one live session lock for current ops topic session; telegram channel OK; no plugin errors."
     }
   ]
 }
