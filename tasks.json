@@ -583,6 +583,18 @@
       "created": "2026-04-16T14:41:24Z",
       "updated": "2026-04-16T14:41:24Z",
       "started_at": "2026-04-16T14:41:24Z"
+    },
+    {
+      "id": "inspect-latest-iltt-failure-after-webhook-and-emai",
+      "title": "Inspect latest ILTT failure after webhook and email fixes",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T14:48:03Z",
+      "updated": "2026-04-16T14:48:03Z",
+      "started_at": "2026-04-16T14:48:03Z"
     }
   ]
 }
