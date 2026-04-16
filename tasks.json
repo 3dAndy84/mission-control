@@ -672,13 +672,15 @@
       "id": "fix-pdf-ingestion-fallback-ladder",
       "title": "fix-pdf-ingestion-fallback-ladder",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T22:04:43Z",
-      "updated": "2026-04-16T22:04:43Z",
-      "started_at": "2026-04-16T22:04:43Z"
+      "updated": "2026-04-16T22:17:18Z",
+      "started_at": "2026-04-16T22:04:43Z",
+      "completed_at": "2026-04-16T22:17:18Z",
+      "proof": "Added bin/pdf-ingest with markitdown-first extraction plus OCR fallback via pypdfium2 + RapidOCR, added tests/test_pdf_ingest.py smoke test, updated skills/summarize/SKILL.md, verified with python3 tests/test_pdf_ingest.py, committed as 1f24aa8 (feat: add local PDF ingestion fallback)."
     }
   ]
 }
