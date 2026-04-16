@@ -653,6 +653,18 @@
       "created": "2026-04-16T21:58:37Z",
       "updated": "2026-04-16T21:58:37Z",
       "started_at": "2026-04-16T21:58:37Z"
+    },
+    {
+      "id": "validate-current-pdf-parsing-path-with-real-file",
+      "title": "validate-current-pdf-parsing-path-with-real-file",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T22:01:51Z",
+      "updated": "2026-04-16T22:01:51Z",
+      "started_at": "2026-04-16T22:01:51Z"
     }
   ]
 }
