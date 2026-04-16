@@ -681,6 +681,18 @@
       "started_at": "2026-04-16T22:04:43Z",
       "completed_at": "2026-04-16T22:17:18Z",
       "proof": "Added bin/pdf-ingest with markitdown-first extraction plus OCR fallback via pypdfium2 + RapidOCR, added tests/test_pdf_ingest.py smoke test, updated skills/summarize/SKILL.md, verified with python3 tests/test_pdf_ingest.py, committed as 1f24aa8 (feat: add local PDF ingestion fallback)."
+    },
+    {
+      "id": "diagnose-acp-codex-internal-error",
+      "title": "diagnose-acp-codex-internal-error",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T22:22:38Z",
+      "updated": "2026-04-16T22:22:38Z",
+      "started_at": "2026-04-16T22:22:38Z"
     }
   ]
 }
