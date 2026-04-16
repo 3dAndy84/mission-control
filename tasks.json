@@ -557,6 +557,18 @@
       "started_at": "2026-04-16T14:17:34Z",
       "completed_at": "2026-04-16T14:25:53Z",
       "proof": "Patched workflow YzVRsdXdCC7EJ64U so [Monthly] 5 catches missing manager-branch execution, normalizes Airtable array fields, and preserves PDF/email flow; recreated n8n container with N8N_PROXY_HOPS=1 plus existing env; validated n8n responds at https://n8n-andy.xyz and the previous X-Forwarded-For trust-proxy ValidationError no longer appears in logs after a live request."
+    },
+    {
+      "id": "investigate-repeated-n8n-sick-leave-error",
+      "title": "Investigate repeated n8n sick leave error",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T14:35:18Z",
+      "updated": "2026-04-16T14:35:18Z",
+      "started_at": "2026-04-16T14:35:18Z"
     }
   ]
 }
