@@ -529,6 +529,18 @@
       "started_at": "2026-04-16T14:05:57Z",
       "completed_at": "2026-04-16T14:11:30Z",
       "proof": "Updated workflow YzVRsdXdCC7EJ64U to generate PDF instead of Excel, fixed email node payload, disabled silent continueOnFail on email, hardened report data lookup against missing manager-branch execution, reactivated workflow, locally validated PDF generation to /tmp/iltt-sick-leave-report-test.pdf, and manually emailed a PDF copy to jsambre@gmail.com."
+    },
+    {
+      "id": "investigate-current-n8n-error",
+      "title": "Investigate current n8n error",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T14:15:55Z",
+      "updated": "2026-04-16T14:15:55Z",
+      "started_at": "2026-04-16T14:15:55Z"
     }
   ]
 }
