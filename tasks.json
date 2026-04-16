@@ -611,6 +611,18 @@
       "started_at": "2026-04-16T14:53:36Z",
       "completed_at": "2026-04-16T14:55:09Z",
       "proof": "Investigated stale manager email issue. Root cause: [Monthly] 5 Build Report Data still contained hardcoded fallback manager email jsambre@gmail.com, and latest execution used that fallback despite Airtable now showing ernie@princess-promenade.com. Patched workflow to remove fallback entirely and fetch active Manager record directly from Airtable at runtime, failing loudly if Email is missing. Workflow updated, republished, and n8n restarted."
+    },
+    {
+      "id": "fix-obsidian-templater-file-placement",
+      "title": "Fix Obsidian Templater file placement",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T19:40:41Z",
+      "updated": "2026-04-16T19:40:41Z",
+      "started_at": "2026-04-16T19:40:41Z"
     }
   ]
 }
