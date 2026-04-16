@@ -658,13 +658,15 @@
       "id": "validate-current-pdf-parsing-path-with-real-file",
       "title": "validate-current-pdf-parsing-path-with-real-file",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T22:01:51Z",
-      "updated": "2026-04-16T22:01:51Z",
-      "started_at": "2026-04-16T22:01:51Z"
+      "updated": "2026-04-16T22:02:31Z",
+      "started_at": "2026-04-16T22:01:51Z",
+      "completed_at": "2026-04-16T22:02:31Z",
+      "proof": "Created /tmp/openclaw-pdf-test.pdf and tested summarize against it. Auto/default PDF path fails with missing uvx/markitdown preprocessing. Explicit OpenAI PDF path reaches native document handling but returns OpenAI 429. Local PDF --extract is unsupported for non-media files. FIRECRAWL_API_KEY remains unset."
     }
   ]
 }
