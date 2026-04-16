@@ -576,13 +576,15 @@
       "id": "fix-iltt-webhook-registration-and-activation",
       "title": "Fix ILTT webhook registration and activation",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T14:41:24Z",
-      "updated": "2026-04-16T14:41:24Z",
-      "started_at": "2026-04-16T14:41:24Z"
+      "updated": "2026-04-16T21:39:55Z",
+      "started_at": "2026-04-16T14:41:24Z",
+      "completed_at": "2026-04-16T21:39:55Z",
+      "proof": "ILTT workflow now activates on n8n startup and webhook path evolution-whatsapp registers correctly. Removed self-referencing error workflow, repaired publish/activation state, republished workflow, and verified activation in n8n logs."
     },
     {
       "id": "inspect-latest-iltt-failure-after-webhook-and-emai",
