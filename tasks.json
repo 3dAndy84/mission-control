@@ -719,6 +719,18 @@
       "created": "2026-04-16T22:38:26Z",
       "updated": "2026-04-16T22:38:26Z",
       "started_at": "2026-04-16T22:38:26Z"
+    },
+    {
+      "id": "run-openclaw-doctor-non-interactive",
+      "title": "run-openclaw-doctor-non-interactive",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T22:45:54Z",
+      "updated": "2026-04-16T22:45:54Z",
+      "started_at": "2026-04-16T22:45:54Z"
     }
   ]
 }
