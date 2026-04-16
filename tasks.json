@@ -707,6 +707,18 @@
       "started_at": "2026-04-16T22:35:46Z",
       "completed_at": "2026-04-16T22:37:04Z",
       "proof": "Codex ACP normal-use smoke test failed immediately with AcpRuntimeError: Internal error and no output on a read-only prompt in /home/clawd/workspace."
+    },
+    {
+      "id": "fix-codex-acp-normal-use",
+      "title": "fix-codex-acp-normal-use",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T22:38:26Z",
+      "updated": "2026-04-16T22:38:26Z",
+      "started_at": "2026-04-16T22:38:26Z"
     }
   ]
 }
