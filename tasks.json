@@ -506,13 +506,15 @@
       "id": "diagnose-monthly-sick-leave-report-email-delivery-",
       "title": "Diagnose monthly sick leave report email delivery in n8n",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T14:03:11Z",
-      "updated": "2026-04-16T14:03:11Z",
-      "started_at": "2026-04-16T14:03:11Z"
+      "updated": "2026-04-16T14:04:28Z",
+      "started_at": "2026-04-16T14:03:11Z",
+      "completed_at": "2026-04-16T14:04:28Z",
+      "proof": "Diagnosed ILTT Sick Leave workflow YzVRsdXdCC7EJ64U. Manager email resolves to jsambre@gmail.com. Recent execution 14706 marked success but contained hidden node errors: [Monthly] 6 Generate Excel failed with 'Module xlsx is disallowed [line 2]' and [Monthly] 7 Email Report to Manager failed with 'The value in the JSON Body field is not valid JSON'. Email node has continueOnFail=true, so workflow stays green despite failure."
     }
   ]
 }
