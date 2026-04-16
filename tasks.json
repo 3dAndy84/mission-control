@@ -616,13 +616,15 @@
       "id": "fix-obsidian-templater-file-placement",
       "title": "Fix Obsidian Templater file placement",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-16T19:40:41Z",
-      "updated": "2026-04-16T19:40:41Z",
-      "started_at": "2026-04-16T19:40:41Z"
+      "updated": "2026-04-16T21:39:54Z",
+      "started_at": "2026-04-16T19:40:41Z",
+      "completed_at": "2026-04-16T21:39:54Z",
+      "proof": "Confirmed root cause: Andy is using a local PC Obsidian vault, so server-side /home/clawd/vaults/Templates files were irrelevant. Verified template contents on server, then emailed Meeting Note Templater.md to jsambre@gmail.com with placement instructions for local vault Templates/ and 05 Meetings/."
     }
   ]
 }
