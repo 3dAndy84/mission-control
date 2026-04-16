@@ -543,6 +543,18 @@
       "started_at": "2026-04-16T14:15:55Z",
       "completed_at": "2026-04-16T14:16:23Z",
       "proof": "Inspected latest n8n error. Execution 14707 for workflow YzVRsdXdCC7EJ64U failed at [Monthly] 7. Root cause upstream: [Monthly] 5 Build Report Data still throws 'Node [Monthly] 4. Get Manager (Airtable) hasn't been executed', which causes [Monthly] 6 Generate PDF to fail with missing period.month_name, then email node errors. Also observed separate n8n app log warnings about X-Forwarded-For with trust proxy false."
+    },
+    {
+      "id": "fix-iltt-monthly-report-workflow-and-n8n-proxy-con",
+      "title": "Fix ILTT monthly report workflow and n8n proxy config",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-16T14:17:34Z",
+      "updated": "2026-04-16T14:17:34Z",
+      "started_at": "2026-04-16T14:17:34Z"
     }
   ]
 }
