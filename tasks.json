@@ -803,6 +803,18 @@
       "started_at": "2026-04-18T19:08:13Z",
       "completed_at": "2026-04-18T19:17:25Z",
       "proof": "Removed the old local Hyperframes stand-in under skills/hyperframes*, rebuilt the Range Scheduler presentation as a real Hyperframes project in tmp/range-video/hf-range, linted clean, and rendered documents/range-video/range-scheduler-presentation-hyperframes-v1.mp4 (commit 6a71137)."
+    },
+    {
+      "id": "fix-range-scheduler-intro-card-overlap-in-hyperfra",
+      "title": "Fix Range Scheduler intro card overlap in Hyperframes video",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-18T19:40:54Z",
+      "updated": "2026-04-18T19:40:54Z",
+      "started_at": "2026-04-18T19:40:54Z"
     }
   ]
 }
