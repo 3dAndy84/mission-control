@@ -808,13 +808,15 @@
       "id": "fix-range-scheduler-intro-card-overlap-in-hyperfra",
       "title": "Fix Range Scheduler intro card overlap in Hyperframes video",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-18T19:40:54Z",
-      "updated": "2026-04-18T19:40:54Z",
-      "started_at": "2026-04-18T19:40:54Z"
+      "updated": "2026-04-18T19:41:04Z",
+      "started_at": "2026-04-18T19:40:54Z",
+      "completed_at": "2026-04-18T19:41:04Z",
+      "proof": "Rebuilt the first three intro cards with wrapped copy and moved artwork, then rendered documents/range-video/range-scheduler-presentation-hyperframes-v3.mp4 (commit 42a4fd7)."
     }
   ]
 }
