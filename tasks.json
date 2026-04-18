@@ -752,13 +752,15 @@
       "id": "create-claude-design-inspired-local-design-skills",
       "title": "Create Claude-Design-inspired local design skills",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-18T15:00:03Z",
-      "updated": "2026-04-18T15:00:03Z",
-      "started_at": "2026-04-18T15:00:03Z"
+      "updated": "2026-04-18T15:02:11Z",
+      "started_at": "2026-04-18T15:00:03Z",
+      "completed_at": "2026-04-18T15:02:11Z",
+      "proof": "Added design-brief, design-studio, brand-system, and design-handoff skills"
     }
   ]
 }
