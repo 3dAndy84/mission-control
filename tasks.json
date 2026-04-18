@@ -766,13 +766,15 @@
       "id": "build-range-scheduler-presentation-video-with-real",
       "title": "Build Range Scheduler presentation video with real app images",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-18T16:00:55Z",
-      "updated": "2026-04-18T16:00:55Z",
-      "started_at": "2026-04-18T16:00:55Z"
+      "updated": "2026-04-18T16:10:08Z",
+      "started_at": "2026-04-18T16:00:55Z",
+      "completed_at": "2026-04-18T16:10:08Z",
+      "proof": "Created documents/range-video/range-scheduler-presentation-v1.mp4 from live app screenshots"
     }
   ]
 }
