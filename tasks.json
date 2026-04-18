@@ -738,13 +738,15 @@
       "id": "save-memory-never-send-passwords-in-group-chat-dm-",
       "title": "Save memory: never send passwords in group chat, DM only",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-18T10:50:09Z",
-      "updated": "2026-04-18T10:50:09Z",
-      "started_at": "2026-04-18T10:50:09Z"
+      "updated": "2026-04-18T10:50:47Z",
+      "started_at": "2026-04-18T10:50:09Z",
+      "completed_at": "2026-04-18T10:50:47Z",
+      "proof": "Saved USER.md preference and memory/2026-04-18.md"
     }
   ]
 }
