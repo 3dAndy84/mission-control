@@ -761,6 +761,18 @@
       "started_at": "2026-04-18T15:00:03Z",
       "completed_at": "2026-04-18T15:02:11Z",
       "proof": "Added design-brief, design-studio, brand-system, and design-handoff skills"
+    },
+    {
+      "id": "build-range-scheduler-presentation-video-with-real",
+      "title": "Build Range Scheduler presentation video with real app images",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-18T16:00:55Z",
+      "updated": "2026-04-18T16:00:55Z",
+      "started_at": "2026-04-18T16:00:55Z"
     }
   ]
 }
