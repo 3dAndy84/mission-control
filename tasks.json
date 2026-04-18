@@ -822,13 +822,15 @@
       "id": "rebuild-full-range-scheduler-presentation-in-desig",
       "title": "Rebuild full Range Scheduler presentation in designed-slide style",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-18T20:09:10Z",
-      "updated": "2026-04-18T20:09:10Z",
-      "started_at": "2026-04-18T20:09:10Z"
+      "updated": "2026-04-18T20:14:18Z",
+      "started_at": "2026-04-18T20:09:10Z",
+      "completed_at": "2026-04-18T20:14:18Z",
+      "proof": "Rebuilt the full Range Scheduler deck in designed-slide style using real screenshots, updated tmp/range-video/hf-range/index.html, and rendered documents/range-video/range-scheduler-presentation-hyperframes-v4.mp4 (commit a0441b6)."
     }
   ]
 }
