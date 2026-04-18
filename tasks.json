@@ -794,13 +794,15 @@
       "id": "replace-fake-hyperframes-skill-and-rebuild-range-s",
       "title": "Replace fake Hyperframes skill and rebuild Range Scheduler video with real HeyGen Hyperframes",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-18T19:08:13Z",
-      "updated": "2026-04-18T19:08:13Z",
-      "started_at": "2026-04-18T19:08:13Z"
+      "updated": "2026-04-18T19:17:25Z",
+      "started_at": "2026-04-18T19:08:13Z",
+      "completed_at": "2026-04-18T19:17:25Z",
+      "proof": "Removed the old local Hyperframes stand-in under skills/hyperframes*, rebuilt the Range Scheduler presentation as a real Hyperframes project in tmp/range-video/hf-range, linted clean, and rendered documents/range-video/range-scheduler-presentation-hyperframes-v1.mp4 (commit 6a71137)."
     }
   ]
 }
