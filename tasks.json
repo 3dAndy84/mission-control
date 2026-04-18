@@ -789,6 +789,18 @@
       "started_at": "2026-04-18T18:58:56Z",
       "completed_at": "2026-04-18T19:05:36Z",
       "proof": "Installed HeyGen Hyperframes skills with npx skills add heygen-com/hyperframes -y into ~/workspace/.agents/skills/{hyperframes,hyperframes-cli,hyperframes-registry,website-to-hyperframes,gsap}"
+    },
+    {
+      "id": "replace-fake-hyperframes-skill-and-rebuild-range-s",
+      "title": "Replace fake Hyperframes skill and rebuild Range Scheduler video with real HeyGen Hyperframes",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-18T19:08:13Z",
+      "updated": "2026-04-18T19:08:13Z",
+      "started_at": "2026-04-18T19:08:13Z"
     }
   ]
 }
