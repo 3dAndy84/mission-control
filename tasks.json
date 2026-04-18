@@ -733,6 +733,18 @@
       "started_at": "2026-04-16T22:45:54Z",
       "completed_at": "2026-04-16T22:46:19Z",
       "proof": "Ran openclaw doctor --non-interactive. Main findings: active-memory config warning persists; Claude CLI auth profile missing in /home/clawd/.openclaw/agents/main/agent/auth-profiles.json; one live session lock for current ops topic session; telegram channel OK; no plugin errors."
+    },
+    {
+      "id": "save-memory-never-send-passwords-in-group-chat-dm-",
+      "title": "Save memory: never send passwords in group chat, DM only",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-18T10:50:09Z",
+      "updated": "2026-04-18T10:50:09Z",
+      "started_at": "2026-04-18T10:50:09Z"
     }
   ]
 }
