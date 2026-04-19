@@ -893,10 +893,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T14:22:13Z",
-      "updated": "2026-04-19T14:27:50Z",
+      "updated": "2026-04-19T14:31:22Z",
       "started_at": "2026-04-19T14:22:13Z",
-      "completed_at": "2026-04-19T14:27:50Z",
-      "proof": "Confirmed the app had 9 existing cams, found one additional app-friendly live feed (YouTube id vxHKAImxUHk), and added it to sxm-cams/index.html. Deep search also found Skyline Beacon Hill Beach and Sunset Beach, but those pages are blocked from iframe embedding by X-Frame-Options: SAMEORIGIN."
+      "completed_at": "2026-04-19T14:31:22Z",
+      "proof": "Updated sxm-cams/index.html to support external webcam cards, added Beacon Hill Beach and Sunset Beach as open-in-new-tab entries, and made camera switching destroy prior HLS playback cleanly."
     },
     {
       "id": "restore-watchdog-service-and-apply-the-recommended",
