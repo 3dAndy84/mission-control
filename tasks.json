@@ -166,13 +166,15 @@
       "id": "inspect-skyline-cams-for-direct-playable-stream-ur",
       "title": "Inspect Skyline cams for direct playable stream URLs",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T14:58:40Z",
-      "updated": "2026-04-19T14:58:40Z",
-      "started_at": "2026-04-19T14:58:40Z"
+      "updated": "2026-04-19T15:00:11Z",
+      "started_at": "2026-04-19T14:58:40Z",
+      "completed_at": "2026-04-19T15:00:11Z",
+      "proof": "Inspected Skyline webcam pages. Beacon Hill and Princess Juliana expose HLS sources at hd-auth.skylinewebcams.com/livee.m3u8, but those URLs return a copyright_violation placeholder playlist even with Skyline cookies and referrer preserved. Sunset Beach is not a native Skyline stream, it is a wrapped YouTube player with videoId 1-ymuIHWSp0, so that one can be embedded directly like the other YouTube cams."
     }
   ]
 }
