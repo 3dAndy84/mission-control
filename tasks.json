@@ -320,13 +320,15 @@
       "id": "convert-dinghy-s-skyline-cams-to-playable-live-cam",
       "title": "Convert Dinghy's Skyline cams to playable live cams",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T17:03:44Z",
-      "updated": "2026-04-19T17:03:44Z",
-      "started_at": "2026-04-19T17:03:44Z"
+      "updated": "2026-04-19T17:05:42Z",
+      "started_at": "2026-04-19T17:03:44Z",
+      "completed_at": "2026-04-19T17:05:42Z",
+      "proof": "Replaced Beacon Hill Beach and Princess Juliana Runway external Skyline entries with playable hls_liveincam entries backed by LiveinCam test pages (5F4KLBX6 and B7FTZX3E). Added client-side source extraction/caching so the app refreshes the underlying HLS URL instead of hardcoding a stale token. Restarted sxm-cams and verified the live site serves the new HLS-backed entries."
     }
   ]
 }
