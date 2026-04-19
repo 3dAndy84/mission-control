@@ -149,6 +149,18 @@
       "started_at": "2026-04-19T14:47:39Z",
       "completed_at": "2026-04-19T14:47:54Z",
       "proof": "Restarted the sxm-cams nginx container so the updated bind-mounted index.html was served, verified the public site now includes the new External Sources entries, and confirmed /api/tokens returns valid JSON with fresh maho/island/port token data."
+    },
+    {
+      "id": "trace-mission-control-vercel-repo-root-mismatch-an",
+      "title": "Trace mission-control Vercel repo/root mismatch and identify exact setting to change",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T14:49:22Z",
+      "updated": "2026-04-19T14:49:22Z",
+      "started_at": "2026-04-19T14:49:22Z"
     }
   ]
 }
