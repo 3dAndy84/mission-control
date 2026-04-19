@@ -189,6 +189,18 @@
       "started_at": "2026-04-19T15:10:04Z",
       "completed_at": "2026-04-19T15:11:45Z",
       "proof": "Updated sxm-cams grid view so PTZtv HLS cams render live video tiles in grid mode, Skyline cams render real preview images from Skyline social thumbnails, and external preview tiles now open the live source directly when clicked. Restarted the sxm-cams container and verified the live site serves the new grid code."
+    },
+    {
+      "id": "make-skyline-cams-open-directly-from-app",
+      "title": "Make Skyline cams open directly from app",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T15:38:58Z",
+      "updated": "2026-04-19T15:38:58Z",
+      "started_at": "2026-04-19T15:38:58Z"
     }
   ]
 }
