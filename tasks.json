@@ -301,6 +301,18 @@
       "started_at": "2026-04-19T16:55:27Z",
       "completed_at": "2026-04-19T16:56:17Z",
       "proof": "Searched for more Dinghy's Beach Bar cam sources. X search found no active Dinghy's live cam posts. Dinghy's own site exists and clearly has an SXM page, but direct fetches from this host are blocked by Incapsula bot protection, so I could not inspect the page HTML for hidden cam embeds or alternate feeds from here."
+    },
+    {
+      "id": "reverse-liveincam-player-url-for-test-link",
+      "title": "Reverse LiveinCam player URL for test link",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T17:01:12Z",
+      "updated": "2026-04-19T17:01:12Z",
+      "started_at": "2026-04-19T17:01:12Z"
     }
   ]
 }
