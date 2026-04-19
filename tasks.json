@@ -874,13 +874,15 @@
       "id": "research-additional-open-live-webcams-in-sint-maar",
       "title": "Research additional open live webcams in Sint Maarten for sxmlivewebcam app",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T14:18:56Z",
-      "updated": "2026-04-19T14:18:56Z",
-      "started_at": "2026-04-19T14:18:56Z"
+      "updated": "2026-04-19T14:19:35Z",
+      "started_at": "2026-04-19T14:18:56Z",
+      "completed_at": "2026-04-19T14:19:35Z",
+      "proof": "Found additional open Sint Maarten webcam candidates via PTZtv and Skyline pages: SXM Island Cam, Port St. Maarten Webcam, Beacon Hill Beach, Princess Juliana runway, Sunset Beach, Simpson Bay Beach, and Great Bay Beach."
     }
   ]
 }
