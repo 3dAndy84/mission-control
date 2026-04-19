@@ -278,13 +278,15 @@
       "id": "force-sxm-cams-homescreen-url-to-refresh",
       "title": "Force sxm-cams homescreen URL to refresh",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T16:35:34Z",
-      "updated": "2026-04-19T16:35:34Z",
-      "started_at": "2026-04-19T16:35:34Z"
+      "updated": "2026-04-19T16:35:35Z",
+      "started_at": "2026-04-19T16:35:34Z",
+      "completed_at": "2026-04-19T16:35:35Z",
+      "proof": "Added no-store/no-cache headers for the dashboard HTML in sxm-cams/proxy.conf, restarted the sxm-cams container, and verified https://cams.n8n-andy.xyz now returns Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0 plus Pragma: no-cache and Expires: 0."
     }
   ]
 }
