@@ -264,13 +264,15 @@
       "id": "add-non-duplicate-playable-sint-maarten-cams",
       "title": "Add non-duplicate playable Sint Maarten cams",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T16:29:07Z",
-      "updated": "2026-04-19T16:29:07Z",
-      "started_at": "2026-04-19T16:29:07Z"
+      "updated": "2026-04-19T16:29:38Z",
+      "started_at": "2026-04-19T16:29:07Z",
+      "completed_at": "2026-04-19T16:29:38Z",
+      "proof": "Added the distinct non-duplicate YouTube cam neSVXln_ozA as 'Airport & Beach' from Tortuga Maho Café to sxm-cams/index.html, restarted the sxm-cams container, and verified the live site serves the new entry."
     }
   ]
 }
