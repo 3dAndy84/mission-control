@@ -897,6 +897,18 @@
       "started_at": "2026-04-19T14:22:13Z",
       "completed_at": "2026-04-19T14:24:00Z",
       "proof": "Checked sxm-cams/index.html and confirmed 9 current cameras. Deep search surfaced likely new candidates: Skyline Beacon Hill Beach and Sunset Beach, plus possible alternates for Princess Juliana runway and Great Bay; most other finds were duplicates or mirrors of Maho, Simpson Bay, Great Bay, Port, or SXM Island feeds."
+    },
+    {
+      "id": "restore-watchdog-service-and-apply-the-recommended",
+      "title": "Restore watchdog service and apply the recommended safety fix",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T14:24:45Z",
+      "updated": "2026-04-19T14:24:45Z",
+      "started_at": "2026-04-19T14:24:45Z"
     }
   ]
 }
