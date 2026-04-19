@@ -175,6 +175,18 @@
       "started_at": "2026-04-19T14:58:40Z",
       "completed_at": "2026-04-19T15:01:51Z",
       "proof": "Replaced Sunset Beach external Skyline entry with direct YouTube cam 1-ymuIHWSp0 in sxm-cams/index.html, restarted the sxm-cams container, and verified the live site now serves the YouTube-based Sunset entry."
+    },
+    {
+      "id": "improve-sxm-cams-grid-previews-and-fix-non-playing",
+      "title": "Improve sxm-cams grid previews and fix non-playing tiles",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T15:10:04Z",
+      "updated": "2026-04-19T15:10:04Z",
+      "started_at": "2026-04-19T15:10:04Z"
     }
   ]
 }
