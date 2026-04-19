@@ -217,6 +217,18 @@
       "started_at": "2026-04-19T15:46:20Z",
       "completed_at": "2026-04-19T16:13:19Z",
       "proof": "Added explicit APP_VERSION cache-busting to Skyline preview image URLs, switched preview image loading to eager, and added an onerror fallback message for failed Skyline preview loads. Restarted sxm-cams and verified the live site serves the updated preview logic."
+    },
+    {
+      "id": "remove-duplicate-skyline-cams-from-sxm-cams",
+      "title": "Remove duplicate Skyline cams from sxm-cams",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T16:16:33Z",
+      "updated": "2026-04-19T16:16:33Z",
+      "started_at": "2026-04-19T16:16:33Z"
     }
   ]
 }
