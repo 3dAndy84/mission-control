@@ -273,6 +273,18 @@
       "started_at": "2026-04-19T16:29:07Z",
       "completed_at": "2026-04-19T16:29:38Z",
       "proof": "Added the distinct non-duplicate YouTube cam neSVXln_ozA as 'Airport & Beach' from Tortuga Maho Café to sxm-cams/index.html, restarted the sxm-cams container, and verified the live site serves the new entry."
+    },
+    {
+      "id": "force-sxm-cams-homescreen-url-to-refresh",
+      "title": "Force sxm-cams homescreen URL to refresh",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T16:35:34Z",
+      "updated": "2026-04-19T16:35:34Z",
+      "started_at": "2026-04-19T16:35:34Z"
     }
   ]
 }
