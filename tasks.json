@@ -180,13 +180,15 @@
       "id": "improve-sxm-cams-grid-previews-and-fix-non-playing",
       "title": "Improve sxm-cams grid previews and fix non-playing tiles",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T15:10:04Z",
-      "updated": "2026-04-19T15:10:04Z",
-      "started_at": "2026-04-19T15:10:04Z"
+      "updated": "2026-04-19T15:11:45Z",
+      "started_at": "2026-04-19T15:10:04Z",
+      "completed_at": "2026-04-19T15:11:45Z",
+      "proof": "Updated sxm-cams grid view so PTZtv HLS cams render live video tiles in grid mode, Skyline cams render real preview images from Skyline social thumbnails, and external preview tiles now open the live source directly when clicked. Restarted the sxm-cams container and verified the live site serves the new grid code."
     }
   ]
 }
