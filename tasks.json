@@ -194,13 +194,15 @@
       "id": "make-skyline-cams-open-directly-from-app",
       "title": "Make Skyline cams open directly from app",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T15:38:58Z",
-      "updated": "2026-04-19T15:38:58Z",
-      "started_at": "2026-04-19T15:38:58Z"
+      "updated": "2026-04-19T15:39:21Z",
+      "started_at": "2026-04-19T15:38:58Z",
+      "completed_at": "2026-04-19T15:39:21Z",
+      "proof": "Updated sxm-cams so external Skyline entries open the live source directly in a new tab instead of rendering an intermediate external-card view. Restarted the sxm-cams container and verified the live site serves the new direct-open behavior."
     }
   ]
 }
