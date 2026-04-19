@@ -1350,7 +1350,7 @@
                     const cronResponse = await fetch(apiUrl('cron-jobs'));
                     if (cronResponse.ok) {
                         const cronData = await cronResponse.json();
-                        allCronJobs = cronData.jobs || [];
+                        allCronJobs = cronData.items || cronData.jobs || [];
                     } else {
                         allCronJobs = [];
                     }
