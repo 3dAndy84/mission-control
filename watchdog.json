@@ -1,15 +1,1 @@
-{
-  "generated": 1775815351622,
-  "status": "active",
-  "gateway": "down",
-  "last_check": "2026-04-10T10:02:31Z",
-  "failure_level": 0,
-  "crashes_24h": 0,
-  "repairs_24h": 0,
-  "crashCount24h": 0,
-  "repairAttempts24h": 0,
-  "autoRepair": true,
-  "notifications": true,
-  "uptime": "unknown",
-  "recentEvents": []
-}
+{"status": "healthy", "gateway": "online", "uptime": "3h 19m", "crashCount24h": 0, "repairAttempts24h": 0, "autoRepair": true, "notifications": true, "recentEvents": [], "last_check": "2026-04-19T14:38:20Z"}
