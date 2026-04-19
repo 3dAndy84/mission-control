@@ -916,13 +916,15 @@
       "id": "add-more-webcam-sources-to-sxm-cams-before-deploy",
       "title": "Add more webcam sources to sxm-cams before deploy",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T14:37:22Z",
-      "updated": "2026-04-19T14:37:22Z",
-      "started_at": "2026-04-19T14:37:22Z"
+      "updated": "2026-04-19T14:37:57Z",
+      "started_at": "2026-04-19T14:37:22Z",
+      "completed_at": "2026-04-19T14:37:57Z",
+      "proof": "Expanded sxm-cams/index.html with additional external-source entries for Princess Juliana Runway, Great Bay Beach, Simpson Bay Beach Alt, plus Beacon Hill Beach and Sunset Beach grouped under External Sources."
     }
   ]
 }
