@@ -334,13 +334,15 @@
       "id": "remove-duplicate-airport-beach-cam-from-sxm-cams",
       "title": "Remove duplicate Airport & Beach cam from sxm-cams",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T17:13:12Z",
-      "updated": "2026-04-19T17:13:12Z",
-      "started_at": "2026-04-19T17:13:12Z"
+      "updated": "2026-04-19T17:13:34Z",
+      "started_at": "2026-04-19T17:13:12Z",
+      "completed_at": "2026-04-19T17:13:34Z",
+      "proof": "Removed the duplicate Airport & Beach cam (neSVXln_ozA / Tortuga Maho Café) from sxm-cams/index.html, restarted the sxm-cams container, and verified the live site no longer serves that entry."
     }
   ]
 }
