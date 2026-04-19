@@ -140,13 +140,15 @@
       "id": "deploy-and-smoke-test-sxm-cams",
       "title": "Deploy and smoke test sxm-cams",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T14:47:39Z",
-      "updated": "2026-04-19T14:47:39Z",
-      "started_at": "2026-04-19T14:47:39Z"
+      "updated": "2026-04-19T14:47:54Z",
+      "started_at": "2026-04-19T14:47:39Z",
+      "completed_at": "2026-04-19T14:47:54Z",
+      "proof": "Restarted the sxm-cams nginx container so the updated bind-mounted index.html was served, verified the public site now includes the new External Sources entries, and confirmed /api/tokens returns valid JSON with fresh maho/island/port token data."
     }
   ]
 }
