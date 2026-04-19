@@ -250,13 +250,15 @@
       "id": "inspect-non-skyline-sint-maarten-cams-for-grid-pla",
       "title": "Inspect non-Skyline Sint Maarten cams for grid-playable sources",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T16:23:16Z",
-      "updated": "2026-04-19T16:23:16Z",
-      "started_at": "2026-04-19T16:23:16Z"
+      "updated": "2026-04-19T16:25:04Z",
+      "started_at": "2026-04-19T16:23:16Z",
+      "completed_at": "2026-04-19T16:25:04Z",
+      "proof": "Inspected non-Skyline Sint Maarten cam pages. CruisingEarth pages are mostly wrappers around existing YouTube embeds: airport/beach -> neSVXln_ozA, Simpson Bay -> 525dNEryfQ4, Great Bay -> N5Mb2bjYwZo. ShowMe Caribbean pages appear to be Wix YouTube players and likely map to existing SHOWME Caribbean feeds: Kim Sha Beach -> Simpson Bay Resort feeds (vxHKAImxUHk / 525dNEryfQ4), Great Bay Boardwalk -> N5Mb2bjYwZo, Maho Beach -> UFM56RJYgb4 or iSeH45R-8R0. Best grid-playable path is other YouTube-based feeds, not Skyline."
     }
   ]
 }
