@@ -208,13 +208,15 @@
       "id": "fix-skyline-previews-and-disconnecting-cams-in-sxm",
       "title": "Fix Skyline previews and disconnecting cams in sxm-cams",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T15:46:20Z",
-      "updated": "2026-04-19T15:46:20Z",
-      "started_at": "2026-04-19T15:46:20Z"
+      "updated": "2026-04-19T15:49:39Z",
+      "started_at": "2026-04-19T15:46:20Z",
+      "completed_at": "2026-04-19T15:49:39Z",
+      "proof": "Updated sxm-cams to use Skyline's own preview stills (4379.jpg, 4380.jpg, 4798.jpg, 5192.jpg) through a new /proxy/skyline-thumb/ nginx route, and added proactive token refresh plus fatal-error retry logic for PTZtv HLS cams in both single and grid views. Restarted the sxm-cams container and verified the live site serves the new preview proxy and HLS refresh code."
     }
   ]
 }
