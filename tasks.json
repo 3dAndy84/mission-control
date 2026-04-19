@@ -855,6 +855,18 @@
       "created": "2026-04-19T11:10:31Z",
       "updated": "2026-04-19T11:10:31Z",
       "started_at": "2026-04-19T11:10:31Z"
+    },
+    {
+      "id": "fix-mission-control-updater-path-failure-and-add-p",
+      "title": "Fix mission control updater path failure and add prevention",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T14:17:40Z",
+      "updated": "2026-04-19T14:17:40Z",
+      "started_at": "2026-04-19T14:17:40Z"
     }
   ]
 }
