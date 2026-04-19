@@ -843,6 +843,18 @@
       "created": "2026-04-19T10:11:24Z",
       "updated": "2026-04-19T10:11:24Z",
       "started_at": "2026-04-19T10:11:24Z"
+    },
+    {
+      "id": "fix-native-openclaw-context-memory-config-then-res",
+      "title": "Fix native OpenClaw context memory config, then resolve ClawVault issue",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T11:10:31Z",
+      "updated": "2026-04-19T11:10:31Z",
+      "started_at": "2026-04-19T11:10:31Z"
     }
   ]
 }
