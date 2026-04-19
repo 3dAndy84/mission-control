@@ -911,6 +911,18 @@
       "started_at": "2026-04-19T14:24:45Z",
       "completed_at": "2026-04-19T14:25:53Z",
       "proof": "Restored openclaw-watchdog.service, re-enabled openclaw-watchdog.timer, confirmed successful watchdog run, and applied the recommended mission-control safety fix by recreating the container destination before writes"
+    },
+    {
+      "id": "add-more-webcam-sources-to-sxm-cams-before-deploy",
+      "title": "Add more webcam sources to sxm-cams before deploy",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T14:37:22Z",
+      "updated": "2026-04-19T14:37:22Z",
+      "started_at": "2026-04-19T14:37:22Z"
     }
   ]
 }
