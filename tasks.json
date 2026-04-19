@@ -161,6 +161,18 @@
       "created": "2026-04-19T14:49:22Z",
       "updated": "2026-04-19T14:49:22Z",
       "started_at": "2026-04-19T14:49:22Z"
+    },
+    {
+      "id": "inspect-skyline-cams-for-direct-playable-stream-ur",
+      "title": "Inspect Skyline cams for direct playable stream URLs",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T14:58:40Z",
+      "updated": "2026-04-19T14:58:40Z",
+      "started_at": "2026-04-19T14:58:40Z"
     }
   ]
 }
