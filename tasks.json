@@ -222,13 +222,15 @@
       "id": "remove-duplicate-skyline-cams-from-sxm-cams",
       "title": "Remove duplicate Skyline cams from sxm-cams",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T16:16:33Z",
-      "updated": "2026-04-19T16:16:33Z",
-      "started_at": "2026-04-19T16:16:33Z"
+      "updated": "2026-04-19T16:16:52Z",
+      "started_at": "2026-04-19T16:16:33Z",
+      "completed_at": "2026-04-19T16:16:52Z",
+      "proof": "Removed duplicate Skyline entries Great Bay Beach and Simpson Bay Beach Alt from sxm-cams/index.html, restarted the sxm-cams container, and verified the live site no longer serves those entries."
     }
   ]
 }
