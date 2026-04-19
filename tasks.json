@@ -245,6 +245,18 @@
       "started_at": "2026-04-19T16:19:08Z",
       "completed_at": "2026-04-19T16:21:24Z",
       "proof": "Checked other webcam sites beyond Skyline. Found no clear extra Dinghy's Beach Bar-branded Sint Maarten cams. Found additional Sint Maarten cams on ShowMe Caribbean (Kim Sha Beach, Great Bay Boardwalk, Maho Beach) and CruisingEarth mirrors for airport/beach, Simpson Bay Beach, and Great Bay Beach."
+    },
+    {
+      "id": "inspect-non-skyline-sint-maarten-cams-for-grid-pla",
+      "title": "Inspect non-Skyline Sint Maarten cams for grid-playable sources",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T16:23:16Z",
+      "updated": "2026-04-19T16:23:16Z",
+      "started_at": "2026-04-19T16:23:16Z"
     }
   ]
 }
