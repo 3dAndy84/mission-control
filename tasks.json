@@ -135,6 +135,18 @@
       "project": "n8n",
       "created": "2026-03-05",
       "updated": "2026-03-07"
+    },
+    {
+      "id": "deploy-and-smoke-test-sxm-cams",
+      "title": "Deploy and smoke test sxm-cams",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-19T14:47:39Z",
+      "updated": "2026-04-19T14:47:39Z",
+      "started_at": "2026-04-19T14:47:39Z"
     }
   ]
 }
