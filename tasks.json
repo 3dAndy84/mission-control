@@ -306,13 +306,15 @@
       "id": "reverse-liveincam-player-url-for-test-link",
       "title": "Reverse LiveinCam player URL for test link",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-19T17:01:12Z",
-      "updated": "2026-04-19T17:01:12Z",
-      "started_at": "2026-04-19T17:01:12Z"
+      "updated": "2026-04-19T17:01:34Z",
+      "started_at": "2026-04-19T17:01:12Z",
+      "completed_at": "2026-04-19T17:01:34Z",
+      "proof": "Reversed the LiveinCam test page and extracted a real HLS stream URL: https://hddn00.skylinewebcams.com/live.m3u8?a=o4u2bhdlmr9o5tdhsr0oolb3f5 . Verified it returns a live m3u8 playlist with Skyline TS segments (4379livic-...). This appears to be a usable direct stream, likely for Beacon Hill / Dinghy's-linked cam."
     }
   ]
 }
