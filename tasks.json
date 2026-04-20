@@ -395,6 +395,18 @@
       "started_at": "2026-04-20T16:56:50Z",
       "completed_at": "2026-04-20T16:59:24Z",
       "proof": "Updated sxm-cams to proxy LiveinCam-backed Skyline HLS playlists and TS segments through same-origin nginx paths (/proxy/skyline-hls/... and /proxy/skyline-frag/...). Switched the app to path-based proxied HLS URLs instead of broken query-encoded upstream URLs. Verified a current proxied playlist rewrites segment URLs correctly and proxied TS fragments return 200 with video/mp2t."
+    },
+    {
+      "id": "benchmark-current-image-generation-providers-and-r",
+      "title": "Benchmark current image generation providers and recommend default",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-20T17:27:41Z",
+      "updated": "2026-04-20T17:27:41Z",
+      "started_at": "2026-04-20T17:27:41Z"
     }
   ]
 }
