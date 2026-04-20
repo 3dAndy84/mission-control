@@ -412,13 +412,15 @@
       "id": "fix-stale-acp-binding-for-infrastructure-topic",
       "title": "Fix stale ACP binding for Infrastructure topic",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-20T19:23:00Z",
-      "updated": "2026-04-20T19:23:00Z",
-      "started_at": "2026-04-20T19:23:00Z"
+      "updated": "2026-04-20T19:34:25Z",
+      "started_at": "2026-04-20T19:23:00Z",
+      "completed_at": "2026-04-20T19:34:25Z",
+      "proof": "Removed stale agent:codex:acp:37c75adc-419e-4c68-8d13-7439618b28e2 bound to topic 102, archived its transcript, and restarted the gateway."
     }
   ]
 }
