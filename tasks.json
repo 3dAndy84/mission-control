@@ -426,13 +426,15 @@
       "id": "prepare-hr-assistant-client-presentation-and-produ",
       "title": "Prepare HR assistant client presentation and production demo plan",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "client",
       "created": "2026-04-20T23:46:31Z",
-      "updated": "2026-04-20T23:46:31Z",
-      "started_at": "2026-04-20T23:46:31Z"
+      "updated": "2026-04-20T23:47:47Z",
+      "started_at": "2026-04-20T23:46:31Z",
+      "completed_at": "2026-04-20T23:47:47Z",
+      "proof": "Created documents/hr-assistant-client-presentation.md and documents/hr-assistant-production-demo-runbook.md"
     }
   ]
 }
