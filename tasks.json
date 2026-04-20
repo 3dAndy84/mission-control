@@ -343,6 +343,18 @@
       "started_at": "2026-04-19T17:13:12Z",
       "completed_at": "2026-04-19T17:13:34Z",
       "proof": "Removed the duplicate Airport & Beach cam (neSVXln_ozA / Tortuga Maho Café) from sxm-cams/index.html, restarted the sxm-cams container, and verified the live site no longer serves that entry."
+    },
+    {
+      "id": "fix-failing-cron-jobs-and-rerun-them",
+      "title": "Fix failing cron jobs and rerun them",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-20T09:45:29Z",
+      "updated": "2026-04-20T09:45:29Z",
+      "started_at": "2026-04-20T09:45:29Z"
     }
   ]
 }
