@@ -407,6 +407,18 @@
       "created": "2026-04-20T17:27:41Z",
       "updated": "2026-04-20T17:27:41Z",
       "started_at": "2026-04-20T17:27:41Z"
+    },
+    {
+      "id": "fix-stale-acp-binding-for-infrastructure-topic",
+      "title": "Fix stale ACP binding for Infrastructure topic",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-20T19:23:00Z",
+      "updated": "2026-04-20T19:23:00Z",
+      "started_at": "2026-04-20T19:23:00Z"
     }
   ]
 }
