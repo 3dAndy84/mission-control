@@ -381,6 +381,18 @@
       "started_at": "2026-04-20T12:59:05Z",
       "completed_at": "2026-04-20T12:59:33Z",
       "proof": "Adjusted sxm-cams grid breakpoints so tablet widths use larger tiles: base min width increased to 420px, screens under 1180px now use a 2-column grid, and screens under 820px drop to 1 column. Also widened the mobile layout breakpoint to 900px for iPad-friendly spacing. Restarted sxm-cams and verified the live site serves the updated CSS."
+    },
+    {
+      "id": "proxy-dinghy-s-hls-streams-through-sxm-cams",
+      "title": "Proxy Dinghy's HLS streams through sxm-cams",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-20T16:56:50Z",
+      "updated": "2026-04-20T16:56:50Z",
+      "started_at": "2026-04-20T16:56:50Z"
     }
   ]
 }
