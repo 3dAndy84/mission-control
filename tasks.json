@@ -461,6 +461,18 @@
       "created": "2026-04-21T21:47:09Z",
       "updated": "2026-04-21T21:47:09Z",
       "started_at": "2026-04-21T21:47:09Z"
+    },
+    {
+      "id": "bootstrap",
+      "title": "bootstrap",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-21T22:12:07Z",
+      "updated": "2026-04-21T22:12:07Z",
+      "started_at": "2026-04-21T22:12:07Z"
     }
   ]
 }
