@@ -478,13 +478,15 @@
       "id": "fix-bootstrap-blocker",
       "title": "fix bootstrap blocker",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-21T22:15:02Z",
-      "updated": "2026-04-21T22:15:02Z",
-      "started_at": "2026-04-21T22:15:02Z"
+      "updated": "2026-04-21T22:20:35Z",
+      "started_at": "2026-04-21T22:15:02Z",
+      "completed_at": "2026-04-21T22:20:35Z",
+      "proof": "openclaw status passes after reinstalling missing extension runtime deps"
     }
   ]
 }
