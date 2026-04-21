@@ -6,6 +6,35 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const ROOT_DIR = __dirname;
 const INDEX_FILE = path.join(ROOT_DIR, 'index.html');
+const BASIC_AUTH_USER = process.env.DASHBOARD_BASIC_AUTH_USER || '';
+const BASIC_AUTH_PASS = process.env.DASHBOARD_BASIC_AUTH_PASS || '';
+
+function requiresBasicAuth() {
+  return Boolean(BASIC_AUTH_USER && BASIC_AUTH_PASS);
+}
+
+function unauthorized(res) {
+  res.set('WWW-Authenticate', 'Basic realm="Mission Control"');
+  res.status(401).send('Authentication required');
+}
+
+function hasValidBasicAuth(req) {
+  if (!requiresBasicAuth()) return true;
+
+  const header = req.get('authorization') || '';
+  if (!header.startsWith('Basic ')) return false;
+
+  try {
+    const decoded = Buffer.from(header.slice(6), 'base64').toString('utf8');
+    const separatorIndex = decoded.indexOf(':');
+    if (separatorIndex === -1) return false;
+    const user = decoded.slice(0, separatorIndex);
+    const pass = decoded.slice(separatorIndex + 1);
+    return user === BASIC_AUTH_USER && pass === BASIC_AUTH_PASS;
+  } catch {
+    return false;
+  }
+}
 
 const dataFiles = {
   status: 'status.json',
@@ -17,6 +46,13 @@ const dataFiles = {
 };
 
 app.disable('x-powered-by');
+
+app.use((req, res, next) => {
+  if (hasValidBasicAuth(req)) {
+    return next();
+  }
+  return unauthorized(res);
+});
 
 app.get('/', (_req, res) => {
   res.sendFile(INDEX_FILE);

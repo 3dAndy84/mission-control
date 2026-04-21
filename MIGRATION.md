@@ -84,6 +84,7 @@ curl http://127.0.0.1:3000/api/health
 
 - The service expects the repo at `~/workspace/dashboard`
 - Default port is `3000`
+- Optional basic auth: set `DASHBOARD_BASIC_AUTH_USER` and `DASHBOARD_BASIC_AUTH_PASS` in the environment to require a username and password for both the dashboard UI and `/api/*`
 - If you change `PORT`, restart the user service:
 
 ```bash

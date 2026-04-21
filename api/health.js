@@ -1,3 +1,5 @@
+const { withBasicAuth } = require('./_lib');
+
 const loaders = {
   'status.json': () => require('../status.json'),
   'watchdog.json': () => require('../watchdog.json'),
@@ -7,7 +9,7 @@ const loaders = {
   'projects.json': () => require('../projects.json'),
 };
 
-module.exports = async function handler(_req, res) {
+module.exports = withBasicAuth(async function handler(_req, res) {
   const files = Object.fromEntries(
     Object.entries(loaders).map(([fileName, load]) => {
       try {
@@ -24,4 +26,4 @@ module.exports = async function handler(_req, res) {
     generatedAt: new Date().toISOString(),
     files,
   });
-};
+});
