@@ -449,6 +449,18 @@
       "started_at": "2026-04-21T11:25:28Z",
       "completed_at": "2026-04-21T11:29:08Z",
       "proof": "Pushed 33de5e0 and deployed basic-auth protected dashboard to https://task-dashboard-eosin.vercel.app"
+    },
+    {
+      "id": "bootstrap",
+      "title": "bootstrap",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-21T21:47:09Z",
+      "updated": "2026-04-21T21:47:09Z",
+      "started_at": "2026-04-21T21:47:09Z"
     }
   ]
 }
