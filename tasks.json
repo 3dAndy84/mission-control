@@ -610,12 +610,14 @@
       "id": "multi-agent-phase1-routing",
       "title": "Phase 1 — implement real topic and agent routing",
       "description": "Add the automatexm agent, map topic 5 to automatexm, keep topic 1 on ops and topic 102 on infra, strengthen Max routing behavior, restart safely, and verify healthy status.",
-      "status": "todo",
+      "status": "in-progress",
       "priority": "high",
       "agent": "max",
       "project": "agent-ops",
       "created": "2026-04-22T23:08:00Z",
-      "updated": "2026-04-22T23:08:00Z"
+      "updated": "2026-04-22T23:23:50Z",
+      "started_at": "2026-04-22T23:22:15Z",
+      "notes": "Config routing landed: automatexm agent added, topic 5 now points to automatexm, topic 102 remains infra, gateway healthy after patch. Prompt-tightening for Max delegation still pending in this phase."
     },
     {
       "id": "multi-agent-skill-routing-map",
@@ -661,6 +663,18 @@
       "created": "2026-04-22T23:22:15Z",
       "updated": "2026-04-22T23:22:15Z",
       "started_at": "2026-04-22T23:22:15Z"
+    },
+    {
+      "id": "complete-multi-agent-rollout-phases-2-4",
+      "title": "complete multi-agent rollout phases 2-4",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T23:27:38Z",
+      "updated": "2026-04-22T23:27:38Z",
+      "started_at": "2026-04-22T23:27:38Z"
     }
   ]
 }
