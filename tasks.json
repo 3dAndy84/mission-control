@@ -582,13 +582,15 @@
       "id": "setup-safe-inbound-image-workspace-workflow",
       "title": "setup safe inbound image workspace workflow",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-22T22:40:16Z",
-      "updated": "2026-04-22T22:40:16Z",
-      "started_at": "2026-04-22T22:40:16Z"
+      "updated": "2026-04-22T22:40:47Z",
+      "started_at": "2026-04-22T22:40:16Z",
+      "completed_at": "2026-04-22T22:40:47Z",
+      "proof": "added bin/inbound-media helper, documented workspace copy rule, and verified copy to /home/clawd/workspace/inbound-media/file_128---bf01c720-ceb8-4d11-94cb-8526c8c2cd96--20260422T224034Z.jpg"
     }
   ]
 }
