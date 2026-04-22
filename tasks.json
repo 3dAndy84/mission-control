@@ -516,13 +516,15 @@
       "id": "openclaw-doctor",
       "title": "openclaw doctor",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-22T10:57:00Z",
-      "updated": "2026-04-22T10:57:00Z",
-      "started_at": "2026-04-22T10:57:00Z"
+      "updated": "2026-04-22T10:59:35Z",
+      "started_at": "2026-04-22T10:57:00Z",
+      "completed_at": "2026-04-22T10:59:35Z",
+      "proof": "doctor ran; --fix installed missing bundled deps node-edge-tts and playwright-core; status verified healthy on 2026.4.21"
     }
   ]
 }
