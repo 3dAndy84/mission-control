@@ -537,6 +537,18 @@
       "created": "2026-04-22T11:02:06Z",
       "updated": "2026-04-22T11:02:06Z",
       "started_at": "2026-04-22T11:02:06Z"
+    },
+    {
+      "id": "direct-edit-openclaw-protected-config",
+      "title": "direct edit openclaw protected config",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T11:07:38Z",
+      "updated": "2026-04-22T11:07:38Z",
+      "started_at": "2026-04-22T11:07:38Z"
     }
   ]
 }
