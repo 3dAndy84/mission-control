@@ -595,14 +595,60 @@
     {
       "id": "plan-multi-agent-routing-rollout",
       "title": "plan multi-agent routing rollout",
-      "description": "",
-      "status": "in-progress",
+      "description": "Create the concrete rollout plan for real agent routing, task-backed delegation, and the Option C skill routing map.",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
-      "project": "general",
+      "project": "agent-ops",
       "created": "2026-04-22T23:05:46Z",
-      "updated": "2026-04-22T23:05:46Z",
-      "started_at": "2026-04-22T23:05:46Z"
+      "updated": "2026-04-22T23:07:04Z",
+      "started_at": "2026-04-22T23:05:46Z",
+      "completed_at": "2026-04-22T23:07:04Z",
+      "proof": "wrote documents/multi-agent-rollout-plan.md and added phase-tracked tasks in dashboard/tasks.json, with phase 1 queued as high priority"
+    },
+    {
+      "id": "multi-agent-phase1-routing",
+      "title": "Phase 1 — implement real topic and agent routing",
+      "description": "Add the automatexm agent, map topic 5 to automatexm, keep topic 1 on ops and topic 102 on infra, strengthen Max routing behavior, restart safely, and verify healthy status.",
+      "status": "todo",
+      "priority": "high",
+      "agent": "max",
+      "project": "agent-ops",
+      "created": "2026-04-22T23:08:00Z",
+      "updated": "2026-04-22T23:08:00Z"
+    },
+    {
+      "id": "multi-agent-skill-routing-map",
+      "title": "Phase 2 — create shared skill routing map",
+      "description": "Create the canonical Option C skill routing map that tells agents which skills to use first, when to delegate, and when not to improvise.",
+      "status": "todo",
+      "priority": "high",
+      "agent": "max",
+      "project": "agent-ops",
+      "created": "2026-04-22T23:08:00Z",
+      "updated": "2026-04-22T23:08:00Z"
+    },
+    {
+      "id": "multi-agent-task-delegation",
+      "title": "Phase 3 — add task-backed delegation conventions",
+      "description": "Make delegated work visible and trackable with ownership, status, proof, and one active owner at a time.",
+      "status": "todo",
+      "priority": "medium",
+      "agent": "max",
+      "project": "agent-ops",
+      "created": "2026-04-22T23:08:00Z",
+      "updated": "2026-04-22T23:08:00Z"
+    },
+    {
+      "id": "multi-agent-refinement-loops",
+      "title": "Phase 4 — design refinement loops for high-value work",
+      "description": "Add critic/rival/synthesizer/judge workflows for high-value content and strategic outputs once the routing foundation is stable.",
+      "status": "todo",
+      "priority": "medium",
+      "agent": "max",
+      "project": "agent-ops",
+      "created": "2026-04-22T23:08:00Z",
+      "updated": "2026-04-22T23:08:00Z"
     }
   ]
 }
