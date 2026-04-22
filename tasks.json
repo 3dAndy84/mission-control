@@ -487,6 +487,18 @@
       "started_at": "2026-04-21T22:15:02Z",
       "completed_at": "2026-04-21T22:20:35Z",
       "proof": "openclaw status passes after reinstalling missing extension runtime deps"
+    },
+    {
+      "id": "fix-openclaw-issues-and-warnings",
+      "title": "fix openclaw issues and warnings",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T01:04:32Z",
+      "updated": "2026-04-22T01:04:32Z",
+      "started_at": "2026-04-22T01:04:32Z"
     }
   ]
 }
