@@ -565,6 +565,18 @@
       "started_at": "2026-04-22T11:46:45Z",
       "completed_at": "2026-04-22T11:47:26Z",
       "proof": "verified current state: acpx permissionMode fixed to approve-reads, gateway healthy, but phantom plugins.allow entries remain so not fully fixed"
+    },
+    {
+      "id": "fix-image-read-path-workflow",
+      "title": "fix image read path workflow",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T22:38:00Z",
+      "updated": "2026-04-22T22:38:00Z",
+      "started_at": "2026-04-22T22:38:00Z"
     }
   ]
 }
