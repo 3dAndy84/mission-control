@@ -649,6 +649,18 @@
       "project": "agent-ops",
       "created": "2026-04-22T23:08:00Z",
       "updated": "2026-04-22T23:08:00Z"
+    },
+    {
+      "id": "phase-1-real-topic-and-agent-routing",
+      "title": "phase 1 real topic and agent routing",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T23:22:15Z",
+      "updated": "2026-04-22T23:22:15Z",
+      "started_at": "2026-04-22T23:22:15Z"
     }
   ]
 }
