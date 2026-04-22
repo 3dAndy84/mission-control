@@ -499,6 +499,18 @@
       "created": "2026-04-22T01:04:32Z",
       "updated": "2026-04-22T01:04:32Z",
       "started_at": "2026-04-22T01:04:32Z"
+    },
+    {
+      "id": "update-openclaw",
+      "title": "update openclaw",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T09:42:07Z",
+      "updated": "2026-04-22T09:42:07Z",
+      "started_at": "2026-04-22T09:42:07Z"
     }
   ]
 }
