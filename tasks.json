@@ -511,6 +511,18 @@
       "created": "2026-04-22T09:42:07Z",
       "updated": "2026-04-22T09:42:07Z",
       "started_at": "2026-04-22T09:42:07Z"
+    },
+    {
+      "id": "openclaw-doctor",
+      "title": "openclaw doctor",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T10:57:00Z",
+      "updated": "2026-04-22T10:57:00Z",
+      "started_at": "2026-04-22T10:57:00Z"
     }
   ]
 }
