@@ -556,13 +556,15 @@
       "id": "verify-openclaw-config-fix-state",
       "title": "verify openclaw config fix state",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-22T11:46:45Z",
-      "updated": "2026-04-22T11:46:45Z",
-      "started_at": "2026-04-22T11:46:45Z"
+      "updated": "2026-04-22T11:47:26Z",
+      "started_at": "2026-04-22T11:46:45Z",
+      "completed_at": "2026-04-22T11:47:26Z",
+      "proof": "verified current state: acpx permissionMode fixed to approve-reads, gateway healthy, but phantom plugins.allow entries remain so not fully fixed"
     }
   ]
 }
