@@ -525,6 +525,18 @@
       "started_at": "2026-04-22T10:57:00Z",
       "completed_at": "2026-04-22T10:59:35Z",
       "proof": "doctor ran; --fix installed missing bundled deps node-edge-tts and playwright-core; status verified healthy on 2026.4.21"
+    },
+    {
+      "id": "fix-openclaw-config-warnings",
+      "title": "fix openclaw config warnings",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-22T11:02:06Z",
+      "updated": "2026-04-22T11:02:06Z",
+      "started_at": "2026-04-22T11:02:06Z"
     }
   ]
 }
