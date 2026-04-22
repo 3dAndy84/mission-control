@@ -610,47 +610,55 @@
       "id": "multi-agent-phase1-routing",
       "title": "Phase 1 — implement real topic and agent routing",
       "description": "Add the automatexm agent, map topic 5 to automatexm, keep topic 1 on ops and topic 102 on infra, strengthen Max routing behavior, restart safely, and verify healthy status.",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "agent-ops",
       "created": "2026-04-22T23:08:00Z",
-      "updated": "2026-04-22T23:23:50Z",
+      "updated": "2026-04-22T23:34:00Z",
       "started_at": "2026-04-22T23:22:15Z",
-      "notes": "Config routing landed: automatexm agent added, topic 5 now points to automatexm, topic 102 remains infra, gateway healthy after patch. Prompt-tightening for Max delegation still pending in this phase."
+      "notes": "Config routing landed: automatexm agent added, topic 5 now points to automatexm, topic 102 remains infra, gateway healthy after patch. Prompt-tightening for Max delegation still pending in this phase.",
+      "completed_at": "2026-04-22T23:34:00Z",
+      "proof": "Added automatexm as a real agent, mapped topic 5 to automatexm while keeping topic 1 on ops and topic 102 on infra, restarted cleanly, verified healthy status, and updated AGENTS.md so Max/ops is explicitly front-door routing only."
     },
     {
       "id": "multi-agent-skill-routing-map",
       "title": "Phase 2 — create shared skill routing map",
       "description": "Create the canonical Option C skill routing map that tells agents which skills to use first, when to delegate, and when not to improvise.",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "agent": "max",
       "project": "agent-ops",
       "created": "2026-04-22T23:08:00Z",
-      "updated": "2026-04-22T23:08:00Z"
+      "updated": "2026-04-22T23:32:00Z",
+      "completed_at": "2026-04-22T23:32:00Z",
+      "proof": "Created /home/clawd/workspace/documents/skill-routing-map.md and updated AGENTS.md to point agents at the canonical routing map."
     },
     {
       "id": "multi-agent-task-delegation",
       "title": "Phase 3 — add task-backed delegation conventions",
       "description": "Make delegated work visible and trackable with ownership, status, proof, and one active owner at a time.",
-      "status": "todo",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "agent-ops",
       "created": "2026-04-22T23:08:00Z",
-      "updated": "2026-04-22T23:08:00Z"
+      "updated": "2026-04-22T23:32:00Z",
+      "completed_at": "2026-04-22T23:32:00Z",
+      "proof": "Updated /home/clawd/workspace/TASKS.md with owner, delegation, and proof rules to make delegated work trackable."
     },
     {
       "id": "multi-agent-refinement-loops",
       "title": "Phase 4 — design refinement loops for high-value work",
       "description": "Add critic/rival/synthesizer/judge workflows for high-value content and strategic outputs once the routing foundation is stable.",
-      "status": "todo",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "agent-ops",
       "created": "2026-04-22T23:08:00Z",
-      "updated": "2026-04-22T23:08:00Z"
+      "updated": "2026-04-22T23:32:00Z",
+      "completed_at": "2026-04-22T23:32:00Z",
+      "proof": "Created /home/clawd/workspace/documents/refinement-loops.md with the v1 critic/rival/synthesizer/judge workflow, criteria, task conventions, and recommended first use case."
     },
     {
       "id": "phase-1-real-topic-and-agent-routing",
@@ -668,13 +676,15 @@
       "id": "complete-multi-agent-rollout-phases-2-4",
       "title": "complete multi-agent rollout phases 2-4",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-22T23:27:38Z",
-      "updated": "2026-04-22T23:27:38Z",
-      "started_at": "2026-04-22T23:27:38Z"
+      "updated": "2026-04-22T23:29:55Z",
+      "started_at": "2026-04-22T23:27:38Z",
+      "completed_at": "2026-04-22T23:29:55Z",
+      "proof": "completed all rollout phases: skill-routing-map.md, refinement-loops.md, AGENTS.md and TASKS.md updated, and dashboard/tasks.json shows phases 1-4 done"
     }
   ]
 }
