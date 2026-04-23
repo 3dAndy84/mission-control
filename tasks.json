@@ -690,13 +690,15 @@
       "id": "check-gpt-image-2-availability",
       "title": "check gpt image 2 availability",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-23T00:19:33Z",
-      "updated": "2026-04-23T00:19:33Z",
-      "started_at": "2026-04-23T00:19:33Z"
+      "updated": "2026-04-23T00:19:43Z",
+      "started_at": "2026-04-23T00:19:33Z",
+      "completed_at": "2026-04-23T00:19:43Z",
+      "proof": "image_generate list confirms openai/gpt-image-2 is configured and available"
     }
   ]
 }
