@@ -704,13 +704,15 @@
       "id": "openclaw-doctor-fix",
       "title": "openclaw doctor fix",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-24T17:40:31Z",
-      "updated": "2026-04-24T17:40:31Z",
-      "started_at": "2026-04-24T17:40:31Z"
+      "updated": "2026-04-24T17:41:10Z",
+      "started_at": "2026-04-24T17:40:31Z",
+      "completed_at": "2026-04-24T17:41:10Z",
+      "proof": "Ran openclaw doctor --fix --non-interactive; bundled plugin dependency warning cleared; status verified gateway 2026.4.23 and Telegram OK."
     }
   ]
 }
