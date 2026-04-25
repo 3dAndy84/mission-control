@@ -40,7 +40,7 @@
     {
       "id": "clawvault-custom-observation-routes",
       "title": "ClawVault: custom observation routes",
-      "description": "Configure routing rules so topic patterns get categorized correctly (topic 197→dominica, 99→coastguard, etc.)",
+      "description": "Configure routing rules so topic patterns get categorized correctly (topic 197\u2192dominica, 99\u2192coastguard, etc.)",
       "status": "done",
       "priority": "low",
       "agent": "max",
@@ -272,7 +272,7 @@
       "updated": "2026-04-19T16:29:38Z",
       "started_at": "2026-04-19T16:29:07Z",
       "completed_at": "2026-04-19T16:29:38Z",
-      "proof": "Added the distinct non-duplicate YouTube cam neSVXln_ozA as 'Airport & Beach' from Tortuga Maho Café to sxm-cams/index.html, restarted the sxm-cams container, and verified the live site serves the new entry."
+      "proof": "Added the distinct non-duplicate YouTube cam neSVXln_ozA as 'Airport & Beach' from Tortuga Maho Caf\u00e9 to sxm-cams/index.html, restarted the sxm-cams container, and verified the live site serves the new entry."
     },
     {
       "id": "force-sxm-cams-homescreen-url-to-refresh",
@@ -342,7 +342,7 @@
       "updated": "2026-04-19T17:13:34Z",
       "started_at": "2026-04-19T17:13:12Z",
       "completed_at": "2026-04-19T17:13:34Z",
-      "proof": "Removed the duplicate Airport & Beach cam (neSVXln_ozA / Tortuga Maho Café) from sxm-cams/index.html, restarted the sxm-cams container, and verified the live site no longer serves that entry."
+      "proof": "Removed the duplicate Airport & Beach cam (neSVXln_ozA / Tortuga Maho Caf\u00e9) from sxm-cams/index.html, restarted the sxm-cams container, and verified the live site no longer serves that entry."
     },
     {
       "id": "fix-failing-cron-jobs-and-rerun-them",
@@ -608,7 +608,7 @@
     },
     {
       "id": "multi-agent-phase1-routing",
-      "title": "Phase 1 — implement real topic and agent routing",
+      "title": "Phase 1 \u2014 implement real topic and agent routing",
       "description": "Add the automatexm agent, map topic 5 to automatexm, keep topic 1 on ops and topic 102 on infra, strengthen Max routing behavior, restart safely, and verify healthy status.",
       "status": "done",
       "priority": "high",
@@ -623,7 +623,7 @@
     },
     {
       "id": "multi-agent-skill-routing-map",
-      "title": "Phase 2 — create shared skill routing map",
+      "title": "Phase 2 \u2014 create shared skill routing map",
       "description": "Create the canonical Option C skill routing map that tells agents which skills to use first, when to delegate, and when not to improvise.",
       "status": "done",
       "priority": "high",
@@ -636,7 +636,7 @@
     },
     {
       "id": "multi-agent-task-delegation",
-      "title": "Phase 3 — add task-backed delegation conventions",
+      "title": "Phase 3 \u2014 add task-backed delegation conventions",
       "description": "Make delegated work visible and trackable with ownership, status, proof, and one active owner at a time.",
       "status": "done",
       "priority": "medium",
@@ -649,7 +649,7 @@
     },
     {
       "id": "multi-agent-refinement-loops",
-      "title": "Phase 4 — design refinement loops for high-value work",
+      "title": "Phase 4 \u2014 design refinement loops for high-value work",
       "description": "Add critic/rival/synthesizer/judge workflows for high-value content and strategic outputs once the routing foundation is stable.",
       "status": "done",
       "priority": "medium",
@@ -774,13 +774,15 @@
       "id": "add-alex-ai-assistant-image",
       "title": "Add Alex AI assistant image",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "automatexm",
       "created": "2026-04-25T15:17:55Z",
-      "updated": "2026-04-25T15:17:55Z",
-      "started_at": "2026-04-25T15:17:55Z"
+      "updated": "2026-04-25T15:21:53Z",
+      "started_at": "2026-04-25T15:17:55Z",
+      "completed_at": "2026-04-25T15:21:53Z",
+      "proof": "Commit b8417f3; Alex avatar installed as automatexm/widget/alex-avatar.png; widget/demo/tests updated; node checks pass."
     }
   ]
 }
