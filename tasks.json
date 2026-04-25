@@ -795,6 +795,18 @@
       "created": "2026-04-25T15:31:18Z",
       "updated": "2026-04-25T15:31:18Z",
       "started_at": "2026-04-25T15:31:18Z"
+    },
+    {
+      "id": "deploy-automatexm-static-site-to-cloudflare-pages",
+      "title": "Deploy AutomateXM static site to Cloudflare Pages",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-25T15:32:46Z",
+      "updated": "2026-04-25T15:32:46Z",
+      "started_at": "2026-04-25T15:32:46Z"
     }
   ]
 }
