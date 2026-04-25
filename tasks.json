@@ -746,13 +746,27 @@
       "id": "audit-automatexm-with-hyperframes-and-recommend-fi",
       "title": "Audit AutomateXM with Hyperframes and recommend fixes",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "automatexm",
       "created": "2026-04-25T14:12:09Z",
-      "updated": "2026-04-25T14:12:09Z",
-      "started_at": "2026-04-25T14:12:09Z"
+      "updated": "2026-04-25T14:18:17Z",
+      "started_at": "2026-04-25T14:12:09Z",
+      "completed_at": "2026-04-25T14:18:17Z",
+      "proof": "Completed Hyperframes/brand-system/design-studio/frontend-humanizer audit and delivered prioritized fix recommendation."
+    },
+    {
+      "id": "implement-automatexm-hyperframes-audit-fixes",
+      "title": "Implement AutomateXM Hyperframes audit fixes",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "automatexm",
+      "created": "2026-04-25T14:50:38Z",
+      "updated": "2026-04-25T14:50:38Z",
+      "started_at": "2026-04-25T14:50:38Z"
     }
   ]
 }
