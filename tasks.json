@@ -727,6 +727,18 @@
       "started_at": "2026-04-25T13:22:06Z",
       "completed_at": "2026-04-25T13:22:27Z",
       "proof": "Updated design-studio workflow and artifact modes with Happy Hues palette-in-context checks; committed docs change."
+    },
+    {
+      "id": "audit-automatexm-website-and-finish-logo",
+      "title": "Audit AutomateXM website and finish logo",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-25T13:25:12Z",
+      "updated": "2026-04-25T13:25:12Z",
+      "started_at": "2026-04-25T13:25:12Z"
     }
   ]
 }
