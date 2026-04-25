@@ -718,13 +718,15 @@
       "id": "add-happy-hues-to-design-workflow",
       "title": "Add Happy Hues to design workflow",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-25T13:22:06Z",
-      "updated": "2026-04-25T13:22:06Z",
-      "started_at": "2026-04-25T13:22:06Z"
+      "updated": "2026-04-25T13:22:27Z",
+      "started_at": "2026-04-25T13:22:06Z",
+      "completed_at": "2026-04-25T13:22:27Z",
+      "proof": "Updated design-studio workflow and artifact modes with Happy Hues palette-in-context checks; committed docs change."
     }
   ]
 }
