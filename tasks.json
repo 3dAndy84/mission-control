@@ -895,6 +895,18 @@
       "started_at": "2026-04-25T18:58:12Z",
       "completed_at": "2026-04-25T18:58:43Z",
       "proof": "Checked live copy density and accuracy against memory/projects/ai-consulting-business.md and site files. Word counts: index 902, about 457, work 679. Findings: homepage is copy-heavy; most core metrics/services match master plan, but claims 'running right now', 'every example actual Caribbean organization', and hospitality/retail delivery proof should be softened or substantiated before public launch."
+    },
+    {
+      "id": "fix-automatexm-website-copy-density-and-accuracy",
+      "title": "Fix AutomateXM website copy density and accuracy",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-25T20:17:45Z",
+      "updated": "2026-04-25T20:17:45Z",
+      "started_at": "2026-04-25T20:17:45Z"
     }
   ]
 }
