@@ -900,13 +900,15 @@
       "id": "fix-automatexm-website-copy-density-and-accuracy",
       "title": "Fix AutomateXM website copy density and accuracy",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-25T20:17:45Z",
-      "updated": "2026-04-25T20:17:45Z",
-      "started_at": "2026-04-25T20:17:45Z"
+      "updated": "2026-04-25T20:19:53Z",
+      "started_at": "2026-04-25T20:17:45Z",
+      "completed_at": "2026-04-25T20:19:53Z",
+      "proof": "Updated automatexm/index.html only; visible homepage copy 902→504 words (44% cut); node automatexm/chat-widget.test.js passed; local link sanity passed; Puppeteer mobile overflow passed at 375/390px; reviewed git diff; committed aa3e0ba; deployed with wrangler to https://automatexm.pages.dev/ and verified safer copy live."
     }
   ]
 }
