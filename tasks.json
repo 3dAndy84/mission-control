@@ -956,13 +956,15 @@
       "id": "build-iltt-sick-leave-n8n-webhook-watchdog",
       "title": "Build ILTT sick leave n8n webhook watchdog",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-26T12:43:41Z",
-      "updated": "2026-04-26T12:43:41Z",
-      "started_at": "2026-04-26T12:43:41Z"
+      "updated": "2026-04-26T12:48:06Z",
+      "started_at": "2026-04-26T12:43:41Z",
+      "completed_at": "2026-04-26T12:48:06Z",
+      "proof": "Built and committed watchdog b36d002. Validation: py_compile OK; unittest 6 tests OK; dry-run DB check matches=1; manual DB count=1; no n8n restart performed because webhook healthy."
     }
   ]
 }
