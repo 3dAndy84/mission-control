@@ -951,6 +951,18 @@
       "started_at": "2026-04-26T04:06:37Z",
       "completed_at": "2026-04-26T04:08:05Z",
       "proof": "Verified failed cron had already pushed Daily backup 2026-04-26 (e2c31de). Updated workspace-backup cron prompt to deterministic NO_REPLY on success/no changes, increased timeout to 600s, exported cron backup JSON, and ignored nested claude/codex/infra worktrees so future git add -A backups do not sweep them in."
+    },
+    {
+      "id": "build-iltt-sick-leave-n8n-webhook-watchdog",
+      "title": "Build ILTT sick leave n8n webhook watchdog",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-26T12:43:41Z",
+      "updated": "2026-04-26T12:43:41Z",
+      "started_at": "2026-04-26T12:43:41Z"
     }
   ]
 }
