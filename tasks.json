@@ -923,6 +923,18 @@
       "started_at": "2026-04-25T20:35:43Z",
       "completed_at": "2026-04-25T20:37:54Z",
       "proof": "Updated AutomateXM index/about/work copy for Automation and AI custom-solution positioning; sick leave now says employees report sick leave and recovery in WhatsApp. Validation passed: node automatexm/chat-widget.test.js, local link sanity, Puppeteer mobile overflow on index/about/work. Committed 6d42c79. Deployed Cloudflare Pages https://1c49b589.automatexm.pages.dev and verified production https://automatexm.pages.dev/ includes Automation and AI and no three systems language."
+    },
+    {
+      "id": "continue-coordinator-agent-routing-fix-from-clawva",
+      "title": "Continue coordinator-agent routing fix from ClawVault commitment resume-coordinator-agent-routing-fix",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-26T04:00:10Z",
+      "updated": "2026-04-26T04:00:10Z",
+      "started_at": "2026-04-26T04:00:10Z"
     }
   ]
 }
