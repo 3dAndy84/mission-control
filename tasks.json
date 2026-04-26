@@ -970,13 +970,15 @@
       "id": "build-generic-n8n-production-watchdog",
       "title": "Build generic n8n production watchdog",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-26T14:04:48Z",
-      "updated": "2026-04-26T14:04:48Z",
-      "started_at": "2026-04-26T14:04:48Z"
+      "updated": "2026-04-26T14:07:38Z",
+      "started_at": "2026-04-26T14:04:48Z",
+      "completed_at": "2026-04-26T14:07:38Z",
+      "proof": "Committed generic n8n production watchdog at ops/n8n-production-watchdog (408ed30); py_compile, unittest, and live dry-run passed."
     }
   ]
 }
