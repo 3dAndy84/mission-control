@@ -984,13 +984,15 @@
       "id": "update-automatexm-public-voice-cta",
       "title": "Update AutomateXM public voice CTA",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-26T15:42:55Z",
-      "updated": "2026-04-26T15:42:55Z",
-      "started_at": "2026-04-26T15:42:55Z"
+      "updated": "2026-04-26T15:44:34Z",
+      "started_at": "2026-04-26T15:42:55Z",
+      "completed_at": "2026-04-26T15:44:34Z",
+      "proof": "Added tel:+16313549207 voice intake CTA to AutomateXM homepage hero/contact/footer plus about/work contact/footer; validated HTML parse/link counts and git diff --check; committed site change 8a4dd69."
     }
   ]
 }
