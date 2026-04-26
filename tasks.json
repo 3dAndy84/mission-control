@@ -965,6 +965,18 @@
       "started_at": "2026-04-26T12:43:41Z",
       "completed_at": "2026-04-26T12:48:06Z",
       "proof": "Built and committed watchdog b36d002. Validation: py_compile OK; unittest 6 tests OK; dry-run DB check matches=1; manual DB count=1; no n8n restart performed because webhook healthy."
+    },
+    {
+      "id": "build-generic-n8n-production-watchdog",
+      "title": "Build generic n8n production watchdog",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-26T14:04:48Z",
+      "updated": "2026-04-26T14:04:48Z",
+      "started_at": "2026-04-26T14:04:48Z"
     }
   ]
 }
