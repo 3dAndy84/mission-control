@@ -928,13 +928,15 @@
       "id": "continue-coordinator-agent-routing-fix-from-clawva",
       "title": "Continue coordinator-agent routing fix from ClawVault commitment resume-coordinator-agent-routing-fix",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-26T04:00:10Z",
-      "updated": "2026-04-26T04:00:10Z",
-      "started_at": "2026-04-26T04:00:10Z"
+      "updated": "2026-04-26T04:01:38Z",
+      "started_at": "2026-04-26T04:00:10Z",
+      "completed_at": "2026-04-26T04:01:38Z",
+      "proof": "Verified live config: agents ops/infra/automatexm exist; Telegram topic 1→ops, 5→automatexm, 102→infra; gateway reachable/systemd running; Telegram OK; config valid. Updated ClawVault commitment with done status. No restart needed."
     }
   ]
 }
