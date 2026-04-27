@@ -1018,6 +1018,18 @@
       "started_at": "2026-04-27T22:20:43Z",
       "completed_at": "2026-04-27T22:22:45Z",
       "proof": "Draft SOP created from Drive PowerPoint and notes: documents/ar-sop-general-investigations-draft-v0.2.docx and .md"
+    },
+    {
+      "id": "set-up-trading-command-center",
+      "title": "Set up trading command center",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-27T23:22:30Z",
+      "updated": "2026-04-27T23:22:30Z",
+      "started_at": "2026-04-27T23:22:30Z"
     }
   ]
 }
