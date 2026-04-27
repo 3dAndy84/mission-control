@@ -1032,6 +1032,18 @@
       "started_at": "2026-04-27T23:22:30Z",
       "completed_at": "2026-04-27T23:24:20Z",
       "proof": "Created trading-command-center with README, risk policy, eligibility/platform checklists, Alpaca paper-trading checklist, crypto/wallet checklist, Polymarket checklist, trade journal, watchlist, daily brief, and weekly review templates. Verified file listing and reviewed staged diff."
+    },
+    {
+      "id": "research-trading-strategies-to-implement",
+      "title": "Research trading strategies to implement",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-27T23:32:25Z",
+      "updated": "2026-04-27T23:32:25Z",
+      "started_at": "2026-04-27T23:32:25Z"
     }
   ]
 }
