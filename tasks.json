@@ -1037,13 +1037,15 @@
       "id": "research-trading-strategies-to-implement",
       "title": "Research trading strategies to implement",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-27T23:32:25Z",
-      "updated": "2026-04-27T23:32:25Z",
-      "started_at": "2026-04-27T23:32:25Z"
+      "updated": "2026-04-27T23:37:52Z",
+      "started_at": "2026-04-27T23:32:25Z",
+      "completed_at": "2026-04-27T23:37:52Z",
+      "proof": "Researched paper-tradable strategy shortlist including ETF trend/momentum, large-cap mean reversion, volatility breakout, DCA/rebalancing, liquidity/spread gate, Polymarket fair-probability review, and news/event monitoring; added strategy-playbook.md, news-monitoring.md, and strategy-scorecard.csv; reviewed staged diff."
     }
   ]
 }
