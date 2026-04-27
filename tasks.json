@@ -993,6 +993,29 @@
       "started_at": "2026-04-26T15:42:55Z",
       "completed_at": "2026-04-26T15:44:34Z",
       "proof": "Added tel:+16313549207 voice intake CTA to AutomateXM homepage hero/contact/footer plus about/work contact/footer; validated HTML parse/link counts and git diff --check; committed site change 8a4dd69."
+    },
+    {
+      "id": "openclaw-obsidian-wiki-layer",
+      "title": "OpenClaw Obsidian wiki layer",
+      "description": "Design and build an Obsidian-readable OpenClaw Wiki on top of ClawVault and QMD: curated Systems, Processes, Decisions, Incidents, and Reports pages maintained by agents with source citations/backlinks.",
+      "status": "backlog",
+      "priority": "medium",
+      "agent": "max",
+      "project": "openclaw",
+      "created": "2026-04-26T22:26:55Z",
+      "updated": "2026-04-26T22:26:55Z"
+    },
+    {
+      "id": "create-sop-from-drive-powerpoint-and-andy-notes",
+      "title": "Create SOP from Drive PowerPoint and Andy notes",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-27T22:20:43Z",
+      "updated": "2026-04-27T22:20:43Z",
+      "started_at": "2026-04-27T22:20:43Z"
     }
   ]
 }
