@@ -1009,13 +1009,15 @@
       "id": "create-sop-from-drive-powerpoint-and-andy-notes",
       "title": "Create SOP from Drive PowerPoint and Andy notes",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-27T22:20:43Z",
-      "updated": "2026-04-27T22:20:43Z",
-      "started_at": "2026-04-27T22:20:43Z"
+      "updated": "2026-04-27T22:22:45Z",
+      "started_at": "2026-04-27T22:20:43Z",
+      "completed_at": "2026-04-27T22:22:45Z",
+      "proof": "Draft SOP created from Drive PowerPoint and notes: documents/ar-sop-general-investigations-draft-v0.2.docx and .md"
     }
   ]
 }
