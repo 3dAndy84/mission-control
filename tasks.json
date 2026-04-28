@@ -1060,6 +1060,18 @@
       "started_at": "2026-04-28T06:03:54Z",
       "completed_at": "2026-04-28T06:05:58Z",
       "proof": "Reviewed today's LCM activity (no matches), checked git log, appended one new mistake for task PATH assumption, and updated current weaknesses to use the absolute task path."
+    },
+    {
+      "id": "humanizer-pass-on-ar-sop-general-investigations-dr",
+      "title": "Humanizer pass on AR SOP General Investigations draft",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-28T11:36:20Z",
+      "updated": "2026-04-28T11:36:20Z",
+      "started_at": "2026-04-28T11:36:20Z"
     }
   ]
 }
