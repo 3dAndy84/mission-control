@@ -1046,6 +1046,18 @@
       "started_at": "2026-04-27T23:32:25Z",
       "completed_at": "2026-04-27T23:37:52Z",
       "proof": "Researched paper-tradable strategy shortlist including ETF trend/momentum, large-cap mean reversion, volatility breakout, DCA/rebalancing, liquidity/spread gate, Polymarket fair-probability review, and news/event monitoring; added strategy-playbook.md, news-monitoring.md, and strategy-scorecard.csv; reviewed staged diff."
+    },
+    {
+      "id": "self-eval",
+      "title": "self-eval",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-28T06:03:54Z",
+      "updated": "2026-04-28T06:03:54Z",
+      "started_at": "2026-04-28T06:03:54Z"
     }
   ]
 }
