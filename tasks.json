@@ -1074,6 +1074,18 @@
       "started_at": "2026-04-28T11:36:20Z",
       "completed_at": "2026-04-28T11:39:39Z",
       "proof": "Humanizer pass applied to AR SOP markdown and DOCX regenerated; grep checks clean for banned phrases, curly quotes, and em dashes; committed docs: humanize AR investigation SOP."
+    },
+    {
+      "id": "upload-humanized-ar-sop-docx-to-google-drive",
+      "title": "Upload humanized AR SOP DOCX to Google Drive",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-28T11:48:41Z",
+      "updated": "2026-04-28T11:48:41Z",
+      "started_at": "2026-04-28T11:48:41Z"
     }
   ]
 }
