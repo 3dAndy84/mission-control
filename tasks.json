@@ -1065,13 +1065,15 @@
       "id": "humanizer-pass-on-ar-sop-general-investigations-dr",
       "title": "Humanizer pass on AR SOP General Investigations draft",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-28T11:36:20Z",
-      "updated": "2026-04-28T11:36:20Z",
-      "started_at": "2026-04-28T11:36:20Z"
+      "updated": "2026-04-28T11:39:39Z",
+      "started_at": "2026-04-28T11:36:20Z",
+      "completed_at": "2026-04-28T11:39:39Z",
+      "proof": "Humanizer pass applied to AR SOP markdown and DOCX regenerated; grep checks clean for banned phrases, curly quotes, and em dashes; committed docs: humanize AR investigation SOP."
     }
   ]
 }
