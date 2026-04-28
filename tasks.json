@@ -1051,13 +1051,15 @@
       "id": "self-eval",
       "title": "self-eval",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-28T06:03:54Z",
-      "updated": "2026-04-28T06:03:54Z",
-      "started_at": "2026-04-28T06:03:54Z"
+      "updated": "2026-04-28T06:05:58Z",
+      "started_at": "2026-04-28T06:03:54Z",
+      "completed_at": "2026-04-28T06:05:58Z",
+      "proof": "Reviewed today's LCM activity (no matches), checked git log, appended one new mistake for task PATH assumption, and updated current weaknesses to use the absolute task path."
     }
   ]
 }
