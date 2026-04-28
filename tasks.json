@@ -1088,6 +1088,18 @@
       "started_at": "2026-04-28T11:48:41Z",
       "completed_at": "2026-04-28T11:49:48Z",
       "proof": "Uploaded humanized AR SOP DOCX to Google Drive as 'AR SOP General Investigations Draft v0.2 - humanized.docx' and verified it appears in Drive search with fileId 1QBvMtfQPynQaAma8t5qHXCDP7ai5AIF8."
+    },
+    {
+      "id": "tune-openclaw-watchdog-to-avoid-false-repair-resta",
+      "title": "Tune OpenClaw watchdog to avoid false repair restarts",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-28T16:56:18Z",
+      "updated": "2026-04-28T16:56:18Z",
+      "started_at": "2026-04-28T16:56:18Z"
     }
   ]
 }
