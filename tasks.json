@@ -1121,13 +1121,15 @@
       "id": "add-terse-technical-response-style-to-agents-md",
       "title": "Add terse technical response style to AGENTS.md",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-29T18:53:25Z",
-      "updated": "2026-04-29T18:53:25Z",
-      "started_at": "2026-04-29T18:53:25Z"
+      "updated": "2026-04-29T18:53:45Z",
+      "started_at": "2026-04-29T18:53:25Z",
+      "completed_at": "2026-04-29T18:53:45Z",
+      "proof": "Added Response Style section to AGENTS.md and committed as 50ef53a."
     }
   ]
 }
