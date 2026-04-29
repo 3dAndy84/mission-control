@@ -1102,6 +1102,18 @@
       "started_at": "2026-04-28T16:56:18Z",
       "completed_at": "2026-04-28T16:57:05Z",
       "proof": "Investigated watchdog/gateway journals. Root cause: single /health probe timeouts caused immediate gateway restarts, with repair check too early for startup. Updated watchdog timeout to 30s, added first-failure grace, extended post-restart wait to 35s, added watchdog test, syntax-checked and ran one healthy check."
+    },
+    {
+      "id": "daily-self-eval",
+      "title": "Daily self-eval",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-29T06:03:30Z",
+      "updated": "2026-04-29T06:03:30Z",
+      "started_at": "2026-04-29T06:03:30Z"
     }
   ]
 }
