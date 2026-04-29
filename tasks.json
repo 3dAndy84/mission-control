@@ -1116,6 +1116,18 @@
       "started_at": "2026-04-29T06:03:30Z",
       "completed_at": "2026-04-29T06:04:14Z",
       "proof": "Daily self-eval complete; reviewed memory files, today's LCM activity, and git log; no new mistakes or weakness updates needed."
+    },
+    {
+      "id": "add-terse-technical-response-style-to-agents-md",
+      "title": "Add terse technical response style to AGENTS.md",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-04-29T18:53:25Z",
+      "updated": "2026-04-29T18:53:25Z",
+      "started_at": "2026-04-29T18:53:25Z"
     }
   ]
 }
