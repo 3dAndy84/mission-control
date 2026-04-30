@@ -1149,13 +1149,15 @@
       "id": "investigate-morning-briefing-cron-failure",
       "title": "Investigate morning-briefing cron failure",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-30T11:04:11Z",
-      "updated": "2026-04-30T11:04:11Z",
-      "started_at": "2026-04-30T11:04:11Z"
+      "updated": "2026-04-30T11:12:14Z",
+      "started_at": "2026-04-30T11:04:11Z",
+      "completed_at": "2026-04-30T11:12:14Z",
+      "proof": "Proof: openclaw cron show dafc366d-e8b0-4867-8657-5ee5e14b632d reports model gpt55, last 7m ago, status ok, next in 24h after manual rerun."
     }
   ]
 }
