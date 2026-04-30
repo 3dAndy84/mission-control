@@ -1135,13 +1135,15 @@
       "id": "update-openclaw-and-verify-version",
       "title": "Update OpenClaw and verify version",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-30T01:54:08Z",
-      "updated": "2026-04-30T01:54:08Z",
-      "started_at": "2026-04-30T01:54:08Z"
+      "updated": "2026-04-30T01:55:54Z",
+      "started_at": "2026-04-30T01:54:08Z",
+      "completed_at": "2026-04-30T01:55:54Z",
+      "proof": "Updated OpenClaw CLI from 2026.4.26 to 2026.4.27; verified openclaw --version returns 2026.4.27 (cbc2ba0). Gateway status still reports app 2026.4.26 after gateway restart signal; needs explicit systemd restart if runtime reload is required."
     }
   ]
 }
