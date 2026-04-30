@@ -1163,13 +1163,15 @@
       "id": "install-stripe-link-cli",
       "title": "Install Stripe Link CLI",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-04-30T11:21:14Z",
-      "updated": "2026-04-30T11:21:14Z",
-      "started_at": "2026-04-30T11:21:14Z"
+      "updated": "2026-04-30T11:21:38Z",
+      "started_at": "2026-04-30T11:21:14Z",
+      "completed_at": "2026-04-30T11:21:38Z",
+      "proof": "Proof: npm installed @stripe/link-cli 0.4.1 globally; link-cli --version returns 0.4.1 (build 1); auth status reports authenticated=false."
     }
   ]
 }
