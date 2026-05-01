@@ -1172,6 +1172,18 @@
       "started_at": "2026-04-30T11:21:14Z",
       "completed_at": "2026-04-30T11:21:38Z",
       "proof": "Proof: npm installed @stripe/link-cli 0.4.1 globally; link-cli --version returns 0.4.1 (build 1); auth status reports authenticated=false."
+    },
+    {
+      "id": "update-openclaw",
+      "title": "Update OpenClaw",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-01T00:32:36Z",
+      "updated": "2026-05-01T00:32:36Z",
+      "started_at": "2026-05-01T00:32:36Z"
     }
   ]
 }
