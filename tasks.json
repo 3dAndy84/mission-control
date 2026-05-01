@@ -1188,6 +1188,18 @@
       "started_at": "2026-05-01T00:32:36Z",
       "completed_at": "2026-05-01T00:40:13Z",
       "proof": "Proof: openclaw status reports Update up to date npm latest 2026.4.29; Gateway and Gateway self app 2026.4.29 reachable 124ms; systemd service running pid 1408236."
+    },
+    {
+      "id": "self-eval",
+      "title": "self-eval",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-01T06:04:24Z",
+      "updated": "2026-05-01T06:04:24Z",
+      "started_at": "2026-05-01T06:04:24Z"
     }
   ]
 }
