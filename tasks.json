@@ -1058,10 +1058,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-04-28T06:03:54Z",
-      "updated": "2026-04-28T06:05:58Z",
+      "updated": "2026-05-01T06:09:33Z",
       "started_at": "2026-04-28T06:03:54Z",
-      "completed_at": "2026-04-28T06:05:58Z",
-      "proof": "Reviewed today's LCM activity (no matches), checked git log, appended one new mistake for task PATH assumption, and updated current weaknesses to use the absolute task path."
+      "completed_at": "2026-05-01T06:09:33Z",
+      "proof": "updated memory/mistakes.md; committed ae673ba"
     },
     {
       "id": "humanizer-pass-on-ar-sop-general-investigations-dr",
@@ -1193,13 +1193,15 @@
       "id": "self-eval",
       "title": "self-eval",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-01T06:04:24Z",
-      "updated": "2026-05-01T06:04:24Z",
-      "started_at": "2026-05-01T06:04:24Z"
+      "updated": "2026-05-01T06:09:33Z",
+      "started_at": "2026-05-01T06:04:24Z",
+      "completed_at": "2026-05-01T06:09:33Z",
+      "proof": "updated memory/mistakes.md; committed ae673ba"
     }
   ]
 }
