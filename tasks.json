@@ -1207,13 +1207,15 @@
       "id": "openclaw-deep-security-audit",
       "title": "OpenClaw deep security audit",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-01T09:22:21Z",
-      "updated": "2026-05-01T09:22:21Z",
-      "started_at": "2026-05-01T09:22:21Z"
+      "updated": "2026-05-01T09:29:20Z",
+      "started_at": "2026-05-01T09:22:21Z",
+      "completed_at": "2026-05-01T09:29:20Z",
+      "proof": "Deep read-only OpenClaw security audit completed. Key findings: gateway loopback-only; high risk from full exec/no prompts/sandbox off; tracked sensitive-looking workspace files; 5 paired devices; proactive job surface."
     }
   ]
 }
