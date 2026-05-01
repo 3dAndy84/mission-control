@@ -1202,6 +1202,18 @@
       "started_at": "2026-05-01T06:04:24Z",
       "completed_at": "2026-05-01T06:09:33Z",
       "proof": "updated memory/mistakes.md; committed ae673ba"
+    },
+    {
+      "id": "openclaw-deep-security-audit",
+      "title": "OpenClaw deep security audit",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-01T09:22:21Z",
+      "updated": "2026-05-01T09:22:21Z",
+      "started_at": "2026-05-01T09:22:21Z"
     }
   ]
 }
