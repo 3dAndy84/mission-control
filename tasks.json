@@ -1228,6 +1228,18 @@
       "created": "2026-05-02T06:04:21Z",
       "updated": "2026-05-02T06:04:21Z",
       "started_at": "2026-05-02T06:04:21Z"
+    },
+    {
+      "id": "install-clawddocs-skill",
+      "title": "Install clawddocs skill",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-02T11:37:07Z",
+      "updated": "2026-05-02T11:37:07Z",
+      "started_at": "2026-05-02T11:37:07Z"
     }
   ]
 }
