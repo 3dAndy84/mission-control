@@ -1216,6 +1216,18 @@
       "started_at": "2026-05-01T09:22:21Z",
       "completed_at": "2026-05-01T09:29:20Z",
       "proof": "Deep read-only OpenClaw security audit completed. Key findings: gateway loopback-only; high risk from full exec/no prompts/sandbox off; tracked sensitive-looking workspace files; 5 paired devices; proactive job surface."
+    },
+    {
+      "id": "daily-self-eval",
+      "title": "daily self-eval",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-02T06:04:21Z",
+      "updated": "2026-05-02T06:04:21Z",
+      "started_at": "2026-05-02T06:04:21Z"
     }
   ]
 }
