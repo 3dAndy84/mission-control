@@ -1233,13 +1233,15 @@
       "id": "install-clawddocs-skill",
       "title": "Install clawddocs skill",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-02T11:37:07Z",
-      "updated": "2026-05-02T11:37:07Z",
-      "started_at": "2026-05-02T11:37:07Z"
+      "updated": "2026-05-02T11:38:28Z",
+      "started_at": "2026-05-02T11:37:07Z",
+      "completed_at": "2026-05-02T11:38:28Z",
+      "proof": "Installed clawddocs@1.2.2; verified openclaw skills info reports Ready; committed as skills: install clawddocs"
     }
   ]
 }
