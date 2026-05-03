@@ -1270,6 +1270,18 @@
       "started_at": "2026-05-03T06:03:13Z",
       "completed_at": "2026-05-03T06:03:39Z",
       "proof": "No new mistakes. Discipline pattern persists (weaknesses.md unchanged). No archive needed. Git log clean."
+    },
+    {
+      "id": "build-read-only-polymarket-scanner-v1",
+      "title": "build read-only polymarket scanner v1",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-03T16:18:56Z",
+      "updated": "2026-05-03T16:18:56Z",
+      "started_at": "2026-05-03T16:18:56Z"
     }
   ]
 }
