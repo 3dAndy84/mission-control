@@ -1284,6 +1284,18 @@
       "started_at": "2026-05-03T16:18:56Z",
       "completed_at": "2026-05-03T16:20:59Z",
       "proof": "Correction: final implementation commit b12e3c2 includes scanner, docs, tests, report, and commitment. Validation passed: py_compile, --help, --mock --stdout, unittest, live scan report."
+    },
+    {
+      "id": "build-polymarket-operator-mode-v2",
+      "title": "build polymarket operator mode v2",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-03T16:32:39Z",
+      "updated": "2026-05-03T16:32:39Z",
+      "started_at": "2026-05-03T16:32:39Z"
     }
   ]
 }
