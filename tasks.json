@@ -1280,10 +1280,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-03T16:18:56Z",
-      "updated": "2026-05-03T16:20:28Z",
+      "updated": "2026-05-03T16:20:59Z",
       "started_at": "2026-05-03T16:18:56Z",
-      "completed_at": "2026-05-03T16:20:28Z",
-      "proof": "Validation: python3 -m py_compile trading-command-center/polymarket_scanner.py; python3 trading-command-center/polymarket_scanner.py --help; python3 trading-command-center/polymarket_scanner.py --mock --stdout; live scan wrote reports/polymarket-scan-20260503-161953.md. Code commit: b70cf9c"
+      "completed_at": "2026-05-03T16:20:59Z",
+      "proof": "Correction: final implementation commit b12e3c2 includes scanner, docs, tests, report, and commitment. Validation passed: py_compile, --help, --mock --stdout, unittest, live scan report."
     }
   ]
 }
