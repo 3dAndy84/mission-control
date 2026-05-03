@@ -1289,13 +1289,15 @@
       "id": "build-polymarket-operator-mode-v2",
       "title": "build polymarket operator mode v2",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-03T16:32:39Z",
-      "updated": "2026-05-03T16:32:39Z",
-      "started_at": "2026-05-03T16:32:39Z"
+      "updated": "2026-05-03T16:35:05Z",
+      "started_at": "2026-05-03T16:32:39Z",
+      "completed_at": "2026-05-03T16:35:05Z",
+      "proof": "Built read-only Polymarket operator v2. Proof: python3 -m py_compile polymarket_scanner.py test_polymarket_scanner.py; python3 -m unittest -v (6 tests OK); mock operator command wrote latest report/alerts/tickets and state; live public alert-only command succeeded with no interrupt-worthy alerts. Implementation commit 8d00c7f."
     }
   ]
 }
