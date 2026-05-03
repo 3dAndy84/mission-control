@@ -1247,13 +1247,15 @@
       "id": "weekly-setup-review",
       "title": "weekly setup review",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-03T06:00:30Z",
-      "updated": "2026-05-03T06:00:30Z",
-      "started_at": "2026-05-03T06:00:30Z"
+      "updated": "2026-05-03T06:01:00Z",
+      "started_at": "2026-05-03T06:00:30Z",
+      "completed_at": "2026-05-03T06:01:00Z",
+      "proof": "openclaw status ok; cron list shows errors on Daily Self-Eval, workspace-backup, memory-hygiene; qmd pending 14; git drift only monitor logs; disk 28% used, mem 13Gi avail; update status up to date"
     }
   ]
 }
