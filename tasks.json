@@ -1242,6 +1242,18 @@
       "started_at": "2026-05-02T11:37:07Z",
       "completed_at": "2026-05-02T11:38:28Z",
       "proof": "Installed clawddocs@1.2.2; verified openclaw skills info reports Ready; committed as skills: install clawddocs"
+    },
+    {
+      "id": "weekly-setup-review",
+      "title": "weekly setup review",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-03T06:00:30Z",
+      "updated": "2026-05-03T06:00:30Z",
+      "started_at": "2026-05-03T06:00:30Z"
     }
   ]
 }
