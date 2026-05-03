@@ -1317,13 +1317,15 @@
       "id": "fix-polymarket-live-fetch-failure-safety",
       "title": "fix polymarket live fetch failure safety",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-03T16:42:18Z",
-      "updated": "2026-05-03T16:42:18Z",
-      "started_at": "2026-05-03T16:42:18Z"
+      "updated": "2026-05-03T16:43:20Z",
+      "started_at": "2026-05-03T16:42:18Z",
+      "completed_at": "2026-05-03T16:43:20Z",
+      "proof": "commit 7fafc83; py_compile passed; unittest 9/9 passed; mock stdout alert-only passed; live no-state smoke passed; live fetch failure unit asserts nonzero/no default state/no mock rows"
     }
   ]
 }
