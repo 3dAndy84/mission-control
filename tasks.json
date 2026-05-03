@@ -1303,13 +1303,15 @@
       "id": "fix-polymarket-operator-mock-state-safety",
       "title": "fix polymarket operator mock state safety",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-03T16:37:37Z",
-      "updated": "2026-05-03T16:37:37Z",
-      "started_at": "2026-05-03T16:37:37Z"
+      "updated": "2026-05-03T16:39:19Z",
+      "started_at": "2026-05-03T16:37:37Z",
+      "completed_at": "2026-05-03T16:39:19Z",
+      "proof": "commit c776e9a; py_compile passed; unittest 8/8 passed; mock --stdout --alert-only kept default state absent; live --no-state smoke passed"
     }
   ]
 }
