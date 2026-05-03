@@ -1312,6 +1312,18 @@
       "started_at": "2026-05-03T16:37:37Z",
       "completed_at": "2026-05-03T16:39:19Z",
       "proof": "commit c776e9a; py_compile passed; unittest 8/8 passed; mock --stdout --alert-only kept default state absent; live --no-state smoke passed"
+    },
+    {
+      "id": "fix-polymarket-live-fetch-failure-safety",
+      "title": "fix polymarket live fetch failure safety",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-03T16:42:18Z",
+      "updated": "2026-05-03T16:42:18Z",
+      "started_at": "2026-05-03T16:42:18Z"
     }
   ]
 }
