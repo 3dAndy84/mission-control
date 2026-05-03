@@ -1298,6 +1298,18 @@
       "started_at": "2026-05-03T16:32:39Z",
       "completed_at": "2026-05-03T16:35:05Z",
       "proof": "Built read-only Polymarket operator v2. Proof: python3 -m py_compile polymarket_scanner.py test_polymarket_scanner.py; python3 -m unittest -v (6 tests OK); mock operator command wrote latest report/alerts/tickets and state; live public alert-only command succeeded with no interrupt-worthy alerts. Implementation commit 8d00c7f."
+    },
+    {
+      "id": "fix-polymarket-operator-mock-state-safety",
+      "title": "fix polymarket operator mock state safety",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-03T16:37:37Z",
+      "updated": "2026-05-03T16:37:37Z",
+      "started_at": "2026-05-03T16:37:37Z"
     }
   ]
 }
