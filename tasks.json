@@ -1375,13 +1375,15 @@
       "id": "harden-polymarket-basket-scanner-into-execution-si",
       "title": "Harden Polymarket basket scanner into execution-signal candidate generator",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-04T13:12:28Z",
-      "updated": "2026-05-04T13:12:28Z",
-      "started_at": "2026-05-04T13:12:28Z"
+      "updated": "2026-05-04T13:19:20Z",
+      "started_at": "2026-05-04T13:12:28Z",
+      "completed_at": "2026-05-04T13:19:20Z",
+      "proof": "Hardened scanner into execution-signal candidate generator; tests pass 20/20; code review found no blockers."
     }
   ]
 }
