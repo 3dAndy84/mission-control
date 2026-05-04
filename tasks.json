@@ -1403,13 +1403,15 @@
       "id": "prepare-final-dffa-constitution-v2-doc",
       "title": "Prepare final DFFA constitution v2 doc",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-04T18:57:00Z",
-      "updated": "2026-05-04T18:57:00Z",
-      "started_at": "2026-05-04T18:57:00Z"
+      "updated": "2026-05-04T18:58:31Z",
+      "started_at": "2026-05-04T18:57:00Z",
+      "completed_at": "2026-05-04T18:58:31Z",
+      "proof": "Created /home/clawd/workspace/dffa-constitution-final-v2.docx; verified no color/strikethrough redline formatting, no comments/legend labels, and zero 'Fire Fighters'/'fire fighters' occurrences."
     }
   ]
 }
