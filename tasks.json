@@ -1326,6 +1326,18 @@
       "started_at": "2026-05-03T16:42:18Z",
       "completed_at": "2026-05-03T16:43:20Z",
       "proof": "commit 7fafc83; py_compile passed; unittest 9/9 passed; mock stdout alert-only passed; live no-state smoke passed; live fetch failure unit asserts nonzero/no default state/no mock rows"
+    },
+    {
+      "id": "daily-self-eval",
+      "title": "daily-self-eval",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-04T06:00:19Z",
+      "updated": "2026-05-04T06:00:19Z",
+      "started_at": "2026-05-04T06:00:19Z"
     }
   ]
 }
