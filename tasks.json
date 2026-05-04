@@ -1114,10 +1114,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-04-29T06:03:30Z",
-      "updated": "2026-04-29T06:04:14Z",
+      "updated": "2026-05-04T06:00:47Z",
       "started_at": "2026-04-29T06:03:30Z",
-      "completed_at": "2026-04-29T06:04:14Z",
-      "proof": "Daily self-eval complete; reviewed memory files, today's LCM activity, and git log; no new mistakes or weakness updates needed."
+      "completed_at": "2026-05-04T06:00:47Z",
+      "proof": "Self-eval completed for 2026-05-04"
     },
     {
       "id": "add-terse-technical-response-style-to-agents-md",
@@ -1221,13 +1221,15 @@
       "id": "daily-self-eval",
       "title": "daily self-eval",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-02T06:04:21Z",
-      "updated": "2026-05-02T06:04:21Z",
-      "started_at": "2026-05-02T06:04:21Z"
+      "updated": "2026-05-04T06:00:47Z",
+      "started_at": "2026-05-02T06:04:21Z",
+      "completed_at": "2026-05-04T06:00:47Z",
+      "proof": "Self-eval completed for 2026-05-04"
     },
     {
       "id": "install-clawddocs-skill",
@@ -1331,13 +1333,15 @@
       "id": "daily-self-eval",
       "title": "daily-self-eval",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-04T06:00:19Z",
-      "updated": "2026-05-04T06:00:19Z",
-      "started_at": "2026-05-04T06:00:19Z"
+      "updated": "2026-05-04T06:00:47Z",
+      "started_at": "2026-05-04T06:00:19Z",
+      "completed_at": "2026-05-04T06:00:47Z",
+      "proof": "Self-eval completed for 2026-05-04"
     }
   ]
 }
