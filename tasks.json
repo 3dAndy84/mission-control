@@ -1347,13 +1347,15 @@
       "id": "fix-morning-briefing-cron-source-of-truth-prompt",
       "title": "Fix morning briefing cron source-of-truth prompt",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-04T11:25:04Z",
-      "updated": "2026-05-04T11:25:04Z",
-      "started_at": "2026-05-04T11:25:04Z"
+      "updated": "2026-05-04T11:25:34Z",
+      "started_at": "2026-05-04T11:25:04Z",
+      "completed_at": "2026-05-04T11:25:34Z",
+      "proof": "Updated morning-briefing cron payload: source-of-truth rules for OpenClaw tasks, explicit TaskNotes statuses only, direct commitments-folder reads only, timestamp-bound log errors, blank calendar event discard, final self-check. Verified cron update returned ok."
     }
   ]
 }
