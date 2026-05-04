@@ -1384,6 +1384,18 @@
       "started_at": "2026-05-04T13:12:28Z",
       "completed_at": "2026-05-04T13:19:20Z",
       "proof": "Hardened scanner into execution-signal candidate generator; tests pass 20/20; code review found no blockers."
+    },
+    {
+      "id": "audit-polymarket-script-for-ghost-fill-defenses",
+      "title": "Audit Polymarket script for ghost fill defenses",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-04T17:23:34Z",
+      "updated": "2026-05-04T17:23:34Z",
+      "started_at": "2026-05-04T17:23:34Z"
     }
   ]
 }
