@@ -1370,6 +1370,18 @@
       "started_at": "2026-05-04T11:46:10Z",
       "completed_at": "2026-05-04T12:01:01Z",
       "proof": "Implemented event basket scanner; tests pass 16/16; final code review found no blockers; committed."
+    },
+    {
+      "id": "harden-polymarket-basket-scanner-into-execution-si",
+      "title": "Harden Polymarket basket scanner into execution-signal candidate generator",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-04T13:12:28Z",
+      "updated": "2026-05-04T13:12:28Z",
+      "started_at": "2026-05-04T13:12:28Z"
     }
   ]
 }
