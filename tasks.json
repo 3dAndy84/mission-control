@@ -1342,6 +1342,18 @@
       "started_at": "2026-05-04T06:00:19Z",
       "completed_at": "2026-05-04T06:00:47Z",
       "proof": "Self-eval completed for 2026-05-04"
+    },
+    {
+      "id": "fix-morning-briefing-cron-source-of-truth-prompt",
+      "title": "Fix morning briefing cron source-of-truth prompt",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-04T11:25:04Z",
+      "updated": "2026-05-04T11:25:04Z",
+      "started_at": "2026-05-04T11:25:04Z"
     }
   ]
 }
