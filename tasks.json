@@ -1356,6 +1356,18 @@
       "started_at": "2026-05-04T11:25:04Z",
       "completed_at": "2026-05-04T11:25:34Z",
       "proof": "Updated morning-briefing cron payload: source-of-truth rules for OpenClaw tasks, explicit TaskNotes statuses only, direct commitments-folder reads only, timestamp-bound log errors, blank calendar event discard, final self-check. Verified cron update returned ok."
+    },
+    {
+      "id": "build-polymarket-event-basket-scanner",
+      "title": "Build Polymarket event basket scanner",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-04T11:46:10Z",
+      "updated": "2026-05-04T11:46:10Z",
+      "started_at": "2026-05-04T11:46:10Z"
     }
   ]
 }
