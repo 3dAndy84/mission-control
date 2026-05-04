@@ -1431,13 +1431,15 @@
       "id": "send-and-archive-final-dffa-constitution",
       "title": "Send and archive final DFFA constitution",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-04T19:03:22Z",
-      "updated": "2026-05-04T19:03:22Z",
-      "started_at": "2026-05-04T19:03:22Z"
+      "updated": "2026-05-04T19:05:21Z",
+      "started_at": "2026-05-04T19:03:22Z",
+      "completed_at": "2026-05-04T19:05:21Z",
+      "proof": "Saved DFFA Constitution Final.docx to Google Drive fileId 1TK4aeKnt-MRVlUu8tZkZKenbxDpjhdf8 and emailed Shacem at slackers100@hotmail.com with final clean DOCX attached."
     }
   ]
 }
