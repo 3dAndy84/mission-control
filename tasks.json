@@ -1361,13 +1361,15 @@
       "id": "build-polymarket-event-basket-scanner",
       "title": "Build Polymarket event basket scanner",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-04T11:46:10Z",
-      "updated": "2026-05-04T11:46:10Z",
-      "started_at": "2026-05-04T11:46:10Z"
+      "updated": "2026-05-04T12:01:01Z",
+      "started_at": "2026-05-04T11:46:10Z",
+      "completed_at": "2026-05-04T12:01:01Z",
+      "proof": "Implemented event basket scanner; tests pass 16/16; final code review found no blockers; committed."
     }
   ]
 }
