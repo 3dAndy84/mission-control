@@ -1426,6 +1426,18 @@
       "started_at": "2026-05-04T18:59:35Z",
       "completed_at": "2026-05-04T18:59:40Z",
       "proof": "Created /home/clawd/workspace/dffa-constitution-final.docx; verified no Version 2/v2 wording, no redline wording, and no Fire Fighters spacing."
+    },
+    {
+      "id": "send-and-archive-final-dffa-constitution",
+      "title": "Send and archive final DFFA constitution",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-04T19:03:22Z",
+      "updated": "2026-05-04T19:03:22Z",
+      "started_at": "2026-05-04T19:03:22Z"
     }
   ]
 }
