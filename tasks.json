@@ -1412,6 +1412,18 @@
       "started_at": "2026-05-04T18:57:00Z",
       "completed_at": "2026-05-04T18:58:31Z",
       "proof": "Created /home/clawd/workspace/dffa-constitution-final-v2.docx; verified no color/strikethrough redline formatting, no comments/legend labels, and zero 'Fire Fighters'/'fire fighters' occurrences."
+    },
+    {
+      "id": "remove-version-2-wording-from-final-dffa-constitut",
+      "title": "Remove version 2 wording from final DFFA constitution",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-04T18:59:35Z",
+      "updated": "2026-05-04T18:59:35Z",
+      "started_at": "2026-05-04T18:59:35Z"
     }
   ]
 }
