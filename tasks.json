@@ -1653,13 +1653,15 @@
       "id": "fix-polymarket-autonomous-bot-py-review-issues-reg",
       "title": "Fix polymarket_autonomous_bot.py review issues + regression tests",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T21:00:15Z",
-      "updated": "2026-05-05T21:00:15Z",
-      "started_at": "2026-05-05T21:00:15Z"
+      "updated": "2026-05-05T21:01:39Z",
+      "started_at": "2026-05-05T21:00:15Z",
+      "completed_at": "2026-05-05T21:01:39Z",
+      "proof": "Patched autonomous bot to preserve edge metadata, stop rescoring, separate paper/decision ledgers, keep one timestamp, and make --no-write output honest; added regression tests; validated with python3 -m unittest -q test_polymarket_autonomous_bot.py in trading-command-center and PYTHONPATH=trading-command-center python3 -m unittest -q trading-command-center.test_polymarket_autonomous_bot from workspace root."
     }
   ]
 }
