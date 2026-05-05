@@ -1494,6 +1494,18 @@
       "created": "2026-05-05T00:52:16Z",
       "updated": "2026-05-05T00:52:16Z",
       "started_at": "2026-05-05T00:52:16Z"
+    },
+    {
+      "id": "polymarket-oracle-source-mapping",
+      "title": "Polymarket oracle/source mapping",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T00:52:38Z",
+      "updated": "2026-05-05T00:52:38Z",
+      "started_at": "2026-05-05T00:52:38Z"
     }
   ]
 }
