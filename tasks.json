@@ -1468,6 +1468,18 @@
       "started_at": "2026-05-05T00:38:03Z",
       "completed_at": "2026-05-05T00:41:16Z",
       "proof": "Implemented paper ledger/report; python3 -m unittest -v passed 48/49? final 49 tests; commit d530cc4"
+    },
+    {
+      "id": "run-read-only-polymarket-paper-scanner-scheduled-c",
+      "title": "Run read-only Polymarket paper scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T00:42:05Z",
+      "updated": "2026-05-05T00:42:05Z",
+      "started_at": "2026-05-05T00:42:05Z"
     }
   ]
 }
