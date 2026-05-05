@@ -1779,13 +1779,15 @@
       "id": "fix-case-screening-authz-and-upload-blockers",
       "title": "Fix case screening authz and upload blockers",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T23:23:10Z",
-      "updated": "2026-05-05T23:23:10Z",
-      "started_at": "2026-05-05T23:23:10Z"
+      "updated": "2026-05-05T23:26:06Z",
+      "started_at": "2026-05-05T23:23:10Z",
+      "completed_at": "2026-05-05T23:26:06Z",
+      "proof": "Committed 4598a25. Gates: npm test (9 pass), node --check src/server.js src/server.test.js, docker compose config with temp .env."
     }
   ]
 }
