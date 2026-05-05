@@ -1648,6 +1648,18 @@
       "created": "2026-05-05T20:53:27Z",
       "updated": "2026-05-05T20:53:27Z",
       "started_at": "2026-05-05T20:53:27Z"
+    },
+    {
+      "id": "fix-polymarket-autonomous-bot-py-review-issues-reg",
+      "title": "Fix polymarket_autonomous_bot.py review issues + regression tests",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T21:00:15Z",
+      "updated": "2026-05-05T21:00:15Z",
+      "started_at": "2026-05-05T21:00:15Z"
     }
   ]
 }
