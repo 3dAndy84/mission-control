@@ -1683,13 +1683,15 @@
       "id": "plan-case-screening-app-build",
       "title": "Plan case screening app build",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T21:58:37Z",
-      "updated": "2026-05-05T21:58:37Z",
-      "started_at": "2026-05-05T21:58:37Z"
+      "updated": "2026-05-05T22:00:20Z",
+      "started_at": "2026-05-05T21:58:37Z",
+      "completed_at": "2026-05-05T22:00:20Z",
+      "proof": "Build plan created at inbox/case-screening/BUILD_PLAN.md and reviewed"
     }
   ]
 }
