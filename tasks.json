@@ -1452,6 +1452,18 @@
       "created": "2026-05-05T00:37:35Z",
       "updated": "2026-05-05T00:37:35Z",
       "started_at": "2026-05-05T00:37:35Z"
+    },
+    {
+      "id": "polymarket-weekly-paper-trading-accuracy-upgrade",
+      "title": "Polymarket weekly paper-trading accuracy upgrade",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T00:38:03Z",
+      "updated": "2026-05-05T00:38:03Z",
+      "started_at": "2026-05-05T00:38:03Z"
     }
   ]
 }
