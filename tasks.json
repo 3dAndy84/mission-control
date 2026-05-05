@@ -1510,6 +1510,18 @@
       "started_at": "2026-05-05T00:52:38Z",
       "completed_at": "2026-05-05T00:54:38Z",
       "proof": "Implemented source_map fields in scanner/paper ledger/report; python3 -m unittest -v passed (54 tests); committed 279139b"
+    },
+    {
+      "id": "build-automated-polymarket-edge-testing-system",
+      "title": "Build automated Polymarket edge testing system",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T01:03:03Z",
+      "updated": "2026-05-05T01:03:03Z",
+      "started_at": "2026-05-05T01:03:03Z"
     }
   ]
 }
