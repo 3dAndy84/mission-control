@@ -1515,13 +1515,15 @@
       "id": "build-automated-polymarket-edge-testing-system",
       "title": "Build automated Polymarket edge testing system",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T01:03:03Z",
-      "updated": "2026-05-05T01:03:03Z",
-      "started_at": "2026-05-05T01:03:03Z"
+      "updated": "2026-05-05T01:07:02Z",
+      "started_at": "2026-05-05T01:03:03Z",
+      "completed_at": "2026-05-05T01:07:02Z",
+      "proof": "Built automated read-only Polymarket edge test system; research completed; tests pass 64 OK; verified live public run generated 0 candidates at current thresholds; commits f5fce82 and run-state commit"
     }
   ]
 }
