@@ -1748,6 +1748,18 @@
       "started_at": "2026-05-05T22:50:56Z",
       "completed_at": "2026-05-05T22:50:58Z",
       "proof": "Plan updated: no Access record import; app goes live with clean DB for new case entry"
+    },
+    {
+      "id": "build-case-screening-app-on-our-vps",
+      "title": "Build case screening app on our VPS",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T23:05:18Z",
+      "updated": "2026-05-05T23:05:18Z",
+      "started_at": "2026-05-05T23:05:18Z"
     }
   ]
 }
