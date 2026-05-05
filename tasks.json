@@ -1445,13 +1445,15 @@
       "id": "polymarket-weekly-paper-trading-accuracy-tests",
       "title": "Polymarket weekly paper-trading accuracy tests",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T00:37:35Z",
-      "updated": "2026-05-05T00:37:35Z",
-      "started_at": "2026-05-05T00:37:35Z"
+      "updated": "2026-05-05T00:41:59Z",
+      "started_at": "2026-05-05T00:37:35Z",
+      "completed_at": "2026-05-05T00:41:59Z",
+      "proof": "Implemented paper ledger/report; tests pass: python3 -m unittest -v ran 49 tests OK; cron set every 2h AST and manual run enqueued"
     },
     {
       "id": "polymarket-weekly-paper-trading-accuracy-upgrade",
