@@ -1753,13 +1753,15 @@
       "id": "build-case-screening-app-on-our-vps",
       "title": "Build case screening app on our VPS",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T23:05:18Z",
-      "updated": "2026-05-05T23:05:18Z",
-      "started_at": "2026-05-05T23:05:18Z"
+      "updated": "2026-05-05T23:29:21Z",
+      "started_at": "2026-05-05T23:05:18Z",
+      "completed_at": "2026-05-05T23:29:21Z",
+      "proof": "V1 built, security blockers fixed, final review passed for fake-data VPS pilot, deployed locally at 127.0.0.1:8088 with auth smoke test passing"
     },
     {
       "id": "build-case-screening-app-v1",
