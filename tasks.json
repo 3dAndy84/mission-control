@@ -1114,10 +1114,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-04-29T06:03:30Z",
-      "updated": "2026-05-04T06:00:47Z",
+      "updated": "2026-05-05T06:00:56Z",
       "started_at": "2026-04-29T06:03:30Z",
-      "completed_at": "2026-05-04T06:00:47Z",
-      "proof": "Self-eval completed for 2026-05-04"
+      "completed_at": "2026-05-05T06:00:56Z",
+      "proof": "Updated mistakes.md with new entry for 2026-05-05."
     },
     {
       "id": "add-terse-technical-response-style-to-agents-md",
@@ -1226,10 +1226,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-02T06:04:21Z",
-      "updated": "2026-05-04T06:00:47Z",
+      "updated": "2026-05-05T06:00:56Z",
       "started_at": "2026-05-02T06:04:21Z",
-      "completed_at": "2026-05-04T06:00:47Z",
-      "proof": "Self-eval completed for 2026-05-04"
+      "completed_at": "2026-05-05T06:00:56Z",
+      "proof": "Updated mistakes.md with new entry for 2026-05-05."
     },
     {
       "id": "install-clawddocs-skill",
@@ -1338,10 +1338,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-04T06:00:19Z",
-      "updated": "2026-05-04T06:00:47Z",
+      "updated": "2026-05-05T06:00:56Z",
       "started_at": "2026-05-04T06:00:19Z",
-      "completed_at": "2026-05-04T06:00:47Z",
-      "proof": "Self-eval completed for 2026-05-04"
+      "completed_at": "2026-05-05T06:00:56Z",
+      "proof": "Updated mistakes.md with new entry for 2026-05-05."
     },
     {
       "id": "fix-morning-briefing-cron-source-of-truth-prompt",
@@ -1543,13 +1543,15 @@
       "id": "daily-self-eval",
       "title": "daily-self-eval",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T06:00:24Z",
-      "updated": "2026-05-05T06:00:24Z",
-      "started_at": "2026-05-05T06:00:24Z"
+      "updated": "2026-05-05T06:00:56Z",
+      "started_at": "2026-05-05T06:00:24Z",
+      "completed_at": "2026-05-05T06:00:56Z",
+      "proof": "Updated mistakes.md with new entry for 2026-05-05."
     }
   ]
 }
