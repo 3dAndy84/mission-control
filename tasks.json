@@ -1557,13 +1557,15 @@
       "id": "run-read-only-polymarket-paper-trading-execution-s",
       "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T06:01:29Z",
-      "updated": "2026-05-05T06:01:29Z",
-      "started_at": "2026-05-05T06:01:29Z"
+      "updated": "2026-05-05T06:01:54Z",
+      "started_at": "2026-05-05T06:01:29Z",
+      "completed_at": "2026-05-05T06:01:54Z",
+      "proof": "Scanner completed read-only at 2026-05-05 06:01 UTC: 0 binary alerts; 1 medium-quality event basket alert (BTC 50k nested threshold), repeat_count=3, no paper PnL logged."
     }
   ]
 }
