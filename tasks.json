@@ -1739,13 +1739,15 @@
       "id": "update-case-screening-plan-for-new-data-only",
       "title": "Update case screening plan for new-data-only",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T22:50:56Z",
-      "updated": "2026-05-05T22:50:56Z",
-      "started_at": "2026-05-05T22:50:56Z"
+      "updated": "2026-05-05T22:50:58Z",
+      "started_at": "2026-05-05T22:50:56Z",
+      "completed_at": "2026-05-05T22:50:58Z",
+      "proof": "Plan updated: no Access record import; app goes live with clean DB for new case entry"
     }
   ]
 }
