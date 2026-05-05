@@ -1765,13 +1765,15 @@
       "id": "build-case-screening-app-v1",
       "title": "Build Case Screening App V1",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T23:08:25Z",
-      "updated": "2026-05-05T23:08:25Z",
-      "started_at": "2026-05-05T23:08:25Z"
+      "updated": "2026-05-05T23:15:08Z",
+      "started_at": "2026-05-05T23:08:25Z",
+      "completed_at": "2026-05-05T23:15:08Z",
+      "proof": "Built and committed Case Screening App V1 at case-screening-app. Proof: npm test passed; docker compose migrate/seed passed; authenticated dashboard smoke test via nginx passed; commit 943fb4f."
     }
   ]
 }
