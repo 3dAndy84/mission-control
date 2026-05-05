@@ -1692,6 +1692,18 @@
       "started_at": "2026-05-05T21:58:37Z",
       "completed_at": "2026-05-05T22:00:20Z",
       "proof": "Build plan created at inbox/case-screening/BUILD_PLAN.md and reviewed"
+    },
+    {
+      "id": "run-read-only-polymarket-paper-trading-execution-s",
+      "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T22:01:30Z",
+      "updated": "2026-05-05T22:01:30Z",
+      "started_at": "2026-05-05T22:01:30Z"
     }
   ]
 }
