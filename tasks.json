@@ -1706,6 +1706,18 @@
       "started_at": "2026-05-05T22:01:30Z",
       "completed_at": "2026-05-05T22:01:35Z",
       "proof": "Scanner ran read-only at 2026-05-05 22:01 UTC. Output: 1 medium event-basket alert; no binary YES/NO alerts; no wallet/signing/trading."
+    },
+    {
+      "id": "update-case-screening-build-plan-with-prior-deploy",
+      "title": "Update case screening build plan with prior deployment decision",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T22:42:24Z",
+      "updated": "2026-05-05T22:42:24Z",
+      "started_at": "2026-05-05T22:42:24Z"
     }
   ]
 }
