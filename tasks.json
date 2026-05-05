@@ -1734,6 +1734,18 @@
       "started_at": "2026-05-05T22:47:31Z",
       "completed_at": "2026-05-05T22:47:33Z",
       "proof": "Updated plan: emailed zip is complete available source; V1 proceeds with fake/anonymized data without waiting for extra export"
+    },
+    {
+      "id": "update-case-screening-plan-for-new-data-only",
+      "title": "Update case screening plan for new-data-only",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T22:50:56Z",
+      "updated": "2026-05-05T22:50:56Z",
+      "started_at": "2026-05-05T22:50:56Z"
     }
   ]
 }
