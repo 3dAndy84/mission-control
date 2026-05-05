@@ -1580,6 +1580,18 @@
       "started_at": "2026-05-05T12:01:30Z",
       "completed_at": "2026-05-05T12:01:48Z",
       "proof": "scanner exit 0; 1 medium event basket candidate: When will Bitcoin hit 50k; repeat_count 6; no PnL due watch-only"
+    },
+    {
+      "id": "run-read-only-polymarket-paper-trading-execution-s",
+      "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T14:01:01Z",
+      "updated": "2026-05-05T14:01:01Z",
+      "started_at": "2026-05-05T14:01:01Z"
     }
   ]
 }
