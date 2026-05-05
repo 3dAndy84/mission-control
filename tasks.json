@@ -1622,6 +1622,18 @@
       "started_at": "2026-05-05T15:27:42Z",
       "completed_at": "2026-05-05T15:53:12Z",
       "proof": "Added offline execution validator layer: kill switch, explicit paper collateral/free-cash model, 20% cash reserve gate, 20% category/theme exposure gate, reducing-sell/open-order staging fixes, and regression tests. Validation: python3 -m unittest test_polymarket_execution.py (43 tests OK), python3 -m unittest discover -q (91 tests OK), git diff --check clean. Live trading remains blocked by design. Note: git TDD hook falsely flagged helper tests despite explicit test_* methods, so commit used --no-verify after tests passed."
+    },
+    {
+      "id": "polymarket-paper-scan-2026-05-05-18-00-utc",
+      "title": "Polymarket paper scan 2026-05-05 18:00 UTC",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T18:01:10Z",
+      "updated": "2026-05-05T18:01:10Z",
+      "started_at": "2026-05-05T18:01:10Z"
     }
   ]
 }
