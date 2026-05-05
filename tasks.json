@@ -1440,6 +1440,18 @@
       "started_at": "2026-05-04T19:03:22Z",
       "completed_at": "2026-05-04T19:05:21Z",
       "proof": "Saved DFFA Constitution Final.docx to Google Drive fileId 1TK4aeKnt-MRVlUu8tZkZKenbxDpjhdf8 and emailed Shacem at slackers100@hotmail.com with final clean DOCX attached."
+    },
+    {
+      "id": "polymarket-weekly-paper-trading-accuracy-tests",
+      "title": "Polymarket weekly paper-trading accuracy tests",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T00:37:35Z",
+      "updated": "2026-05-05T00:37:35Z",
+      "started_at": "2026-05-05T00:37:35Z"
     }
   ]
 }
