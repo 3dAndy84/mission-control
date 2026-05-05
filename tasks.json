@@ -1774,6 +1774,18 @@
       "started_at": "2026-05-05T23:08:25Z",
       "completed_at": "2026-05-05T23:15:08Z",
       "proof": "Built and committed Case Screening App V1 at case-screening-app. Proof: npm test passed; docker compose migrate/seed passed; authenticated dashboard smoke test via nginx passed; commit 943fb4f."
+    },
+    {
+      "id": "fix-case-screening-authz-and-upload-blockers",
+      "title": "Fix case screening authz and upload blockers",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T23:23:10Z",
+      "updated": "2026-05-05T23:23:10Z",
+      "started_at": "2026-05-05T23:23:10Z"
     }
   ]
 }
