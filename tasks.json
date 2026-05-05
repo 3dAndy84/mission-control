@@ -1608,6 +1608,18 @@
       "started_at": "2026-05-05T15:16:01Z",
       "completed_at": "2026-05-05T15:21:38Z",
       "proof": "Folded risk defaults into README, risk policy, scanner reports, trade-ticket gate; added explicit scanner tests; validation: python3 -m unittest test_polymarket_scanner.py test_polymarket_execution.py test_polymarket_edge_system.py (65 tests OK)."
+    },
+    {
+      "id": "make-polymarket-system-execution-ready-with-valida",
+      "title": "Make Polymarket system execution-ready with validator and kill-switch plan",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T15:27:42Z",
+      "updated": "2026-05-05T15:27:42Z",
+      "started_at": "2026-05-05T15:27:42Z"
     }
   ]
 }
