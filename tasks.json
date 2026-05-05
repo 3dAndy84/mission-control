@@ -1636,6 +1636,18 @@
       "started_at": "2026-05-05T18:01:10Z",
       "completed_at": "2026-05-05T18:01:30Z",
       "proof": "Ran read-only polymarket_scanner.py at 2026-05-05 18:01 UTC; stdout showed 0 binary alerts and 1 medium event basket alert (Bitcoin 50k nested threshold); ledger repeat_count=3, no paper PnL."
+    },
+    {
+      "id": "polymarket-autonomous-opportunity-bot",
+      "title": "Polymarket autonomous opportunity bot",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T20:53:27Z",
+      "updated": "2026-05-05T20:53:27Z",
+      "started_at": "2026-05-05T20:53:27Z"
     }
   ]
 }
