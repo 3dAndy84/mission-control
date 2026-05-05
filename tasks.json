@@ -1594,6 +1594,18 @@
       "started_at": "2026-05-05T14:01:01Z",
       "completed_at": "2026-05-05T14:01:16Z",
       "proof": "Scanner completed read-only at 2026-05-05 14:01 UTC. Output: 1 medium event-basket alert, no binary YES/NO alerts; no trades/signing/wallet used."
+    },
+    {
+      "id": "fold-centpro-risk-framework-into-polymarket-scanne",
+      "title": "Fold centpro risk framework into Polymarket scanner/operator rules",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T15:16:01Z",
+      "updated": "2026-05-05T15:16:01Z",
+      "started_at": "2026-05-05T15:16:01Z"
     }
   ]
 }
