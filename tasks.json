@@ -1711,13 +1711,15 @@
       "id": "update-case-screening-build-plan-with-prior-deploy",
       "title": "Update case screening build plan with prior deployment decision",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T22:42:24Z",
-      "updated": "2026-05-05T22:42:24Z",
-      "started_at": "2026-05-05T22:42:24Z"
+      "updated": "2026-05-05T22:42:51Z",
+      "started_at": "2026-05-05T22:42:24Z",
+      "completed_at": "2026-05-05T22:42:51Z",
+      "proof": "Updated BUILD_PLAN.md with Andy's confirmed deployment/security order and saved decision memory"
     }
   ]
 }
