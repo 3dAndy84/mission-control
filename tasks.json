@@ -1529,13 +1529,15 @@
       "id": "polymarket-paper-scan-2026-05-05-04-00-utc",
       "title": "Polymarket paper scan 2026-05-05 04:00 UTC",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T04:01:19Z",
-      "updated": "2026-05-05T04:01:19Z",
-      "started_at": "2026-05-05T04:01:19Z"
+      "updated": "2026-05-05T04:02:03Z",
+      "started_at": "2026-05-05T04:01:19Z",
+      "completed_at": "2026-05-05T04:02:03Z",
+      "proof": "scanner completed read-only; 1 medium-quality event basket signal; no binary YES/NO alerts; no trades/signing/wallet access"
     }
   ]
 }
