@@ -1725,13 +1725,15 @@
       "id": "update-case-screening-plan-source-assumption",
       "title": "Update case screening plan source assumption",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T22:47:31Z",
-      "updated": "2026-05-05T22:47:31Z",
-      "started_at": "2026-05-05T22:47:31Z"
+      "updated": "2026-05-05T22:47:33Z",
+      "started_at": "2026-05-05T22:47:31Z",
+      "completed_at": "2026-05-05T22:47:33Z",
+      "proof": "Updated plan: emailed zip is complete available source; V1 proceeds with fake/anonymized data without waiting for extra export"
     }
   ]
 }
