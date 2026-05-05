@@ -1562,10 +1562,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T06:01:29Z",
-      "updated": "2026-05-05T06:01:54Z",
+      "updated": "2026-05-05T14:01:16Z",
       "started_at": "2026-05-05T06:01:29Z",
-      "completed_at": "2026-05-05T06:01:54Z",
-      "proof": "Scanner completed read-only at 2026-05-05 06:01 UTC: 0 binary alerts; 1 medium-quality event basket alert (BTC 50k nested threshold), repeat_count=3, no paper PnL logged."
+      "completed_at": "2026-05-05T14:01:16Z",
+      "proof": "Scanner completed read-only at 2026-05-05 14:01 UTC. Output: 1 medium event-basket alert, no binary YES/NO alerts; no trades/signing/wallet used."
     },
     {
       "id": "polymarket-paper-scan-2026-05-05-12-00-utc",
@@ -1585,13 +1585,15 @@
       "id": "run-read-only-polymarket-paper-trading-execution-s",
       "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T14:01:01Z",
-      "updated": "2026-05-05T14:01:01Z",
-      "started_at": "2026-05-05T14:01:01Z"
+      "updated": "2026-05-05T14:01:16Z",
+      "started_at": "2026-05-05T14:01:01Z",
+      "completed_at": "2026-05-05T14:01:16Z",
+      "proof": "Scanner completed read-only at 2026-05-05 14:01 UTC. Output: 1 medium event-basket alert, no binary YES/NO alerts; no trades/signing/wallet used."
     }
   ]
 }
