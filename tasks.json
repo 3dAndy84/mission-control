@@ -1487,13 +1487,15 @@
       "id": "add-polymarket-oracle-source-map",
       "title": "Add Polymarket oracle source map",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T00:52:16Z",
-      "updated": "2026-05-05T00:52:16Z",
-      "started_at": "2026-05-05T00:52:16Z"
+      "updated": "2026-05-05T00:55:04Z",
+      "started_at": "2026-05-05T00:52:16Z",
+      "completed_at": "2026-05-05T00:55:04Z",
+      "proof": "Implemented source map fields; reviewed diff; python3 -m unittest -v ran 54 tests OK; commit 279139b"
     },
     {
       "id": "polymarket-oracle-source-mapping",
