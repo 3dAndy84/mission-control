@@ -1482,6 +1482,18 @@
       "started_at": "2026-05-05T00:42:05Z",
       "completed_at": "2026-05-05T00:42:20Z",
       "proof": "Scanner completed read-only at 2026-05-05 00:42 UTC; 2 medium event basket alerts, no binary YES/NO alerts, ledger reviewed."
+    },
+    {
+      "id": "add-polymarket-oracle-source-map",
+      "title": "Add Polymarket oracle source map",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-05T00:52:16Z",
+      "updated": "2026-05-05T00:52:16Z",
+      "started_at": "2026-05-05T00:52:16Z"
     }
   ]
 }
