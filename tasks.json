@@ -1938,6 +1938,18 @@
       "started_at": "2026-05-06T15:07:08Z",
       "completed_at": "2026-05-06T15:09:03Z",
       "proof": "Retrieved AgentMail Case Screening zip; extracted presentation and screening formulier strafbare feiten; saved canonical .ppt/.doc/.txt files and requirements summary at case-screening-app/reference/case-screening-requirements-summary.md"
+    },
+    {
+      "id": "run-read-only-polymarket-paper-trading-execution-s",
+      "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T16:01:06Z",
+      "updated": "2026-05-06T16:01:06Z",
+      "started_at": "2026-05-06T16:01:06Z"
     }
   ]
 }
