@@ -1478,10 +1478,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T00:42:05Z",
-      "updated": "2026-05-05T00:42:20Z",
+      "updated": "2026-05-06T20:01:25Z",
       "started_at": "2026-05-05T00:42:05Z",
-      "completed_at": "2026-05-05T00:42:20Z",
-      "proof": "Scanner completed read-only at 2026-05-05 00:42 UTC; 2 medium event basket alerts, no binary YES/NO alerts, ledger reviewed."
+      "completed_at": "2026-05-06T20:01:25Z",
+      "proof": "Scanner ran read-only at 2026-05-06 20:01 UTC; 0 binary alerts, 1 medium event basket alert; ledger repeat_count=13, no paper PnL."
     },
     {
       "id": "add-polymarket-oracle-source-map",
@@ -2071,13 +2071,15 @@
       "id": "run-read-only-polymarket-paper-scanner-scheduled-c",
       "title": "Run read-only Polymarket paper scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T20:01:01Z",
-      "updated": "2026-05-06T20:01:01Z",
-      "started_at": "2026-05-06T20:01:01Z"
+      "updated": "2026-05-06T20:01:25Z",
+      "started_at": "2026-05-06T20:01:01Z",
+      "completed_at": "2026-05-06T20:01:25Z",
+      "proof": "Scanner ran read-only at 2026-05-06 20:01 UTC; 0 binary alerts, 1 medium event basket alert; ledger repeat_count=13, no paper PnL."
     }
   ]
 }
