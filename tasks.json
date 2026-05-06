@@ -1807,12 +1807,12 @@
       "id": "fix-polymarket-fox-execution-signal-candidate",
       "title": "Fix Polymarket FOX execution signal candidate",
       "description": "",
-      "status": "in-progress",
+      "status": "blocked",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T00:16:58Z",
-      "updated": "2026-05-06T00:16:58Z",
+      "updated": "2026-05-06T00:18:23Z",
       "started_at": "2026-05-06T00:16:58Z"
     }
   ]
