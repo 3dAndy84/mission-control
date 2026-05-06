@@ -1861,13 +1861,15 @@
       "id": "polymarket-paper-scan-2026-05-06-10-00-utc",
       "title": "Polymarket paper scan 2026-05-06 10:00 UTC",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T10:01:29Z",
-      "updated": "2026-05-06T10:01:29Z",
-      "started_at": "2026-05-06T10:01:29Z"
+      "updated": "2026-05-06T10:01:47Z",
+      "started_at": "2026-05-06T10:01:29Z",
+      "completed_at": "2026-05-06T10:01:47Z",
+      "proof": "scanner completed read-only; 1 medium event basket alert: When will Bitcoin hit 50k; no binary YES/NO alerts; ledger repeat_count 8; no paper PnL"
     }
   ]
 }
