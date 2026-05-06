@@ -1819,13 +1819,15 @@
       "id": "polymarket-paper-scan-scheduled-check-2026-05-06-0",
       "title": "Polymarket paper scan scheduled check 2026-05-06 04:00 UTC",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T04:01:11Z",
-      "updated": "2026-05-06T04:01:11Z",
-      "started_at": "2026-05-06T04:01:11Z"
+      "updated": "2026-05-06T04:01:29Z",
+      "started_at": "2026-05-06T04:01:11Z",
+      "completed_at": "2026-05-06T04:01:29Z",
+      "proof": "Read-only scan completed. Found 1 medium-quality event basket candidate: When will Bitcoin hit 50k? Repeat count 5, no paper P&L available/watch-only."
     }
   ]
 }
