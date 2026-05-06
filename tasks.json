@@ -1884,6 +1884,18 @@
       "started_at": "2026-05-06T12:01:10Z",
       "completed_at": "2026-05-06T12:01:22Z",
       "proof": "Scanner completed at 2026-05-06 12:01 UTC: 0 binary YES/NO alerts; 1 medium event basket candidate (When will Bitcoin hit 50k?) repeat_count 9; read-only/no trade."
+    },
+    {
+      "id": "build-secure-case-screening-app-v1",
+      "title": "Build secure Case Screening app v1",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T12:07:37Z",
+      "updated": "2026-05-06T12:07:37Z",
+      "started_at": "2026-05-06T12:07:37Z"
     }
   ]
 }
