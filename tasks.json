@@ -2134,6 +2134,18 @@
       "started_at": "2026-05-06T22:14:05Z",
       "completed_at": "2026-05-06T22:16:19Z",
       "proof": "Patched case-screening-app: admin-only Beheer nav/routes; CRUD/edit forms for bureaus/offences/indicators and user role/active edit; README KPSM mail plan. Validation: npm test pass (22); migrate ok; docker compose up -d --build app reverse-proxy ok; curl http://localhost:8088/login 200. curl http://localhost/login failed because proxy binds 127.0.0.1:8088."
+    },
+    {
+      "id": "case-screening-personnel-user-creation-password-fl",
+      "title": "Case Screening personnel user creation password flow",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T22:20:00Z",
+      "updated": "2026-05-06T22:20:00Z",
+      "started_at": "2026-05-06T22:20:00Z"
     }
   ]
 }
