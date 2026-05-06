@@ -1889,25 +1889,29 @@
       "id": "build-secure-case-screening-app-v1",
       "title": "Build secure Case Screening app v1",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T12:07:37Z",
-      "updated": "2026-05-06T12:07:37Z",
-      "started_at": "2026-05-06T12:07:37Z"
+      "updated": "2026-05-06T12:11:49Z",
+      "started_at": "2026-05-06T12:07:37Z",
+      "completed_at": "2026-05-06T12:11:49Z",
+      "proof": "Built/validated secure Case Screening V1 in case-screening-app; npm test passed (9/9); docker compose config ok; no commit."
     },
     {
       "id": "build-secure-case-screening-app-v1",
       "title": "Build secure Case Screening app V1",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T12:10:25Z",
-      "updated": "2026-05-06T12:10:25Z",
-      "started_at": "2026-05-06T12:10:25Z"
+      "updated": "2026-05-06T12:11:49Z",
+      "started_at": "2026-05-06T12:10:25Z",
+      "completed_at": "2026-05-06T12:11:49Z",
+      "proof": "Built/validated secure Case Screening V1 in case-screening-app; npm test passed (9/9); docker compose config ok; no commit."
     }
   ]
 }
