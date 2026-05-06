@@ -1964,6 +1964,18 @@
       "created": "2026-05-06T16:54:37Z",
       "updated": "2026-05-06T16:54:37Z",
       "started_at": "2026-05-06T16:54:37Z"
+    },
+    {
+      "id": "run-case-screening-app-through-review-skills",
+      "title": "Run Case Screening app through review skills",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T17:18:55Z",
+      "updated": "2026-05-06T17:18:55Z",
+      "started_at": "2026-05-06T17:18:55Z"
     }
   ]
 }
