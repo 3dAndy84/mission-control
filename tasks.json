@@ -2016,6 +2016,18 @@
       "started_at": "2026-05-06T18:01:46Z",
       "completed_at": "2026-05-06T18:01:51Z",
       "proof": "Ran read-only scanner: 0 binary alerts; 1 medium event basket alert (Bitcoin 50k nested threshold), repeat_count 12 in paper ledger; no trade/wallet/signing."
+    },
+    {
+      "id": "redesign-case-screening-ui-ux",
+      "title": "Redesign Case Screening UI UX",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T19:15:38Z",
+      "updated": "2026-05-06T19:15:38Z",
+      "started_at": "2026-05-06T19:15:38Z"
     }
   ]
 }
