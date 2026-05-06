@@ -2007,13 +2007,15 @@
       "id": "polymarket-paper-scan-2026-05-06-18-00-utc",
       "title": "Polymarket paper scan 2026-05-06 18:00 UTC",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T18:01:46Z",
-      "updated": "2026-05-06T18:01:46Z",
-      "started_at": "2026-05-06T18:01:46Z"
+      "updated": "2026-05-06T18:01:51Z",
+      "started_at": "2026-05-06T18:01:46Z",
+      "completed_at": "2026-05-06T18:01:51Z",
+      "proof": "Ran read-only scanner: 0 binary alerts; 1 medium event basket alert (Bitcoin 50k nested threshold), repeat_count 12 in paper ledger; no trade/wallet/signing."
     }
   ]
 }
