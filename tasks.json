@@ -2125,13 +2125,15 @@
       "id": "case-screening-admin-beheer-editing-and-kpsm-mail-",
       "title": "case-screening admin Beheer editing and KPSM mail plan",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T22:14:05Z",
-      "updated": "2026-05-06T22:14:05Z",
-      "started_at": "2026-05-06T22:14:05Z"
+      "updated": "2026-05-06T22:16:19Z",
+      "started_at": "2026-05-06T22:14:05Z",
+      "completed_at": "2026-05-06T22:16:19Z",
+      "proof": "Patched case-screening-app: admin-only Beheer nav/routes; CRUD/edit forms for bureaus/offences/indicators and user role/active edit; README KPSM mail plan. Validation: npm test pass (22); migrate ok; docker compose up -d --build app reverse-proxy ok; curl http://localhost:8088/login 200. curl http://localhost/login failed because proxy binds 127.0.0.1:8088."
     }
   ]
 }
