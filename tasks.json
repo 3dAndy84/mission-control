@@ -2002,6 +2002,18 @@
       "created": "2026-05-06T17:28:37Z",
       "updated": "2026-05-06T17:28:37Z",
       "started_at": "2026-05-06T17:28:37Z"
+    },
+    {
+      "id": "polymarket-paper-scan-2026-05-06-18-00-utc",
+      "title": "Polymarket paper scan 2026-05-06 18:00 UTC",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T18:01:46Z",
+      "updated": "2026-05-06T18:01:46Z",
+      "started_at": "2026-05-06T18:01:46Z"
     }
   ]
 }
