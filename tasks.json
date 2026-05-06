@@ -2177,13 +2177,15 @@
       "id": "build-polymarket-edge-scanner-v1",
       "title": "Build Polymarket edge scanner v1",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T22:29:28Z",
-      "updated": "2026-05-06T22:29:28Z",
-      "started_at": "2026-05-06T22:29:28Z"
+      "updated": "2026-05-06T22:48:35Z",
+      "started_at": "2026-05-06T22:29:28Z",
+      "completed_at": "2026-05-06T22:48:35Z",
+      "proof": "Installed quiet read-only Polymarket edge scanner plus EOD report cron; fixed taxonomy review issues; tests pass (56 unittest + script contract py_compile); live smoke wrote latest report/state; no wallet/trading permissions."
     }
   ]
 }
