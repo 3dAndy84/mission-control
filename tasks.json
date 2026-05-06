@@ -1929,13 +1929,15 @@
       "id": "retrieve-case-screening-presentation-from-agentmai",
       "title": "Retrieve Case Screening presentation from AgentMail and extract requirements",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T15:07:08Z",
-      "updated": "2026-05-06T15:07:08Z",
-      "started_at": "2026-05-06T15:07:08Z"
+      "updated": "2026-05-06T15:09:03Z",
+      "started_at": "2026-05-06T15:07:08Z",
+      "completed_at": "2026-05-06T15:09:03Z",
+      "proof": "Retrieved AgentMail Case Screening zip; extracted presentation and screening formulier strafbare feiten; saved canonical .ppt/.doc/.txt files and requirements summary at case-screening-app/reference/case-screening-requirements-summary.md"
     }
   ]
 }
