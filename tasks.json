@@ -2106,6 +2106,18 @@
       "created": "2026-05-06T22:11:43Z",
       "updated": "2026-05-06T22:11:43Z",
       "started_at": "2026-05-06T22:11:43Z"
+    },
+    {
+      "id": "case-screening-admin-beheer-editing-and-mail-plann",
+      "title": "Case Screening admin beheer editing and mail planning",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T22:13:32Z",
+      "updated": "2026-05-06T22:13:32Z",
+      "started_at": "2026-05-06T22:13:32Z"
     }
   ]
 }
