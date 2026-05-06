@@ -1838,10 +1838,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T06:01:19Z",
-      "updated": "2026-05-06T06:01:35Z",
+      "updated": "2026-05-06T12:01:22Z",
       "started_at": "2026-05-06T06:01:19Z",
-      "completed_at": "2026-05-06T06:01:35Z",
-      "proof": "Scanner completed read-only at 2026-05-06 06:01 UTC; 1 medium event basket alert, no binary YES/NO alerts, no trade/wallet/signing."
+      "completed_at": "2026-05-06T12:01:22Z",
+      "proof": "Scanner completed at 2026-05-06 12:01 UTC: 0 binary YES/NO alerts; 1 medium event basket candidate (When will Bitcoin hit 50k?) repeat_count 9; read-only/no trade."
     },
     {
       "id": "polymarket-paper-scanner-scheduled-check",
@@ -1875,13 +1875,15 @@
       "id": "run-read-only-polymarket-scanner-scheduled-check",
       "title": "Run read-only Polymarket scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T12:01:10Z",
-      "updated": "2026-05-06T12:01:10Z",
-      "started_at": "2026-05-06T12:01:10Z"
+      "updated": "2026-05-06T12:01:22Z",
+      "started_at": "2026-05-06T12:01:10Z",
+      "completed_at": "2026-05-06T12:01:22Z",
+      "proof": "Scanner completed at 2026-05-06 12:01 UTC: 0 binary YES/NO alerts; 1 medium event basket candidate (When will Bitcoin hit 50k?) repeat_count 9; read-only/no trade."
     }
   ]
 }
