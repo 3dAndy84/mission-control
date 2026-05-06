@@ -1814,6 +1814,18 @@
       "created": "2026-05-06T00:16:58Z",
       "updated": "2026-05-06T00:18:23Z",
       "started_at": "2026-05-06T00:16:58Z"
+    },
+    {
+      "id": "polymarket-paper-scan-scheduled-check-2026-05-06-0",
+      "title": "Polymarket paper scan scheduled check 2026-05-06 04:00 UTC",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T04:01:11Z",
+      "updated": "2026-05-06T04:01:11Z",
+      "started_at": "2026-05-06T04:01:11Z"
     }
   ]
 }
