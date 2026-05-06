@@ -2094,6 +2094,18 @@
       "started_at": "2026-05-06T22:02:08Z",
       "completed_at": "2026-05-06T22:02:13Z",
       "proof": "Ran polymarket_scanner.py read-only at 2026-05-06 22:01 UTC; output: 0 binary alerts, 1 medium event basket alert (When will Bitcoin hit 50k?), repeat_count 14 in paper ledger; no trade/signing/wallet."
+    },
+    {
+      "id": "identify-profitable-polymarket-topics",
+      "title": "Identify profitable Polymarket topics",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T22:11:43Z",
+      "updated": "2026-05-06T22:11:43Z",
+      "started_at": "2026-05-06T22:11:43Z"
     }
   ]
 }
