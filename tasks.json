@@ -2052,6 +2052,18 @@
       "created": "2026-05-06T19:49:21Z",
       "updated": "2026-05-06T19:49:21Z",
       "started_at": "2026-05-06T19:49:21Z"
+    },
+    {
+      "id": "apply-case-screening-feedback-roles-and-form-simpl",
+      "title": "Apply Case Screening feedback roles and form simplification",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T19:51:32Z",
+      "updated": "2026-05-06T19:51:32Z",
+      "started_at": "2026-05-06T19:51:32Z"
     }
   ]
 }
