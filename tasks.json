@@ -2118,6 +2118,18 @@
       "created": "2026-05-06T22:13:32Z",
       "updated": "2026-05-06T22:13:32Z",
       "started_at": "2026-05-06T22:13:32Z"
+    },
+    {
+      "id": "case-screening-admin-beheer-editing-and-kpsm-mail-",
+      "title": "case-screening admin Beheer editing and KPSM mail plan",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T22:14:05Z",
+      "updated": "2026-05-06T22:14:05Z",
+      "started_at": "2026-05-06T22:14:05Z"
     }
   ]
 }
