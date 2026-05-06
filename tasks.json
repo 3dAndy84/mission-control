@@ -2045,13 +2045,15 @@
       "id": "case-screening-app-dutch-ui-access-fixes",
       "title": "Case Screening app Dutch UI/access fixes",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T19:49:21Z",
-      "updated": "2026-05-06T19:49:21Z",
-      "started_at": "2026-05-06T19:49:21Z"
+      "updated": "2026-05-06T19:56:15Z",
+      "started_at": "2026-05-06T19:49:21Z",
+      "completed_at": "2026-05-06T19:56:15Z",
+      "proof": "Implemented Dutch UI/access fixes for Case Screening. Validation: npm test in case-screening-app passed 20/20; Codex review PASS; committed 9d54510."
     },
     {
       "id": "apply-case-screening-feedback-roles-and-form-simpl",
