@@ -1952,6 +1952,18 @@
       "started_at": "2026-05-06T16:01:06Z",
       "completed_at": "2026-05-06T16:01:36Z",
       "proof": "Scanner completed 2026-05-06 16:01 UTC: 1 medium event basket alert; no binary YES/NO alerts; ledger repeat_count=11 for BTC 50k nested-threshold watch; no paper P&L logged (watch-only)."
+    },
+    {
+      "id": "make-case-screening-app-fully-dutch-with-filters",
+      "title": "Make Case Screening app fully Dutch with filters",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T16:54:37Z",
+      "updated": "2026-05-06T16:54:37Z",
+      "started_at": "2026-05-06T16:54:37Z"
     }
   ]
 }
