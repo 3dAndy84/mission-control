@@ -1856,6 +1856,18 @@
       "started_at": "2026-05-06T08:01:04Z",
       "completed_at": "2026-05-06T08:01:20Z",
       "proof": "Ran read-only scanner at 2026-05-06 08:01 UTC; found 1 medium event basket alert, no binary YES/NO alerts; paper ledger updated repeat_count=7."
+    },
+    {
+      "id": "polymarket-paper-scan-2026-05-06-10-00-utc",
+      "title": "Polymarket paper scan 2026-05-06 10:00 UTC",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T10:01:29Z",
+      "updated": "2026-05-06T10:01:29Z",
+      "started_at": "2026-05-06T10:01:29Z"
     }
   ]
 }
