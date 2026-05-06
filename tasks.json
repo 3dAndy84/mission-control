@@ -1833,13 +1833,15 @@
       "id": "run-read-only-polymarket-scanner-scheduled-check",
       "title": "Run read-only Polymarket scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T06:01:19Z",
-      "updated": "2026-05-06T06:01:19Z",
-      "started_at": "2026-05-06T06:01:19Z"
+      "updated": "2026-05-06T06:01:35Z",
+      "started_at": "2026-05-06T06:01:19Z",
+      "completed_at": "2026-05-06T06:01:35Z",
+      "proof": "Scanner completed read-only at 2026-05-06 06:01 UTC; 1 medium event basket alert, no binary YES/NO alerts, no trade/wallet/signing."
     }
   ]
 }
