@@ -2099,13 +2099,15 @@
       "id": "identify-profitable-polymarket-topics",
       "title": "Identify profitable Polymarket topics",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T22:11:43Z",
-      "updated": "2026-05-06T22:11:43Z",
-      "started_at": "2026-05-06T22:11:43Z"
+      "updated": "2026-05-06T22:14:50Z",
+      "started_at": "2026-05-06T22:11:43Z",
+      "completed_at": "2026-05-06T22:14:50Z",
+      "proof": "Pulled live Polymarket Gamma API top 500 active events, classified high-volume topic classes, reviewed supplied bored2boar X post via x_search, produced ranked profitable topic map with risks."
     },
     {
       "id": "case-screening-admin-beheer-editing-and-mail-plann",
