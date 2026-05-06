@@ -2160,6 +2160,18 @@
       "started_at": "2026-05-06T22:20:19Z",
       "completed_at": "2026-05-06T22:22:59Z",
       "proof": "Implemented admin user creation with email/login, one-time temp password, must_change_password flow; npm test passed; migrate passed; rebuilt app/reverse-proxy; curl /login OK on 127.0.0.1:8088"
+    },
+    {
+      "id": "case-screening-kpsm-mail-password-reset-reminders-",
+      "title": "Case Screening KPSM mail password reset reminders and PDF reports",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T22:26:12Z",
+      "updated": "2026-05-06T22:26:12Z",
+      "started_at": "2026-05-06T22:26:12Z"
     }
   ]
 }
