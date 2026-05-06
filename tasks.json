@@ -1847,13 +1847,15 @@
       "id": "polymarket-paper-scanner-scheduled-check",
       "title": "Polymarket paper scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T08:01:04Z",
-      "updated": "2026-05-06T08:01:04Z",
-      "started_at": "2026-05-06T08:01:04Z"
+      "updated": "2026-05-06T08:01:20Z",
+      "started_at": "2026-05-06T08:01:04Z",
+      "completed_at": "2026-05-06T08:01:20Z",
+      "proof": "Ran read-only scanner at 2026-05-06 08:01 UTC; found 1 medium event basket alert, no binary YES/NO alerts; paper ledger updated repeat_count=7."
     }
   ]
 }
