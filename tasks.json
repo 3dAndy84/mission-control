@@ -1842,6 +1842,18 @@
       "started_at": "2026-05-06T06:01:19Z",
       "completed_at": "2026-05-06T06:01:35Z",
       "proof": "Scanner completed read-only at 2026-05-06 06:01 UTC; 1 medium event basket alert, no binary YES/NO alerts, no trade/wallet/signing."
+    },
+    {
+      "id": "polymarket-paper-scanner-scheduled-check",
+      "title": "Polymarket paper scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-06T08:01:04Z",
+      "updated": "2026-05-06T08:01:04Z",
+      "started_at": "2026-05-06T08:01:04Z"
     }
   ]
 }
