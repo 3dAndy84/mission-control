@@ -2366,6 +2366,18 @@
       "started_at": "2026-05-07T13:28:42Z",
       "completed_at": "2026-05-07T13:32:17Z",
       "proof": "Implemented Case Screening App changes; verified with node --check src/server.js and npm test (29 passing)."
+    },
+    {
+      "id": "case-screening-admin-status-indicators",
+      "title": "case-screening-admin-status-indicators",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T14:00:00Z",
+      "updated": "2026-05-07T14:00:00Z",
+      "started_at": "2026-05-07T14:00:00Z"
     }
   ]
 }
