@@ -1562,10 +1562,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T06:01:29Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-05T06:01:29Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "polymarket-paper-scan-2026-05-05-12-00-utc",
@@ -1590,10 +1590,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T14:01:01Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-05T14:01:01Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "fold-centpro-risk-framework-into-polymarket-scanne",
@@ -1702,10 +1702,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T22:01:30Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-05T22:01:30Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "update-case-screening-build-plan-with-prior-deploy",
@@ -1948,10 +1948,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T16:01:06Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-06T16:01:06Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "make-case-screening-app-fully-dutch-with-filters",
@@ -2278,10 +2278,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T04:00:59Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-07T04:00:59Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "run-read-only-polymarket-paper-trading-execution-s",
@@ -2292,10 +2292,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T06:01:00Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-07T06:01:00Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "run-scheduled-read-only-polymarket-scanner",
@@ -2348,10 +2348,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T12:01:02Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-07T12:01:02Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "implement-case-screening-app-changes-requested-by-",
@@ -2390,22 +2390,24 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T14:01:00Z",
-      "updated": "2026-05-07T14:01:53Z",
+      "updated": "2026-05-07T16:01:13Z",
       "started_at": "2026-05-07T14:01:00Z",
-      "completed_at": "2026-05-07T14:01:53Z",
-      "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     },
     {
       "id": "run-read-only-polymarket-paper-trading-execution-s",
       "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T16:00:57Z",
-      "updated": "2026-05-07T16:00:57Z",
-      "started_at": "2026-05-07T16:00:57Z"
+      "updated": "2026-05-07T16:01:13Z",
+      "started_at": "2026-05-07T16:00:57Z",
+      "completed_at": "2026-05-07T16:01:13Z",
+      "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
     }
   ]
 }
