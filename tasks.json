@@ -2504,6 +2504,18 @@
       "created": "2026-05-07T19:57:40Z",
       "updated": "2026-05-07T19:57:40Z",
       "started_at": "2026-05-07T19:57:40Z"
+    },
+    {
+      "id": "run-read-only-polymarket-paper-trading-execution-s",
+      "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T20:01:21Z",
+      "updated": "2026-05-07T20:01:21Z",
+      "started_at": "2026-05-07T20:01:21Z"
     }
   ]
 }
