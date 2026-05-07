@@ -2408,6 +2408,18 @@
       "started_at": "2026-05-07T16:00:57Z",
       "completed_at": "2026-05-07T16:01:13Z",
       "proof": "Scanner completed read-only at 2026-05-07 16:01 UTC. Output: no binary YES/NO alerts; 2 medium-quality event basket candidates (NHL Stanley Cup overround, BTC 50k monotonicity). Reviewed ledgers for repeats/P&L."
+    },
+    {
+      "id": "clarify-assignment-ui-and-workload-max-five-warnin",
+      "title": "Clarify assignment UI and workload max five warning",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T17:04:26Z",
+      "updated": "2026-05-07T17:04:26Z",
+      "started_at": "2026-05-07T17:04:26Z"
     }
   ]
 }
