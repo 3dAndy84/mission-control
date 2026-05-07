@@ -2422,6 +2422,18 @@
       "started_at": "2026-05-07T17:04:26Z",
       "completed_at": "2026-05-07T17:07:00Z",
       "proof": "node --check src/server.js; npm test 38/38; docker rebuild/restart; live workload check; commit pushed"
+    },
+    {
+      "id": "improve-case-dossier-overview-layout",
+      "title": "Improve case dossier overview layout",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T17:15:31Z",
+      "updated": "2026-05-07T17:15:31Z",
+      "started_at": "2026-05-07T17:15:31Z"
     }
   ]
 }
