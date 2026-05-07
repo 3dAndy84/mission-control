@@ -2371,13 +2371,15 @@
       "id": "case-screening-admin-status-indicators",
       "title": "case-screening-admin-status-indicators",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T14:00:00Z",
-      "updated": "2026-05-07T14:00:00Z",
-      "started_at": "2026-05-07T14:00:00Z"
+      "updated": "2026-05-07T14:01:34Z",
+      "started_at": "2026-05-07T14:00:00Z",
+      "completed_at": "2026-05-07T14:01:34Z",
+      "proof": "--proof"
     },
     {
       "id": "run-read-only-polymarket-paper-trading-execution-s",
