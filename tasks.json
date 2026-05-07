@@ -2240,6 +2240,18 @@
       "started_at": "2026-05-07T00:16:35Z",
       "completed_at": "2026-05-07T00:16:37Z",
       "proof": "proof: final smoke ok"
+    },
+    {
+      "id": "polymarket-paper-scan-scheduled-check-2026-05-07-0",
+      "title": "Polymarket paper scan scheduled check 2026-05-07 02:00 UTC",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T02:01:00Z",
+      "updated": "2026-05-07T02:01:00Z",
+      "started_at": "2026-05-07T02:01:00Z"
     }
   ]
 }
