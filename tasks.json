@@ -2413,13 +2413,15 @@
       "id": "clarify-assignment-ui-and-workload-max-five-warnin",
       "title": "Clarify assignment UI and workload max five warning",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T17:04:26Z",
-      "updated": "2026-05-07T17:04:26Z",
-      "started_at": "2026-05-07T17:04:26Z"
+      "updated": "2026-05-07T17:07:00Z",
+      "started_at": "2026-05-07T17:04:26Z",
+      "completed_at": "2026-05-07T17:07:00Z",
+      "proof": "node --check src/server.js; npm test 38/38; docker rebuild/restart; live workload check; commit pushed"
     }
   ]
 }
