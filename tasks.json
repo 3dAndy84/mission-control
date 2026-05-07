@@ -2352,6 +2352,18 @@
       "started_at": "2026-05-07T12:01:02Z",
       "completed_at": "2026-05-07T12:01:26Z",
       "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
+    },
+    {
+      "id": "implement-case-screening-app-changes-requested-by-",
+      "title": "Implement Case Screening App changes requested by Andy",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "case-screening-app",
+      "created": "2026-05-07T13:28:42Z",
+      "updated": "2026-05-07T13:28:42Z",
+      "started_at": "2026-05-07T13:28:42Z"
     }
   ]
 }
