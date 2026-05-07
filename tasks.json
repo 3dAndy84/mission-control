@@ -2329,13 +2329,15 @@
       "id": "fix-qmd-vulkan-embedding-support",
       "title": "Fix QMD Vulkan embedding support",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T10:09:25Z",
-      "updated": "2026-05-07T10:09:25Z",
-      "started_at": "2026-05-07T10:09:25Z"
+      "updated": "2026-05-07T10:25:08Z",
+      "started_at": "2026-05-07T10:09:25Z",
+      "completed_at": "2026-05-07T10:25:08Z",
+      "proof": "Set QMD_LLAMA_GPU=false in gateway env/profile/bashrc and installed ~/bin/qmd wrapper exporting QMD_LLAMA_GPU=false. Verified qmd status no longer attempts Vulkan and reports CPU-only; qmd search works."
     }
   ]
 }
