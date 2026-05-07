@@ -2301,13 +2301,15 @@
       "id": "run-scheduled-read-only-polymarket-scanner",
       "title": "Run scheduled read-only Polymarket scanner",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T08:01:19Z",
-      "updated": "2026-05-07T08:01:19Z",
-      "started_at": "2026-05-07T08:01:19Z"
+      "updated": "2026-05-07T08:01:39Z",
+      "started_at": "2026-05-07T08:01:19Z",
+      "completed_at": "2026-05-07T08:01:39Z",
+      "proof": "Ran read-only Polymarket scanner from trading-command-center; stdout produced 1 medium-quality event basket alert and no binary YES/NO alerts."
     }
   ]
 }
