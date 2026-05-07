@@ -2229,13 +2229,15 @@
       "id": "task-cli-final-smoke",
       "title": "task-cli-final-smoke",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T00:16:35Z",
-      "updated": "2026-05-07T00:16:35Z",
-      "started_at": "2026-05-07T00:16:35Z"
+      "updated": "2026-05-07T00:16:37Z",
+      "started_at": "2026-05-07T00:16:35Z",
+      "completed_at": "2026-05-07T00:16:37Z",
+      "proof": "proof: final smoke ok"
     }
   ]
 }
