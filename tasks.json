@@ -1478,10 +1478,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T00:42:05Z",
-      "updated": "2026-05-06T20:01:25Z",
+      "updated": "2026-05-07T10:02:07Z",
       "started_at": "2026-05-05T00:42:05Z",
-      "completed_at": "2026-05-06T20:01:25Z",
-      "proof": "Scanner ran read-only at 2026-05-06 20:01 UTC; 0 binary alerts, 1 medium event basket alert; ledger repeat_count=13, no paper PnL."
+      "completed_at": "2026-05-07T10:02:07Z",
+      "proof": "Read-only scanner completed at 2026-05-07 10:01 UTC; output had 0 binary alerts and 1 medium event basket alert: When will Bitcoin hit 50k?; no wallet/signing/trade actions."
     },
     {
       "id": "add-polymarket-oracle-source-map",
@@ -2076,10 +2076,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T20:01:01Z",
-      "updated": "2026-05-06T20:01:25Z",
+      "updated": "2026-05-07T10:02:07Z",
       "started_at": "2026-05-06T20:01:01Z",
-      "completed_at": "2026-05-06T20:01:25Z",
-      "proof": "Scanner ran read-only at 2026-05-06 20:01 UTC; 0 binary alerts, 1 medium event basket alert; ledger repeat_count=13, no paper PnL."
+      "completed_at": "2026-05-07T10:02:07Z",
+      "proof": "Read-only scanner completed at 2026-05-07 10:01 UTC; output had 0 binary alerts and 1 medium event basket alert: When will Bitcoin hit 50k?; no wallet/signing/trade actions."
     },
     {
       "id": "run-read-only-polymarket-scanner",
@@ -2315,13 +2315,15 @@
       "id": "run-read-only-polymarket-paper-scanner-scheduled-c",
       "title": "Run read-only Polymarket paper scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T10:01:46Z",
-      "updated": "2026-05-07T10:01:46Z",
-      "started_at": "2026-05-07T10:01:46Z"
+      "updated": "2026-05-07T10:02:07Z",
+      "started_at": "2026-05-07T10:01:46Z",
+      "completed_at": "2026-05-07T10:02:07Z",
+      "proof": "Read-only scanner completed at 2026-05-07 10:01 UTC; output had 0 binary alerts and 1 medium event basket alert: When will Bitcoin hit 50k?; no wallet/signing/trade actions."
     }
   ]
 }
