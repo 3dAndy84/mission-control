@@ -2357,13 +2357,15 @@
       "id": "implement-case-screening-app-changes-requested-by-",
       "title": "Implement Case Screening App changes requested by Andy",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "case-screening-app",
       "created": "2026-05-07T13:28:42Z",
-      "updated": "2026-05-07T13:28:42Z",
-      "started_at": "2026-05-07T13:28:42Z"
+      "updated": "2026-05-07T13:32:17Z",
+      "started_at": "2026-05-07T13:28:42Z",
+      "completed_at": "2026-05-07T13:32:17Z",
+      "proof": "Implemented Case Screening App changes; verified with node --check src/server.js and npm test (29 passing)."
     }
   ]
 }
