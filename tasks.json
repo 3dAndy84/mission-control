@@ -2282,6 +2282,18 @@
       "started_at": "2026-05-07T04:00:59Z",
       "completed_at": "2026-05-07T04:01:20Z",
       "proof": "Ran python3 polymarket_scanner.py --stdout --alert-only --event-scan --limit 150 --event-limit 100 --min-liquidity 1000 --min-leg-volume 1000 --min-leg-liquidity 1000 at 2026-05-07 04:01 UTC. Output: no interrupt-worthy binary YES/NO alerts; 1 event basket alert, When will Bitcoin hit 50k?, medium quality, nested-threshold monotonicity violation. Reviewed logs/ledgers: repeated signal count visible at 17 in paper ledger / 27 in edge ledger; no simple paper P&L logged for this event."
+    },
+    {
+      "id": "run-read-only-polymarket-paper-trading-execution-s",
+      "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T06:01:00Z",
+      "updated": "2026-05-07T06:01:00Z",
+      "started_at": "2026-05-07T06:01:00Z"
     }
   ]
 }
