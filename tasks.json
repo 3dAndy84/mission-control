@@ -2450,6 +2450,18 @@
       "started_at": "2026-05-07T18:00:55Z",
       "completed_at": "2026-05-07T18:01:19Z",
       "proof": "Ran read-only polymarket_scanner.py at 2026-05-07 18:00 UTC; output produced 2 medium event basket alerts, no binary interrupt-worthy alerts; reviewed ledger latest timestamp and repeat/P&L fields."
+    },
+    {
+      "id": "add-embargo-case-visibility-rules",
+      "title": "Add embargo case visibility rules",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T18:19:53Z",
+      "updated": "2026-05-07T18:19:53Z",
+      "started_at": "2026-05-07T18:19:53Z"
     }
   ]
 }
