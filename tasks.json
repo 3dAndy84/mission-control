@@ -2394,6 +2394,18 @@
       "started_at": "2026-05-07T14:01:00Z",
       "completed_at": "2026-05-07T14:01:53Z",
       "proof": "Read-only scanner completed at 2026-05-07 14:01 UTC; stdout produced 1 medium event basket alert and no binary YES/NO alerts; no wallet/signing/trading used."
+    },
+    {
+      "id": "run-read-only-polymarket-paper-trading-execution-s",
+      "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T16:00:57Z",
+      "updated": "2026-05-07T16:00:57Z",
+      "started_at": "2026-05-07T16:00:57Z"
     }
   ]
 }
