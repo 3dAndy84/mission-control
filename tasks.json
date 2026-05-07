@@ -2478,6 +2478,18 @@
       "started_at": "2026-05-07T18:33:38Z",
       "completed_at": "2026-05-07T18:34:33Z",
       "proof": "node --check src/server.js; npm test 41/41; docker rebuild/restart; live dashboard shows Ingelogd badge; pushed"
+    },
+    {
+      "id": "update-screening-roles-embargo-list-visibility-and",
+      "title": "Update screening roles embargo list visibility and onderzoeksnaam",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T18:48:26Z",
+      "updated": "2026-05-07T18:48:26Z",
+      "started_at": "2026-05-07T18:48:26Z"
     }
   ]
 }
