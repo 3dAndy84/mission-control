@@ -2539,13 +2539,15 @@
       "id": "fix-polymarket-weather-bot-for-serious-paper-testi",
       "title": "Fix Polymarket weather bot for serious paper testing",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T21:43:35Z",
-      "updated": "2026-05-07T21:43:35Z",
-      "started_at": "2026-05-07T21:43:35Z"
+      "updated": "2026-05-07T22:06:06Z",
+      "started_at": "2026-05-07T21:43:35Z",
+      "completed_at": "2026-05-07T22:06:06Z",
+      "proof": "Implemented and committed ad50a64: paper-only weather-bin testing hardening in trading-command-center. Adds exact station/source mapping, coordinate validation, 3-family weather model consensus, 18-30h entry window, adjacent 3-bin selection, paper price cap, stricter live gate requiring 30 closed + 30 positive closed + positive ROI. Validation: 137 unittest discover OK; direct scanner/execution/weather tests OK; final Codex review PASS. Note: commit used documented SKIP_TDD because the local TDD hook has a grep -q pipeline bug that fails even when direct tests exist."
     },
     {
       "id": "run-read-only-polymarket-paper-scan-scheduled-chec",
