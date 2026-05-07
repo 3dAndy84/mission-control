@@ -2296,6 +2296,18 @@
       "started_at": "2026-05-07T06:01:00Z",
       "completed_at": "2026-05-07T06:01:20Z",
       "proof": "Ran read-only scanner at 2026-05-07 06:01 UTC; stdout found 0 binary YES/NO alerts and 1 medium-quality event basket alert: When will Bitcoin hit 50k?; ledger shows repeat_count 18, watch-only, no paper PnL."
+    },
+    {
+      "id": "run-scheduled-read-only-polymarket-scanner",
+      "title": "Run scheduled read-only Polymarket scanner",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T08:01:19Z",
+      "updated": "2026-05-07T08:01:19Z",
+      "started_at": "2026-05-07T08:01:19Z"
     }
   ]
 }
