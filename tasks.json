@@ -2455,13 +2455,15 @@
       "id": "add-embargo-case-visibility-rules",
       "title": "Add embargo case visibility rules",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T18:19:53Z",
-      "updated": "2026-05-07T18:19:53Z",
-      "started_at": "2026-05-07T18:19:53Z"
+      "updated": "2026-05-07T18:27:58Z",
+      "started_at": "2026-05-07T18:19:53Z",
+      "completed_at": "2026-05-07T18:27:58Z",
+      "proof": "node --check src/server.js; npm test 41/41; review pass; docker rebuild/restart; live new-screening and dossier embargo check; commit pushed"
     }
   ]
 }
