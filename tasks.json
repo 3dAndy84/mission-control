@@ -2212,6 +2212,18 @@
       "started_at": "2026-05-07T00:16:01Z",
       "completed_at": "2026-05-07T00:16:02Z",
       "proof": "proof: start/done smoke"
+    },
+    {
+      "id": "task-cli-test-fail",
+      "title": "CLI test fail",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T00:16:04Z",
+      "updated": "2026-05-07T00:16:04Z",
+      "started_at": "2026-05-07T00:16:04Z"
     }
   ]
 }
