@@ -2520,6 +2520,18 @@
       "started_at": "2026-05-07T20:01:21Z",
       "completed_at": "2026-05-07T20:01:57Z",
       "proof": "Scanner completed read-only at 2026-05-07 20:01 UTC; 1 medium event-basket alert, no binary YES/NO alerts; reviewed prior paper ledger/reports."
+    },
+    {
+      "id": "fix-case-dossier-status-and-close-controls-spacing",
+      "title": "Fix case dossier status and close controls spacing",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T20:16:18Z",
+      "updated": "2026-05-07T20:16:18Z",
+      "started_at": "2026-05-07T20:16:18Z"
     }
   ]
 }
