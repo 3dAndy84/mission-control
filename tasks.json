@@ -2191,13 +2191,15 @@
       "id": "fix-task-cli",
       "title": "Fix task CLI",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T00:13:05Z",
-      "updated": "2026-05-07T00:13:05Z",
-      "started_at": "2026-05-07T00:13:05Z"
+      "updated": "2026-05-07T00:16:46Z",
+      "started_at": "2026-05-07T00:13:05Z",
+      "completed_at": "2026-05-07T00:16:46Z",
+      "proof": "proof: /home/clawd/bin/task wrapper resolves to workspace bin/task; help/start/done/fail smoke tested; final start/done smoke passed"
     },
     {
       "id": "task-cli-test-start",
