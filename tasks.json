@@ -2324,6 +2324,18 @@
       "started_at": "2026-05-07T10:01:46Z",
       "completed_at": "2026-05-07T10:02:07Z",
       "proof": "Read-only scanner completed at 2026-05-07 10:01 UTC; output had 0 binary alerts and 1 medium event basket alert: When will Bitcoin hit 50k?; no wallet/signing/trade actions."
+    },
+    {
+      "id": "fix-qmd-vulkan-embedding-support",
+      "title": "Fix QMD Vulkan embedding support",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T10:09:25Z",
+      "updated": "2026-05-07T10:09:25Z",
+      "started_at": "2026-05-07T10:09:25Z"
     }
   ]
 }
