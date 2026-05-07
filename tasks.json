@@ -2186,6 +2186,18 @@
       "started_at": "2026-05-06T22:29:28Z",
       "completed_at": "2026-05-06T22:48:35Z",
       "proof": "Installed quiet read-only Polymarket edge scanner plus EOD report cron; fixed taxonomy review issues; tests pass (56 unittest + script contract py_compile); live smoke wrote latest report/state; no wallet/trading permissions."
+    },
+    {
+      "id": "fix-task-cli",
+      "title": "Fix task CLI",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T00:13:05Z",
+      "updated": "2026-05-07T00:13:05Z",
+      "started_at": "2026-05-07T00:13:05Z"
     }
   ]
 }
