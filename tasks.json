@@ -2483,13 +2483,15 @@
       "id": "update-screening-roles-embargo-list-visibility-and",
       "title": "Update screening roles embargo list visibility and onderzoeksnaam",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T18:48:26Z",
-      "updated": "2026-05-07T18:48:26Z",
-      "started_at": "2026-05-07T18:48:26Z"
+      "updated": "2026-05-07T19:34:28Z",
+      "started_at": "2026-05-07T18:48:26Z",
+      "completed_at": "2026-05-07T19:34:28Z",
+      "proof": "node --check src/server.js; npm test 43/43; review blocker fixed; DB migration applied; docker rebuild/restart; live /login 200 and teamleider cases/new verified"
     }
   ]
 }
