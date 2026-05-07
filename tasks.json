@@ -2469,13 +2469,15 @@
       "id": "show-current-logged-in-user-in-app-nav",
       "title": "Show current logged-in user in app nav",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T18:33:38Z",
-      "updated": "2026-05-07T18:33:38Z",
-      "started_at": "2026-05-07T18:33:38Z"
+      "updated": "2026-05-07T18:34:33Z",
+      "started_at": "2026-05-07T18:33:38Z",
+      "completed_at": "2026-05-07T18:34:33Z",
+      "proof": "node --check src/server.js; npm test 41/41; docker rebuild/restart; live dashboard shows Ingelogd badge; pushed"
     }
   ]
 }
