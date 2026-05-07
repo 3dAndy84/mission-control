@@ -2427,13 +2427,15 @@
       "id": "improve-case-dossier-overview-layout",
       "title": "Improve case dossier overview layout",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T17:15:31Z",
-      "updated": "2026-05-07T17:15:31Z",
-      "started_at": "2026-05-07T17:15:31Z"
+      "updated": "2026-05-07T17:21:42Z",
+      "started_at": "2026-05-07T17:15:31Z",
+      "completed_at": "2026-05-07T17:21:42Z",
+      "proof": "node --check src/server.js; npm test 39/39 with test env; docker rebuild/restart; live dossier HTML check; commit pushed"
     }
   ]
 }
