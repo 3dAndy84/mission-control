@@ -2546,6 +2546,18 @@
       "created": "2026-05-07T21:43:35Z",
       "updated": "2026-05-07T21:43:35Z",
       "started_at": "2026-05-07T21:43:35Z"
+    },
+    {
+      "id": "run-read-only-polymarket-paper-scan-scheduled-chec",
+      "title": "Run read-only Polymarket paper scan scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T22:01:02Z",
+      "updated": "2026-05-07T22:01:02Z",
+      "started_at": "2026-05-07T22:01:02Z"
     }
   ]
 }
