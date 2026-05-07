@@ -2534,6 +2534,18 @@
       "started_at": "2026-05-07T20:16:18Z",
       "completed_at": "2026-05-07T20:18:01Z",
       "proof": "Separated case dossier status update and close controls with dedicated .case-controls layout, responsive mobile stacking, danger styling for close. Proof: node --check src/server.js; npm test 45/45; docker rebuild/restart; live dossier 200 and contains case-controls/status-form/close-form; commit 241aa9e pushed."
+    },
+    {
+      "id": "fix-polymarket-weather-bot-for-serious-paper-testi",
+      "title": "Fix Polymarket weather bot for serious paper testing",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T21:43:35Z",
+      "updated": "2026-05-07T21:43:35Z",
+      "started_at": "2026-05-07T21:43:35Z"
     }
   ]
 }
