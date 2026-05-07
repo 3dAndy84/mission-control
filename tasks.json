@@ -2492,6 +2492,18 @@
       "started_at": "2026-05-07T18:48:26Z",
       "completed_at": "2026-05-07T19:34:28Z",
       "proof": "node --check src/server.js; npm test 43/43; review blocker fixed; DB migration applied; docker rebuild/restart; live /login 200 and teamleider cases/new verified"
+    },
+    {
+      "id": "manage-statuses-roles-and-jz-access-rules",
+      "title": "Manage statuses roles and JZ access rules",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T19:57:40Z",
+      "updated": "2026-05-07T19:57:40Z",
+      "started_at": "2026-05-07T19:57:40Z"
     }
   ]
 }
