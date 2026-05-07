@@ -2245,13 +2245,15 @@
       "id": "polymarket-paper-scan-scheduled-check-2026-05-07-0",
       "title": "Polymarket paper scan scheduled check 2026-05-07 02:00 UTC",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T02:01:00Z",
-      "updated": "2026-05-07T02:01:00Z",
-      "started_at": "2026-05-07T02:01:00Z"
+      "updated": "2026-05-07T02:01:22Z",
+      "started_at": "2026-05-07T02:01:00Z",
+      "completed_at": "2026-05-07T02:01:22Z",
+      "proof": "Ran read-only scanner at 2026-05-07 02:01 UTC; output: 1 medium event basket alert, no binary YES/NO alerts; reviewed paper ledger repeats/P&L."
     }
   ]
 }
