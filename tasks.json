@@ -2217,12 +2217,12 @@
       "id": "task-cli-test-fail",
       "title": "CLI test fail",
       "description": "",
-      "status": "in-progress",
+      "status": "blocked",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T00:16:04Z",
-      "updated": "2026-05-07T00:16:04Z",
+      "updated": "2026-05-07T00:16:05Z",
       "started_at": "2026-05-07T00:16:04Z"
     }
   ]
