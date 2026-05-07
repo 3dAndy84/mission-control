@@ -2338,6 +2338,18 @@
       "started_at": "2026-05-07T10:09:25Z",
       "completed_at": "2026-05-07T10:25:08Z",
       "proof": "Set QMD_LLAMA_GPU=false in gateway env/profile/bashrc and installed ~/bin/qmd wrapper exporting QMD_LLAMA_GPU=false. Verified qmd status no longer attempts Vulkan and reports CPU-only; qmd search works."
+    },
+    {
+      "id": "run-read-only-polymarket-paper-trading-execution-s",
+      "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T12:01:02Z",
+      "updated": "2026-05-07T12:01:02Z",
+      "started_at": "2026-05-07T12:01:02Z"
     }
   ]
 }
