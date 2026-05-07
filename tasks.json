@@ -2259,13 +2259,15 @@
       "id": "prepare-polymarket-quiet-scanner-end-of-day-report",
       "title": "Prepare Polymarket quiet scanner end-of-day report",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T03:01:48Z",
-      "updated": "2026-05-07T03:01:48Z",
-      "started_at": "2026-05-07T03:01:48Z"
+      "updated": "2026-05-07T03:02:15Z",
+      "started_at": "2026-05-07T03:01:48Z",
+      "completed_at": "2026-05-07T03:02:15Z",
+      "proof": "Ran /home/clawd/workspace/scripts/polymarket-edge-scan.sh successfully; inspected latest report/JSON; sent Telegram Polymarket topic report messageId 13213; confirmed no trading executed."
     }
   ]
 }
