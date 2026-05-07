@@ -2203,13 +2203,15 @@
       "id": "task-cli-test-start",
       "title": "CLI test start",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T00:16:01Z",
-      "updated": "2026-05-07T00:16:01Z",
-      "started_at": "2026-05-07T00:16:01Z"
+      "updated": "2026-05-07T00:16:02Z",
+      "started_at": "2026-05-07T00:16:01Z",
+      "completed_at": "2026-05-07T00:16:02Z",
+      "proof": "proof: start/done smoke"
     }
   ]
 }
