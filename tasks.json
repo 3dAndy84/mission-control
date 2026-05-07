@@ -1562,10 +1562,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T06:01:29Z",
-      "updated": "2026-05-07T06:01:20Z",
+      "updated": "2026-05-07T12:01:26Z",
       "started_at": "2026-05-05T06:01:29Z",
-      "completed_at": "2026-05-07T06:01:20Z",
-      "proof": "Ran read-only scanner at 2026-05-07 06:01 UTC; stdout found 0 binary YES/NO alerts and 1 medium-quality event basket alert: When will Bitcoin hit 50k?; ledger shows repeat_count 18, watch-only, no paper PnL."
+      "completed_at": "2026-05-07T12:01:26Z",
+      "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
     },
     {
       "id": "polymarket-paper-scan-2026-05-05-12-00-utc",
@@ -1590,10 +1590,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T14:01:01Z",
-      "updated": "2026-05-07T06:01:20Z",
+      "updated": "2026-05-07T12:01:26Z",
       "started_at": "2026-05-05T14:01:01Z",
-      "completed_at": "2026-05-07T06:01:20Z",
-      "proof": "Ran read-only scanner at 2026-05-07 06:01 UTC; stdout found 0 binary YES/NO alerts and 1 medium-quality event basket alert: When will Bitcoin hit 50k?; ledger shows repeat_count 18, watch-only, no paper PnL."
+      "completed_at": "2026-05-07T12:01:26Z",
+      "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
     },
     {
       "id": "fold-centpro-risk-framework-into-polymarket-scanne",
@@ -1702,10 +1702,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T22:01:30Z",
-      "updated": "2026-05-07T06:01:20Z",
+      "updated": "2026-05-07T12:01:26Z",
       "started_at": "2026-05-05T22:01:30Z",
-      "completed_at": "2026-05-07T06:01:20Z",
-      "proof": "Ran read-only scanner at 2026-05-07 06:01 UTC; stdout found 0 binary YES/NO alerts and 1 medium-quality event basket alert: When will Bitcoin hit 50k?; ledger shows repeat_count 18, watch-only, no paper PnL."
+      "completed_at": "2026-05-07T12:01:26Z",
+      "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
     },
     {
       "id": "update-case-screening-build-plan-with-prior-deploy",
@@ -1948,10 +1948,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T16:01:06Z",
-      "updated": "2026-05-07T06:01:20Z",
+      "updated": "2026-05-07T12:01:26Z",
       "started_at": "2026-05-06T16:01:06Z",
-      "completed_at": "2026-05-07T06:01:20Z",
-      "proof": "Ran read-only scanner at 2026-05-07 06:01 UTC; stdout found 0 binary YES/NO alerts and 1 medium-quality event basket alert: When will Bitcoin hit 50k?; ledger shows repeat_count 18, watch-only, no paper PnL."
+      "completed_at": "2026-05-07T12:01:26Z",
+      "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
     },
     {
       "id": "make-case-screening-app-fully-dutch-with-filters",
@@ -2278,10 +2278,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T04:00:59Z",
-      "updated": "2026-05-07T06:01:20Z",
+      "updated": "2026-05-07T12:01:26Z",
       "started_at": "2026-05-07T04:00:59Z",
-      "completed_at": "2026-05-07T06:01:20Z",
-      "proof": "Ran read-only scanner at 2026-05-07 06:01 UTC; stdout found 0 binary YES/NO alerts and 1 medium-quality event basket alert: When will Bitcoin hit 50k?; ledger shows repeat_count 18, watch-only, no paper PnL."
+      "completed_at": "2026-05-07T12:01:26Z",
+      "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
     },
     {
       "id": "run-read-only-polymarket-paper-trading-execution-s",
@@ -2292,10 +2292,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T06:01:00Z",
-      "updated": "2026-05-07T06:01:20Z",
+      "updated": "2026-05-07T12:01:26Z",
       "started_at": "2026-05-07T06:01:00Z",
-      "completed_at": "2026-05-07T06:01:20Z",
-      "proof": "Ran read-only scanner at 2026-05-07 06:01 UTC; stdout found 0 binary YES/NO alerts and 1 medium-quality event basket alert: When will Bitcoin hit 50k?; ledger shows repeat_count 18, watch-only, no paper PnL."
+      "completed_at": "2026-05-07T12:01:26Z",
+      "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
     },
     {
       "id": "run-scheduled-read-only-polymarket-scanner",
@@ -2343,13 +2343,15 @@
       "id": "run-read-only-polymarket-paper-trading-execution-s",
       "title": "Run read-only Polymarket paper-trading execution-signal scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T12:01:02Z",
-      "updated": "2026-05-07T12:01:02Z",
-      "started_at": "2026-05-07T12:01:02Z"
+      "updated": "2026-05-07T12:01:26Z",
+      "started_at": "2026-05-07T12:01:02Z",
+      "completed_at": "2026-05-07T12:01:26Z",
+      "proof": "Read-only scanner completed. stdout: no interrupt-worthy binary YES/NO alerts; one medium event basket alert (Bitcoin 50k monotonicity), 13 paper edge-system candidates all score_band=reject; report reports/polymarket-edge-system-20260507-120001.md and ledger state/polymarket-edge-paper-ledger.jsonl inspected."
     }
   ]
 }
