@@ -2310,6 +2310,18 @@
       "started_at": "2026-05-07T08:01:19Z",
       "completed_at": "2026-05-07T08:01:39Z",
       "proof": "Ran read-only Polymarket scanner from trading-command-center; stdout produced 1 medium-quality event basket alert and no binary YES/NO alerts."
+    },
+    {
+      "id": "run-read-only-polymarket-paper-scanner-scheduled-c",
+      "title": "Run read-only Polymarket paper scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-07T10:01:46Z",
+      "updated": "2026-05-07T10:01:46Z",
+      "started_at": "2026-05-07T10:01:46Z"
     }
   ]
 }
