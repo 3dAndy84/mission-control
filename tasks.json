@@ -2525,13 +2525,15 @@
       "id": "fix-case-dossier-status-and-close-controls-spacing",
       "title": "Fix case dossier status and close controls spacing",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T20:16:18Z",
-      "updated": "2026-05-07T20:16:18Z",
-      "started_at": "2026-05-07T20:16:18Z"
+      "updated": "2026-05-07T20:18:01Z",
+      "started_at": "2026-05-07T20:16:18Z",
+      "completed_at": "2026-05-07T20:18:01Z",
+      "proof": "Separated case dossier status update and close controls with dedicated .case-controls layout, responsive mobile stacking, danger styling for close. Proof: node --check src/server.js; npm test 45/45; docker rebuild/restart; live dossier 200 and contains case-controls/status-form/close-form; commit 241aa9e pushed."
     }
   ]
 }
