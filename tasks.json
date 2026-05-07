@@ -2551,13 +2551,15 @@
       "id": "run-read-only-polymarket-paper-scan-scheduled-chec",
       "title": "Run read-only Polymarket paper scan scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T22:01:02Z",
-      "updated": "2026-05-07T22:01:02Z",
-      "started_at": "2026-05-07T22:01:02Z"
+      "updated": "2026-05-07T22:01:25Z",
+      "started_at": "2026-05-07T22:01:02Z",
+      "completed_at": "2026-05-07T22:01:25Z",
+      "proof": "Ran read-only polymarket_scanner.py alert-only event scan at 2026-05-07 22:01 UTC; output reviewed: no binary alerts, one medium event-basket candidate (BTC 50k nested threshold), repeated in ledger with no paper P&L."
     }
   ]
 }
