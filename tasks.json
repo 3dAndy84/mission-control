@@ -2609,13 +2609,15 @@
       "id": "add-automatexm-secure-app-gate",
       "title": "Add AutomateXM secure app gate",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "codex",
       "project": "automatexm",
       "created": "2026-05-08T01:37:13Z",
-      "updated": "2026-05-08T01:37:13Z",
-      "started_at": "2026-05-08T01:37:13Z"
+      "updated": "2026-05-08T01:40:51Z",
+      "started_at": "2026-05-08T01:37:13Z",
+      "completed_at": "2026-05-08T01:40:51Z",
+      "proof": "Added AutomateXM secure app gate reference, wired ship-check --automatexm-gate, updated stack-test and skill routing; verified bash -n, diff --check, and audit-only run."
     }
   ]
 }
