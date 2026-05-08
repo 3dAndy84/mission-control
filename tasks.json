@@ -2576,6 +2576,18 @@
       "started_at": "2026-05-08T00:01:04Z",
       "completed_at": "2026-05-08T00:01:29Z",
       "proof": "Scanner completed read-only. Output: no binary YES/NO alerts; 1 medium-quality event basket alert (When will Bitcoin hit 50k?) repeat_count 5 in ledger; no paper P&L available for watch-only signal."
+    },
+    {
+      "id": "add-usable-polymarket-stack-notes-from-antpalkin-p",
+      "title": "Add usable Polymarket stack notes from antpalkin post",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-08T00:44:13Z",
+      "updated": "2026-05-08T00:44:13Z",
+      "started_at": "2026-05-08T00:44:13Z"
     }
   ]
 }
