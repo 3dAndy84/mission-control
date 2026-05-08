@@ -512,7 +512,7 @@
       "updated": "2026-05-08T01:05:55Z",
       "started_at": "2026-04-22T09:42:07Z",
       "completed_at": "2026-05-08T01:05:55Z",
-      "proof": "--proof"
+      "proof": "OpenClaw updated to 2026.5.7 (eeef486). Verified: openclaw status reports update up to date, gateway reachable 99ms, gateway app/self 2026.5.7, Telegram ON/OK, service active pid 1121124. Ran doctor --non-interactive with HOME=/home/clawd; only warnings/state hygiene, no channel security warnings."
     },
     {
       "id": "openclaw-doctor",
@@ -1187,7 +1187,7 @@
       "updated": "2026-05-08T01:05:55Z",
       "started_at": "2026-05-01T00:32:36Z",
       "completed_at": "2026-05-08T01:05:55Z",
-      "proof": "--proof"
+      "proof": "OpenClaw updated to 2026.5.7 (eeef486). Verified: openclaw status reports update up to date, gateway reachable 99ms, gateway app/self 2026.5.7, Telegram ON/OK, service active pid 1121124. Ran doctor --non-interactive with HOME=/home/clawd; only warnings/state hygiene, no channel security warnings."
     },
     {
       "id": "self-eval",
@@ -2603,7 +2603,7 @@
       "updated": "2026-05-08T01:05:55Z",
       "started_at": "2026-05-08T00:57:04Z",
       "completed_at": "2026-05-08T01:05:55Z",
-      "proof": "--proof"
+      "proof": "OpenClaw updated to 2026.5.7 (eeef486). Verified: openclaw status reports update up to date, gateway reachable 99ms, gateway app/self 2026.5.7, Telegram ON/OK, service active pid 1121124. Ran doctor --non-interactive with HOME=/home/clawd; only warnings/state hygiene, no channel security warnings."
     }
   ]
 }
