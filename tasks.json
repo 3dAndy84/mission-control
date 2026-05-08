@@ -509,10 +509,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-04-22T09:42:07Z",
-      "updated": "2026-05-01T00:40:13Z",
+      "updated": "2026-05-08T01:05:55Z",
       "started_at": "2026-04-22T09:42:07Z",
-      "completed_at": "2026-05-01T00:40:13Z",
-      "proof": "Proof: openclaw status reports Update up to date npm latest 2026.4.29; Gateway and Gateway self app 2026.4.29 reachable 124ms; systemd service running pid 1408236."
+      "completed_at": "2026-05-08T01:05:55Z",
+      "proof": "--proof"
     },
     {
       "id": "openclaw-doctor",
@@ -1184,10 +1184,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-01T00:32:36Z",
-      "updated": "2026-05-01T00:40:13Z",
+      "updated": "2026-05-08T01:05:55Z",
       "started_at": "2026-05-01T00:32:36Z",
-      "completed_at": "2026-05-01T00:40:13Z",
-      "proof": "Proof: openclaw status reports Update up to date npm latest 2026.4.29; Gateway and Gateway self app 2026.4.29 reachable 124ms; systemd service running pid 1408236."
+      "completed_at": "2026-05-08T01:05:55Z",
+      "proof": "--proof"
     },
     {
       "id": "self-eval",
@@ -2595,13 +2595,15 @@
       "id": "update-openclaw",
       "title": "Update OpenClaw",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-08T00:57:04Z",
-      "updated": "2026-05-08T00:57:04Z",
-      "started_at": "2026-05-08T00:57:04Z"
+      "updated": "2026-05-08T01:05:55Z",
+      "started_at": "2026-05-08T00:57:04Z",
+      "completed_at": "2026-05-08T01:05:55Z",
+      "proof": "--proof"
     }
   ]
 }
