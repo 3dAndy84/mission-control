@@ -2562,6 +2562,18 @@
       "started_at": "2026-05-07T22:01:02Z",
       "completed_at": "2026-05-07T22:01:25Z",
       "proof": "Ran read-only polymarket_scanner.py alert-only event scan at 2026-05-07 22:01 UTC; output reviewed: no binary alerts, one medium event-basket candidate (BTC 50k nested threshold), repeated in ledger with no paper P&L."
+    },
+    {
+      "id": "run-read-only-polymarket-paper-scanner-scheduled-c",
+      "title": "Run read-only Polymarket paper scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "general",
+      "created": "2026-05-08T00:01:04Z",
+      "updated": "2026-05-08T00:01:04Z",
+      "started_at": "2026-05-08T00:01:04Z"
     }
   ]
 }
