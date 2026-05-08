@@ -2581,13 +2581,15 @@
       "id": "add-usable-polymarket-stack-notes-from-antpalkin-p",
       "title": "Add usable Polymarket stack notes from antpalkin post",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "max",
       "project": "general",
       "created": "2026-05-08T00:44:13Z",
-      "updated": "2026-05-08T00:44:13Z",
-      "started_at": "2026-05-08T00:44:13Z"
+      "updated": "2026-05-08T00:46:50Z",
+      "started_at": "2026-05-08T00:44:13Z",
+      "completed_at": "2026-05-08T00:46:50Z",
+      "proof": "Added Section 11 to trading-command-center/strategy-playbook.md with latency-arb hypothesis, safe observer/backtest path, useful repo/tool list, explicit hype skips, and next latency_observer upgrade. Reviewed git diff."
     }
   ]
 }
