@@ -2604,6 +2604,18 @@
       "started_at": "2026-05-08T00:57:04Z",
       "completed_at": "2026-05-08T01:05:55Z",
       "proof": "OpenClaw updated to 2026.5.7 (eeef486). Verified: openclaw status reports update up to date, gateway reachable 99ms, gateway app/self 2026.5.7, Telegram ON/OK, service active pid 1121124. Ran doctor --non-interactive with HOME=/home/clawd; only warnings/state hygiene, no channel security warnings."
+    },
+    {
+      "id": "add-automatexm-secure-app-gate",
+      "title": "Add AutomateXM secure app gate",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "codex",
+      "project": "automatexm",
+      "created": "2026-05-08T01:37:13Z",
+      "updated": "2026-05-08T01:37:13Z",
+      "started_at": "2026-05-08T01:37:13Z"
     }
   ]
 }
