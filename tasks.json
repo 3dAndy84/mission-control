@@ -2618,6 +2618,18 @@
       "started_at": "2026-05-08T01:37:13Z",
       "completed_at": "2026-05-08T01:40:51Z",
       "proof": "Added AutomateXM secure app gate reference, wired ship-check --automatexm-gate, updated stack-test and skill routing; verified bash -n, diff --check, and audit-only run."
+    },
+    {
+      "id": "polymarket-bot-execution-readiness",
+      "title": "Polymarket bot execution readiness/profitability improvements",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "max",
+      "project": "trading",
+      "created": "2026-05-09T03:35:51Z",
+      "updated": "2026-05-09T03:35:51Z",
+      "started_at": "2026-05-09T03:35:51Z"
     }
   ]
 }
