@@ -2644,6 +2644,18 @@
       "created": "2026-05-14T23:54:46Z",
       "updated": "2026-05-14T23:54:46Z",
       "started_at": "2026-05-14T23:54:46Z"
+    },
+    {
+      "id": "fix-infrastructure-issues",
+      "title": "Fix infrastructure issues",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "Max",
+      "project": "infra",
+      "created": "2026-05-14T23:58:34Z",
+      "updated": "2026-05-14T23:58:34Z",
+      "started_at": "2026-05-14T23:58:34Z"
     }
   ]
 }
