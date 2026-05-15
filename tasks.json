@@ -2670,6 +2670,18 @@
       "started_at": "2026-05-15T10:01:02Z",
       "completed_at": "2026-05-15T10:01:36Z",
       "proof": "Ran read-only Polymarket scanner at 2026-05-15 10:01 UTC; stdout found 2 medium event-basket candidates, no binary alerts; checked state/polymarket-paper-ledger.jsonl for repeat/paper movement."
+    },
+    {
+      "id": "codex-review-whole-case-screening-app",
+      "title": "Codex review whole Case Screening App",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "Codex",
+      "project": "Case Screening App",
+      "created": "2026-05-15T23:05:18Z",
+      "updated": "2026-05-15T23:05:18Z",
+      "started_at": "2026-05-15T23:05:18Z"
     }
   ]
 }
