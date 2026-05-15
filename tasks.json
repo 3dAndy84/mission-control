@@ -2689,13 +2689,15 @@
       "id": "diagnose-delayed-nonresponsive-main-chats-topic-1",
       "title": "Diagnose delayed/nonresponsive main chats topic 1",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "Max",
       "project": "infra",
       "created": "2026-05-15T23:38:04Z",
-      "updated": "2026-05-15T23:38:04Z",
-      "started_at": "2026-05-15T23:38:04Z"
+      "updated": "2026-05-15T23:40:39Z",
+      "started_at": "2026-05-15T23:38:04Z",
+      "completed_at": "2026-05-15T23:40:39Z",
+      "proof": "Config edited: /home/clawd/.openclaw/openclaw.json ackReactionScope=off, telegram reactionLevel=off, topic 1 systemPrompt tightened; jq validation passed; gateway reload requested and logged."
     }
   ]
 }
