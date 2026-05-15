@@ -2675,13 +2675,15 @@
       "id": "codex-review-whole-case-screening-app",
       "title": "Codex review whole Case Screening App",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "Codex",
       "project": "Case Screening App",
       "created": "2026-05-15T23:05:18Z",
-      "updated": "2026-05-15T23:05:18Z",
-      "started_at": "2026-05-15T23:05:18Z"
+      "updated": "2026-05-15T23:06:25Z",
+      "started_at": "2026-05-15T23:05:18Z",
+      "completed_at": "2026-05-15T23:06:25Z",
+      "proof": "Reviewed case-screening-app source/config/schema; npm test pass 63/63; npm audit prod 0 vulns; docker compose config ok; findings posted to Telegram topic."
     }
   ]
 }
