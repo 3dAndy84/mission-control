@@ -2684,6 +2684,18 @@
       "started_at": "2026-05-15T23:05:18Z",
       "completed_at": "2026-05-15T23:06:25Z",
       "proof": "Reviewed case-screening-app source/config/schema; npm test pass 63/63; npm audit prod 0 vulns; docker compose config ok; findings posted to Telegram topic."
+    },
+    {
+      "id": "diagnose-delayed-nonresponsive-main-chats-topic-1",
+      "title": "Diagnose delayed/nonresponsive main chats topic 1",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "Max",
+      "project": "infra",
+      "created": "2026-05-15T23:38:04Z",
+      "updated": "2026-05-15T23:38:04Z",
+      "started_at": "2026-05-15T23:38:04Z"
     }
   ]
 }
