@@ -2754,6 +2754,18 @@
       "started_at": "2026-05-16T12:20:53Z",
       "completed_at": "2026-05-16T12:21:08Z",
       "proof": "Updated /home/clawd/workspace/ops/TOOLS.md with 10-second delegation rule; verified by git diff"
+    },
+    {
+      "id": "run-read-only-polymarket-paper-scanner-scheduled-c",
+      "title": "Run read-only Polymarket paper scanner scheduled check",
+      "description": "",
+      "status": "in-progress",
+      "priority": "low",
+      "agent": "ops",
+      "project": "trading",
+      "created": "2026-05-16T16:01:09Z",
+      "updated": "2026-05-16T16:01:09Z",
+      "started_at": "2026-05-16T16:01:09Z"
     }
   ]
 }
