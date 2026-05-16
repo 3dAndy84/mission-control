@@ -1478,10 +1478,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-05T00:42:05Z",
-      "updated": "2026-05-15T10:01:36Z",
+      "updated": "2026-05-16T16:01:34Z",
       "started_at": "2026-05-05T00:42:05Z",
-      "completed_at": "2026-05-15T10:01:36Z",
-      "proof": "Ran read-only Polymarket scanner at 2026-05-15 10:01 UTC; stdout found 2 medium event-basket candidates, no binary alerts; checked state/polymarket-paper-ledger.jsonl for repeat/paper movement."
+      "completed_at": "2026-05-16T16:01:34Z",
+      "proof": "Scanner run at 2026-05-16 16:01 UTC: 2 medium event basket candidates; no binary YES/NO alerts; ledger repeats World Cup #89 and BTC #107; no executable paper P&L improvement logged."
     },
     {
       "id": "add-polymarket-oracle-source-map",
@@ -2076,10 +2076,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-06T20:01:01Z",
-      "updated": "2026-05-15T10:01:36Z",
+      "updated": "2026-05-16T16:01:34Z",
       "started_at": "2026-05-06T20:01:01Z",
-      "completed_at": "2026-05-15T10:01:36Z",
-      "proof": "Ran read-only Polymarket scanner at 2026-05-15 10:01 UTC; stdout found 2 medium event-basket candidates, no binary alerts; checked state/polymarket-paper-ledger.jsonl for repeat/paper movement."
+      "completed_at": "2026-05-16T16:01:34Z",
+      "proof": "Scanner run at 2026-05-16 16:01 UTC: 2 medium event basket candidates; no binary YES/NO alerts; ledger repeats World Cup #89 and BTC #107; no executable paper P&L improvement logged."
     },
     {
       "id": "run-read-only-polymarket-scanner",
@@ -2320,10 +2320,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-07T10:01:46Z",
-      "updated": "2026-05-15T10:01:36Z",
+      "updated": "2026-05-16T16:01:34Z",
       "started_at": "2026-05-07T10:01:46Z",
-      "completed_at": "2026-05-15T10:01:36Z",
-      "proof": "Ran read-only Polymarket scanner at 2026-05-15 10:01 UTC; stdout found 2 medium event-basket candidates, no binary alerts; checked state/polymarket-paper-ledger.jsonl for repeat/paper movement."
+      "completed_at": "2026-05-16T16:01:34Z",
+      "proof": "Scanner run at 2026-05-16 16:01 UTC: 2 medium event basket candidates; no binary YES/NO alerts; ledger repeats World Cup #89 and BTC #107; no executable paper P&L improvement logged."
     },
     {
       "id": "fix-qmd-vulkan-embedding-support",
@@ -2572,10 +2572,10 @@
       "agent": "max",
       "project": "general",
       "created": "2026-05-08T00:01:04Z",
-      "updated": "2026-05-15T10:01:36Z",
+      "updated": "2026-05-16T16:01:34Z",
       "started_at": "2026-05-08T00:01:04Z",
-      "completed_at": "2026-05-15T10:01:36Z",
-      "proof": "Ran read-only Polymarket scanner at 2026-05-15 10:01 UTC; stdout found 2 medium event-basket candidates, no binary alerts; checked state/polymarket-paper-ledger.jsonl for repeat/paper movement."
+      "completed_at": "2026-05-16T16:01:34Z",
+      "proof": "Scanner run at 2026-05-16 16:01 UTC: 2 medium event basket candidates; no binary YES/NO alerts; ledger repeats World Cup #89 and BTC #107; no executable paper P&L improvement logged."
     },
     {
       "id": "add-usable-polymarket-stack-notes-from-antpalkin-p",
@@ -2666,10 +2666,10 @@
       "agent": "Max",
       "project": "trading",
       "created": "2026-05-15T10:01:02Z",
-      "updated": "2026-05-15T10:01:36Z",
+      "updated": "2026-05-16T16:01:34Z",
       "started_at": "2026-05-15T10:01:02Z",
-      "completed_at": "2026-05-15T10:01:36Z",
-      "proof": "Ran read-only Polymarket scanner at 2026-05-15 10:01 UTC; stdout found 2 medium event-basket candidates, no binary alerts; checked state/polymarket-paper-ledger.jsonl for repeat/paper movement."
+      "completed_at": "2026-05-16T16:01:34Z",
+      "proof": "Scanner run at 2026-05-16 16:01 UTC: 2 medium event basket candidates; no binary YES/NO alerts; ledger repeats World Cup #89 and BTC #107; no executable paper P&L improvement logged."
     },
     {
       "id": "codex-review-whole-case-screening-app",
@@ -2759,13 +2759,15 @@
       "id": "run-read-only-polymarket-paper-scanner-scheduled-c",
       "title": "Run read-only Polymarket paper scanner scheduled check",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "low",
       "agent": "ops",
       "project": "trading",
       "created": "2026-05-16T16:01:09Z",
-      "updated": "2026-05-16T16:01:09Z",
-      "started_at": "2026-05-16T16:01:09Z"
+      "updated": "2026-05-16T16:01:34Z",
+      "started_at": "2026-05-16T16:01:09Z",
+      "completed_at": "2026-05-16T16:01:34Z",
+      "proof": "Scanner run at 2026-05-16 16:01 UTC: 2 medium event basket candidates; no binary YES/NO alerts; ledger repeats World Cup #89 and BTC #107; no executable paper P&L improvement logged."
     }
   ]
 }
