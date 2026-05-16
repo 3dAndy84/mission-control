@@ -2703,13 +2703,15 @@
       "id": "fix-case-screening-app-issues-from-telegram-thread",
       "title": "Fix Case Screening App issues from Telegram thread",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "Max",
       "project": "Case Screening App",
       "created": "2026-05-16T05:34:49Z",
-      "updated": "2026-05-16T05:34:49Z",
-      "started_at": "2026-05-16T05:34:49Z"
+      "updated": "2026-05-16T05:44:14Z",
+      "started_at": "2026-05-16T05:34:49Z",
+      "completed_at": "2026-05-16T05:44:14Z",
+      "proof": "Patched case-screening-app review issues. Proof: node --check src/server.js; npm test 64/64; docker compose build app; docker compose exec app npm run migrate; /login returns 200; case_number_counters table exists."
     },
     {
       "id": "fix-case-screening-app-codex-review-issues",
