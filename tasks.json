@@ -2710,6 +2710,18 @@
       "created": "2026-05-16T05:34:49Z",
       "updated": "2026-05-16T05:34:49Z",
       "started_at": "2026-05-16T05:34:49Z"
+    },
+    {
+      "id": "fix-case-screening-app-codex-review-issues",
+      "title": "Fix Case Screening App Codex review issues",
+      "description": "",
+      "status": "in-progress",
+      "priority": "medium",
+      "agent": "Max",
+      "project": "case-screening-app",
+      "created": "2026-05-16T05:36:33Z",
+      "updated": "2026-05-16T05:36:33Z",
+      "started_at": "2026-05-16T05:36:33Z"
     }
   ]
 }
