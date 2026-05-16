@@ -2698,6 +2698,18 @@
       "started_at": "2026-05-15T23:38:04Z",
       "completed_at": "2026-05-15T23:40:39Z",
       "proof": "Config edited: /home/clawd/.openclaw/openclaw.json ackReactionScope=off, telegram reactionLevel=off, topic 1 systemPrompt tightened; jq validation passed; gateway reload requested and logged."
+    },
+    {
+      "id": "fix-case-screening-app-issues-from-telegram-thread",
+      "title": "Fix Case Screening App issues from Telegram thread",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "Max",
+      "project": "Case Screening App",
+      "created": "2026-05-16T05:34:49Z",
+      "updated": "2026-05-16T05:34:49Z",
+      "started_at": "2026-05-16T05:34:49Z"
     }
   ]
 }
