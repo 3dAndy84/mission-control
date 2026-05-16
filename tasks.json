@@ -2731,13 +2731,15 @@
       "id": "enable-telegram-acknowledgement-reactions-for-topi",
       "title": "Enable Telegram acknowledgement reactions for topic 1",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "medium",
       "agent": "infra",
       "project": "infra",
       "created": "2026-05-16T12:15:41Z",
-      "updated": "2026-05-16T12:15:41Z",
-      "started_at": "2026-05-16T12:15:41Z"
+      "updated": "2026-05-16T12:16:33Z",
+      "started_at": "2026-05-16T12:15:41Z",
+      "completed_at": "2026-05-16T12:16:33Z",
+      "proof": "Verified live config: channels.telegram.reactionLevel=ack, messages.ackReactionScope=group-all, topic 1 systemPrompt present; cron status confirms gateway responsive after restart."
     }
   ]
 }
