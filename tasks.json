@@ -2745,13 +2745,15 @@
       "id": "persist-10-second-delegation-rule-for-topic-agents",
       "title": "Persist 10-second delegation rule for topic agents",
       "description": "",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "agent": "Max",
       "project": "ops",
       "created": "2026-05-16T12:20:53Z",
-      "updated": "2026-05-16T12:20:53Z",
-      "started_at": "2026-05-16T12:20:53Z"
+      "updated": "2026-05-16T12:21:08Z",
+      "started_at": "2026-05-16T12:20:53Z",
+      "completed_at": "2026-05-16T12:21:08Z",
+      "proof": "Updated /home/clawd/workspace/ops/TOOLS.md with 10-second delegation rule; verified by git diff"
     }
   ]
 }
