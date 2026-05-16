@@ -2708,10 +2708,10 @@
       "agent": "Max",
       "project": "Case Screening App",
       "created": "2026-05-16T05:34:49Z",
-      "updated": "2026-05-16T05:44:14Z",
+      "updated": "2026-05-16T05:45:40Z",
       "started_at": "2026-05-16T05:34:49Z",
-      "completed_at": "2026-05-16T05:44:14Z",
-      "proof": "Patched case-screening-app review issues. Proof: node --check src/server.js; npm test 64/64; docker compose build app; docker compose exec app npm run migrate; /login returns 200; case_number_counters table exists."
+      "completed_at": "2026-05-16T05:45:40Z",
+      "proof": "Final verified after worker patch: node --check src/server.js; npm test 65/65; docker compose build app; docker compose up -d app reverse-proxy; docker compose exec app npm run migrate; /login 200."
     },
     {
       "id": "fix-case-screening-app-codex-review-issues",
