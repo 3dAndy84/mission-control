@@ -2740,6 +2740,18 @@
       "started_at": "2026-05-16T12:15:41Z",
       "completed_at": "2026-05-16T12:16:33Z",
       "proof": "Verified live config: channels.telegram.reactionLevel=ack, messages.ackReactionScope=group-all, topic 1 systemPrompt present; cron status confirms gateway responsive after restart."
+    },
+    {
+      "id": "persist-10-second-delegation-rule-for-topic-agents",
+      "title": "Persist 10-second delegation rule for topic agents",
+      "description": "",
+      "status": "in-progress",
+      "priority": "high",
+      "agent": "Max",
+      "project": "ops",
+      "created": "2026-05-16T12:20:53Z",
+      "updated": "2026-05-16T12:20:53Z",
+      "started_at": "2026-05-16T12:20:53Z"
     }
   ]
 }
